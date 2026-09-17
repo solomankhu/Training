@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<base target="_top">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>แบบทดสอบผู้ใช้ SSM</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+:root{
+  --ground:#F2F4EF; --surface:#FFFFFF; --surface-2:#F7F9F4;
+  --ink:#16221C; --ink-2:#4C5C53; --ink-3:#7E8D84;
+  --line:#DCE3D9; --line-2:#C6D0C2;
+  --accent:#2F6B4F; --accent-ink:#FFFFFF; --accent-soft:#E2EFE7;
+  --amber:#A96C16; --amber-soft:#FAEFDD;
+  --bad:#A33A2C; --bad-soft:#F9E5E2;
+  --shadow:0 1px 2px rgba(22,34,28,.06), 0 8px 24px rgba(22,34,28,.05);
+  padding-top:env(safe-area-inset-top,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --ground:#0E1410; --surface:#19211B; --surface-2:#202A22;
+    --ink:#E7EDE6; --ink-2:#A8B4AB; --ink-3:#7B8880;
+    --line:#2A352C; --line-2:#3A473C;
+    --accent:#63AC80; --accent-ink:#0E1410; --accent-soft:#1D3227;
+    --amber:#D89C46; --amber-soft:#33270F;
+    --bad:#E07866; --bad-soft:#3A1E19;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.3);
+  }
+}
+*,*::before,*::after{box-sizing:border-box}
+html{height:100%}
+body{
+  height:100%; margin:0; background:var(--ground); color:var(--ink);
+  font-family:"IBM Plex Sans Thai Looped","Noto Sans Thai",system-ui,sans-serif;
+  font-size:15px; line-height:1.62; -webkit-font-smoothing:antialiased;
+}
+.mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+img{max-width:100%}
+[hidden]{display:none!important}
+
+#shell{height:100%;max-width:520px;margin:0 auto;background:var(--surface);
+  display:flex;flex-direction:column;box-shadow:var(--shadow)}
+.bar{flex:0 0 auto;background:var(--surface);border-bottom:1px solid var(--line)}
+.scroll{flex:1 1 auto;overflow-y:auto;-webkit-overflow-scrolling:touch}
+.pad{padding:20px 16px 28px}
+.foot{flex:0 0 auto;background:var(--surface);border-top:1px solid var(--line);
+  padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px));
+  display:flex;gap:10px;align-items:center}
+
+.demo-strip{background:var(--amber-soft);color:var(--amber);font-size:11.5px;letter-spacing:.02em;
+  font-weight:600;padding:7px 16px;text-align:center;border-bottom:1px solid var(--line)}
+
+.prog-wrap{padding:11px 16px 12px;display:flex;flex-direction:column;gap:8px}
+.prog-meta{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.prog-count{font-size:12.5px;color:var(--ink-2);font-weight:500}
+.chip{font-size:11px;font-weight:600;letter-spacing:.03em;padding:3px 9px;border-radius:999px;
+  background:var(--accent-soft);color:var(--accent);white-space:nowrap}
+.track{height:5px;border-radius:999px;background:var(--line);overflow:hidden}
+.fill{height:100%;background:var(--accent);border-radius:999px;transition:width .32s cubic-bezier(.4,0,.2,1)}
+@media (prefers-reduced-motion:reduce){.fill{transition:none}}
+
+h1{font-size:23px;line-height:1.35;margin:0;font-weight:700;text-wrap:balance;letter-spacing:-.01em}
+h2{font-size:18px;line-height:1.45;margin:0;font-weight:600}
+.eyebrow{font-size:11px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);margin:0}
+.lede{color:var(--ink-2);margin:0;font-size:14px}
+.tiny{font-size:12px;color:var(--ink-3);margin:0;line-height:1.55}
+.stack{display:flex;flex-direction:column;gap:16px}
+.stack-sm{display:flex;flex-direction:column;gap:9px}
+hr.rule{border:0;border-top:1px solid var(--line);margin:2px 0}
+
+.hero{display:flex;justify-content:center;padding:4px 0 2px}
+.field{display:flex;flex-direction:column;gap:6px;margin-top:2px}
+.field label{font-size:12.5px;font-weight:600;color:var(--ink-2)}
+.field input,.field select{font:inherit;font-size:16px;padding:11px 12px;border-radius:9px;
+  border:1px solid var(--line-2);background:var(--surface-2);color:var(--ink);width:100%}
+.field input::placeholder{color:var(--ink-3)}
+.facts{display:flex;gap:8px;flex-wrap:wrap;margin-top:2px}
+.fact{flex:1 1 30%;min-width:96px;background:var(--surface-2);border:1px solid var(--line);
+  border-radius:10px;padding:10px 11px}
+.fact b{display:block;font-size:17px;font-weight:600;letter-spacing:-.01em}
+.fact span{font-size:11.5px;color:var(--ink-3)}
+
+.stem{font-size:17px;line-height:1.55;font-weight:600;margin:0}
+.hint{font-size:12.5px;color:var(--ink-3);margin:0}
+.opts{display:flex;flex-direction:column;gap:9px;margin:0;padding:0;list-style:none}
+.opt{display:flex;gap:11px;align-items:flex-start;padding:12px 13px;border-radius:11px;
+  border:1px solid var(--line-2);background:var(--surface-2);cursor:pointer;text-align:left;width:100%}
+.opt[aria-checked="true"]{border-color:var(--accent);background:var(--accent-soft)}
+.box{flex:0 0 auto;width:21px;height:21px;border-radius:6px;border:2px solid var(--line-2);
+  background:var(--surface);margin-top:1px;display:grid;place-items:center}
+.box.round{border-radius:50%}
+.opt[aria-checked="true"] .box{border-color:var(--accent);background:var(--accent)}
+.box svg{opacity:0;width:13px;height:13px}
+.opt[aria-checked="true"] .box svg{opacity:1}
+.opt-text{flex:1;font-size:14.5px;line-height:1.5}
+.opt-ico{flex:0 0 auto;display:grid;place-items:center;width:26px;height:26px}
+
+.ord{display:flex;flex-direction:column;gap:8px;margin:0;padding:0;list-style:none;position:relative}
+.ord li{display:flex;align-items:stretch;gap:9px;padding:9px 9px 9px 12px;border-radius:11px;
+  border:1px solid var(--line-2);background:var(--surface-2);position:relative}
+.ord li.dragging{z-index:5;border-color:var(--accent);background:var(--surface);
+  box-shadow:0 6px 18px rgba(22,34,28,.16);pointer-events:none;user-select:none}
+.rank{flex:0 0 auto;width:23px;height:23px;align-self:center;border-radius:7px;
+  background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;
+  font-size:12.5px;font-weight:600}
+.ord-text{flex:1;font-size:14.5px;line-height:1.48;align-self:center}
+.nudge{display:flex;flex-direction:column;gap:3px;flex:0 0 auto}
+.nudge button{width:36px;height:29px;border-radius:8px;border:1px solid var(--line-2);
+  background:var(--surface);cursor:pointer;display:grid;place-items:center;padding:0}
+.nudge button:disabled{opacity:.34;cursor:not-allowed}
+.grip{flex:0 0 auto;width:32px;border-radius:9px;border:1px solid var(--line-2);
+  background:var(--surface);display:grid;place-items:center;padding:0;
+  cursor:grab;touch-action:none;-webkit-user-select:none;user-select:none}
+.grip:active{cursor:grabbing;background:var(--accent-soft);border-color:var(--accent)}
+
+.case{position:sticky;top:0;z-index:2;background:var(--accent-soft);border:1px solid var(--accent);
+  border-radius:12px;padding:12px 13px;display:flex;flex-direction:column;gap:5px}
+.case .eyebrow{color:var(--accent)}
+.case p{margin:0;font-size:14px;line-height:1.55;color:var(--ink)}
+
+.btn{flex:1;padding:13px 16px;border-radius:11px;border:1px solid transparent;
+  background:var(--accent);color:var(--accent-ink);font-weight:600;font-size:15px;cursor:pointer}
+.btn:disabled{opacity:.42;cursor:not-allowed}
+.btn.ghost{background:var(--surface);border-color:var(--line-2);color:var(--ink-2);flex:0 0 auto}
+.btn.wide{flex:1}
+
+.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:0;padding:0;list-style:none}
+.cell{aspect-ratio:1;border-radius:10px;border:1px solid var(--line-2);background:var(--surface-2);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;cursor:pointer;width:100%}
+.cell b{font-size:15px;font-weight:600}
+.cell.done{border-color:var(--accent);background:var(--accent-soft);color:var(--accent)}
+.cell.todo{border-color:var(--amber);background:var(--amber-soft);color:var(--amber)}
+.tally{display:flex;gap:8px}
+.tally div{flex:1;border-radius:10px;padding:10px 12px;border:1px solid var(--line)}
+.tally .ok{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
+.tally .no{background:var(--amber-soft);border-color:var(--amber);color:var(--amber)}
+.tally b{display:block;font-size:19px;font-weight:600}
+.tally span{font-size:11.5px}
+
+.score-card{background:var(--surface-2);border:1px solid var(--line);border-radius:14px;
+  padding:16px 15px;display:flex;flex-direction:column;align-items:center;gap:3px}
+.kv{display:flex;justify-content:space-between;gap:14px;align-items:baseline}
+.kv span{font-size:13px;color:var(--ink-3)}
+.kv b{font-size:13.5px;font-weight:600;text-align:right}
+.saved{font-size:11.5px;color:var(--ink-3);display:flex;align-items:center;gap:5px}
+.errbox{background:var(--bad-soft);border:1px solid var(--bad);border-radius:12px;padding:13px 14px}
+.errbox .eyebrow{color:var(--bad)}
+.errbox p{margin:6px 0 0;font-size:13.5px;line-height:1.55;color:var(--ink-2)}
+</style>
+</head>
+<body>
+
+<div id="shell">
+  <div class="demo-strip" id="strip">ต้นแบบ · ข้อตัวอย่าง 5 ข้อ ยังไม่ผ่านการตรวจกับระบบจริง</div>
+  <div class="bar" id="topbar" hidden>
+    <div class="prog-wrap">
+      <div class="prog-meta">
+        <span class="prog-count mono" id="pcount"></span>
+        <span class="chip" id="pchip"></span>
+      </div>
+      <div class="track"><div class="fill" id="pfill"></div></div>
+    </div>
+  </div>
+  <div class="scroll" id="scroll"><div class="pad" id="view"></div></div>
+  <div class="foot" id="foot" hidden></div>
+</div>
+
+<script src="items.js"></script>
+
+<script>
+/* ────────────────────────────────────────────────────────────────────────
+   ตั้งค่าเพียงบรรทัดเดียว: URL ของ Apps Script ที่ deploy แล้ว (ขั้นที่ 5 ใน README)
+   ──────────────────────────────────────────────────────────────────────── */
+var ENDPOINT = 'PASTE_YOUR_APPS_SCRIPT_URL_HERE';
+
+var ROLES = {
+  admin:        { th: 'ผู้ดูแลระบบ',  track: 'office' },
+  zonehead:     { th: 'หัวหน้าเขต',   track: 'office' },
+  surveyor:     { th: 'นักสำรวจ',     track: 'field'  },
+  gis:          { th: 'ผู้ใช้งาน GIS', track: 'office' },
+  cutter:       { th: 'รถตัดอ้อย',    track: 'field'  },
+  servicepoint: { th: 'จุดบริการ',    track: 'field'  }
+};
+
+/* ค่าจาก QR อ่านจาก URL ของหน้านี้ แล้วกรองแบบเดียวกับที่ doGet เคยกรอง
+   -- role ต้องอยู่ใน whitelist, session เหลือเฉพาะ A-Za-z0-9_- */
+var QR = (function () {
+  var p = new URLSearchParams(location.search);
+  var r = String(p.get('role') || '');
+  return {
+    role: Object.prototype.hasOwnProperty.call(ROLES, r) ? r : '',
+    session: String(p.get('session') || '').replace(/[^A-Za-z0-9_-]/g, '').slice(0, 40)
+  };
+})();
+
+var PARTS = {
+  1:'หมวด 1 · ความรู้และการใช้งาน',
+  2:'หมวด 2 · ขั้นตอนที่ถูกต้อง',
+  3:'หมวด 3 · การแก้ปัญหา',
+  4:'หมวด 4 · การขอความช่วยเหลือ',
+  5:'หมวด 5 · สถานการณ์รวม'
+};
+
+var ICONS = {
+  ok:  '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="var(--accent)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9" fill="var(--accent-soft)"/><path d="M8 12.4l2.6 2.6L16 9.6"/></svg>',
+  wait:'<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="var(--amber)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9" fill="var(--amber-soft)"/><path d="M15.5 10.5a4 4 0 10-.3 3.4"/><path d="M15.9 7.6v3h-3"/></svg>',
+  fail:'<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="var(--bad)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9" fill="var(--bad-soft)"/><path d="M9.3 9.3l5.4 5.4M14.7 9.3l-5.4 5.4"/></svg>',
+  none:'<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="var(--ink-3)" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12h7"/></svg>'
+};
+var CHECK = '<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-ink)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>';
+var TICK  = '<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="var(--accent)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>';
+var UP    = '<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="var(--ink-2)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V6M6 12l6-6 6 6"/></svg>';
+var DOWN  = '<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="var(--ink-2)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v13M18 12l-6 6-6-6"/></svg>';
+var GRIP  = '<svg viewBox="0 0 16 22" width="16" height="22" fill="var(--ink-3)" aria-hidden="true"><circle cx="5" cy="5" r="1.7"/><circle cx="11" cy="5" r="1.7"/><circle cx="5" cy="11" r="1.7"/><circle cx="11" cy="11" r="1.7"/><circle cx="5" cy="17" r="1.7"/><circle cx="11" cy="17" r="1.7"/></svg>';
+
+/* ============================ สถานะ ============================ */
+var DRAFT_KEY = 'ssm-exam-v1';
+var state = {
+  screen:'register', idx:0,
+  role: ROLES[QR.role] ? QR.role : null,
+  roleFromQR: !!ROLES[QR.role],
+  session: QR.session || 'SSM-DEFAULT',
+  track: ROLES[QR.role] ? ROLES[QR.role].track : 'field',
+  clientToken: null,
+  profile:{name:'', dept:''},
+  answers:{}, order:{}, startedAt:null, receipt:null, sendError:null
+};
+function ITEMS(){ return (state.role && ITEMS_BY_ROLE[state.role]) || []; }
+function roleTh(){ return state.role ? ROLES[state.role].th : '—'; }
+function uuid(){
+  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c){
+    var r = Math.random()*16|0, v = c === 'x' ? r : (r&0x3|0x8);
+    return v.toString(16);
+  });
+}
+function save(){ try{ localStorage.setItem(DRAFT_KEY, JSON.stringify(state)); }catch(e){} }
+function load(){
+  try{
+    var raw = localStorage.getItem(DRAFT_KEY); if(!raw) return false;
+    var d = JSON.parse(raw);
+    if(!d || d.screen==='register' || d.screen==='submitted') return false;
+    for(var k in d){ state[k]=d[k]; }
+    return true;
+  }catch(e){ return false; }
+}
+function hasDraft(){
+  try{
+    var raw = localStorage.getItem(DRAFT_KEY); if(!raw) return false;
+    var d = JSON.parse(raw);
+    return !!d && d.screen!=='register' && d.screen!=='submitted';
+  }catch(e){ return false; }
+}
+function clearDraft(){ try{ localStorage.removeItem(DRAFT_KEY); }catch(e){} }
+
+function orderItems(it){ return it.type==='ordering' ? it.items : null; }
+function initOrder(it){
+  if(!state.order[it.id]){
+    var n = orderItems(it).length, seq = [];
+    for(var i=0;i<n;i++) seq.push(i);
+    for(var j=n-1;j>0;j--){ var m=(j*7+3)%(j+1), t=seq[j]; seq[j]=seq[m]; seq[m]=t; }
+    state.order[it.id] = seq;
+  }
+  return state.order[it.id];
+}
+function answered(it){
+  if(it.type==='ordering') return !!state.order[it.id];
+  var a = state.answers[it.id];
+  return !!a && a.length>0;
+}
+function esc(s){ return String(s).replace(/[&<>"]/g,function(c){
+  return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+
+/* ============================ การวาดหน้าจอ ============================ */
+var view=document.getElementById('view'), foot=document.getElementById('foot'),
+    topbar=document.getElementById('topbar'), scroll=document.getElementById('scroll');
+
+function render(){
+  var q = state.screen==='question';
+  topbar.hidden = !q;
+  if(q){
+    var it = ITEMS()[state.idx];
+    document.getElementById('pcount').textContent = 'ข้อ '+(state.idx+1)+' จาก '+ITEMS().length;
+    document.getElementById('pchip').textContent = PARTS[it.part] || '';
+    document.getElementById('pfill').style.width = ((state.idx+1)/ITEMS().length*100)+'%';
+  }
+  ({register:vRegister, question:vQuestion, review:vReview, confirm:vConfirm,
+    sending:vSending, submitted:vSubmitted, failed:vFailed})[state.screen]();
+  scroll.scrollTop = 0;
+}
+
+function vRegister(){
+  var zones = ['เขต 1','เขต 2','เขต 3','เขต 4','เขต 5','เขต 7','เขต 8','สำนักงานใหญ่'];
+  var roleBlock = state.roleFromQR
+    ? '<div class="field"><label>บทบาท</label>'
+      + '<div style="display:flex;align-items:center;gap:9px;padding:11px 12px;border-radius:9px;border:1px solid var(--accent);background:var(--accent-soft)">'
+      + '<span style="font-size:15px;font-weight:600;color:var(--accent)">'+esc(roleTh())+'</span>'
+      + '<span class="chip" style="margin-left:auto">'+(state.track==='field'?'ภาคสนาม':'สำนักงาน')+'</span></div>'
+      + '<p class="tiny">มาจาก QR ที่สแกน · รุ่น <b>'+esc(state.session)+'</b></p></div>'
+    : '<div class="field"><label for="f-role">บทบาท</label><select id="f-role">'
+      + '<option value="">เลือกบทบาท</option>'
+      + Object.keys(ROLES).map(function(k){
+          return '<option value="'+k+'"'+(state.role===k?' selected':'')+'>'+ROLES[k].th
+               + ' · '+(ROLES[k].track==='field'?'ภาคสนาม':'สำนักงาน')+'</option>'; }).join('')
+      + '</select><p class="tiny">ปกติบทบาทมาจาก QR — ที่นี่ไม่ได้รับค่ามา จึงต้องเลือกเอง</p></div>';
+
+  view.innerHTML =
+    '<div class="stack">'
+    + '<div class="hero"><svg viewBox="0 0 230 116" width="216" height="109" role="img" aria-label="ภาพประกอบแปลงอ้อยพร้อมหมุดพิกัด">'
+      + '<rect x="1" y="52" width="228" height="63" rx="9" fill="var(--accent-soft)"/>'
+      + '<g stroke="var(--accent)" stroke-width="1.3" opacity=".42"><path d="M10 106h210M14 94h202M20 82h190M28 70h174M38 60h154"/></g>'
+      + '<path d="M46 96 L74 58 L152 52 L192 84 L150 106 Z" fill="none" stroke="var(--accent)" stroke-width="2.4" stroke-dasharray="6 5" stroke-linejoin="round"/>'
+      + '<g fill="var(--accent)"><circle cx="46" cy="96" r="3.6"/><circle cx="74" cy="58" r="3.6"/><circle cx="152" cy="52" r="3.6"/><circle cx="192" cy="84" r="3.6"/><circle cx="150" cy="106" r="3.6"/></g>'
+      + '<g stroke="var(--accent)" stroke-width="2.6" stroke-linecap="round" opacity=".85">'
+      + '<path d="M92 48V20M92 30c-7-2-11-7-12-14 7 0 12 3 14 9M92 34c7-3 11-8 12-15-7 0-12 3-14 9"/>'
+      + '<path d="M122 46V14M122 24c-7-2-11-7-12-14 7 0 12 3 14 9M122 28c7-3 11-8 12-15-7 0-12 3-14 9"/></g>'
+      + '<path d="M170 44c0-7-6-13-13-13s-13 6-13 13c0 9 13 21 13 21s13-12 13-21z" fill="var(--amber)"/>'
+      + '<circle cx="157" cy="43" r="4.6" fill="var(--surface)"/></svg></div>'
+    + '<div class="stack-sm"><p class="eyebrow">แบบทดสอบผู้ใช้ระบบ SSM</p>'
+      + '<h1>วัดความพร้อมใช้งานจริง</h1>'
+      + '<p class="lede">ไม่ใช่ข้อสอบท่องจำ — วัดว่าใช้งานได้ แก้ปัญหาเบื้องต้นเป็น และรู้ว่าเมื่อไรควรส่งต่อ</p></div>'
+    + '<div class="facts">'
+      + '<div class="fact"><b class="mono">'+(state.role ? ITEMS().length : '—')+'</b><span>ข้อ</span></div>'
+      + '<div class="fact"><b class="mono">~4</b><span>นาที</span></div>'
+      + '<div class="fact"><b>'+(state.roleFromQR?esc(roleTh()):'เลือกด้านล่าง')+'</b><span>'+(state.roleFromQR?'บทบาทจาก QR ✓':'QR ไม่ได้ส่งบทบาทมา')+'</span></div>'
+    + '</div><hr class="rule"><div class="stack-sm">'
+    + '<div class="field"><label for="f-name">ชื่อ-นามสกุล</label>'
+      + '<input id="f-name" autocomplete="name" placeholder="เช่น สมชาย ใจดี" value="'+esc(state.profile.name)+'"></div>'
+    + '<div class="field"><label for="f-dept">หน่วยงาน</label><select id="f-dept"><option value="">เลือกหน่วยงาน</option>'
+      + zones.map(function(d){ return '<option'+(state.profile.dept===d?' selected':'')+'>'+d+'</option>'; }).join('')
+      + '</select></div>'
+    + roleBlock + '</div>'
+    + '<p class="tiny">ชื่อและหน่วยงานจะถูกบันทึกพร้อมคำตอบ เพื่อให้ผู้สอนรวบรวมผลของรุ่นได้</p></div>';
+
+  ['name','dept'].forEach(function(k){
+    var el = document.getElementById('f-'+k);
+    el.oninput = el.onchange = function(){ state.profile[k]=el.value; updateStart(); };
+  });
+  var rs = document.getElementById('f-role');
+  if(rs) rs.onchange = function(){
+    state.role = rs.value || null;
+    state.track = state.role ? ROLES[state.role].track : 'field';
+    state.order = {}; state.answers = {};
+    render();
+  };
+
+  foot.hidden = false;
+  foot.innerHTML = (hasDraft() ? '<button class="btn ghost" id="resume">ทำต่อ</button>' : '')
+                 + '<button class="btn" id="start">เริ่มทำข้อสอบ</button>';
+  document.getElementById('start').onclick = function(){
+    state.screen='question'; state.idx=0;
+    state.startedAt = Date.now();
+    state.clientToken = uuid();
+    save(); render();
+  };
+  var r = document.getElementById('resume');
+  if(r) r.onclick = function(){ if(load()) render(); };
+  updateStart();
+}
+function updateStart(){
+  var b = document.getElementById('start');
+  if(b) b.disabled = !(state.profile.name.replace(/\s/g,'') && state.profile.dept && state.role);
+}
+
+function vQuestion(){
+  var it = ITEMS()[state.idx], body = '';
+  if(it.type==='case'){
+    body += '<div class="case"><p class="eyebrow">'+esc(it.caseTitle)+'</p><p>'+esc(it.caseText)+'</p></div>';
+  }
+  body += '<p class="stem">'+esc(it.stem)+'</p>';
+  if(it.hint) body += '<p class="hint">'+esc(it.hint)+'</p>';
+
+  if(it.type==='ordering'){
+    var labels = orderItems(it), seq = initOrder(it);
+    body += '<p class="hint">ลากที่ปุ่มจับด้านขวา หรือใช้ปุ่มลูกศร</p><ul class="ord">'
+      + seq.map(function(v,i){
+          return '<li data-v="'+v+'"><span class="rank mono">'+(i+1)+'</span>'
+            + '<span class="ord-text">'+esc(labels[v])+'</span><span class="nudge">'
+            + '<button type="button" data-mv="up"'+(i===0?' disabled':'')+' aria-label="เลื่อน &quot;'+esc(labels[v])+'&quot; ขึ้น">'+UP+'</button>'
+            + '<button type="button" data-mv="down"'+(i===seq.length-1?' disabled':'')+' aria-label="เลื่อน &quot;'+esc(labels[v])+'&quot; ลง">'+DOWN+'</button>'
+            + '</span><span class="grip" role="button" tabindex="-1" aria-label="ลากเพื่อจัดลำดับ">'+GRIP+'</span></li>';
+        }).join('') + '</ul>';
+  } else {
+    var multi = it.type==='multiple', picked = state.answers[it.id] || [];
+    body += '<ul class="opts" role="'+(multi?'group':'radiogroup')+'">'
+      + it.options.map(function(o,i){
+          return '<li><button type="button" class="opt" data-i="'+i+'" aria-label="'+esc(o.t)+'" '
+            + 'role="'+(multi?'checkbox':'radio')+'" aria-checked="'+(picked.indexOf(i)>=0)+'">'
+            + '<span class="box'+(multi?'':' round')+'">'+CHECK+'</span>'
+            + '<span class="opt-text">'+esc(o.t)+'</span>'
+            + (o.ico ? '<span class="opt-ico">'+ICONS[o.ico]+'</span>' : '')
+            + '</button></li>';
+        }).join('') + '</ul>';
+  }
+
+  view.innerHTML = '<div class="stack">'+body+'</div>';
+
+  Array.prototype.forEach.call(view.querySelectorAll('.opt'), function(b){
+    b.onclick = function(){
+      var i = +b.dataset.i, cur = state.answers[it.id] || [];
+      if(it.type==='multiple'){
+        state.answers[it.id] = cur.indexOf(i)>=0
+          ? cur.filter(function(x){ return x!==i; })
+          : cur.concat([i]).sort(function(a,b2){ return a-b2; });
+      } else {
+        state.answers[it.id] = [i];
+      }
+      save();
+      var sel = state.answers[it.id];
+      Array.prototype.forEach.call(view.querySelectorAll('.opt'), function(x){
+        x.setAttribute('aria-checked', sel.indexOf(+x.dataset.i)>=0);
+      });
+    };
+  });
+  if(it.type==='ordering') wireOrdering(it);
+
+  foot.hidden = false;
+  var last = state.idx===ITEMS().length-1;
+  foot.innerHTML = '<button class="btn ghost" id="prev"'+(state.idx===0?' disabled':'')+'>ย้อนกลับ</button>'
+    + '<span class="saved">'+TICK+' บันทึกร่างแล้ว</span>'
+    + '<button class="btn" id="next" style="flex:0 0 auto;min-width:118px">'+(last?'ตรวจก่อนส่ง':'ถัดไป')+'</button>';
+  document.getElementById('prev').onclick = function(){ state.idx--; save(); render(); };
+  document.getElementById('next').onclick = function(){
+    if(last){ state.screen='review'; } else { state.idx++; }
+    save(); render();
+  };
+}
+
+/* ---- การจัดลำดับ ---- */
+var drag = null;
+function commitOrder(it){
+  var list = view.querySelector('.ord'); if(!list) return;
+  var rows = Array.prototype.slice.call(list.children);
+  state.order[it.id] = rows.map(function(li){ return +li.dataset.v; });
+  save();
+  rows.forEach(function(li,i){
+    li.querySelector('.rank').textContent = i+1;
+    li.querySelector('[data-mv="up"]').disabled   = i===0;
+    li.querySelector('[data-mv="down"]').disabled = i===rows.length-1;
+  });
+}
+function wireOrdering(it){
+  var list = view.querySelector('.ord'); if(!list) return;
+  Array.prototype.forEach.call(list.querySelectorAll('[data-mv]'), function(b){
+    b.onclick = function(){
+      var li = b.parentNode.parentNode;
+      if(b.dataset.mv==='up'){ var p=li.previousElementSibling; if(p) list.insertBefore(li,p); }
+      else { var n=li.nextElementSibling; if(n) list.insertBefore(n,li); }
+      commitOrder(it);
+      if(!b.disabled) b.focus();
+    };
+  });
+  Array.prototype.forEach.call(list.querySelectorAll('.grip'), function(g){
+    g.onpointerdown = function(e){
+      if(e.button && e.button!==0) return;
+      e.preventDefault();
+      drag = { li:g.parentNode, list:list, it:it, y:e.clientY, id:e.pointerId };
+      drag.li.classList.add('dragging');
+    };
+  });
+}
+window.addEventListener('pointermove', function(e){
+  if(!drag || e.pointerId!==drag.id) return;
+  e.preventDefault();
+  drag.li.style.transform = 'translateY('+(e.clientY-drag.y)+'px)';
+  var el = document.elementFromPoint(e.clientX, e.clientY);
+  var row = el && el.closest ? el.closest('.ord > li') : null;
+  if(row && row!==drag.li && drag.list.contains(row)){
+    var r = row.getBoundingClientRect();
+    drag.list.insertBefore(drag.li, (e.clientY < r.top + r.height/2) ? row : row.nextSibling);
+    drag.y = e.clientY;
+    drag.li.style.transform = 'translateY(0)';
+  }
+}, {passive:false});
+function endDrag(){
+  if(!drag) return;
+  drag.li.classList.remove('dragging');
+  drag.li.style.transform = '';
+  var it = drag.it; drag = null;
+  commitOrder(it);
+}
+window.addEventListener('pointerup', endDrag);
+window.addEventListener('pointercancel', endDrag);
+
+function vReview(){
+  var items = ITEMS(), done = items.filter(answered).length, todo = items.length-done;
+  view.innerHTML = '<div class="stack"><div class="stack-sm">'
+    + '<p class="eyebrow">ขั้นสุดท้าย</p><h1>ตรวจก่อนส่งคำตอบ</h1>'
+    + '<p class="lede">แตะหมายเลขข้อเพื่อกลับไปแก้ไข</p></div>'
+    + '<div class="tally"><div class="ok"><b class="mono">'+done+'</b><span>ตอบแล้ว</span></div>'
+    + '<div class="'+(todo?'no':'')+'"><b class="mono">'+todo+'</b><span>ยังไม่ได้ตอบ</span></div></div>'
+    + '<ul class="grid">'+items.map(function(it,i){
+        return '<li><button type="button" class="cell '+(answered(it)?'done':'todo')+'" data-i="'+i+'" '
+          + 'aria-label="ข้อ '+(i+1)+' '+(answered(it)?'ตอบแล้ว':'ยังไม่ได้ตอบ')+'">'
+          + '<b class="mono">'+(i+1)+'</b><span style="font-size:11px">'+(answered(it)?'✓':'!')+'</span></button></li>';
+      }).join('')+'</ul>'
+    + (todo ? '<p class="tiny" style="color:var(--amber);font-weight:600">ยังเหลือ '+todo+' ข้อที่ยังไม่ได้ตอบ ข้อที่ไม่ตอบจะได้ 0 คะแนน</p>' : '')
+    + '<hr class="rule"><p class="tiny">เมื่อส่งแล้วจะไม่สามารถกลับมาแก้ไขได้</p></div>';
+
+  Array.prototype.forEach.call(view.querySelectorAll('.cell'), function(b){
+    b.onclick = function(){ state.idx=+b.dataset.i; state.screen='question'; save(); render(); };
+  });
+  foot.hidden = false;
+  foot.innerHTML = '<button class="btn ghost" id="back">กลับไปตรวจ</button>'
+                 + '<button class="btn" id="submit">ยืนยันส่งคำตอบ</button>';
+  document.getElementById('back').onclick = function(){ state.idx=0; state.screen='question'; save(); render(); };
+  document.getElementById('submit').onclick = function(){ state.screen='confirm'; render(); };
+}
+
+function vConfirm(){
+  var todo = ITEMS().length - ITEMS().filter(answered).length;
+  view.innerHTML = '<div class="stack" style="padding-top:26px">'
+    + '<div class="hero"><svg viewBox="0 0 96 96" width="88" height="88" role="img" aria-label="ไอคอนยืนยันการส่ง">'
+    + '<circle cx="48" cy="48" r="40" fill="var(--amber-soft)" stroke="var(--amber)" stroke-width="2.5"/>'
+    + '<path d="M48 28v26" stroke="var(--amber)" stroke-width="6" stroke-linecap="round"/>'
+    + '<circle cx="48" cy="66" r="4" fill="var(--amber)"/></svg></div>'
+    + '<div class="stack-sm" style="text-align:center"><h1>ยืนยันส่งคำตอบ</h1>'
+    + '<p class="lede">เมื่อส่งแล้วจะไม่สามารถกลับมาแก้ไขคำตอบได้</p></div>'
+    + (todo ? '<div class="tally"><div class="no" style="text-align:center"><b class="mono">'+todo+'</b>'
+              + '<span>ข้อที่ยังไม่ได้ตอบ จะได้ 0 คะแนน</span></div></div>' : '')
+    + '</div>';
+  foot.hidden = false;
+  foot.innerHTML = '<button class="btn ghost" id="back2">กลับไปตรวจ</button>'
+                 + '<button class="btn" id="go">ยืนยันส่ง</button>';
+  document.getElementById('back2').onclick = function(){ state.screen='review'; render(); };
+  document.getElementById('go').onclick = function(){ submit(1); };
+}
+
+/* ---- ส่งคำตอบ พร้อม retry แบบถอยหลังเพิ่มทีละเท่าตัว ---- */
+function payload(){
+  return {
+    clientToken: state.clientToken,
+    role: state.role, session: state.session, track: state.track,
+    name: state.profile.name, department: state.profile.dept,
+    startedAt: state.startedAt, submittedAt: Date.now(),
+    responses: (function(){
+      var r = {};
+      ITEMS().forEach(function(it){
+        r[it.id] = it.type==='ordering' ? (state.order[it.id]||[]) : (state.answers[it.id]||[]);
+      });
+      return r;
+    })()
+  };
+}
+function submit(attempt){
+  state.screen='sending'; state.sendAttempt=attempt; render();
+
+  // ห้ามตั้ง Content-Type เอง -- การตั้งจะทำให้เบราว์เซอร์ยิง preflight OPTIONS ก่อน
+  // ซึ่ง Apps Script ตอบไม่ได้ คำขอจะถูกบล็อกทั้งที่ฝั่งเซิร์ฟเวอร์ไม่มีอะไรผิด
+  // ปล่อยให้ body เป็นสตริง แล้วเบราว์เซอร์จะใช้ text/plain ซึ่งเป็น simple request
+  fetch(ENDPOINT, { method: 'POST', body: JSON.stringify(payload()) })
+    .then(function(r){
+      if(!r.ok) throw new Error('เซิร์ฟเวอร์ตอบ ' + r.status);
+      return r.json();
+    })
+    .then(function(res){
+      if(!res || !res.ok) throw new Error((res && res.error) || 'ส่งไม่สำเร็จ');
+      state.receipt = res; state.screen='submitted'; clearDraft(); render();
+    })
+    .catch(function(err){
+      if(attempt < 4){
+        setTimeout(function(){ submit(attempt+1); }, 900 * Math.pow(2, attempt-1));
+      } else {
+        state.sendError = (err && err.message) ? err.message : 'ส่งไม่สำเร็จ';
+        state.screen='failed'; render();
+      }
+    });
+}
+
+function vSending(){
+  view.innerHTML = '<div class="stack" style="align-items:center;padding-top:56px;text-align:center">'
+    + '<svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="var(--accent)" stroke-width="2.2" stroke-linecap="round">'
+    + '<circle cx="12" cy="12" r="9" opacity=".22"/><path d="M21 12a9 9 0 00-9-9">'
+    + '<animateTransform attributeName="transform" type="rotate" from="0 12 12" to="360 12 12" dur="1s" repeatCount="indefinite"/>'
+    + '</path></svg><h2>กำลังส่งคำตอบ</h2>'
+    + '<p class="tiny" style="max-width:34ch">'
+    + (state.sendAttempt>1 ? 'สัญญาณไม่ดี กำลังลองใหม่ครั้งที่ '+state.sendAttempt+' — คำตอบยังอยู่ครบ' : 'การตรวจเฉลยเกิดขึ้นฝั่งเซิร์ฟเวอร์')
+    + '</p></div>';
+  foot.hidden = true;
+}
+
+function vFailed(){
+  view.innerHTML = '<div class="stack" style="padding-top:26px">'
+    + '<div class="errbox"><p class="eyebrow">ส่งคำตอบไม่สำเร็จ</p>'
+    + '<p>'+esc(state.sendError||'')+'</p>'
+    + '<p><b>คำตอบของคุณยังอยู่ครบในเครื่อง</b> กดลองส่งอีกครั้งได้เลย หรือแจ้งผู้สอนถ้ายังไม่สำเร็จ</p></div></div>';
+  foot.hidden = false;
+  foot.innerHTML = '<button class="btn wide" id="retry">ลองส่งอีกครั้ง</button>';
+  document.getElementById('retry').onclick = function(){ submit(1); };
+}
+
+function vSubmitted(){
+  var r = state.receipt || {};
+  view.innerHTML = '<div class="stack" style="padding-top:22px">'
+    + '<div class="hero"><svg viewBox="0 0 120 120" width="112" height="112" role="img" aria-label="ส่งคำตอบเรียบร้อย">'
+    + '<circle cx="60" cy="60" r="46" fill="var(--accent-soft)"/><circle cx="60" cy="60" r="46" fill="none" stroke="var(--accent)" stroke-width="2.5"/>'
+    + '<path d="M40 61l14 14 27-30" fill="none" stroke="var(--accent)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>'
+    + '<div class="stack-sm" style="text-align:center"><h1>ส่งคำตอบเรียบร้อย</h1>'
+    + '<p class="lede">ระบบได้รับคำตอบของคุณครบถ้วนแล้ว<br>ผู้สอนจะรวบรวมและแจ้งผลให้ทราบภายหลัง</p></div>'
+    + '<div class="score-card" style="gap:10px"><div style="display:flex;flex-direction:column;gap:9px;width:100%">'
+    + [['ชื่อ', state.profile.name||'—'],
+       ['หน่วยงาน', state.profile.dept||'—'],
+       ['บทบาท', roleTh()],
+       ['รุ่นอบรม', state.session],
+       ['เวลาที่ส่ง', (r.submittedAt||'—')+' น.'],
+       ['จำนวนข้อที่ตอบ', (r.answeredCount!=null?r.answeredCount:'—')+' จาก '+(r.totalItems||ITEMS().length)+' ข้อ'],
+       ['รหัสอ้างอิง', r.attemptId||'—']
+      ].map(function(kv){
+        return '<div class="kv"><span>'+kv[0]+'</span><b'+(kv[0]==='รหัสอ้างอิง'?' class="mono"':'')+'>'+esc(kv[1])+'</b></div>';
+      }).join('')
+    + '</div></div>'
+    + (r.duplicate ? '<p class="tiny" style="text-align:center;color:var(--amber)">ระบบเคยรับคำตอบชุดนี้ไว้แล้ว จึงไม่บันทึกซ้ำ</p>' : '')
+    + '<p class="tiny" style="text-align:center">เก็บรหัสอ้างอิงไว้ เผื่อต้องติดต่อผู้สอน<br>ปิดหน้านี้ได้เลย</p></div>';
+  foot.hidden = true;
+}
+
+if (ENDPOINT.indexOf('PASTE_') === 0) {
+  document.getElementById('strip').textContent =
+    'ยังไม่ได้ตั้งค่า ENDPOINT ใน index.html — ส่งคำตอบไม่ได้ (ดู README ขั้นที่ 6)';
+}
+render();
+</script>
+</body>
+</html>
