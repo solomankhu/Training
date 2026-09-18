@@ -154,7 +154,7 @@ hr.rule{border:0;border-top:1px solid var(--line);margin:2px 0}
 <body>
 
 <div id="shell">
-  <div class="demo-strip" id="strip">ต้นแบบ · ข้อตัวอย่าง 5 ข้อ ยังไม่ผ่านการตรวจกับระบบจริง</div>
+  <div class="demo-strip" id="strip" hidden></div>
   <div class="bar" id="topbar" hidden>
     <div class="prog-wrap">
       <div class="prog-meta">
@@ -617,8 +617,10 @@ function vSubmitted(){
 }
 
 if (ENDPOINT.indexOf('PASTE_') === 0) {
-  document.getElementById('strip').textContent =
+  var strip = document.getElementById('strip');
+  strip.textContent =
     'ยังไม่ได้ตั้งค่า ENDPOINT ใน index.html — ส่งคำตอบไม่ได้ (ดู README ขั้นที่ 6)';
+  strip.hidden = false;
 }
 render();
 </script>
