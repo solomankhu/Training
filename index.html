@@ -286,6 +286,8 @@ function render(){
     document.getElementById('pchip').textContent = PARTS[it.part] || '';
     document.getElementById('pfill').style.width = ((state.idx+1)/ITEMS().length*100)+'%';
   }
+  // ใกล้ถึงเวลาส่ง -- ปลุกเซิร์ฟเวอร์ไว้ก่อน ผู้สอบใช้เวลาตรวจทานพอให้ cold start จบ
+  if (state.screen==='review' || state.screen==='confirm') warm();
   ({register:vRegister, question:vQuestion, review:vReview, confirm:vConfirm,
     sending:vSending, submitted:vSubmitted, failed:vFailed})[state.screen]();
   scroll.scrollTop = 0;
@@ -544,24 +546,66 @@ function payload(){
     })()
   };
 }
+/*
+ * Apps Script ที่ว่างงานอยู่ต้อง "ตื่น" ก่อน (cold start) ครั้งแรกหลังดีพลอยหรือหลังเงียบไปนาน
+ * วัดจริง 2026-09-18: คำขอแรกค้าง 42 วินาทีแล้วได้หน้า HTML แทน JSON คำขอถัดไป ~1.2 วินาที
+ *
+ * วิธีรับมือสามชั้น:
+ * 1. warm() ปลุกเซิร์ฟเวอร์ล่วงหน้าด้วย GET ที่ไม่แตะชีต -- ตอนเปิดหน้า และตอนถึงหน้าตรวจก่อนส่ง
+ *    ผู้สอบจึงไม่ใช่คนที่ต้องจ่ายค่า cold start ตอนกดส่ง
+ * 2. ตัดคำขอที่ค้างเกิน SEND_TIMEOUT_MS -- ไม่ปล่อยให้หน้าจอหมุนไม่รู้จบ
+ * 3. ลองใหม่ได้ SEND_MAX_ATTEMPTS ครั้งแบบถอยห่างขึ้น ซึ่งปลอดภัยเพราะเซิร์ฟเวอร์กันบันทึกซ้ำด้วย clientToken
+ *    คำขอที่ถูกตัดฝั่ง client อาจบันทึกสำเร็จฝั่งเซิร์ฟเวอร์ไปแล้ว ครั้งถัดไปจะได้ใบเสร็จเดิมกลับมา ไม่ใช่แถวใหม่
+ */
+var SEND_TIMEOUT_MS   = 35000;
+var SEND_MAX_ATTEMPTS = 5;
+var SEND_BACKOFF_MS   = [2000, 4000, 8000, 8000];
+var WARM_EVERY_MS     = 60000;
+var lastWarm = 0;
+
+function warm(){
+  if (ENDPOINT.indexOf('PASTE_') === 0) return;
+  var now = Date.now();
+  if (now - lastWarm < WARM_EVERY_MS) return;
+  lastWarm = now;
+  fetch(ENDPOINT + '?action=warm', { method: 'GET', cache: 'no-store' }).catch(function(){});
+}
+
+function fetchWithTimeout(url, opts, ms){
+  if (typeof AbortController === 'undefined') return fetch(url, opts);
+  var ctl = new AbortController();
+  var timer = setTimeout(function(){ ctl.abort(); }, ms);
+  opts.signal = ctl.signal;
+  return fetch(url, opts).then(
+    function(r){ clearTimeout(timer); return r; },
+    function(e){
+      clearTimeout(timer);
+      throw (e && e.name === 'AbortError') ? new Error('เซิร์ฟเวอร์ไม่ตอบภายใน ' + Math.round(ms/1000) + ' วินาที') : e;
+    });
+}
+
 function submit(attempt){
   state.screen='sending'; state.sendAttempt=attempt; render();
 
   // ห้ามตั้ง Content-Type เอง -- การตั้งจะทำให้เบราว์เซอร์ยิง preflight OPTIONS ก่อน
   // ซึ่ง Apps Script ตอบไม่ได้ คำขอจะถูกบล็อกทั้งที่ฝั่งเซิร์ฟเวอร์ไม่มีอะไรผิด
   // ปล่อยให้ body เป็นสตริง แล้วเบราว์เซอร์จะใช้ text/plain ซึ่งเป็น simple request
-  fetch(ENDPOINT, { method: 'POST', body: JSON.stringify(payload()) })
+  fetchWithTimeout(ENDPOINT, { method: 'POST', body: JSON.stringify(payload()) }, SEND_TIMEOUT_MS)
     .then(function(r){
       if(!r.ok) throw new Error('เซิร์ฟเวอร์ตอบ ' + r.status);
-      return r.json();
+      // ตอน cold start Apps Script อาจตอบ 200 เป็นหน้า HTML -- r.json() จะพังด้วยข้อความที่ผู้สอบอ่านไม่รู้เรื่อง
+      return r.text().then(function(t){
+        try { return JSON.parse(t); }
+        catch(e){ throw new Error('เซิร์ฟเวอร์ยังไม่พร้อม'); }
+      });
     })
     .then(function(res){
       if(!res || !res.ok) throw new Error((res && res.error) || 'ส่งไม่สำเร็จ');
       state.receipt = res; state.screen='submitted'; clearDraft(); render();
     })
     .catch(function(err){
-      if(attempt < 4){
-        setTimeout(function(){ submit(attempt+1); }, 900 * Math.pow(2, attempt-1));
+      if(attempt < SEND_MAX_ATTEMPTS){
+        setTimeout(function(){ submit(attempt+1); }, SEND_BACKOFF_MS[Math.min(attempt-1, SEND_BACKOFF_MS.length-1)]);
       } else {
         state.sendError = (err && err.message) ? err.message : 'ส่งไม่สำเร็จ';
         state.screen='failed'; render();
@@ -576,7 +620,10 @@ function vSending(){
     + '<animateTransform attributeName="transform" type="rotate" from="0 12 12" to="360 12 12" dur="1s" repeatCount="indefinite"/>'
     + '</path></svg><h2>กำลังส่งคำตอบ</h2>'
     + '<p class="tiny" style="max-width:34ch">'
-    + (state.sendAttempt>1 ? 'สัญญาณไม่ดี กำลังลองใหม่ครั้งที่ '+state.sendAttempt+' — คำตอบยังอยู่ครบ' : 'การตรวจเฉลยเกิดขึ้นฝั่งเซิร์ฟเวอร์')
+    + (state.sendAttempt>1
+        ? 'เซิร์ฟเวอร์กำลังเริ่มทำงาน หรือสัญญาณไม่ดี — กำลังลองใหม่ครั้งที่ '+state.sendAttempt+' จาก '+SEND_MAX_ATTEMPTS
+          + '<br>อาจใช้เวลาถึง 1 นาที ไม่ต้องกดอะไร คำตอบยังอยู่ครบ และจะไม่ถูกบันทึกซ้ำ'
+        : 'การตรวจเฉลยเกิดขึ้นฝั่งเซิร์ฟเวอร์')
     + '</p></div>';
   foot.hidden = true;
 }
@@ -623,6 +670,7 @@ if (ENDPOINT.indexOf('PASTE_') === 0) {
   strip.hidden = false;
 }
 render();
+warm();
 </script>
 </body>
 </html>
