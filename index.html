@@ -3,178 +3,490 @@
 <head>
 <base target="_top">
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>แบบทดสอบผู้ใช้ SSM</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<meta name="viewport" content="width=device-width, initial-scale=1, interactive-widget=resizes-content">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#19211B" media="(prefers-color-scheme: dark)">
+<title>SSM · แบบทดสอบหลังอบรม</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-20 0 260 260'%3E%3Cstyle%3E.f%7Bfill:%235c2b0a%7D.s%7Bfill:none;stroke:%235c2b0a;stroke-linejoin:round%7D.t%7Bfill:%23fff;font:700 42px Georgia,serif%7D%40media (prefers-color-scheme:dark)%7B.f%7Bfill:%23D9A77A%7D.s%7Bstroke:%23D9A77A%7D.t%7Bfill:%2319211B%7D%7D%3C/style%3E%3Cpath class='f' d='M5 147h39l18 31H5zM215 147h-39l-18 31h57z'/%3E%3Crect class='f' x='5' y='192' width='210' height='58' rx='3'/%3E%3Cpath class='s' stroke-width='18' d='M110 7l105 171H5z'/%3E%3Cpath class='s' stroke-width='15' d='M18 160L58 40l52 68 52-68 40 120'/%3E%3Cpath class='s' stroke-width='13' d='M110 85l44 75H66z'/%3E%3Ctext class='t' x='110' y='235' text-anchor='middle' letter-spacing='5'%3ETMI%3C/text%3E%3C/svg%3E">
+<!-- ฟอนต์: โดเมนเดียวคู่เดียว (googleapis + gstatic) · โหลดแบบไม่บล็อกการวาดหน้าจอ
+     สัญญาณอ่อนจะเห็นฟอนต์สำรองก่อน แล้วสลับเป็น Sarabun เมื่อโหลดเสร็จ (display=swap) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600;700&amp;display=swap" media="print" onload="this.media='all'">
 <style>
 :root{
-  --ground:#F2F4EF; --surface:#FFFFFF; --surface-2:#F7F9F4;
-  --ink:#16221C; --ink-2:#4C5C53; --ink-3:#7E8D84;
-  --line:#DCE3D9; --line-2:#C6D0C2;
-  --accent:#2F6B4F; --accent-ink:#FFFFFF; --accent-soft:#E2EFE7;
-  --amber:#A96C16; --amber-soft:#FAEFDD;
+  --ground:#EEF2EC; --surface:#FFFFFF; --surface-2:#F7F9F4; --surface-3:#EDF1EA;
+  --ink:#16221C; --muted:#5E6D64;
+  --line:#DCE3D9; --line-2:#C3CEBF; --line-strong:#7D8C83;
+  --accent:#1a6b3a; --accent-ink:#FFFFFF; --accent-soft:#E3F0E7;
+  --earth:#5c2b0a; --gold:#C9A227;
+  --amber:#8A5A0F; --amber-soft:#FBF1DC;
   --bad:#A33A2C; --bad-soft:#F9E5E2;
-  --shadow:0 1px 2px rgba(22,34,28,.06), 0 8px 24px rgba(22,34,28,.05);
-  padding-top:env(safe-area-inset-top,0px);
+  --shadow:0 1px 2px rgba(22,34,28,.06), 0 8px 24px rgba(22,34,28,.06);
+  --font:"Sarabun","Noto Sans Thai",system-ui,sans-serif;
 }
 @media (prefers-color-scheme: dark){
   :root{
-    --ground:#0E1410; --surface:#19211B; --surface-2:#202A22;
-    --ink:#E7EDE6; --ink-2:#A8B4AB; --ink-3:#7B8880;
-    --line:#2A352C; --line-2:#3A473C;
+    --ground:#0E1410; --surface:#19211B; --surface-2:#202A22; --surface-3:#26312A;
+    --ink:#E7EDE6; --muted:#9AA79F;
+    --line:#2C382F; --line-2:#3D4A40; --line-strong:#6F7D74;
     --accent:#63AC80; --accent-ink:#0E1410; --accent-soft:#1D3227;
-    --amber:#D89C46; --amber-soft:#33270F;
+    --earth:#D9A77A;
+    --amber:#E0A858; --amber-soft:#33270F;
     --bad:#E07866; --bad-soft:#3A1E19;
     --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.3);
   }
 }
 *,*::before,*::after{box-sizing:border-box}
-html{height:100%}
+html{height:100%;-webkit-text-size-adjust:100%;text-size-adjust:100%}
 body{
   height:100%; margin:0; background:var(--ground); color:var(--ink);
-  font-family:"IBM Plex Sans Thai Looped","Noto Sans Thai",system-ui,sans-serif;
-  font-size:15px; line-height:1.62; -webkit-font-smoothing:antialiased;
+  font-family:var(--font); font-size:16px; line-height:1.6;
+  -webkit-font-smoothing:antialiased; overflow-wrap:break-word; -webkit-tap-highlight-color:transparent;
 }
-.mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums}
-button{font:inherit;color:inherit}
-:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+button,input,select{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:6px}
 img{max-width:100%}
 [hidden]{display:none!important}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 
-#shell{height:100%;max-width:520px;margin:0 auto;background:var(--surface);
+#shell{position:relative;height:100%;height:100dvh;max-width:560px;margin:0 auto;background:var(--surface);
   display:flex;flex-direction:column;box-shadow:var(--shadow)}
-.bar{flex:0 0 auto;background:var(--surface);border-bottom:1px solid var(--line)}
-.scroll{flex:1 1 auto;overflow-y:auto;-webkit-overflow-scrolling:touch}
-.pad{padding:20px 16px 28px}
-.foot{flex:0 0 auto;background:var(--surface);border-top:1px solid var(--line);
-  padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px));
-  display:flex;gap:10px;align-items:center}
+.strip{flex:0 0 auto;background:var(--amber-soft);color:var(--amber);font-size:13px;font-weight:600;
+  line-height:1.5;padding:6px 16px;text-align:center;border-bottom:1px solid var(--line)}
 
-.demo-strip{background:var(--amber-soft);color:var(--amber);font-size:11.5px;letter-spacing:.02em;
-  font-weight:600;padding:7px 16px;text-align:center;border-bottom:1px solid var(--line)}
+/* ---- หัวหน้าจอ: โลโก้ + ชื่อ + บทบาท ---- */
+.brand{flex:0 0 auto;display:flex;align-items:center;gap:10px;min-height:56px;
+  padding:8px 16px;padding-top:calc(8px + env(safe-area-inset-top,0px));
+  background:var(--surface);border-bottom:1px solid var(--line)}
+.logo{flex:0 0 auto;display:block;width:30px;height:36px;color:var(--earth)}
+.brand-t{margin:0;min-width:0;font-size:16px;font-weight:700;line-height:1.35;color:var(--ink)}
+.brand-t span{color:var(--muted);font-weight:600}
+.pill{margin-left:auto;flex:0 0 auto;max-width:48%;display:inline-flex;align-items:center;gap:7px;
+  font-size:13px;font-weight:600;line-height:1.35;padding:5px 11px 5px 9px;border-radius:999px;
+  border:1px solid var(--line-2);background:var(--surface-2);color:var(--ink)}
+.pill::before{content:"";flex:0 0 auto;width:9px;height:9px;border-radius:50%;background:var(--gold)}
 
-.prog-wrap{padding:11px 16px 12px;display:flex;flex-direction:column;gap:8px}
-.prog-meta{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
-.prog-count{font-size:12.5px;color:var(--ink-2);font-weight:500}
-.chip{font-size:11px;font-weight:600;letter-spacing:.03em;padding:3px 9px;border-radius:999px;
-  background:var(--accent-soft);color:var(--accent);white-space:nowrap}
-.track{height:5px;border-radius:999px;background:var(--line);overflow:hidden}
-.fill{height:100%;background:var(--accent);border-radius:999px;transition:width .32s cubic-bezier(.4,0,.2,1)}
-@media (prefers-reduced-motion:reduce){.fill{transition:none}}
+/* ---- แถบความคืบหน้าแบ่ง 5 หมวด ---- */
+.prog{flex:0 0 auto;padding:10px 16px 9px;display:flex;flex-direction:column;gap:8px;
+  background:var(--surface);border-bottom:1px solid var(--line)}
+.prog-meta{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.prog-count{font-size:14px;font-weight:600;color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums}
+.chip{min-width:0;font-size:13px;font-weight:600;line-height:1.4;padding:3px 10px;border-radius:999px;
+  background:var(--accent-soft);color:var(--accent);text-align:right}
+.segs{display:flex;gap:6px}
+.seg{flex:1 1 0;min-width:22px;display:flex;flex-direction:column;align-items:center;gap:3px}
+.seg-bar{display:block;width:100%;height:8px;border-radius:999px;background:var(--line);overflow:hidden}
+.seg-bar i{display:block;height:100%;background:var(--accent);border-radius:999px;transition:width .3s cubic-bezier(.4,0,.2,1)}
+.seg-lab{display:flex;align-items:center;justify-content:center;height:15px;font-size:13px;line-height:1;font-weight:600;color:var(--muted)}
+.seg-lab svg{display:block}
+.seg.is-cur .seg-lab{color:var(--accent);font-weight:700}
+.seg.is-gap .seg-lab{color:var(--amber)}
 
-h1{font-size:23px;line-height:1.35;margin:0;font-weight:700;text-wrap:balance;letter-spacing:-.01em}
-h2{font-size:18px;line-height:1.45;margin:0;font-weight:600}
-.eyebrow{font-size:11px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);margin:0}
-.lede{color:var(--ink-2);margin:0;font-size:14px}
-.tiny{font-size:12px;color:var(--ink-3);margin:0;line-height:1.55}
+.scroll{flex:1 1 auto;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
+.pad{padding:20px 16px 32px}
+.foot{flex:0 0 auto;display:flex;gap:8px;align-items:center;background:var(--surface);border-top:1px solid var(--line);
+  padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px))}
+
+h1{font-size:24px;line-height:1.45;margin:0;font-weight:700;text-wrap:balance}
+h2{font-size:18px;line-height:1.5;margin:0;font-weight:600}
+.eyebrow{font-size:14px;font-weight:600;color:var(--muted);margin:0;line-height:1.6}
+.lede{color:var(--muted);margin:0;font-size:16px;line-height:1.65}
+.tiny{font-size:13px;color:var(--muted);margin:0;line-height:1.6}
 .stack{display:flex;flex-direction:column;gap:16px}
-.stack-sm{display:flex;flex-direction:column;gap:9px}
-hr.rule{border:0;border-top:1px solid var(--line);margin:2px 0}
+.stack-sm{display:flex;flex-direction:column;gap:8px}
+.center{text-align:center;align-items:center}
+hr.rule{border:0;border-top:1px solid var(--line);margin:2px 0;width:100%}
 
-.hero{display:flex;justify-content:center;padding:4px 0 2px}
-.field{display:flex;flex-direction:column;gap:6px;margin-top:2px}
-.field label{font-size:12.5px;font-weight:600;color:var(--ink-2)}
-.field input,.field select{font:inherit;font-size:16px;padding:11px 12px;border-radius:9px;
-  border:1px solid var(--line-2);background:var(--surface-2);color:var(--ink);width:100%}
-.field input::placeholder{color:var(--ink-3)}
-.facts{display:flex;gap:8px;flex-wrap:wrap;margin-top:2px}
-.fact{flex:1 1 30%;min-width:96px;background:var(--surface-2);border:1px solid var(--line);
-  border-radius:10px;padding:10px 11px}
-.fact b{display:block;font-size:17px;font-weight:600;letter-spacing:-.01em}
-.fact span{font-size:11.5px;color:var(--ink-3)}
+/* ---- ภาพประกอบบทบาท (สีเดียว ตามสี accent) ---- */
+.hero{display:flex;justify-content:center;padding:2px 0 0}
+.art{display:block;width:176px;height:auto;color:var(--accent)}
+.hero .art{width:196px}
 
-.stem{font-size:17px;line-height:1.55;font-weight:600;margin:0}
-.hint{font-size:12.5px;color:var(--ink-3);margin:0}
-.opts{display:flex;flex-direction:column;gap:9px;margin:0;padding:0;list-style:none}
-.opt{display:flex;gap:11px;align-items:flex-start;padding:12px 13px;border-radius:11px;
-  border:1px solid var(--line-2);background:var(--surface-2);cursor:pointer;text-align:left;width:100%}
-.opt[aria-checked="true"]{border-color:var(--accent);background:var(--accent-soft)}
-.box{flex:0 0 auto;width:21px;height:21px;border-radius:6px;border:2px solid var(--line-2);
-  background:var(--surface);margin-top:1px;display:grid;place-items:center}
+/* ---- ลงทะเบียน ---- */
+.field{display:flex;flex-direction:column;gap:6px}
+.field label,.field .lab{font-size:14px;font-weight:600;color:var(--muted)}
+.field input,.field select{font-size:16px;min-height:48px;padding:10px 12px;border-radius:10px;
+  border:1px solid var(--line-strong);background:var(--surface-2);color:var(--ink);width:100%}
+.field input::placeholder{color:var(--muted)}
+.role-fixed{display:flex;align-items:center;gap:10px;min-height:48px;padding:10px 12px;border-radius:10px;
+  border:1px solid var(--accent);background:var(--accent-soft)}
+.role-fixed b{font-size:16px;font-weight:600;color:var(--accent)}
+.role-fixed .chip{margin-left:auto}
+.facts{display:flex;gap:8px;flex-wrap:wrap}
+.fact{flex:1 1 30%;min-width:96px;background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+.fact b{display:block;font-size:18px;font-weight:700;line-height:1.4}
+.fact span{font-size:13px;color:var(--muted)}
+.prep{display:flex;flex-direction:column;gap:6px;padding:10px 12px;border-radius:12px;background:var(--surface-2);border:1px solid var(--line)}
+.prep-row{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--muted);line-height:1.5}
+.prep-bar{display:block;height:6px;border-radius:999px;background:var(--line);overflow:hidden}
+.prep-bar i{display:block;height:100%;background:var(--accent);transition:width .25s ease}
+.spin{flex:0 0 auto;width:16px;height:16px;border-radius:50%;border:2.5px solid var(--line-2);border-top-color:var(--accent);animation:spin .9s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* ---- คำถาม ---- */
+.stem{font-size:18px;line-height:1.7;font-weight:600;margin:0}
+.hint{font-size:14px;color:var(--muted);margin:0;line-height:1.6}
+.who{display:flex;align-items:center;gap:10px}
+.ava{flex:0 0 auto;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;
+  background:hsl(var(--h,150),45%,32%);color:#FFFFFF;font-size:16px;font-weight:700;line-height:1}
+.who-t{font-size:14px;line-height:1.5;color:var(--muted)}
+.who-t b{color:var(--ink);font-weight:600}
+.case{position:sticky;top:0;z-index:2;background:var(--accent-soft);border:1px solid var(--accent);
+  border-radius:14px;padding:12px 14px;display:flex;flex-direction:column;gap:6px}
+@media (max-height:640px){.case{position:static}}
+.case-title{margin:0;font-size:15px;font-weight:700;line-height:1.5;color:var(--accent)}
+.case-text{margin:0;font-size:16px;line-height:1.65;white-space:pre-line}
+
+/* ภาพในโจทย์ -- กรอบจองสัดส่วนไว้ก่อน ภาพโหลดเสร็จแล้วหน้าจอไม่กระโดด */
+.qfig{margin:0}
+.fig-btn{display:block;width:100%;padding:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;
+  background:var(--surface-3);cursor:zoom-in;text-align:left}
+.pic{position:relative;display:block;width:100%;background:var(--surface-3);overflow:hidden}
+.pic img{display:block;width:100%;height:auto}
+/* ภาพหน้าจอมือถือสูงมาก (400x856) -- จำกัดความสูงในโจทย์ไว้ ~40% ของจอ ให้โจทย์กับตัวเลือกยังอยู่ในสายตา
+   กว้างตามสัดส่วนของภาพ (--ar = w/h) จึงไม่ถูกครอบตัด · แตะเพื่อดูเต็มจอได้เหมือนเดิม */
+.qfig .pic{width:min(100%, calc(40vh * var(--ar, 1.3333)));margin:0 auto}
+.pic.err img{visibility:hidden}
+.pic-err{display:none;position:absolute;top:0;right:0;bottom:0;left:0;flex-direction:column;align-items:center;justify-content:center;
+  gap:6px;padding:12px;text-align:center;font-size:14px;font-weight:600;line-height:1.5;color:var(--muted);background:var(--surface-3)}
+.pic.err .pic-err,.pic.retrying .pic-err{display:flex}
+.pic.retrying .pic-err svg{animation:spin 1s linear infinite}
+.zoom-badge{position:absolute;right:8px;bottom:8px;display:inline-flex;align-items:center;gap:6px;padding:5px 11px;
+  border-radius:999px;background:rgba(14,20,16,.8);color:#FFFFFF;font-size:13px;font-weight:600;line-height:1.35;pointer-events:none}
+.pic.err .zoom-badge{display:none}
+
+/* ตัวเลือกแบบข้อความ */
+.opts{display:flex;flex-direction:column;gap:8px}
+.opt{display:flex;gap:12px;align-items:flex-start;width:100%;min-height:56px;padding:13px 14px;border-radius:12px;
+  border:1px solid var(--line-2);background:var(--surface-2);text-align:left}
+.opt[aria-checked="true"]{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent);background:var(--accent-soft)}
+.box{flex:0 0 auto;width:24px;height:24px;margin-top:2px;border-radius:7px;border:2px solid var(--line-strong);
+  background:var(--surface);display:grid;place-items:center}
 .box.round{border-radius:50%}
 .opt[aria-checked="true"] .box{border-color:var(--accent);background:var(--accent)}
-.box svg{opacity:0;width:13px;height:13px}
+.box svg{opacity:0;width:14px;height:14px}
 .opt[aria-checked="true"] .box svg{opacity:1}
-.opt-text{flex:1;font-size:14.5px;line-height:1.5}
+.opt-text{flex:1;min-width:0;font-size:16px;line-height:1.6}
 .opt-ico{flex:0 0 auto;display:grid;place-items:center;width:26px;height:26px}
 
+/* ตัวเลือกแบบภาพ: การ์ด 2 คอลัมน์ · ปุ่มขยายแยกจากการเลือก */
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.card{position:relative;min-width:0}
+.card-sel{position:relative;display:flex;flex-direction:column;gap:8px;width:100%;height:100%;padding:8px;
+  border-radius:14px;border:1px solid var(--line-2);background:var(--surface-2);text-align:left}
+.card-sel[aria-checked="true"]{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent);background:var(--accent-soft)}
+.card-head{display:flex;align-items:center;gap:8px;min-height:44px;padding-right:48px}
+.card-sel.noimg .card-head{padding-right:0}
+.card-letter{flex:0 0 auto;width:44px;height:44px;border-radius:12px;display:grid;place-items:center;
+  font-size:24px;font-weight:700;line-height:1;background:var(--surface);border:1px solid var(--line-2);color:var(--ink)}
+.card-sel[aria-checked="true"] .card-letter{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.card-tick{margin-left:auto;flex:0 0 auto;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;
+  background:var(--accent);opacity:0;transform:scale(.6);transition:opacity .15s,transform .15s}
+.card-tick svg{width:16px;height:16px}
+.card-sel[aria-checked="true"] .card-tick{opacity:1;transform:none}
+.card .pic{border-radius:10px;border:1px solid var(--line)}
+.card-text{font-size:16px;line-height:1.6;padding:0 2px 2px}
+.card-zoom{position:absolute;top:8px;right:8px;z-index:1;width:44px;height:44px;padding:0;border-radius:12px;
+  border:1px solid var(--line-2);background:var(--surface);color:var(--ink);display:grid;place-items:center}
+
+/* จัดลำดับ -- ปุ่มจับด้านขวาสำหรับลาก + ปุ่ม ↑ ↓ ที่ต้องมีเสมอ (D13) */
 .ord{display:flex;flex-direction:column;gap:8px;margin:0;padding:0;list-style:none;position:relative}
-.ord li{display:flex;align-items:stretch;gap:9px;padding:9px 9px 9px 12px;border-radius:11px;
+.ord li{display:flex;align-items:center;gap:8px;padding:8px 8px 8px 12px;border-radius:12px;
   border:1px solid var(--line-2);background:var(--surface-2);position:relative}
 .ord li.dragging{z-index:5;border-color:var(--accent);background:var(--surface);
-  box-shadow:0 6px 18px rgba(22,34,28,.16);pointer-events:none;user-select:none}
-.rank{flex:0 0 auto;width:23px;height:23px;align-self:center;border-radius:7px;
-  background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;
-  font-size:12.5px;font-weight:600}
-.ord-text{flex:1;font-size:14.5px;line-height:1.48;align-self:center}
-.nudge{display:flex;flex-direction:column;gap:3px;flex:0 0 auto}
-.nudge button{width:36px;height:29px;border-radius:8px;border:1px solid var(--line-2);
-  background:var(--surface);cursor:pointer;display:grid;place-items:center;padding:0}
-.nudge button:disabled{opacity:.34;cursor:not-allowed}
-.grip{flex:0 0 auto;width:32px;border-radius:9px;border:1px solid var(--line-2);
-  background:var(--surface);display:grid;place-items:center;padding:0;
-  cursor:grab;touch-action:none;-webkit-user-select:none;user-select:none}
+  box-shadow:0 8px 22px rgba(0,0,0,.18);pointer-events:none;user-select:none}
+.rank{flex:0 0 auto;width:28px;height:28px;border-radius:8px;background:var(--accent);color:var(--accent-ink);
+  display:grid;place-items:center;font-size:15px;font-weight:700;font-variant-numeric:tabular-nums}
+.ord-text{flex:1;min-width:0;font-size:16px;line-height:1.6}
+.nudge{display:flex;flex-direction:column;gap:8px;flex:0 0 auto}
+.nudge button{width:48px;height:48px;padding:0;border-radius:10px;border:1px solid var(--line-2);background:var(--surface);
+  display:grid;place-items:center}
+.nudge button:disabled{opacity:.35;cursor:not-allowed}
+.grip{flex:0 0 auto;align-self:stretch;width:48px;min-height:48px;border-radius:10px;border:1px dashed var(--line-strong);
+  background:var(--surface);display:grid;place-items:center;padding:0;cursor:grab;touch-action:none;
+  -webkit-user-select:none;user-select:none}
 .grip:active{cursor:grabbing;background:var(--accent-soft);border-color:var(--accent)}
 
-.case{position:sticky;top:0;z-index:2;background:var(--accent-soft);border:1px solid var(--accent);
-  border-radius:12px;padding:12px 13px;display:flex;flex-direction:column;gap:5px}
-.case .eyebrow{color:var(--accent)}
-.case p{margin:0;font-size:14px;line-height:1.55;color:var(--ink)}
-
-.btn{flex:1;padding:13px 16px;border-radius:11px;border:1px solid transparent;
-  background:var(--accent);color:var(--accent-ink);font-weight:600;font-size:15px;cursor:pointer}
+/* ---- ปุ่ม ---- */
+.btn{flex:1;min-height:48px;padding:11px 16px;border-radius:12px;border:1px solid transparent;
+  background:var(--accent);color:var(--accent-ink);font-weight:600;font-size:16px;line-height:1.4}
 .btn:disabled{opacity:.42;cursor:not-allowed}
-.btn.ghost{background:var(--surface);border-color:var(--line-2);color:var(--ink-2);flex:0 0 auto}
-.btn.wide{flex:1}
+.btn.ghost{flex:0 0 auto;background:var(--surface);border-color:var(--line-strong);color:var(--ink)}
+.btn.next{flex:0 0 auto;min-width:118px}
+.saved{flex:1;min-width:0;display:flex;align-items:center;justify-content:center;gap:5px;font-size:13px;color:var(--muted);line-height:1.4}
 
-.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:0;padding:0;list-style:none}
-.cell{aspect-ratio:1;border-radius:10px;border:1px solid var(--line-2);background:var(--surface-2);
-  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;cursor:pointer;width:100%}
-.cell b{font-size:15px;font-weight:600}
+/* ---- เปิดหมวด ---- */
+.intro{display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;margin-top:8px;
+  padding:28px 20px 28px;border-radius:18px;background:var(--surface-2);border:1px solid var(--line)}
+.intro-art{position:relative;margin-bottom:4px}
+.intro-num{position:absolute;right:-8px;top:-8px;width:44px;height:44px;border-radius:50%;background:var(--gold);
+  color:#16221C;display:grid;place-items:center;font-size:20px;font-weight:700;line-height:1;box-shadow:0 0 0 4px var(--surface-2)}
+.intro-n{margin:0;font-size:15px;font-weight:600;line-height:1.5;color:var(--accent);background:var(--accent-soft);
+  padding:3px 14px;border-radius:999px}
+
+/* ---- ตรวจก่อนส่ง ---- */
+.grp{display:flex;flex-direction:column;gap:8px}
+.grp-h{display:flex;justify-content:space-between;gap:12px;font-size:15px;font-weight:600;line-height:1.5}
+.grp-h span{color:var(--muted);font-weight:600;font-variant-numeric:tabular-nums}
+.grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin:0;padding:0;list-style:none}
+.cell{width:100%;min-height:52px;aspect-ratio:1;border-radius:10px;border:1px solid var(--line-2);background:var(--surface-2);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0;padding:0;line-height:1.3}
+.cell b{font-size:16px;font-weight:700;font-variant-numeric:tabular-nums}
+.cell span{font-size:13px}
 .cell.done{border-color:var(--accent);background:var(--accent-soft);color:var(--accent)}
 .cell.todo{border-color:var(--amber);background:var(--amber-soft);color:var(--amber)}
 .tally{display:flex;gap:8px}
-.tally div{flex:1;border-radius:10px;padding:10px 12px;border:1px solid var(--line)}
+.tally div{flex:1;border-radius:12px;padding:10px 12px;border:1px solid var(--line)}
 .tally .ok{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
 .tally .no{background:var(--amber-soft);border-color:var(--amber);color:var(--amber)}
-.tally b{display:block;font-size:19px;font-weight:600}
-.tally span{font-size:11.5px}
+.tally b{display:block;font-size:20px;font-weight:700;line-height:1.4}
+.tally span{font-size:13px}
+.warn{color:var(--amber);font-weight:600}
 
-.score-card{background:var(--surface-2);border:1px solid var(--line);border-radius:14px;
-  padding:16px 15px;display:flex;flex-direction:column;align-items:center;gap:3px}
+/* ---- ส่งแล้ว ---- */
+.finish-top{position:relative;display:flex;justify-content:center;padding:22px 0 8px}
+.stamps{position:relative;z-index:1;display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.stamp{width:54px;height:54px;border-radius:50%;border:3px solid var(--gold);background:var(--accent-soft);color:var(--accent);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;line-height:1;
+  animation:stampIn .45s cubic-bezier(.3,1.4,.5,1) both;animation-delay:calc(var(--i,0) * 90ms)}
+.stamp b{font-size:18px;font-weight:700}
+.stamp svg{width:14px;height:14px}
+@keyframes stampIn{from{opacity:0;transform:scale(.4)}to{opacity:1;transform:none}}
+.burst{position:absolute;left:50%;top:50%;width:0;height:0;pointer-events:none}
+.burst i{position:absolute;left:-6px;top:-15px;width:12px;height:30px;border-radius:0 100% 0 100%;background:var(--accent);
+  opacity:0;animation:leaf 1.3s cubic-bezier(.2,.7,.3,1) var(--t,0ms) 1 forwards}
+.burst i.g{background:var(--gold)}
+@keyframes leaf{
+  0%{opacity:0;transform:rotate(var(--a)) translateY(0) scale(.3)}
+  15%{opacity:1}
+  100%{opacity:0;transform:rotate(var(--a)) translateY(calc(var(--d) * -1)) scale(1)}
+}
+.receipt{background:var(--surface-2);border:1px solid var(--line);border-radius:14px;padding:14px 16px;display:flex;flex-direction:column;gap:10px}
 .kv{display:flex;justify-content:space-between;gap:14px;align-items:baseline}
-.kv span{font-size:13px;color:var(--ink-3)}
-.kv b{font-size:13.5px;font-weight:600;text-align:right}
-.saved{font-size:11.5px;color:var(--ink-3);display:flex;align-items:center;gap:5px}
+.kv span{font-size:14px;color:var(--muted)}
+.kv b{font-size:15px;font-weight:600;text-align:right}
+.kv b.code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:14px}
 .errbox{background:var(--bad-soft);border:1px solid var(--bad);border-radius:12px;padding:13px 14px}
 .errbox .eyebrow{color:var(--bad)}
-.errbox p{margin:6px 0 0;font-size:13.5px;line-height:1.55;color:var(--ink-2)}
+.errbox p{margin:6px 0 0;font-size:15px;line-height:1.6;color:var(--ink)}
+.errbox .btn{margin-top:10px;width:100%}
+
+/* ---- toast หลักไมล์ -- ไม่บอกผล ไม่มีคะแนน ---- */
+.toast{position:absolute;left:16px;right:16px;bottom:88px;z-index:20;display:flex;align-items:center;gap:10px;
+  padding:12px 14px;border-radius:14px;background:var(--ink);color:var(--surface);font-size:15px;font-weight:600;line-height:1.5;
+  box-shadow:0 10px 30px rgba(0,0,0,.25);opacity:0;transform:translateY(8px);pointer-events:none;
+  transition:opacity .25s ease,transform .25s ease}
+.toast.show{opacity:1;transform:none}
+.toast.off{transition:none}
+.t-ico{flex:0 0 auto;width:30px;height:30px;border-radius:50%;background:var(--gold);display:grid;place-items:center}
+
+/* ---- ภาพขยายเต็มจอ ---- */
+.zoom{position:fixed;top:0;left:0;width:100%;height:100%;max-width:none;max-height:none;margin:0;padding:0;border:0;
+  background:#0B0F0C;color:#FFFFFF;overflow:hidden}
+.zoom::backdrop{background:#0B0F0C}
+.z-stage{position:absolute;top:0;right:0;bottom:0;left:0;display:flex;overflow:auto;-webkit-overflow-scrolling:touch;
+  padding:64px 8px 88px;touch-action:pan-x pan-y pinch-zoom}
+.z-stage img{display:block;margin:auto;max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;background:#FFFFFF;border-radius:4px}
+.z-stage.actual img{max-width:none;max-height:none}
+.z-close{position:absolute;z-index:2;top:calc(8px + env(safe-area-inset-top,0px));right:8px;width:48px;height:48px;padding:0;
+  border-radius:50%;border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.14);color:#FFFFFF;display:grid;place-items:center}
+.z-cap{position:absolute;left:0;right:0;bottom:0;margin:0;padding:18px 16px calc(12px + env(safe-area-inset-bottom,0px));
+  font-size:15px;line-height:1.55;color:#E7EDE6;background:linear-gradient(rgba(11,15,12,0),rgba(11,15,12,.88) 34%)}
+.z-cap small{display:block;font-size:13px;color:#B9C4BD}
+.z-err{position:absolute;top:50%;left:16px;right:16px;transform:translateY(-50%);z-index:1;display:flex;flex-direction:column;
+  align-items:center;gap:8px;padding:18px;border-radius:14px;background:#26312A;color:#E7EDE6;font-size:15px;font-weight:600;
+  border:0;text-align:center}
+
+.strip{display:flex;flex-direction:column;align-items:center;gap:6px}
+.strip-btn{min-height:48px;padding:8px 16px;border-radius:10px;border:1px solid var(--amber);background:var(--surface);
+  color:var(--ink);font-weight:600;font-size:15px;line-height:1.4}
+.stem:focus{outline:none}
+h1[tabindex="-1"]:focus{outline:none}   /* หัวข้อรับโฟกัสจากโค้ดเพื่อ screen reader -- ไม่ใช่ปุ่ม ไม่ต้องมีวงโฟกัส */
+/* ปุ่มหลักที่ยังกดไปต่อไม่ได้ -- aria-disabled จึงยังโฟกัสได้ · กรอบ --line-strong ≥3:1 · ตัวอักษร --muted ≥4.5:1 */
+.btn.gated{background:var(--surface);border-color:var(--line-strong);color:var(--muted)}
+.gate{flex:0 0 auto;margin:0;max-height:0;overflow:hidden;padding:0 16px;background:var(--amber-soft);color:var(--amber);
+  font-size:14px;font-weight:600;line-height:1.5}
+.gate.show{max-height:200px;padding:10px 16px;border-top:1px solid var(--line)}
+.saved.bad{color:var(--amber);font-weight:600}
+.missbox{background:var(--amber-soft);border:1px solid var(--amber);border-radius:12px;padding:12px 14px}
+.missbox b{display:block;font-size:17px;line-height:1.5;color:var(--amber)}
+.missbox p{margin:4px 0 0;font-size:15px;line-height:1.6;color:var(--ink)}
+.misslist{display:flex;flex-direction:column;gap:8px}
+.miss{display:flex;align-items:center;gap:10px;width:100%;min-height:56px;padding:10px 14px;border-radius:12px;
+  border:1px solid var(--amber);background:var(--surface);color:var(--ink);text-align:left;font-size:15px;line-height:1.5}
+.miss::after{content:"\203A";margin-left:auto;font-size:24px;line-height:1;color:var(--amber)}
+.resume{display:flex;flex-direction:column;gap:6px;padding:14px;border-radius:14px;border:1px solid var(--accent);background:var(--accent-soft)}
+.resume-t{margin:0;font-size:17px;font-weight:700;line-height:1.5;color:var(--accent)}
+.resume-m{margin:0;font-size:15px;line-height:1.6;color:var(--ink)}
+.resume-w{margin:0;font-size:14px;font-weight:600;line-height:1.6;color:var(--amber)}
+.resume-row{display:flex;gap:8px;margin-top:6px}
+.send{align-items:center;text-align:center;padding-top:24px}
+.send-ico{width:56px;height:56px;display:grid;place-items:center;color:var(--accent)}
+.send-ico.wait{color:var(--amber)}
+.send-ico.bad{color:var(--bad)}
+.spin.big{width:40px;height:40px;border-width:4px}
+.send-card{align-self:stretch;display:flex;flex-direction:column;gap:8px;padding:14px 16px;border-radius:14px;
+  border:1px solid var(--line);background:var(--surface-2);text-align:left}
+.send-card p{margin:0;display:flex;gap:8px;align-items:flex-start;font-size:15px;line-height:1.6}
+.send-card svg{flex:0 0 auto;margin-top:6px}
+.escalate{align-self:stretch;padding:12px 14px;border-radius:12px;background:var(--amber-soft);border:1px solid var(--amber);
+  color:var(--ink);font-size:15px;line-height:1.6;text-align:left}
+.escalate .code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:16px;white-space:nowrap}
+.ask{border:0;border-radius:16px;padding:20px;width:calc(100% - 32px);max-width:380px;background:var(--surface);color:var(--ink);
+  box-shadow:0 20px 50px rgba(0,0,0,.35)}
+.ask::backdrop{background:rgba(0,0,0,.5)}
+.ask-t{margin:0 0 16px;font-size:17px;font-weight:600;line-height:1.6}
+.ask-row{display:flex;gap:8px}
+.ask-row .btn{flex:1}
+.still .stamp{animation:none}
+
+@media (prefers-reduced-motion: reduce){
+  .burst{display:none}
+  .stamp{animation:none}
+  .seg-bar i,.prep-bar i,.toast,.card-tick{transition:none}
+  .spin{animation:none}
+}
+
+/* ==== ความพอดีจอ (เจ้าของงาน 2026-09-25) ============================================
+   ปุ่ม "ถัดไป" อยู่แถบล่างสุดเสมอ เนื้อหาเลื่อนอยู่ด้านบน · บีบระยะให้ข้อส่วนใหญ่พอดีจอโดยไม่ต้องเลื่อน
+   ระยะบรรทัดภาษาไทย: ข้อความหลายบรรทัด 1.45-1.55 ไม่ต่ำกว่า 1.4 · ตัวอักษรไม่เล็กกว่า 13px (ด่าน e2e)
+   ปุ่มทั่วไปสูง 48px · ปุ่มจัดลำดับ 40px แนวนอน ตามที่เจ้าของงานเลือก */
+html,body{overscroll-behavior:none}
+.brand{min-height:48px;gap:8px;padding:6px 16px;padding-top:calc(6px + env(safe-area-inset-top,0px))}
+.logo{width:24px;height:29px}
+.brand-t{font-size:15px;line-height:1.3}
+.pill{padding:3px 10px 3px 8px;line-height:1.3}
+.prog{padding:8px 16px 6px;gap:6px}
+.prog-count{font-size:13px;line-height:1.3}
+.chip{padding:2px 9px;line-height:1.35}
+.segs{gap:4px}
+.seg{min-width:0;gap:2px}
+.seg-bar{height:6px}
+.seg-lab{height:14px}
+.pad{padding:12px 16px 16px}
+.foot{padding:8px 16px 10px;padding-bottom:calc(10px + env(safe-area-inset-bottom,0px))}
+.stack{gap:12px}
+.stem{font-size:17px;line-height:1.55}
+.hint{line-height:1.45}
+.who{gap:8px}
+.ava{width:32px;height:32px;font-size:14px}
+.who-t{line-height:1.4}
+.case{padding:10px 12px;gap:4px;border-radius:12px}
+.case-title{line-height:1.4}
+.case-text{font-size:15px;line-height:1.55}
+.qfig .pic{width:min(100%, calc(30vh * var(--ar, 1.3333)));width:min(100%, calc(30svh * var(--ar, 1.3333)))}
+.zoom-badge{white-space:nowrap}
+.opts{gap:6px}
+.opt{min-height:48px;padding:10px 12px;gap:10px}
+.box{margin-top:0}
+.opt-text{line-height:1.5}
+.btn{padding:10px 16px}
+
+/* จัดลำดับ: ↑ ↓ และที่จับลากเรียงแนวนอน ขนาด 40px มีสีแยกชัด (ขึ้น = เขียว · ลง = ส้ม · ลาก = เทา) */
+.ord{gap:6px}
+.ord li{padding:6px 6px 6px 10px;gap:6px}
+.rank{width:26px;height:26px;font-size:14px}
+.ord-text{font-size:15px;line-height:1.5}
+.nudge{flex-direction:row;gap:4px;align-items:center}
+.nudge button{width:40px;height:40px;border-radius:10px}
+.nudge [data-mv="up"]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
+.nudge [data-mv="down"]{background:var(--amber-soft);border-color:var(--amber);color:var(--amber)}
+.nudge button:disabled{opacity:.3}
+.grip{align-self:center;width:40px;height:40px;min-height:40px;border:1px solid var(--line-strong);
+  background:var(--surface-3);color:var(--muted)}
+
+/* จอเตี้ย (ส่วนใหญ่คือมือถือจอเล็ก หรือมีแถบเครื่องมือของเบราว์เซอร์กินพื้นที่) -- บีบเพิ่มอัตโนมัติ */
+@media (max-height:720px){
+  .brand{min-height:44px;padding-top:calc(4px + env(safe-area-inset-top,0px));padding-bottom:4px}
+  .prog{padding:6px 16px 4px;gap:4px}
+  .pad{padding:10px 16px 12px}
+  .stack{gap:10px}
+  .stem{font-size:16px;line-height:1.5}
+  .hint{font-size:13px;line-height:1.4}
+  .ava{width:28px;height:28px;font-size:13px}
+  .who-t{font-size:13px}
+  .case{position:static;padding:8px 10px}
+  .case-text{font-size:15px;line-height:1.5}
+  .opt{padding:8px 12px}
+  .box{width:22px;height:22px}
+  .opt-text{font-size:15px;line-height:1.45}
+  .ord li{padding:4px 4px 4px 8px}
+  .ord-text{font-size:15px;line-height:1.45}
+  .qfig .pic{width:min(100%, calc(26vh * var(--ar, 1.3333)));width:min(100%, calc(26svh * var(--ar, 1.3333)))}
+  .foot{padding-top:6px;padding-bottom:calc(8px + env(safe-area-inset-bottom,0px))}
+}
+
+/* ?diag=1 -- วัดค่าจอของเครื่องจริง ไว้ยืนยันว่าแถบล่างถูกบังหรือไม่ ผู้สอบปกติไม่เห็น */
+.diag{position:fixed;left:8px;right:8px;top:8px;z-index:99;padding:8px 10px;border-radius:10px;
+  background:rgba(0,0,0,.82);color:#fff;font:13px/1.45 ui-monospace,Consolas,monospace;white-space:pre-wrap;pointer-events:none}
+.diag-bar{position:fixed;left:0;right:0;bottom:0;height:2px;background:#e11d48;z-index:99;pointer-events:none}
+.diag-probe{position:fixed;visibility:hidden;padding:env(safe-area-inset-top,0px) env(safe-area-inset-right,0px)
+  env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px)}
 </style>
 </head>
 <body>
 
 <div id="shell">
-  <div class="demo-strip" id="strip" hidden></div>
-  <div class="bar" id="topbar" hidden>
-    <div class="prog-wrap">
-      <div class="prog-meta">
-        <span class="prog-count mono" id="pcount"></span>
-        <span class="chip" id="pchip"></span>
-      </div>
-      <div class="track"><div class="fill" id="pfill"></div></div>
+  <div class="strip" id="strip" hidden></div>
+  <header class="brand">
+    <svg class="logo" viewBox="0 0 220 260" role="img" aria-label="TMI">
+      <path fill="currentColor" d="M5 147h39l18 31H5zM215 147h-39l-18 31h57z"/>
+      <rect fill="currentColor" x="5" y="192" width="210" height="58" rx="3"/>
+      <g fill="none" stroke="currentColor" stroke-linejoin="round">
+        <path stroke-width="18" d="M110 7l105 171H5z"/>
+        <path stroke-width="15" d="M18 160L58 40l52 68 52-68 40 120"/>
+        <path stroke-width="13" d="M110 85l44 75H66z"/>
+      </g>
+      <text x="110" y="235" text-anchor="middle" font-family="Georgia,serif" font-size="42" font-weight="700" letter-spacing="5" fill="var(--surface)">TMI</text>
+    </svg>
+    <p class="brand-t">SSM <span>· แบบทดสอบหลังอบรม</span></p>
+    <span class="pill" id="pill" hidden></span>
+  </header>
+  <div class="prog" id="prog" hidden>
+    <div class="prog-meta">
+      <span class="prog-count" id="pcount"></span>
+      <span class="chip" id="pchip"></span>
     </div>
+    <div class="segs" id="segs" aria-hidden="true"></div>
   </div>
-  <div class="scroll" id="scroll"><div class="pad" id="view"></div></div>
+  <main class="scroll" id="scroll"><div class="pad" id="view"></div></main>
+  <div class="gate" id="gatemsg" role="status"></div>
   <div class="foot" id="foot" hidden></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="sr-only" id="live" aria-live="polite"></div>
 </div>
 
-<script src="items.js"></script>
+<dialog class="zoom" id="zoom" aria-label="ภาพขยาย">
+  <button type="button" class="z-close" id="zclose" aria-label="ปิดภาพขยาย" autofocus><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div class="z-stage" id="zstage"><img id="zimg" alt=""></div>
+  <button type="button" class="z-err" id="zerr" hidden>โหลดภาพไม่สำเร็จ · แตะเพื่อลองใหม่</button>
+  <p class="z-cap"><span id="zcap"></span><small>ใช้สองนิ้วถ่างเพื่อซูม · แตะภาพเพื่อดูขนาดจริง</small></p>
+</dialog>
+
+<dialog class="ask" id="ask" aria-labelledby="askt">
+  <p class="ask-t" id="askt"></p>
+  <div class="ask-row"><button type="button" class="btn ghost" id="askno">ยกเลิก</button><button type="button" class="btn" id="askyes"></button></div>
+</dialog>
 
 <script>
 /* ────────────────────────────────────────────────────────────────────────
    ตั้งค่าเพียงบรรทัดเดียว: URL ของ Apps Script ที่ deploy แล้ว (ขั้นที่ 5 ใน README)
    ──────────────────────────────────────────────────────────────────────── */
 var ENDPOINT = 'https://script.google.com/macros/s/AKfycbxyvpthRChf0KkNy1w7bzaT6PUPIwYcHxZdYWC2BoAvY3UJ9y08Ua3oXpeIo2k69SA8/exec';
+
+/* โหมดทดสอบ -- ?fixture=1 บน localhost เท่านั้น: โหลด _fixture/items.js แทน items.js
+   และไม่ยิงไปที่ ENDPOINT เลย (ส่งผ่าน window.FIXTURE_FETCH ที่ไฟล์ fixture ประกาศไว้)
+   บน GitHub Pages ค่านี้เป็น false เสมอ หน้าเว็บจริงจึงทำงานแบบเดิมทุกประการ */
+var FIXTURE = (function () {
+  try {
+    return new URLSearchParams(location.search).get('fixture') === '1'
+        && /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname);
+  } catch (e) { return false; }
+})();
+var BANK_SRC = FIXTURE ? '_fixture/items.js' : 'items.js';
 
 var ROLES = {
   admin:        { th: 'ผู้ดูแลระบบ',  track: 'office' },
@@ -197,27 +509,107 @@ var QR = (function () {
 })();
 
 var PARTS = {
-  1:'หมวด 1 · ความรู้และการใช้งาน',
-  2:'หมวด 2 · ขั้นตอนที่ถูกต้อง',
-  3:'หมวด 3 · การแก้ปัญหา',
-  4:'หมวด 4 · การขอความช่วยเหลือ',
-  5:'หมวด 5 · สถานการณ์รวม'
+  1:'ความรู้และการใช้งาน',
+  2:'ขั้นตอนที่ถูกต้อง',
+  3:'การแก้ปัญหา',
+  4:'การขอความช่วยเหลือ',
+  5:'สถานการณ์รวม'
 };
+var PART_TOTAL = 5;
+function partLabel(k){ return 'หมวด ' + k + ' · ' + (PARTS[k] || ''); }
+var CHEER = {
+  1:'เริ่มกันเลย ข้อแรก ๆ เป็นเรื่องที่ใช้ทุกวัน',
+  2:'หมวดนี้ถามลำดับขั้นตอน ค่อย ๆ นึกตามที่ทำจริง',
+  3:'เหมือนเจอปัญหาหน้างาน คิดว่าจะทำอะไรก่อน',
+  4:'หมวดสั้น ๆ นึกถึงตอนที่ต้องแจ้งปัญหาให้ทีมช่วย',
+  5:'ใกล้แล้ว เหลือสถานการณ์รวมอีกนิดเดียว'
+};
+/* หลักไมล์นับจากจำนวนข้อที่ตอบ -- ไม่รู้และไม่บอกว่าตอบแล้วได้ผลอย่างไร */
+var MILESTONES = [
+  [25, 'ตอบไปแล้วหนึ่งในสี่ ทำต่อได้เลย'],
+  [50, 'มาได้ครึ่งทางแล้ว ค่อย ๆ ทำต่อ'],
+  [75, 'อีกไม่กี่ข้อก็ครบแล้ว']
+];
+var LETTERS = 'กขคงจฉชซ';
 
 var ICONS = {
   ok:  '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="var(--accent)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9" fill="var(--accent-soft)"/><path d="M8 12.4l2.6 2.6L16 9.6"/></svg>',
   wait:'<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="var(--amber)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9" fill="var(--amber-soft)"/><path d="M15.5 10.5a4 4 0 10-.3 3.4"/><path d="M15.9 7.6v3h-3"/></svg>',
   fail:'<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="var(--bad)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9" fill="var(--bad-soft)"/><path d="M9.3 9.3l5.4 5.4M14.7 9.3l-5.4 5.4"/></svg>',
-  none:'<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="var(--ink-3)" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12h7"/></svg>'
+  none:'<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="var(--muted)" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12h7"/></svg>'
 };
-var CHECK = '<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-ink)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>';
-var TICK  = '<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="var(--accent)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>';
-var UP    = '<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="var(--ink-2)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V6M6 12l6-6 6 6"/></svg>';
-var DOWN  = '<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="var(--ink-2)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v13M18 12l-6 6-6-6"/></svg>';
-var GRIP  = '<svg viewBox="0 0 16 22" width="16" height="22" fill="var(--ink-3)" aria-hidden="true"><circle cx="5" cy="5" r="1.7"/><circle cx="11" cy="5" r="1.7"/><circle cx="5" cy="11" r="1.7"/><circle cx="11" cy="11" r="1.7"/><circle cx="5" cy="17" r="1.7"/><circle cx="11" cy="17" r="1.7"/></svg>';
+var CHECK = '<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-ink)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>';
+var TICK  = '<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="var(--accent)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>';
+var TICK_C = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>';
+var UP    = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V6M6 12l6-6 6 6"/></svg>';
+var DOWN  = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v13M18 12l-6 6-6-6"/></svg>';
+var GRIP  = '<svg viewBox="0 0 16 22" width="14" height="19" fill="currentColor" aria-hidden="true"><circle cx="5" cy="5" r="1.7"/><circle cx="11" cy="5" r="1.7"/><circle cx="5" cy="11" r="1.7"/><circle cx="11" cy="11" r="1.7"/><circle cx="5" cy="17" r="1.7"/><circle cx="11" cy="17" r="1.7"/></svg>';
+var MAG   = '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L20.5 20.5M10.5 7.8v5.4M7.8 10.5h5.4"/></svg>';
+var MAG_S = '<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L20.5 20.5"/></svg>';
+var RETRY = '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12a8 8 0 11-2.4-5.7"/><path d="M20 4.5v5h-5"/></svg>';
+var LEAF  = '<svg viewBox="0 0 24 24" width="16" height="16" fill="#16221C" aria-hidden="true"><path d="M5 19C5 10 11 4.5 19.5 4.5 19.5 13 14 19 5 19z"/><path d="M5 19l8-8" stroke="#C9A227" stroke-width="1.6" stroke-linecap="round"/></svg>';
+
+/* ภาพประกอบบทบาท -- สีเดียว (currentColor = accent) · ใส่ลงหน้าจอเฉพาะของบทบาทที่กำลังทำ */
+var ART_OPEN = '<svg class="art" viewBox="0 0 160 112" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="';
+var ART = {
+  admin: ['ภาพประกอบผู้ดูแลระบบ',
+    '<rect x="26" y="12" width="108" height="72" rx="7" fill="currentColor" fill-opacity=".1"/>'
+    + '<path d="M66 100h28M80 84v16"/><circle cx="58" cy="40" r="9"/><path d="M41 70c2-10 9-16 17-16s15 6 17 16"/>'
+    + '<path d="M90 34h30M90 47h22M90 60h26"/><circle cx="124" cy="96" r="4" fill="currentColor"/>'],
+  zonehead: ['ภาพประกอบหัวหน้าเขต',
+    '<rect x="42" y="14" width="76" height="92" rx="8" fill="currentColor" fill-opacity=".1"/>'
+    + '<rect x="62" y="7" width="36" height="15" rx="5"/>'
+    + '<path d="M54 44l7 7 12-13M82 45h24M54 70l7 7 12-13M82 71h24M56 94h34"/>'],
+  surveyor: ['ภาพประกอบนักสำรวจ',
+    '<path d="M26 106V44M26 62c-9-2-14-9-15-17 9 0 14 5 16 12M26 80c9-3 14-10 15-18-9 0-14 5-16 12"/>'
+    + '<path d="M44 106V60M44 76c-8-2-12-8-13-15 8 0 12 4 14 10"/>'
+    + '<rect x="66" y="10" width="58" height="96" rx="9" fill="currentColor" fill-opacity=".1"/><path d="M87 20h16"/>'
+    + '<path d="M78 78l10-32 24 6 2 26z" stroke-dasharray="5 5"/>'
+    + '<g fill="currentColor" stroke="none"><circle cx="88" cy="46" r="4"/><circle cx="112" cy="52" r="4"/><circle cx="114" cy="78" r="4"/><circle cx="78" cy="78" r="4"/></g>'],
+  gis: ['ภาพประกอบผู้ใช้งาน GIS',
+    '<path d="M14 28l42-12 46 12 44-12v70l-44 12-46-12-42 12z" fill="currentColor" fill-opacity=".1"/>'
+    + '<path d="M56 16v70M102 28v70"/><path d="M26 72l16-26 32 6 10 22-30 12z" stroke-dasharray="5 4"/>'
+    + '<path d="M132 44c0-8-6-14-14-14s-14 6-14 14c0 10 14 24 14 24s14-14 14-24z" fill="currentColor" fill-opacity=".18"/>'
+    + '<circle cx="118" cy="44" r="4.5"/>'],
+  cutter: ['ภาพประกอบรถตัดอ้อย',
+    '<path d="M40 86V56h44l10-20h26l8 20h14v30z" fill="currentColor" fill-opacity=".1"/>'
+    + '<path d="M98 42h18l5 12H92zM40 64L18 40l-7 6"/><circle cx="62" cy="88" r="12"/><circle cx="122" cy="88" r="12"/>'
+    + '<path d="M6 106h148M14 106V76M22 106V70M30 106V78"/>'],
+  servicepoint: ['ภาพประกอบจุดบริการ',
+    '<path d="M36 18h88v18a9 9 0 000 18v18H36V54a9 9 0 000-18z" fill="currentColor" fill-opacity=".1"/>'
+    + '<path d="M50 32h32M50 45h22M50 58h28M94 30v28M100 30v28M105 30v28M110 30v28"/>'
+    + '<path d="M12 104h136M24 104V90h112v14"/>']
+};
+function roleArt(role){
+  var a = ART[role];
+  return a ? ART_OPEN + a[0] + '">' + a[1] + '</svg>' : FIELD_ART;
+}
+var FIELD_ART = '<svg class="art" viewBox="0 0 230 116" role="img" aria-label="ภาพประกอบแปลงอ้อยพร้อมหมุดพิกัด">'
+  + '<rect x="1" y="52" width="228" height="63" rx="9" fill="var(--accent-soft)"/>'
+  + '<g stroke="var(--accent)" stroke-width="1.3" opacity=".42"><path d="M10 106h210M14 94h202M20 82h190M28 70h174M38 60h154"/></g>'
+  + '<path d="M46 96 L74 58 L152 52 L192 84 L150 106 Z" fill="none" stroke="var(--accent)" stroke-width="2.4" stroke-dasharray="6 5" stroke-linejoin="round"/>'
+  + '<g fill="var(--accent)"><circle cx="46" cy="96" r="3.6"/><circle cx="74" cy="58" r="3.6"/><circle cx="152" cy="52" r="3.6"/><circle cx="192" cy="84" r="3.6"/><circle cx="150" cy="106" r="3.6"/></g>'
+  + '<g stroke="var(--accent)" stroke-width="2.6" stroke-linecap="round" opacity=".85">'
+  + '<path d="M92 48V20M92 30c-7-2-11-7-12-14 7 0 12 3 14 9M92 34c7-3 11-8 12-15-7 0-12 3-14 9"/>'
+  + '<path d="M122 46V14M122 24c-7-2-11-7-12-14 7 0 12 3 14 9M122 28c7-3 11-8 12-15-7 0-12 3-14 9"/></g>'
+  + '<path d="M170 44c0-7-6-13-13-13s-13 6-13 13c0 9 13 21 13 21s13-12 13-21z" fill="var(--earth)"/>'
+  + '<circle cx="157" cy="43" r="4.6" fill="var(--surface)"/></svg>';
+
+/* ============================ คลังข้อ ============================ */
+/* items.js โหลดแบบไม่บล็อกหน้าจอ ผู้สอบกรอกชื่อได้ระหว่างรอ -- โหลดไม่ขึ้นก็ลองใหม่เองสองครั้ง แล้วให้กดเอง */
+var BANK = { ready:false, failed:false, tries:0, total:0 };
+function BANKDATA(){ return window.ITEMS_BY_ROLE || {}; }
+function castOf(key){
+  var c = window.CAST;
+  if (!key || !c || !Object.prototype.hasOwnProperty.call(c, key)) return null;
+  return (c[key] && c[key].name) ? c[key] : null;
+}
 
 /* ============================ สถานะ ============================ */
-var DRAFT_KEY = 'ssm-exam-v1';
+var DRAFT_KEY   = FIXTURE ? 'ssm-exam-fixture-v1' : 'ssm-exam-v1';
+/* ใบรับแยกคีย์จากร่าง -- ร่างถูกลบเมื่อส่งสำเร็จ แต่ใบรับต้องอยู่ต่อ
+   ไม่งั้นสแกน QR ซ้ำ = clientToken ใหม่ = แถวที่สองในชีต (D6) */
+var RECEIPT_KEY = FIXTURE ? 'ssm-exam-receipt-fixture-v1' : 'ssm-exam-receipt-v1';
 var state = {
   screen:'register', idx:0,
   role: ROLES[QR.role] ? QR.role : null,
@@ -226,81 +618,392 @@ var state = {
   track: ROLES[QR.role] ? ROLES[QR.role].track : 'field',
   clientToken: null,
   profile:{name:'', dept:''},
-  answers:{}, order:{}, startedAt:null, receipt:null, sendError:null
+  answers:{}, order:{}, startedAt:null, receipt:null,
+  introSeen:{}, milestones:{}, returnTo:null, outbox:null, savedAt:null
 };
-function ITEMS(){ return (state.role && ITEMS_BY_ROLE[state.role]) || []; }
-function roleTh(){ return state.role ? ROLES[state.role].th : '—'; }
+var storageOk = true;
+function ITEMS(){ return (state.role && BANK.ready && BANKDATA()[state.role]) || []; }
+function roleTh(r){ r = r || state.role; return (r && ROLES[r]) ? ROLES[r].th : '—'; }
 function uuid(){
   return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c){
     var r = Math.random()*16|0, v = c === 'x' ? r : (r&0x3|0x8);
     return v.toString(16);
   });
 }
-function save(){ try{ localStorage.setItem(DRAFT_KEY, JSON.stringify(state)); }catch(e){} }
+function pad2(x){ return (x < 10 ? '0' : '') + x; }
+function hhmm(ts){ var d = new Date(ts); return pad2(d.getHours()) + ':' + pad2(d.getMinutes()); }
+/* บันทึกไม่ได้ (โหมดส่วนตัว/พื้นที่เต็ม) ต้องบอกผู้สอบ -- เงียบไว้คือคำตอบหายตอนปิดหน้า */
+function save(){
+  state.savedAt = Date.now();
+  try { localStorage.setItem(DRAFT_KEY, JSON.stringify(state)); storageOk = true; }
+  catch (e) { storageOk = false; }
+  paintSaved();
+  return storageOk;
+}
+function paintSaved(){
+  var el = document.getElementById('saved');
+  if (!el) return;
+  el.className = 'saved' + (storageOk ? '' : ' bad');
+  el.innerHTML = storageOk ? TICK + ' บันทึกร่างแล้ว' : 'บันทึกในเครื่องไม่ได้ · อย่าปิดหน้านี้';
+}
+function readJSON(key){
+  try { var raw = localStorage.getItem(key); return raw ? JSON.parse(raw) : null; }
+  catch (e) { return null; }
+}
+function readDraft(){ var d = readJSON(DRAFT_KEY); return (d && typeof d === 'object') ? d : null; }
+/* ร่างที่ทำต่อได้ = ยังทำข้อสอบอยู่ และยังไม่ได้กดส่ง (ร่างที่มี outbox เป็นเรื่องของหน้ากำลังส่ง ไม่ใช่การทำต่อ) */
+function resumable(d){ return !!d && !d.outbox && d.screen !== 'register' && d.screen !== 'submitted'; }
+/* ร่างผูกกับรุ่นคลังข้อ -- ตัวเลือกถูกสลับตอน build คำตอบของรุ่นหนึ่งจึงชี้ผิดข้อในอีกรุ่นเสมอ
+   ร่างจากรุ่นอื่น (รวมร่างจากหน้าเก่าที่ไม่มี bankVersion) ทำต่อไม่ได้ -- บอกผู้สอบแล้วให้เริ่มใหม่ (D7) */
+function draftFromOtherBank(d){
+  return !!window.BANK_VERSION && d.bankVersion !== window.BANK_VERSION;
+}
+/* เครื่องที่ใช้ร่วมกัน: ร่างของบทบาทอื่นห้ามทับบทบาทที่มากับ QR (D5) */
+function draftOtherRole(d){ return !!QR.role && !!d.role && d.role !== QR.role; }
+function adopt(d){ for (var k in d) state[k] = d[k]; }
 function load(){
-  try{
-    var raw = localStorage.getItem(DRAFT_KEY); if(!raw) return false;
-    var d = JSON.parse(raw);
-    if(!d || d.screen==='register' || d.screen==='submitted') return false;
-    for(var k in d){ state[k]=d[k]; }
-    return true;
-  }catch(e){ return false; }
+  var d = readDraft();
+  if (!resumable(d) || draftOtherRole(d) || draftFromOtherBank(d)) return false;
+  adopt(d);
+  normaliseDraft();
+  return true;
 }
-function hasDraft(){
-  try{
-    var raw = localStorage.getItem(DRAFT_KEY); if(!raw) return false;
-    var d = JSON.parse(raw);
-    return !!d && d.screen!=='register' && d.screen!=='submitted';
-  }catch(e){ return false; }
-}
+function hasDraft(){ return resumable(readDraft()); }
 function clearDraft(){ try{ localStorage.removeItem(DRAFT_KEY); }catch(e){} }
+/* ร่างจากหน้าเวอร์ชันก่อนไม่มีฟิลด์ใหม่ -- เติมให้ครบโดยไม่แตะคำตอบ */
+function normaliseDraft(){
+  var items = ITEMS();
+  if (state.idx >= items.length) state.idx = Math.max(0, items.length - 1);
+  if (!state.introSeen || typeof state.introSeen !== 'object') {
+    state.introSeen = {};
+    var cur = items[state.idx];
+    if (cur) for (var k = 1; k <= cur.part; k++) state.introSeen[k] = true;
+  }
+  if (!state.answers || typeof state.answers !== 'object') state.answers = {};
+  if (!state.order || typeof state.order !== 'object') state.order = {};
+  if (state.screen === 'sending' || state.screen === 'failed' || state.screen === 'confirm') state.screen = 'review';
+  if (!state.milestones || typeof state.milestones !== 'object') {
+    state.milestones = {};
+    checkMilestones(true);
+  }
+}
 
 function orderItems(it){ return it.type==='ordering' ? it.items : null; }
+/* ลำดับตั้งต้น = ลำดับใน items.js ตรง ๆ -- exam_build สลับไว้แล้ว และเลือกให้ลำดับที่ยังไม่ขยับได้คะแนนไม่เกิน 1/3
+   (เจ้าของงาน 2026-09-25: กด "ถัดไป" = ยืนยันลำดับที่เห็น ไม่มีปุ่มยืนยันแยก) */
+function startOrder(it){
+  var n = orderItems(it).length, seq = [];
+  for(var i=0;i<n;i++) seq.push(i);
+  return seq;
+}
 function initOrder(it){
-  if(!state.order[it.id]){
-    var n = orderItems(it).length, seq = [];
-    for(var i=0;i<n;i++) seq.push(i);
-    for(var j=n-1;j>0;j--){ var m=(j*7+3)%(j+1), t=seq[j]; seq[j]=seq[m]; seq[m]=t; }
-    state.order[it.id] = seq;
-  }
+  var n = orderItems(it).length, cur = state.order[it.id];
+  if(!cur || cur.length !== n) state.order[it.id] = startOrder(it);
   return state.order[it.id];
 }
-function answered(it){
-  if(it.type==='ordering') return !!state.order[it.id];
-  var a = state.answers[it.id];
-  return !!a && a.length>0;
+function isPerm(a, n){
+  if (!Array.isArray(a) || a.length !== n) return false;
+  var seen = {};
+  for (var i = 0; i < n; i++) {
+    var x = a[i];
+    if (x !== (x|0) || x < 0 || x >= n || seen[x]) return false;
+    seen[x] = 1;
+  }
+  return true;
+}
+/* ฟังก์ชันเดียวที่ตัดสินว่า "ตอบแล้ว" -- ปุ่มถัดไป · หน้าตรวจ · missing() · ด่านก่อนส่ง · แถบคืบหน้า · หลักไมล์ ใช้ตัวนี้ทั้งหมด */
+function isAnswered(it, st){
+  st = st || state;
+  if (!it) return false;
+  // ข้อเรียงลำดับ: ลำดับที่แสดงอยู่คือคำตอบตั้งแต่เปิดข้อ -- ขาดเฉพาะข้อที่ยังไม่เคยเปิด
+  if (it.type === 'ordering') return isPerm(st.order && st.order[it.id], (it.items || []).length);
+  var a = st.answers && st.answers[it.id], n = (it.options || []).length;
+  if (!Array.isArray(a)) return false;
+  function inRange(x){ return x === (x|0) && x >= 0 && x < n; }
+  if (it.type === 'multiple') {
+    var seen = {}, c = 0;
+    a.forEach(function(x){ if (inRange(x) && !seen[x]) { seen[x] = 1; c++; } });
+    return c >= 1;
+  }
+  return a.length === 1 && inRange(a[0]);
+}
+function reasonOf(it){
+  return it.type === 'ordering' ? 'ยังไม่ได้เปิดข้อนี้เพื่อจัดลำดับ'
+       : it.type === 'multiple' ? 'ยังไม่ได้เลือกคำตอบ (เลือกได้มากกว่า 1 ข้อ)'
+       : 'ยังไม่ได้เลือกคำตอบ';
+}
+function missing(){
+  var out = [];
+  ITEMS().forEach(function(it, i){ if (!isAnswered(it)) out.push(i); });
+  return out;
+}
+function countAnswered(d){
+  var items = (d && d.role && BANKDATA()[d.role]) || [];
+  return items.filter(function(it){ return isAnswered(it, d); }).length;
 }
 function esc(s){ return String(s).replace(/[&<>"]/g,function(c){
   return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
 
+/* สรุปหมวดของบทบาทปัจจุบัน -- ขนาดแถบแต่ละหมวดเป็นสัดส่วนกับจำนวนข้อจริง */
+function partStats(){
+  var items = ITEMS(), map = {}, list = [];
+  items.forEach(function(it, i){
+    var p = map[it.part];
+    if(!p){ p = map[it.part] = { k: it.part, idx: [], done: 0 }; list.push(p); }
+    p.idx.push(i);
+    if(isAnswered(it)) p.done++;
+  });
+  list.sort(function(a, b){ return a.k - b.k; });
+  return list;
+}
+
+/* ============================ ตัวละครและภาพ ============================ */
+var KIN = ['น้อง','พี่','น้า','ลุง','ป้า','ยาย','คุณ','อา','ตา'];
+/* อักษรย่อ: ตัดคำเรียกญาติ แล้วเอาพยัญชนะตัวแรก (พร้อมสระหน้า ห/อ นำ และวรรณยุกต์ที่เกาะอยู่) */
+function initial(name){
+  var s = String(name || '').trim(), ch, out = '', j = 0;
+  for (var i = 0; i < KIN.length; i++) {
+    if (s.indexOf(KIN[i]) === 0 && s.length > KIN[i].length) { s = s.slice(KIN[i].length); break; }
+  }
+  ch = Array.from ? Array.from(s) : s.split('');
+  if (!ch.length) return '?';
+  if (/[เแโใไ]/.test(ch[0]) && ch.length > 1) { out = ch[0]; j = 1; }
+  out += ch[j]; j++;
+  if (/[หอ]/.test(ch[j - 1]) && /[งญนมยรลว]/.test(ch[j] || '')) { out += ch[j]; j++; }
+  while (j < ch.length && /[ัิ-ฺ็-๎]/.test(ch[j])) { out += ch[j]; j++; }
+  return out;
+}
+function hue(key){
+  var h = 0;
+  for (var i = 0; i < key.length; i++) h = (h * 31 + key.charCodeAt(i)) >>> 0;
+  return h % 360;
+}
+function whoRow(it){
+  var c = castOf(it.chr);
+  if (!c) return '';
+  return '<div class="who"><span class="ava" aria-hidden="true" style="--h:' + hue(String(it.chr)) + '">' + esc(initial(c.name)) + '</span>'
+    + '<span class="who-t">' + (c.role ? '<b>' + esc(c.role) + '</b> (' + esc(c.name) + ')' : '<b>' + esc(c.name) + '</b>') + '</span></div>';
+}
+
+/* รับเฉพาะ path สัมพัทธ์ภายในเว็บนี้ -- img/<hash>.webp ตามสัญญาของตัวสร้าง */
+function safeImg(m){
+  if (!m || typeof m.src !== 'string') return null;
+  var src = m.src;
+  if (!/^[A-Za-z0-9_][A-Za-z0-9_.\/-]*\.(webp|png|jpe?g)$/.test(src) || src.indexOf('..') >= 0 || src.indexOf('//') >= 0) return null;
+  var w = +m.w > 0 ? Math.round(+m.w) : 4, h = +m.h > 0 ? Math.round(+m.h) : 3;
+  return { src: src, alt: String(m.alt || ''), w: w, h: h };
+}
+function itemImages(it){
+  var out = [], q = it && safeImg(it.img);
+  if (!it) return out;
+  if (q) out.push(q.src);
+  (it.options || []).forEach(function(o){ var m = safeImg(o && o.img); if (m) out.push(m.src); });
+  return out;
+}
+function roleImages(){
+  var seen = {}, out = [];
+  ITEMS().forEach(function(it){ itemImages(it).forEach(function(s){ if(!seen[s]){ seen[s] = 1; out.push(s); } }); });
+  return out;
+}
+function bust(src){ return src + (src.indexOf('?') < 0 ? '?' : '&') + 'r=' + Date.now(); }
+function pic(im, badge, errText){
+  return '<span class="pic" data-src="' + esc(im.src) + '" data-alt="' + esc(im.alt) + '" style="aspect-ratio:' + im.w + ' / ' + im.h + ';--ar:' + (im.w / im.h).toFixed(4) + '">'
+    + '<img src="' + esc(im.src) + '" alt="' + esc(im.alt) + '" width="' + im.w + '" height="' + im.h + '" decoding="async">'
+    + (badge ? '<span class="zoom-badge" aria-hidden="true">' + MAG_S + 'แตะเพื่อขยาย</span>' : '')
+    + '<span class="pic-err" aria-hidden="true">' + RETRY + '<span data-msg="' + esc(errText || 'โหลดภาพไม่สำเร็จ · แตะเพื่อลองใหม่') + '">'
+    + (errText || 'โหลดภาพไม่สำเร็จ · แตะเพื่อลองใหม่') + '</span></span>'
+    + '</span>';
+}
+
+/* โหลดล่วงหน้า: ทั้งบทบาทตอนลงทะเบียน และข้อถัดไปหลังวาดแต่ละข้อ
+   เก็บอ็อบเจกต์ Image ไว้ ให้เบราว์เซอร์ถือไฟล์ไว้ในหน่วยความจำจนถึงข้อนั้น */
+var IMG = {}, HOLD = [];
+function loadImg(src, cb){
+  if (IMG[src] === 'ok') { if (cb) cb(true); return; }
+  IMG[src] = 'load';
+  var im = new Image();
+  im.onload = function(){ IMG[src] = 'ok'; if (cb) cb(true); };
+  im.onerror = function(){ IMG[src] = 'err'; if (cb) cb(false); };
+  im.src = src;
+  HOLD.push(im);
+}
+function prefetchItem(it){
+  itemImages(it).forEach(function(s){ if (IMG[s] !== 'ok' && IMG[s] !== 'load') loadImg(s); });
+}
+var prep = { gen:0, total:0, ok:0, seen:0 };
+function warmRoleImages(){
+  var list = roleImages(), gen = ++prep.gen, next = 0;
+  prep.total = list.length; prep.ok = 0; prep.seen = 0;
+  function pump(){
+    if (gen !== prep.gen || next >= list.length) return;
+    loadImg(list[next++], function(ok){
+      if (gen !== prep.gen) return;
+      prep.seen++; if (ok) prep.ok++;
+      paintPrep(); pump();
+    });
+  }
+  paintPrep();
+  pump(); pump();          // ทีละสองไฟล์ -- สัญญาณอ่อนไม่ควรถูกถมด้วยคำขอพร้อมกันทั้งชุด
+}
+
 /* ============================ การวาดหน้าจอ ============================ */
 var view=document.getElementById('view'), foot=document.getElementById('foot'),
-    topbar=document.getElementById('topbar'), scroll=document.getElementById('scroll');
+    prog=document.getElementById('prog'), scroll=document.getElementById('scroll'),
+    pill=document.getElementById('pill'), live=document.getElementById('live'),
+    toastEl=document.getElementById('toast'), strip=document.getElementById('strip'),
+    gateEl=document.getElementById('gatemsg');
+
+function focusEl(el, noScroll){
+  if (!el) return;
+  try { el.focus(noScroll ? { preventScroll: true } : undefined); } catch (e) { el.focus(); }
+}
+function say(msg){ live.textContent = msg; }      // #live -- เฉพาะการเปลี่ยนสถานะ ไม่ใช่ตัวนับถอยหลัง
 
 function render(){
-  var q = state.screen==='question';
-  topbar.hidden = !q;
-  if(q){
-    var it = ITEMS()[state.idx];
-    document.getElementById('pcount').textContent = 'ข้อ '+(state.idx+1)+' จาก '+ITEMS().length;
-    document.getElementById('pchip').textContent = PARTS[it.part] || '';
-    document.getElementById('pfill').style.width = ((state.idx+1)/ITEMS().length*100)+'%';
-  }
-  // ใกล้ถึงเวลาส่ง -- ปลุกเซิร์ฟเวอร์ไว้ก่อน ผู้สอบใช้เวลาตรวจทานพอให้ cold start จบ
-  if (state.screen==='review' || state.screen==='confirm') warm();
-  ({register:vRegister, question:vQuestion, review:vReview, confirm:vConfirm,
-    sending:vSending, submitted:vSubmitted, failed:vFailed})[state.screen]();
+  var scr = state.screen, withProg = (scr==='question' || scr==='intro') && ITEMS().length > 0;
+  paintHeader();
+  paintStrip();
+  hideGate();
+  if (scr !== 'question') hideToast();        // "อีกไม่กี่ข้อ" ค้างบนหน้าตรวจ/หน้าจบจะอ่านผิดความหมาย
+  if (scr !== 'sending') stopTick();
+  prog.hidden = !withProg;
+  if (withProg) paintProgress();
+  // ใกล้ถึงเวลาส่ง -- ปลุกเซิร์ฟเวอร์ไว้ก่อน ผู้สอบใช้เวลาตรวจทานพอให้ cold start จบ (และเช็กรุ่นคลังข้อไปด้วย)
+  if (scr==='review' || scr==='confirm') warm();
+  ({register:vRegister, intro:vIntro, question:vQuestion, review:vReview, confirm:vConfirm,
+    sending:vSending, submitted:vSubmitted})[scr]();
   scroll.scrollTop = 0;
+}
+
+function paintHeader(){
+  if (state.role) { pill.innerHTML = '<span class="sr-only">บทบาท </span>' + esc(roleTh()); pill.hidden = false; }
+  else pill.hidden = true;
+}
+
+/* แถบบนสุด: โหมดทดสอบ · ยังไม่ตั้ง ENDPOINT · ไม่มีสัญญาณ · คลังข้อบนเซิร์ฟเวอร์เป็นรุ่นใหม่กว่า */
+function bankOutdated(){ return !!SRV_BANK && !!window.BANK_VERSION && SRV_BANK !== window.BANK_VERSION; }
+function paintStrip(){
+  var msgs = [], btn = '', scr = state.screen;
+  var inExam = scr==='intro' || scr==='question' || scr==='review' || scr==='confirm';
+  if (FIXTURE) msgs.push('โหมดทดสอบ (fixture) — โหลดข้อจาก _fixture และไม่ส่งคำตอบจริง');
+  if (ENDPOINT.indexOf('PASTE_') === 0) msgs.push('ยังไม่ได้ตั้งค่า ENDPOINT ใน index.html — ส่งคำตอบไม่ได้ (ดู README ขั้นที่ 6)');
+  if (navigator.onLine === false && scr !== 'sending' && scr !== 'submitted') msgs.push('ไม่มีสัญญาณ · ทำข้อสอบต่อได้ คำตอบบันทึกในเครื่อง');
+  if (bankOutdated() && scr === 'register') {
+    msgs.push('มีข้อสอบรุ่นใหม่ · โหลดหน้าใหม่ก่อนเริ่ม');
+    btn = '<button type="button" class="strip-btn" id="stripbtn" data-act="reload">โหลดหน้าใหม่</button>';
+  } else if (bankOutdated() && inExam) {
+    msgs.push('ข้อสอบในระบบถูกปรับปรุงระหว่างที่ทำ · คำตอบชุดนี้จะส่งไม่ได้ · แจ้งผู้สอน');
+    btn = '<button type="button" class="strip-btn" id="stripbtn" data-act="restart">โหลดรุ่นใหม่ (เริ่มใหม่)</button>';
+  }
+  strip.hidden = !msgs.length;
+  strip.innerHTML = msgs.map(function(m){ return '<span>' + esc(m) + '</span>'; }).join('') + btn;
+  var b = document.getElementById('stripbtn');
+  if (b) b.onclick = function(){
+    if (b.dataset.act === 'reload') { reloadFresh(); return; }
+    askRestart(function(){ clearDraft(); reloadFresh(); });
+  };
+}
+
+/* ข้อความใต้ปุ่มถัดไปเมื่อยังไม่ได้ตอบ (role=status) */
+function showGate(){ gateEl.textContent = 'ตอบข้อนี้ก่อน จึงจะไปข้อถัดไปได้'; gateEl.classList.add('show'); }
+function hideGate(){ gateEl.classList.remove('show'); gateEl.textContent = ''; }
+
+var lastPart = null;
+function paintProgress(){
+  var items = ITEMS(), it = items[state.idx], k = it.part, intro = state.screen === 'intro';
+  document.getElementById('pcount').textContent = 'ข้อ ' + (state.idx+1) + ' จาก ' + items.length;
+  document.getElementById('pchip').textContent = partLabel(k);
+  document.getElementById('segs').innerHTML = partStats().map(function(p){
+    var pos = p.idx.indexOf(state.idx), fill = p.k < k ? 100 : p.k > k ? 0 : (intro ? 0 : (pos + 1) / p.idx.length * 100);
+    var passed = p.k < k, complete = p.done === p.idx.length;
+    var cls = 'seg' + (p.k === k ? ' is-cur' : '') + (passed && !complete ? ' is-gap' : '');
+    return '<div class="' + cls + '"><span class="seg-bar"><i style="width:' + fill + '%"></i></span>'
+      + '<span class="seg-lab">' + (passed && complete ? TICK : p.k) + '</span></div>';
+  }).join('');
+  if (k !== lastPart) { lastPart = k; say('หมวด ' + k + ' จาก ' + PART_TOTAL + ' · ' + (PARTS[k] || '')); }
+}
+
+var toastTimer = null, toastClear = null;
+function toast(msg){
+  clearTimeout(toastTimer); clearTimeout(toastClear);
+  toastEl.classList.remove('off');
+  toastEl.style.bottom = ((foot.hidden ? 0 : foot.offsetHeight) + 12) + 'px';
+  toastEl.innerHTML = '<span class="t-ico">' + LEAF + '</span><span>' + esc(msg) + '</span>';
+  toastEl.classList.add('show');
+  toastTimer = setTimeout(function(){
+    toastEl.classList.remove('show');
+    toastClear = setTimeout(function(){ toastEl.innerHTML = ''; }, 300);
+  }, 3200);
+}
+/* ออกจากหน้าข้อสอบ = ปิดทันที ไม่ปล่อยให้กล่องว่างค่อย ๆ จางบนหน้าถัดไป */
+function hideToast(){
+  clearTimeout(toastTimer); clearTimeout(toastClear);
+  toastEl.classList.add('off');
+  toastEl.classList.remove('show');
+  toastEl.innerHTML = '';
+}
+function checkMilestones(silent){
+  var items = ITEMS(); if (!items.length) return;
+  var pct = items.filter(function(it){ return isAnswered(it); }).length / items.length * 100, hit = null;
+  MILESTONES.forEach(function(m){ if (pct >= m[0] && !state.milestones[m[0]]) { state.milestones[m[0]] = true; hit = m; } });
+  if (hit) { save(); if (!silent) toast(hit[1]); }
+}
+
+/* ---- ยืนยันก่อนทำสิ่งที่ย้อนไม่ได้ (native <dialog>) ---- */
+var askEl = document.getElementById('ask'), askCb = null;
+function askConfirm(text, yesLabel, onYes){
+  if (typeof askEl.showModal !== 'function') { if (window.confirm(text)) onYes(); return; }
+  document.getElementById('askt').textContent = text;
+  document.getElementById('askyes').textContent = yesLabel;
+  askCb = onYes;
+  askEl.showModal();
+  focusEl(document.getElementById('askno'));
+}
+document.getElementById('askno').onclick = function(){ askCb = null; askEl.close(); };
+document.getElementById('askyes').onclick = function(){ var cb = askCb; askCb = null; askEl.close(); if (cb) cb(); };
+function askRestart(onYes){
+  var d = readDraft(), a = (d && BANK.ready) ? countAnswered(d) : null;
+  askConfirm((a === null ? 'คำตอบที่ทำไว้' : 'คำตอบที่ทำไว้ ' + a + ' ข้อ') + 'จะหายทั้งหมด · เริ่มใหม่ใช่ไหม', 'เริ่มใหม่', onYes);
+}
+/* โหลดใหม่ให้ได้ items.js รุ่นล่าสุดจริง -- Pages ให้ cache 10 นาที reload ธรรมดาอาจได้ไฟล์เดิม */
+function reloadFresh(){
+  try { sessionStorage.setItem('ssm-bank-bust', String(Date.now())); } catch (e) {}
+  location.reload();
+}
+
+/* ---- ปุ่มย้อนกลับของ Android: pushState ตอนกด เริ่ม/ทำต่อ แล้วแปลง back เป็น "ข้อก่อนหน้า" ---- */
+var GUARDED = { intro:1, question:1, review:1, confirm:1, sending:1 };
+var guardOn = !!(history.state && history.state.ssm === 'guard'), selfPop = false, selfPopTimer = null;
+function pushGuard(){
+  if (guardOn) return;
+  try { history.pushState({ ssm: 'guard' }, ''); guardOn = true; } catch (e) {}
+}
+/* entry ที่ push โดยไม่มี user activation อาจถูก Chrome ข้าม -- push ใหม่ตอนผู้สอบแตะจอครั้งถัดไป */
+document.addEventListener('pointerdown', function(){
+  if (!guardOn && GUARDED[state.screen] && !zoomIsOpen()) pushGuard();
+}, true);
+function onBack(){
+  var s = state.screen;
+  if (s === 'question' || s === 'intro') {
+    if (state.idx > 0) { state.idx--; state.screen = 'question'; save(); render(); }
+    pushGuard();
+  } else if (s === 'review') {
+    state.idx = Math.max(0, ITEMS().length - 1); state.screen = 'question'; state.returnTo = null; save(); render(); pushGuard();
+  } else if (s === 'confirm') {
+    state.screen = 'review'; render(); pushGuard();
+  } else if (s === 'sending') {
+    toast('กำลังส่งคำตอบ · ไม่ต้องออกจากหน้านี้'); pushGuard();
+  }
+  // register / submitted: ปล่อยให้ออกจากหน้าได้
 }
 
 function vRegister(){
   var zones = ['เขต 1','เขต 2','เขต 3','เขต 4','เขต 5','เขต 7','เขต 8','สำนักงานใหญ่'];
   var roleBlock = state.roleFromQR
-    ? '<div class="field"><label>บทบาท</label>'
-      + '<div style="display:flex;align-items:center;gap:9px;padding:11px 12px;border-radius:9px;border:1px solid var(--accent);background:var(--accent-soft)">'
-      + '<span style="font-size:15px;font-weight:600;color:var(--accent)">'+esc(roleTh())+'</span>'
-      + '<span class="chip" style="margin-left:auto">'+(state.track==='field'?'ภาคสนาม':'สำนักงาน')+'</span></div>'
-      + '<p class="tiny">มาจาก QR ที่สแกน · รุ่น <b>'+esc(state.session)+'</b></p></div>'
+    ? '<div class="field"><span class="lab">บทบาท</span>'
+      + '<div class="role-fixed"><b>' + esc(roleTh()) + '</b>'
+      + '<span class="chip">' + (state.track==='field'?'ภาคสนาม':'สำนักงาน') + '</span></div>'
+      + '<p class="tiny">มาจาก QR ที่สแกน · รุ่น <b>' + esc(state.session) + '</b></p></div>'
     : '<div class="field"><label for="f-role">บทบาท</label><select id="f-role">'
       + '<option value="">เลือกบทบาท</option>'
       + Object.keys(ROLES).map(function(k){
@@ -310,24 +1013,21 @@ function vRegister(){
 
   view.innerHTML =
     '<div class="stack">'
-    + '<div class="hero"><svg viewBox="0 0 230 116" width="216" height="109" role="img" aria-label="ภาพประกอบแปลงอ้อยพร้อมหมุดพิกัด">'
-      + '<rect x="1" y="52" width="228" height="63" rx="9" fill="var(--accent-soft)"/>'
-      + '<g stroke="var(--accent)" stroke-width="1.3" opacity=".42"><path d="M10 106h210M14 94h202M20 82h190M28 70h174M38 60h154"/></g>'
-      + '<path d="M46 96 L74 58 L152 52 L192 84 L150 106 Z" fill="none" stroke="var(--accent)" stroke-width="2.4" stroke-dasharray="6 5" stroke-linejoin="round"/>'
-      + '<g fill="var(--accent)"><circle cx="46" cy="96" r="3.6"/><circle cx="74" cy="58" r="3.6"/><circle cx="152" cy="52" r="3.6"/><circle cx="192" cy="84" r="3.6"/><circle cx="150" cy="106" r="3.6"/></g>'
-      + '<g stroke="var(--accent)" stroke-width="2.6" stroke-linecap="round" opacity=".85">'
-      + '<path d="M92 48V20M92 30c-7-2-11-7-12-14 7 0 12 3 14 9M92 34c7-3 11-8 12-15-7 0-12 3-14 9"/>'
-      + '<path d="M122 46V14M122 24c-7-2-11-7-12-14 7 0 12 3 14 9M122 28c7-3 11-8 12-15-7 0-12 3-14 9"/></g>'
-      + '<path d="M170 44c0-7-6-13-13-13s-13 6-13 13c0 9 13 21 13 21s13-12 13-21z" fill="var(--amber)"/>'
-      + '<circle cx="157" cy="43" r="4.6" fill="var(--surface)"/></svg></div>'
+    + '<div class="resume" id="resumecard" hidden></div>'
+    + '<div class="hero">' + roleArt(state.role) + '</div>'
     + '<div class="stack-sm"><p class="eyebrow">แบบทดสอบผู้ใช้ระบบ SSM</p>'
       + '<h1>วัดความพร้อมใช้งานจริง</h1>'
       + '<p class="lede">ไม่ใช่ข้อสอบท่องจำ — วัดว่าใช้งานได้ แก้ปัญหาเบื้องต้นเป็น และรู้ว่าเมื่อไรควรส่งต่อ</p></div>'
     + '<div class="facts">'
-      + '<div class="fact"><b class="mono">'+(state.role ? ITEMS().length : '—')+'</b><span>ข้อ</span></div>'
-      + '<div class="fact"><b class="mono">~30–35</b><span>นาที</span></div>'
+      + '<div class="fact"><b id="f-count">—</b><span>ข้อ</span></div>'
+      + '<div class="fact"><b>~30–35</b><span>นาที</span></div>'
       + '<div class="fact"><b>'+(state.roleFromQR?esc(roleTh()):'เลือกด้านล่าง')+'</b><span>'+(state.roleFromQR?'บทบาทจาก QR ✓':'QR ไม่ได้ส่งบทบาทมา')+'</span></div>'
-    + '</div><hr class="rule"><div class="stack-sm">'
+    + '</div>'
+    + '<div class="prep" id="imgprep" hidden></div>'
+    + '<div class="errbox" id="bankerr" hidden><p class="eyebrow">โหลดข้อสอบไม่สำเร็จ</p>'
+      + '<p>สัญญาณอาจไม่ดี ชื่อที่กรอกไว้ยังอยู่ ลองโหลดใหม่ได้เลย</p>'
+      + '<button type="button" class="btn" id="bankretry">ลองโหลดใหม่</button></div>'
+    + '<hr class="rule"><div class="stack-sm">'
     + '<div class="field"><label for="f-name">ชื่อ-นามสกุล</label>'
       + '<input id="f-name" autocomplete="name" placeholder="เช่น สมชาย ใจดี" value="'+esc(state.profile.name)+'"></div>'
     + '<div class="field"><label for="f-dept">หน่วยงาน</label><select id="f-dept"><option value="">เลือกหน่วยงาน</option>'
@@ -346,39 +1046,178 @@ function vRegister(){
     state.track = state.role ? ROLES[state.role].track : 'field';
     state.order = {}; state.answers = {};
     render();
+    warmRoleImages();
   };
+  document.getElementById('bankretry').onclick = function(){ BANK.tries = 0; loadBank(); refreshRegisterBits(); };
 
   foot.hidden = false;
-  foot.innerHTML = (hasDraft() ? '<button class="btn ghost" id="resume">ทำต่อ</button>' : '')
-                 + '<button class="btn" id="start">เริ่มทำข้อสอบ</button>';
+  foot.innerHTML = '<button class="btn" id="start">เริ่มทำข้อสอบ</button>';
+  // มีร่างค้างอยู่ -- เริ่มใหม่ต้องถามก่อน ไม่ทับเงียบ ๆ (D5)
   document.getElementById('start').onclick = function(){
-    state.screen='question'; state.idx=0;
-    state.startedAt = Date.now();
-    state.clientToken = uuid();
-    save(); render();
+    if (hasDraft()) askRestart(function(){ clearDraft(); beginNew(); });
+    else beginNew();
   };
+  refreshRegisterBits();
+}
+function beginNew(){
+  var keep = { name: state.profile.name, dept: state.profile.dept };
+  state.screen = 'intro'; state.idx = 0;
+  state.answers = {}; state.order = {};
+  state.introSeen = {}; state.milestones = {}; state.returnTo = null;
+  state.outbox = null; state.receipt = null; state.profile = keep;
+  state.startedAt = Date.now();
+  state.clientToken = uuid();
+  state.bankVersion = window.BANK_VERSION || '';
+  pushGuard();
+  save(); render();
+}
+/* การ์ดทำต่อ: บอกว่าเป็นของใคร บทบาทไหน ทำไปกี่ข้อ -- เครื่องเดียวอาจมีหลายคนใช้ */
+function paintResume(){
+  var el = document.getElementById('resumecard');
+  if (!el) return;
+  var d = readDraft();
+  if (!resumable(d)) { el.hidden = true; el.innerHTML = ''; return; }
+  var otherRole = draftOtherRole(d), otherBank = BANK.ready && draftFromOtherBank(d);
+  var items = (BANK.ready && d.role) ? (BANKDATA()[d.role] || []) : null;
+  var meta = ['ของ ' + ((d.profile && d.profile.name) || '—'), roleTh(d.role)];
+  if (items && !otherBank) meta.push('ทำไปแล้ว ' + countAnswered(d) + ' จาก ' + items.length + ' ข้อ');
+  if (d.savedAt) meta.push('บันทึกล่าสุด ' + hhmm(d.savedAt) + ' น.');
+  var note = otherBank ? 'ข้อสอบถูกปรับปรุงตั้งแต่ที่ทำค้างไว้ ต้องเริ่มใหม่'
+           : otherRole ? 'ข้อสอบที่ค้างไว้เป็นของบทบาท ' + roleTh(d.role) : '';
+  var canResume = !otherRole && !otherBank;
+  el.innerHTML = '<p class="resume-t">มีข้อสอบที่ทำค้างไว้</p>'
+    + '<p class="resume-m">' + esc(meta.join(' · ')) + '</p>'
+    + (note ? '<p class="resume-w">' + esc(note) + '</p>' : '')
+    + '<div class="resume-row">'
+    + (canResume ? '<button type="button" class="btn" id="resume"' + (BANK.ready ? '' : ' disabled') + '>ทำต่อ</button>' : '')
+    + '<button type="button" class="btn ghost" id="restart">เริ่มใหม่</button></div>';
+  el.hidden = false;
   var r = document.getElementById('resume');
-  if(r) r.onclick = function(){ if(load()) render(); };
-  updateStart();
+  if (r) r.onclick = function(){
+    if (load()) { pushGuard(); render(); warmRoleImages(); }
+    else paintResume();
+  };
+  document.getElementById('restart').onclick = function(){
+    askRestart(function(){ clearDraft(); paintResume(); updateStart(); });
+  };
 }
 function updateStart(){
   var b = document.getElementById('start');
-  if(b) b.disabled = !(state.profile.name.replace(/\s/g,'') && state.profile.dept && state.role);
+  if(b) b.disabled = !(BANK.ready && ITEMS().length && state.profile.name.replace(/\s/g,'') && state.profile.dept
+                      && state.role && !bankOutdated());
+}
+function refreshRegisterBits(){
+  var c = document.getElementById('f-count');
+  if (c) c.textContent = state.role ? (BANK.ready ? String(ITEMS().length) : '…') : '—';
+  var e = document.getElementById('bankerr'); if (e) e.hidden = !BANK.failed;
+  paintResume(); updateStart(); paintPrep();
+}
+function paintPrep(){
+  var el = document.getElementById('imgprep'); if (!el) return;
+  if (!BANK.ready) {
+    el.hidden = BANK.failed;
+    el.innerHTML = '<span class="prep-row"><span class="spin" aria-hidden="true"></span><span>กำลังโหลดข้อสอบ…</span></span>';
+    return;
+  }
+  if (!state.role || !prep.total) { el.hidden = true; return; }
+  el.hidden = false;
+  var done = prep.seen >= prep.total, failed = prep.seen - prep.ok;
+  el.innerHTML = '<span class="prep-row">' + (done ? (failed ? ICONS.wait : TICK) : '<span class="spin" aria-hidden="true"></span>')
+    + '<span>เตรียมภาพประกอบ ' + prep.ok + '/' + prep.total + '</span></span>'
+    + '<span class="prep-bar"><i style="width:' + Math.round(prep.seen / prep.total * 100) + '%"></i></span>'
+    + (done && failed ? '<span class="tiny">' + failed + ' ภาพยังโหลดไม่ได้ จะลองอีกครั้งเมื่อถึงข้อนั้น — เริ่มทำได้ตามปกติ</span>' : '');
+}
+
+function vIntro(){
+  var items = ITEMS(), it = items[state.idx], k = it.part;
+  var n = items.filter(function(x){ return x.part === k; }).length;
+  warm();                                    // เช็กรุ่นคลังข้อบนเซิร์ฟเวอร์ทุกต้นหมวด (throttle 60 วินาที)
+  view.innerHTML = '<div class="intro">'
+    + '<div class="intro-art">' + roleArt(state.role) + '<span class="intro-num" aria-hidden="true">' + k + '</span></div>'
+    + '<p class="eyebrow">หมวด ' + k + ' จาก ' + PART_TOTAL + '</p>'
+    + '<h1>' + esc(PARTS[k] || '') + '</h1>'
+    + '<p class="intro-n">' + n + ' ข้อ</p>'
+    + '<p class="lede">' + esc(CHEER[k] || '') + '</p></div>';
+  foot.hidden = false;
+  foot.innerHTML = (state.idx > 0 ? '<button class="btn ghost" id="prev">ย้อนกลับ</button>' : '')
+                 + '<button class="btn" id="begin">เริ่มหมวดนี้</button>';
+  document.getElementById('begin').onclick = function(){ state.introSeen[k] = true; state.screen = 'question'; save(); render(); };
+  var pv = document.getElementById('prev');
+  if (pv) pv.onclick = function(){ state.idx--; state.screen = 'question'; save(); render(); };
+  prefetchItem(it);
+}
+
+function listHtml(it, multi, picked){
+  return '<div class="opts" role="' + (multi ? 'group' : 'radiogroup') + '" aria-labelledby="stem">'
+    + it.options.map(function(o, i){
+        return '<button type="button" class="opt sel" data-i="' + i + '" aria-label="' + esc(o.t) + '" '
+          + 'role="' + (multi ? 'checkbox' : 'radio') + '" aria-checked="' + (picked.indexOf(i) >= 0) + '">'
+          + '<span class="box' + (multi ? '' : ' round') + '">' + CHECK + '</span>'
+          + '<span class="opt-text">' + esc(o.t) + '</span>'
+          + (o.ico && ICONS[o.ico] ? '<span class="opt-ico">' + ICONS[o.ico] + '</span>' : '')
+          + '</button>';
+      }).join('') + '</div>';
+}
+function cardsHtml(it, multi, picked){
+  return '<div class="cards" role="' + (multi ? 'group' : 'radiogroup') + '" aria-labelledby="stem">'
+    + it.options.map(function(o, i){
+        var L = LETTERS.charAt(i) || String(i + 1), im = safeImg(o.img);
+        var name = L + '. ' + (o.t || (im ? im.alt : ''));
+        return '<div class="card"><button type="button" class="card-sel sel' + (im ? '' : ' noimg') + '" data-i="' + i + '" '
+          + 'role="' + (multi ? 'checkbox' : 'radio') + '" aria-checked="' + (picked.indexOf(i) >= 0) + '" aria-label="' + esc(name) + '">'
+          + '<span class="card-head"><span class="card-letter" aria-hidden="true">' + L + '</span>'
+          + '<span class="card-tick" aria-hidden="true">' + CHECK + '</span></span>'
+          + (im ? pic(im, false, 'โหลดภาพไม่สำเร็จ · แตะ ↻ เพื่อลองใหม่') : '')
+          + (o.t ? '<span class="card-text">' + esc(o.t) + '</span>' : '')
+          + '</button>'
+          + (im ? '<button type="button" class="card-zoom" data-zoom="' + i + '" data-l="' + L + '" aria-label="ขยายภาพตัวเลือก ' + L + '">' + MAG + '</button>' : '')
+          + '</div>';
+      }).join('') + '</div>';
+}
+
+function focusFirst(it){
+  if (it.type === 'ordering') focusEl(view.querySelector('.ord [data-mv]:not([disabled])'));
+  else focusEl(view.querySelector('.sel'));
+}
+/* ปุ่มหลัก: aria-disabled (ไม่ใช่ disabled) เพื่อให้ยังโฟกัสได้ และกดแล้วบอกเหตุผลได้ */
+function paintNext(it){
+  var b = document.getElementById('next');
+  if (!b) return;
+  var ans = isAnswered(it), last = state.idx === ITEMS().length - 1;
+  if (state.returnTo === 'review') {
+    var k = missing().length;
+    b.textContent = k ? 'ไปข้อที่ยังขาดถัดไป · เหลือ ' + k : 'ครบแล้ว · กลับหน้าตรวจ';
+  } else {
+    b.textContent = last ? 'ตรวจก่อนส่ง' : 'ถัดไป';
+  }
+  if (ans) { b.removeAttribute('aria-disabled'); b.classList.remove('gated'); }
+  else { b.setAttribute('aria-disabled', 'true'); b.classList.add('gated'); }
 }
 
 function vQuestion(){
-  var it = ITEMS()[state.idx], body = '';
+  var items = ITEMS(), it = items[state.idx], body = '', who = whoRow(it), fix = state.returnTo === 'review';
   if(it.type==='case'){
-    body += '<div class="case"><p class="eyebrow">'+esc(it.caseTitle)+'</p><p>'+esc(it.caseText)+'</p></div>';
+    body += '<div class="case">' + who + '<p class="case-title">' + esc(it.caseTitle || '') + '</p>'
+          + '<p class="case-text">' + esc(String(it.caseText || '').trim()) + '</p></div>';
+  } else if (who) {
+    body += who;
   }
-  body += '<p class="stem">'+esc(it.stem)+'</p>';
+  var qim = safeImg(it.img);
+  if (qim) {
+    var lab = 'ภาพประกอบโจทย์' + (qim.alt ? ': ' + qim.alt : '') + ' · แตะเพื่อขยาย';
+    body += '<figure class="qfig"><button type="button" class="fig-btn" data-zoom="q" data-label="' + esc(lab) + '" aria-label="' + esc(lab) + '">'
+          + pic(qim, true) + '</button></figure>';
+  }
+  body += '<p class="stem" id="stem" tabindex="-1" aria-describedby="pcount">'+esc(it.stem)+'</p>';
   if(it.hint) body += '<p class="hint">'+esc(it.hint)+'</p>';
 
   if(it.type==='ordering'){
+    var fresh = !isPerm(state.order[it.id], orderItems(it).length);
     var labels = orderItems(it), seq = initOrder(it);
-    body += '<p class="hint">ลากที่ปุ่มจับด้านขวา หรือใช้ปุ่มลูกศร</p><ul class="ord">'
+    if (fresh) save();                              // เปิดข้อ = บันทึกลำดับที่เห็นเป็นคำตอบไว้ในร่างทันที
+    body += '<p class="hint">ลากที่ปุ่มจับด้านขวา หรือใช้ปุ่มลูกศรเพื่อจัดลำดับ · ลำดับที่เห็นตอนกด “ถัดไป” คือคำตอบ</p><ul class="ord" aria-labelledby="stem">'
       + seq.map(function(v,i){
-          return '<li data-v="'+v+'"><span class="rank mono">'+(i+1)+'</span>'
+          return '<li data-v="'+v+'"><span class="rank">'+(i+1)+'</span>'
             + '<span class="ord-text">'+esc(labels[v])+'</span><span class="nudge">'
             + '<button type="button" data-mv="up"'+(i===0?' disabled':'')+' aria-label="เลื่อน &quot;'+esc(labels[v])+'&quot; ขึ้น">'+UP+'</button>'
             + '<button type="button" data-mv="down"'+(i===seq.length-1?' disabled':'')+' aria-label="เลื่อน &quot;'+esc(labels[v])+'&quot; ลง">'+DOWN+'</button>'
@@ -386,22 +1225,16 @@ function vQuestion(){
         }).join('') + '</ul>';
   } else {
     var multi = it.type==='multiple', picked = state.answers[it.id] || [];
-    body += '<ul class="opts" role="'+(multi?'group':'radiogroup')+'">'
-      + it.options.map(function(o,i){
-          return '<li><button type="button" class="opt" data-i="'+i+'" aria-label="'+esc(o.t)+'" '
-            + 'role="'+(multi?'checkbox':'radio')+'" aria-checked="'+(picked.indexOf(i)>=0)+'">'
-            + '<span class="box'+(multi?'':' round')+'">'+CHECK+'</span>'
-            + '<span class="opt-text">'+esc(o.t)+'</span>'
-            + (o.ico ? '<span class="opt-ico">'+ICONS[o.ico]+'</span>' : '')
-            + '</button></li>';
-        }).join('') + '</ul>';
+    var withImg = (it.options || []).some(function(o){ return !!safeImg(o && o.img); });
+    body += withImg ? cardsHtml(it, multi, picked) : listHtml(it, multi, picked);
   }
 
   view.innerHTML = '<div class="stack">'+body+'</div>';
 
-  Array.prototype.forEach.call(view.querySelectorAll('.opt'), function(b){
+  // เลือกคำตอบไม่พาไปข้ออื่นเลย ไม่ว่าชนิดไหน (ไม่มี auto-advance)
+  Array.prototype.forEach.call(view.querySelectorAll('.sel'), function(b){
     b.onclick = function(){
-      var i = +b.dataset.i, cur = state.answers[it.id] || [];
+      var was = isAnswered(it), i = +b.dataset.i, cur = state.answers[it.id] || [];
       if(it.type==='multiple'){
         state.answers[it.id] = cur.indexOf(i)>=0
           ? cur.filter(function(x){ return x!==i; })
@@ -411,24 +1244,151 @@ function vQuestion(){
       }
       save();
       var sel = state.answers[it.id];
-      Array.prototype.forEach.call(view.querySelectorAll('.opt'), function(x){
+      Array.prototype.forEach.call(view.querySelectorAll('.sel'), function(x){
         x.setAttribute('aria-checked', sel.indexOf(+x.dataset.i)>=0);
       });
+      var now = isAnswered(it);
+      if (!was && now) say('ตอบข้อนี้แล้ว');
+      if (now) hideGate();
+      paintNext(it);
+      checkMilestones(false);
     };
   });
-  if(it.type==='ordering') wireOrdering(it);
+  // ปุ่มขยายภาพ (ภาพโจทย์ทั้งกรอบ · ภาพตัวเลือกเฉพาะปุ่มแว่นขยาย) -- ไม่แตะคำตอบ
+  Array.prototype.forEach.call(view.querySelectorAll('[data-zoom]'), function(b){
+    b.onclick = function(){
+      var p = b.dataset.zoom === 'q' ? b.querySelector('.pic') : b.parentNode.querySelector('.pic');
+      if (!p || p.classList.contains('retrying')) return;
+      if (p.classList.contains('err')) retryPic(p); else openZoom(p, b);
+    };
+  });
+  if(it.type==='ordering'){ wireOrdering(it); }
 
   foot.hidden = false;
-  var last = state.idx===ITEMS().length-1;
-  foot.innerHTML = '<button class="btn ghost" id="prev"'+(state.idx===0?' disabled':'')+'>ย้อนกลับ</button>'
-    + '<span class="saved">'+TICK+' บันทึกร่างแล้ว</span>'
-    + '<button class="btn" id="next" style="flex:0 0 auto;min-width:118px">'+(last?'ตรวจก่อนส่ง':'ถัดไป')+'</button>';
-  document.getElementById('prev').onclick = function(){ state.idx--; save(); render(); };
+  var last = state.idx===items.length-1;
+  foot.innerHTML = (fix
+      ? '<button class="btn ghost" id="toreview">หน้าตรวจ</button>'
+      : '<button class="btn ghost" id="prev"'+(state.idx===0?' disabled':'')+'>ย้อนกลับ</button>'
+        + '<span class="saved" id="saved"></span>')
+    + '<button class="btn next" id="next" aria-describedby="gatemsg"></button>';
+  paintSaved();
+  paintNext(it);
+  if (fix) {
+    document.getElementById('toreview').onclick = function(){ state.returnTo = null; state.screen = 'review'; save(); render(); };
+  } else {
+    document.getElementById('prev').onclick = function(){ state.idx--; save(); render(); };
+  }
   document.getElementById('next').onclick = function(){
-    if(last){ state.screen='review'; } else { state.idx++; }
+    if (it.type === 'ordering') { commitOrder(it); checkMilestones(false); }   // กดถัดไป = ยืนยันลำดับที่เห็น
+    if (!isAnswered(it)) { showGate(); focusFirst(it); return; }     // ไม่มีข้าม (OD-1)
+    if (state.returnTo === 'review') {
+      var m = missing();
+      if (!m.length) { state.returnTo = null; state.screen = 'review'; }
+      else {
+        var after = m.filter(function(i){ return i > state.idx; });
+        state.idx = after.length ? after[0] : m[0];
+      }
+      save(); render(); return;
+    }
+    if(last){ state.screen='review'; }
+    else {
+      state.idx++;
+      var np = ITEMS()[state.idx].part;
+      if (np !== it.part && !state.introSeen[np]) state.screen = 'intro';
+    }
     save(); render();
   };
+  focusEl(document.getElementById('stem'), true);
+  prefetchItem(items[state.idx + 1]);
 }
+
+/* ---- สถานะภาพในหน้าจอ: ดักที่ view แบบ capture จึงไม่พลาดแม้ภาพโหลดเสร็จก่อนผูก handler ---- */
+function onPicEvent(e){
+  var img = e.target;
+  if (!img || img.tagName !== 'IMG') return;
+  var p = img.parentNode;
+  if (!p || !p.classList || !p.classList.contains('pic')) return;
+  var ok = e.type === 'load', msg = p.querySelector('.pic-err span');
+  IMG[p.dataset.src] = ok ? 'ok' : 'err';
+  p.classList.remove('retrying');
+  if (msg) msg.textContent = msg.getAttribute('data-msg');
+  if (ok) p.classList.remove('err'); else p.classList.add('err');
+  var card = p.closest ? p.closest('.card') : null;
+  if (card) {
+    var z = card.querySelector('.card-zoom');
+    if (z) { z.innerHTML = ok ? MAG : RETRY; z.setAttribute('aria-label', (ok ? 'ขยายภาพตัวเลือก ' : 'โหลดภาพตัวเลือกใหม่ ') + z.dataset.l); }
+    return;
+  }
+  var fb = p.closest ? p.closest('.fig-btn') : null;
+  if (fb) fb.setAttribute('aria-label', ok ? fb.dataset.label : 'โหลดภาพไม่สำเร็จ แตะเพื่อลองใหม่');
+}
+view.addEventListener('load', onPicEvent, true);
+view.addEventListener('error', onPicEvent, true);
+function retryPic(p){
+  var img = p.querySelector('img'), msg = p.querySelector('.pic-err span');
+  if (p.classList.contains('retrying')) return;
+  p.classList.remove('err');
+  p.classList.add('retrying');                    // ระหว่างรอ: ไอคอนหมุน + ข้อความ ไม่ปล่อยเป็นกล่องว่าง
+  if (msg) msg.textContent = 'กำลังโหลดภาพใหม่…';
+  IMG[p.dataset.src] = 'load';
+  img.src = bust(p.dataset.src);
+}
+
+/* ---- ภาพขยายเต็มจอ: <dialog> + pushState ให้ปุ่มย้อนกลับของ Android ปิดภาพ ไม่ใช่ออกจากข้อสอบ ---- */
+var zoom = document.getElementById('zoom'), zimg = document.getElementById('zimg'), zcap = document.getElementById('zcap'),
+    zclose = document.getElementById('zclose'), zstage = document.getElementById('zstage'), zerr = document.getElementById('zerr');
+var zoomPushed = false, zoomTrigger = null;
+function zoomIsOpen(){ return zoom.hasAttribute('open'); }
+function openZoom(p, trigger){
+  var img = p.querySelector('img');
+  zerr.hidden = true;
+  zstage.classList.remove('actual');
+  zimg.alt = p.dataset.alt || '';
+  zcap.textContent = p.dataset.alt || '';
+  zimg.src = img.currentSrc || img.src;
+  zoomTrigger = trigger || null;
+  if (typeof zoom.showModal === 'function') zoom.showModal(); else zoom.setAttribute('open', '');
+  try { history.pushState({ ssmZoom: 1 }, ''); zoomPushed = true; } catch (e) { zoomPushed = false; }
+  zstage.scrollTop = 0; zstage.scrollLeft = 0;
+  zclose.focus();
+}
+function closeZoom(){
+  if (!zoomIsOpen()) return;
+  if (typeof zoom.close === 'function') zoom.close();
+  else { zoom.removeAttribute('open'); onZoomClosed(); }
+}
+function onZoomClosed(){
+  var t = zoomTrigger; zoomTrigger = null;
+  if (zoomPushed) {
+    zoomPushed = false; selfPop = true;
+    clearTimeout(selfPopTimer); selfPopTimer = setTimeout(function(){ selfPop = false; }, 800);
+    try { history.back(); } catch (e) { selfPop = false; }
+  }
+  resetPinch();
+  if (t && document.body.contains(t)) { try { t.focus({ preventScroll: true }); } catch (e) { t.focus(); } }
+}
+/* ซูมด้วยสองนิ้วค้างไว้หลังปิดภาพ -- บีบ maximum-scale ชั่วครู่ให้เบราว์เซอร์คืนขนาดปกติ */
+function resetPinch(){
+  var m = document.querySelector('meta[name="viewport"]');
+  if (!m || !window.visualViewport || window.visualViewport.scale <= 1.01) return;
+  var c = m.getAttribute('content');
+  m.setAttribute('content', c + ', maximum-scale=1');
+  setTimeout(function(){ m.setAttribute('content', c); }, 300);
+}
+zoom.addEventListener('close', onZoomClosed);
+window.addEventListener('popstate', function(){
+  if (selfPop) { selfPop = false; clearTimeout(selfPopTimer); return; }   // เราย้อนเองตอนปิดภาพ -- ไม่ใช่ผู้สอบกดย้อน
+  if (zoomIsOpen()) { zoomPushed = false; closeZoom(); return; }
+  if (askEl.hasAttribute('open')) { askCb = null; askEl.close(); if (GUARDED[state.screen]) { guardOn = false; pushGuard(); } return; }
+  guardOn = !!(history.state && history.state.ssm === 'guard');
+  if (guardOn) return;
+  onBack();
+});
+zclose.onclick = closeZoom;
+zstage.onclick = function(e){ if (e.target === zimg) zstage.classList.toggle('actual'); };
+zimg.onload = function(){ zerr.hidden = true; };
+zimg.onerror = function(){ if (zimg.getAttribute('src')) zerr.hidden = false; };
+zerr.onclick = function(){ zerr.hidden = true; zimg.src = bust(zimg.src.replace(/[?&]r=\d+$/, '')); };
 
 /* ---- การจัดลำดับ ---- */
 var drag = null;
@@ -486,54 +1446,69 @@ function endDrag(){
 window.addEventListener('pointerup', endDrag);
 window.addEventListener('pointercancel', endDrag);
 
+/* ---- หน้าตรวจ: ส่งได้เมื่อตอบครบทุกข้อเท่านั้น ---- */
 function vReview(){
-  var items = ITEMS(), done = items.filter(answered).length, todo = items.length-done;
+  state.returnTo = null;                       // ถึงหน้าตรวจแล้ว -- ออกจากโหมดแก้ข้อที่ขาด
+  var items = ITEMS(), miss = missing(), m = miss.length, n = items.length;
+  var groups = partStats().map(function(p){
+    return '<section class="grp"><h2 class="grp-h">' + esc(partLabel(p.k)) + '<span>' + p.done + '/' + p.idx.length + '</span></h2>'
+      + '<ul class="grid">' + p.idx.map(function(i){
+          var a = isAnswered(items[i]);
+          return '<li><button type="button" class="cell '+(a?'done':'todo')+'" data-i="'+i+'" '
+            + 'aria-label="ข้อ '+(i+1)+' '+(a?'ตอบแล้ว':'ยังไม่ได้ตอบ')+'">'
+            + '<b>'+(i+1)+'</b><span aria-hidden="true">'+(a?'✓':'!')+'</span></button></li>';
+        }).join('') + '</ul></section>';
+  }).join('');
+  var status = m
+    ? '<div class="missbox" role="alert"><b>ยังตอบไม่ครบ · เหลือ ' + m + ' ข้อ</b><p>ต้องตอบครบทุกข้อก่อน จึงจะส่งคำตอบได้</p></div>'
+      + '<div class="misslist">' + miss.map(function(i){
+          var it = items[i], why = reasonOf(it);
+          return '<button type="button" class="miss" data-i="' + i + '" aria-label="ข้อ ' + (i+1) + ' ' + esc(why) + '">'
+            + 'ข้อ ' + (i+1) + ' · หมวด ' + it.part + ' · ' + esc(why) + '</button>';
+        }).join('') + '</div>'
+    : '<div class="tally"><div class="ok"><b>ตอบครบทั้ง ' + n + ' ข้อแล้ว</b><span>ตรวจทานได้โดยแตะหมายเลขข้อ</span></div></div>';
   view.innerHTML = '<div class="stack"><div class="stack-sm">'
-    + '<p class="eyebrow">ขั้นสุดท้าย</p><h1>ตรวจก่อนส่งคำตอบ</h1>'
-    + '<p class="lede">แตะหมายเลขข้อเพื่อกลับไปแก้ไข</p></div>'
-    + '<div class="tally"><div class="ok"><b class="mono">'+done+'</b><span>ตอบแล้ว</span></div>'
-    + '<div class="'+(todo?'no':'')+'"><b class="mono">'+todo+'</b><span>ยังไม่ได้ตอบ</span></div></div>'
-    + '<ul class="grid">'+items.map(function(it,i){
-        return '<li><button type="button" class="cell '+(answered(it)?'done':'todo')+'" data-i="'+i+'" '
-          + 'aria-label="ข้อ '+(i+1)+' '+(answered(it)?'ตอบแล้ว':'ยังไม่ได้ตอบ')+'">'
-          + '<b class="mono">'+(i+1)+'</b><span style="font-size:11px">'+(answered(it)?'✓':'!')+'</span></button></li>';
-      }).join('')+'</ul>'
-    + (todo ? '<p class="tiny" style="color:var(--amber);font-weight:600">ยังเหลือ '+todo+' ข้อที่ยังไม่ได้ตอบ ข้อที่ไม่ตอบจะได้ 0 คะแนน</p>' : '')
+    + '<p class="eyebrow">ขั้นสุดท้าย</p><h1 id="rh1" tabindex="-1">ตรวจก่อนส่งคำตอบ</h1></div>'
+    + status + groups
     + '<hr class="rule"><p class="tiny">เมื่อส่งแล้วจะไม่สามารถกลับมาแก้ไขได้</p></div>';
 
-  Array.prototype.forEach.call(view.querySelectorAll('.cell'), function(b){
-    b.onclick = function(){ state.idx=+b.dataset.i; state.screen='question'; save(); render(); };
+  function jump(i){ state.idx = i; state.returnTo = 'review'; state.screen = 'question'; save(); render(); }
+  Array.prototype.forEach.call(view.querySelectorAll('.cell, .miss'), function(b){
+    b.onclick = function(){ jump(+b.dataset.i); };
   });
   foot.hidden = false;
-  foot.innerHTML = '<button class="btn ghost" id="back">กลับไปตรวจ</button>'
-                 + '<button class="btn" id="submit">ยืนยันส่งคำตอบ</button>';
-  document.getElementById('back').onclick = function(){ state.idx=0; state.screen='question'; save(); render(); };
-  document.getElementById('submit').onclick = function(){ state.screen='confirm'; render(); };
+  // ยังขาดอยู่ = ไม่มีปุ่มส่งใน DOM เลย ไม่ใช่แค่ปุ่มจาง
+  foot.innerHTML = '<button class="btn ghost" id="first">ดูตั้งแต่ข้อแรก</button>'
+    + (m ? '<button class="btn" id="fix">ไปทำข้อที่ยังขาด (' + m + ')</button>'
+         : '<button class="btn" id="submit">ส่งคำตอบ</button>');
+  document.getElementById('first').onclick = function(){ state.idx = 0; state.returnTo = null; state.screen = 'question'; save(); render(); };
+  if (m) document.getElementById('fix').onclick = function(){ jump(miss[0]); };
+  else document.getElementById('submit').onclick = function(){ state.screen = 'confirm'; render(); };
+  save();
+  focusEl(document.getElementById('rh1'));
 }
 
 function vConfirm(){
-  var todo = ITEMS().length - ITEMS().filter(answered).length;
+  if (missing().length) { state.screen = 'review'; render(); return; }      // ด่านซ้ำที่หน้ายืนยัน
   view.innerHTML = '<div class="stack" style="padding-top:26px">'
     + '<div class="hero"><svg viewBox="0 0 96 96" width="88" height="88" role="img" aria-label="ไอคอนยืนยันการส่ง">'
     + '<circle cx="48" cy="48" r="40" fill="var(--amber-soft)" stroke="var(--amber)" stroke-width="2.5"/>'
     + '<path d="M48 28v26" stroke="var(--amber)" stroke-width="6" stroke-linecap="round"/>'
     + '<circle cx="48" cy="66" r="4" fill="var(--amber)"/></svg></div>'
-    + '<div class="stack-sm" style="text-align:center"><h1>ยืนยันส่งคำตอบ</h1>'
-    + '<p class="lede">เมื่อส่งแล้วจะไม่สามารถกลับมาแก้ไขคำตอบได้</p></div>'
-    + (todo ? '<div class="tally"><div class="no" style="text-align:center"><b class="mono">'+todo+'</b>'
-              + '<span>ข้อที่ยังไม่ได้ตอบ จะได้ 0 คะแนน</span></div></div>' : '')
-    + '</div>';
+    + '<div class="stack-sm center"><h1>ยืนยันส่งคำตอบ</h1>'
+    + '<p class="lede">เมื่อส่งแล้วจะไม่สามารถกลับมาแก้ไขคำตอบได้</p></div></div>';
   foot.hidden = false;
   foot.innerHTML = '<button class="btn ghost" id="back2">กลับไปตรวจ</button>'
                  + '<button class="btn" id="go">ยืนยันส่ง</button>';
   document.getElementById('back2').onclick = function(){ state.screen='review'; render(); };
-  document.getElementById('go').onclick = function(){ submit(1); };
+  document.getElementById('go').onclick = function(){ queueSubmit(); };
 }
 
-/* ---- ส่งคำตอบ พร้อม retry แบบถอยหลังเพิ่มทีละเท่าตัว ---- */
+/* ---- payload -- สร้างครั้งเดียวตอนกดยืนยันส่ง แล้วแช่แข็งไว้ใน outbox (submittedAt/clientToken ไม่เปลี่ยนอีก · D4) ---- */
 function payload(){
   return {
     clientToken: state.clientToken,
+    bankVersion: state.bankVersion || window.BANK_VERSION || '',
     role: state.role, session: state.session, track: state.track,
     name: state.profile.name, department: state.profile.dept,
     startedAt: state.startedAt, submittedAt: Date.now(),
@@ -547,130 +1522,372 @@ function payload(){
   };
 }
 /*
- * Apps Script ที่ว่างงานอยู่ต้อง "ตื่น" ก่อน (cold start) ครั้งแรกหลังดีพลอยหรือหลังเงียบไปนาน
- * วัดจริง 2026-09-18: คำขอแรกค้าง 42 วินาทีแล้วได้หน้า HTML แทน JSON คำขอถัดไป ~1.2 วินาที
+ * ส่งจนกว่าจะสำเร็จ -- ไม่มีเพดานจำนวนครั้ง (D2)
  *
- * วิธีรับมือสามชั้น:
- * 1. warm() ปลุกเซิร์ฟเวอร์ล่วงหน้าด้วย GET ที่ไม่แตะชีต -- ตอนเปิดหน้า และตอนถึงหน้าตรวจก่อนส่ง
- *    ผู้สอบจึงไม่ใช่คนที่ต้องจ่ายค่า cold start ตอนกดส่ง
- * 2. ตัดคำขอที่ค้างเกิน SEND_TIMEOUT_MS -- ไม่ปล่อยให้หน้าจอหมุนไม่รู้จบ
- * 3. ลองใหม่ได้ SEND_MAX_ATTEMPTS ครั้งแบบถอยห่างขึ้น ซึ่งปลอดภัยเพราะเซิร์ฟเวอร์กันบันทึกซ้ำด้วย clientToken
- *    คำขอที่ถูกตัดฝั่ง client อาจบันทึกสำเร็จฝั่งเซิร์ฟเวอร์ไปแล้ว ครั้งถัดไปจะได้ใบเสร็จเดิมกลับมา ไม่ใช่แถวใหม่
+ * Apps Script ที่ว่างงานต้อง "ตื่น" ก่อน (cold start วัดจริง 42 วินาที 2026-09-18) และรอล็อกได้ 30 วินาที
+ * 1. warm() ปลุกเซิร์ฟเวอร์ล่วงหน้าด้วย GET ที่ไม่แตะชีต -- ตอนเปิดหน้า ต้นหมวด และหน้าตรวจ (อ่าน bank_version ไปด้วย)
+ * 2. คำขอหนึ่งครั้งรอได้ SEND_TIMEOUT_MS (45 วินาที > ล็อก 30 วินาที)
+ * 3. ล้มแล้วเว้น 2 → 4 → 8 → 15 → 30 → 30 … วินาที (±20%) ไม่หยุด ปลอดภัยเพราะเซิร์ฟเวอร์กันซ้ำด้วย clientToken
+ *    คำขอที่หมดเวลาฝั่ง client อาจบันทึกสำเร็จฝั่งเซิร์ฟเวอร์แล้ว ครั้งถัดไปจะได้ใบรับเดิม ไม่ใช่แถวใหม่
+ * 4. outbox อยู่ใน localStorage ก่อนยิงครั้งแรก -- ปิดหน้า/รีโหลดแล้วสแกน QR เดิม ระบบส่งต่อเอง (D3)
+ * ออกจากวงนี้ได้สองทางเท่านั้น: สำเร็จ หรือเซิร์ฟเวอร์ตอบ BANK_VERSION (ลองซ้ำไม่มีวันช่วย)
+ * จัดประเภทจากสัญญาณของ transport/เซิร์ฟเวอร์เท่านั้น ไม่อ่านข้อความ error
  */
-var SEND_TIMEOUT_MS   = 35000;
-var SEND_MAX_ATTEMPTS = 5;
-var SEND_BACKOFF_MS   = [2000, 4000, 8000, 8000];
-var WARM_EVERY_MS     = 60000;
-var lastWarm = 0;
+var QS = new URLSearchParams(location.search);
+var FAST = FIXTURE && QS.get('fastretry') === '1';       // เฉพาะชุดทดสอบ: หน่วงเวลา /20 และหมดเวลา 2 วินาที
+var SEND_TIMEOUT_MS = FAST ? 2000 : 45000;
+var RETRY_DELAYS_MS = [2000, 4000, 8000, 15000, 30000];  // หลังจากนั้น 30 วินาทีไปเรื่อย ๆ
+var SAFETY_POLL_MS  = 60000;
+var WARM_EVERY_MS   = 60000;
+var lastWarm = 0, SRV_BANK = null;
+var SEND = { inflight:false, timer:null, tick:null, safety:null, nextAt:0, kind:'sending', lastTitle:'', footFor:'' };
+
+/* จุดเดียวที่คุยกับ ENDPOINT -- โหมดทดสอบใช้ตัวจำลองจาก fixture และไม่มีทางยิงออกไปจริง */
+function net(url, opts){
+  if (FIXTURE) {
+    return typeof window.FIXTURE_FETCH === 'function'
+      ? window.FIXTURE_FETCH(url, opts)
+      : Promise.reject(new Error('โหมดทดสอบ: ไม่มีตัวจำลองการส่ง'));
+  }
+  return fetch(url, opts);
+}
 
 function warm(){
   if (ENDPOINT.indexOf('PASTE_') === 0) return;
   var now = Date.now();
   if (now - lastWarm < WARM_EVERY_MS) return;
   lastWarm = now;
-  fetch(ENDPOINT + '?action=warm', { method: 'GET', cache: 'no-store' }).catch(function(){});
-}
-
-function fetchWithTimeout(url, opts, ms){
-  if (typeof AbortController === 'undefined') return fetch(url, opts);
-  var ctl = new AbortController();
-  var timer = setTimeout(function(){ ctl.abort(); }, ms);
-  opts.signal = ctl.signal;
-  return fetch(url, opts).then(
-    function(r){ clearTimeout(timer); return r; },
-    function(e){
-      clearTimeout(timer);
-      throw (e && e.name === 'AbortError') ? new Error('เซิร์ฟเวอร์ไม่ตอบภายใน ' + Math.round(ms/1000) + ' วินาที') : e;
-    });
-}
-
-function submit(attempt){
-  state.screen='sending'; state.sendAttempt=attempt; render();
-
-  // ห้ามตั้ง Content-Type เอง -- การตั้งจะทำให้เบราว์เซอร์ยิง preflight OPTIONS ก่อน
-  // ซึ่ง Apps Script ตอบไม่ได้ คำขอจะถูกบล็อกทั้งที่ฝั่งเซิร์ฟเวอร์ไม่มีอะไรผิด
-  // ปล่อยให้ body เป็นสตริง แล้วเบราว์เซอร์จะใช้ text/plain ซึ่งเป็น simple request
-  fetchWithTimeout(ENDPOINT, { method: 'POST', body: JSON.stringify(payload()) }, SEND_TIMEOUT_MS)
-    .then(function(r){
-      if(!r.ok) throw new Error('เซิร์ฟเวอร์ตอบ ' + r.status);
-      // ตอน cold start Apps Script อาจตอบ 200 เป็นหน้า HTML -- r.json() จะพังด้วยข้อความที่ผู้สอบอ่านไม่รู้เรื่อง
-      return r.text().then(function(t){
-        try { return JSON.parse(t); }
-        catch(e){ throw new Error('เซิร์ฟเวอร์ยังไม่พร้อม'); }
-      });
-    })
-    .then(function(res){
-      if(!res || !res.ok) throw new Error((res && res.error) || 'ส่งไม่สำเร็จ');
-      state.receipt = res; state.screen='submitted'; clearDraft(); render();
-    })
-    .catch(function(err){
-      if(attempt < SEND_MAX_ATTEMPTS){
-        setTimeout(function(){ submit(attempt+1); }, SEND_BACKOFF_MS[Math.min(attempt-1, SEND_BACKOFF_MS.length-1)]);
-      } else {
-        state.sendError = (err && err.message) ? err.message : 'ส่งไม่สำเร็จ';
-        state.screen='failed'; render();
+  net(ENDPOINT + '?action=warm', { method: 'GET', cache: 'no-store' })
+    .then(function(r){ return (r && r.ok) ? r.text() : ''; })
+    .then(function(t){
+      var j; try { j = JSON.parse(t); } catch (e) { return; }      // cold start ตอบเป็น HTML -- ไม่มีข้อมูลก็ไม่ทำอะไร
+      if (j && typeof j.bank_version === 'string' && j.bank_version) {
+        SRV_BANK = j.bank_version;
+        paintStrip(); updateStart();
       }
-    });
+    })
+    .catch(function(){});
 }
+
+/* ยิงหนึ่งครั้ง คืนผลเป็นประเภทเสมอ (ไม่ reject) -- หมดเวลานับรวมการอ่าน body ด้วย */
+function postOnce(body, ms){
+  return new Promise(function(resolve){
+    var done = false, ctl = (typeof AbortController !== 'undefined') ? new AbortController() : null, timer;
+    function fin(o){ if (done) return; done = true; clearTimeout(timer); resolve(o); }
+    function failKind(e){ return (e && e.name === 'AbortError') ? 'slow' : (navigator.onLine === false ? 'offline' : 'net'); }
+    timer = setTimeout(function(){ if (ctl) { try { ctl.abort(); } catch (e) {} } fin({ kind: 'slow' }); }, ms);
+    // ห้ามตั้ง Content-Type เอง -- จะกลายเป็น preflight OPTIONS ที่ Apps Script ตอบไม่ได้ (body สตริง = text/plain = simple request)
+    var opts = { method: 'POST', body: body };
+    if (ctl) opts.signal = ctl.signal;
+    var p;
+    try { p = net(ENDPOINT, opts); } catch (e) { fin({ kind: failKind(e) }); return; }
+    p.then(function(r){
+      if (!r || !r.ok) { fin({ kind: 'server' }); return; }
+      return r.text().then(function(t){
+        var j;
+        try { j = JSON.parse(t); } catch (e) { fin({ kind: 'server' }); return; }   // 200 แต่เป็น HTML (cold start)
+        if (j && j.ok === true) fin({ kind: 'ok', res: j });
+        else if (j && j.code === 'BANK_VERSION') fin({ kind: 'bank', res: j });
+        else fin({ kind: 'busy' });                                                // BUSY และ ok:false อื่นทั้งหมด -- ลองใหม่
+      });
+    }).catch(function(e){ fin({ kind: failKind(e) }); });
+  });
+}
+
+/* ชื่อเดิมยังใช้ได้ -- ทุกทางเข้าผ่านด่าน missing() เดียวกัน */
+function submit(){ queueSubmit(); }
+function queueSubmit(){
+  if (state.outbox) {                           // มี outbox แล้ว = ห้ามสร้าง token/submittedAt ใหม่ แค่ส่งต่อ
+    if (state.screen !== 'sending') { state.screen = 'sending'; render(); }
+    kick('user');
+    return;
+  }
+  if (!BANK.ready || !ITEMS().length || missing().length) {   // ด่านที่ข้อมูล: ยังไม่ครบ = ไม่มี POST
+    state.screen = 'review'; save(); render();
+    return;
+  }
+  state.outbox = { payload: payload(), queuedAt: Date.now(), attempts: 0, lastAt: null };
+  state.screen = 'sending';
+  save();                                       // เก็บลงเครื่องก่อนยิงครั้งแรกเสมอ
+  render();
+  kick('initial');
+}
+function kick(why){
+  var ob = state.outbox;
+  if (!ob || ob.terminal || SEND.inflight) return;           // ส่งได้ทีละคำขอเดียว
+  clearTimeout(SEND.timer); SEND.timer = null; SEND.nextAt = 0; stopTick();
+  if (navigator.onLine === false && why !== 'user' && why !== 'poll') {
+    SEND.kind = 'offline'; paintSending(); armSafety();
+    return;
+  }
+  attemptSend();
+}
+function armSafety(){ clearTimeout(SEND.safety); SEND.safety = setTimeout(function(){ kick('poll'); }, SAFETY_POLL_MS); }
+function attemptSend(){
+  var ob = state.outbox;
+  SEND.inflight = true;
+  clearTimeout(SEND.safety);
+  ob.attempts = (ob.attempts || 0) + 1;
+  ob.lastAt = Date.now();
+  save();
+  SEND.kind = 'sending';
+  paintSending();
+  postOnce(JSON.stringify(ob.payload), SEND_TIMEOUT_MS).then(function(o){
+    SEND.inflight = false;
+    onOutcome(o);
+  });
+}
+function onOutcome(o){
+  if (!state.outbox) return;
+  if (o.kind === 'ok') { sendDone(o.res); return; }
+  if (o.kind === 'bank') {                     // จบ -- ไม่ลองซ้ำ แต่ไม่ลบ outbox เอง (ผู้สอบกดโหลดรุ่นใหม่เอง)
+    state.outbox.terminal = true; save();
+    SEND.kind = 'terminal'; paintSending();
+    return;
+  }
+  if (o.kind === 'offline') { SEND.kind = 'offline'; paintSending(); armSafety(); return; }
+  var n = state.outbox.attempts, base = RETRY_DELAYS_MS[Math.min(n - 1, RETRY_DELAYS_MS.length - 1)];
+  var ms = Math.round(base * (0.8 + Math.random() * 0.4) / (FAST ? 20 : 1));
+  SEND.kind = o.kind;
+  SEND.nextAt = Date.now() + ms;
+  SEND.timer = setTimeout(function(){ SEND.timer = null; kick('timer'); }, ms);
+  paintSending();
+  stopTick();
+  SEND.tick = setInterval(paintCountdown, 1000);
+}
+function stopTick(){ if (SEND.tick) { clearInterval(SEND.tick); SEND.tick = null; } }
+function secsLeft(){ return Math.max(0, Math.ceil((SEND.nextAt - Date.now()) / 1000)); }
+function paintCountdown(){ var el = document.getElementById('scount'); if (el) el.textContent = String(secsLeft()); }
+function sendDone(res){
+  var p = state.outbox.payload;
+  var rc = { attemptId: res.attemptId || '', submittedAt: res.submittedAt || '', name: p.name, dept: p.department,
+             role: p.role, session: p.session, clientToken: p.clientToken,
+             answeredCount: res.answeredCount, totalItems: res.totalItems, duplicate: !!res.duplicate };
+  try { localStorage.setItem(RECEIPT_KEY, JSON.stringify(rc)); } catch (e) {}   // ใบรับก่อน แล้วค่อยลบร่าง
+  clearTimeout(SEND.timer); clearTimeout(SEND.safety); stopTick();
+  clearDraft();
+  state.outbox = null; state.receipt = rc; state.still = false; state.screen = 'submitted';
+  render();
+}
+function refCode(){
+  var t = String((state.outbox && state.outbox.payload && state.outbox.payload.clientToken) || state.clientToken || '')
+            .replace(/-/g, '').slice(0, 8).toUpperCase();
+  return t.slice(0, 4) + '-' + t.slice(4);
+}
+
+var SEND_COPY = {
+  net:      ['ยังส่งไม่ถึงระบบ', 'สัญญาณอาจไม่ดี ระบบจะลองส่งอีกครั้งใน {s} วินาที'],
+  slow:     ['ระบบตอบช้า', 'ระบบอาจกำลังเริ่มทำงาน จะลองส่งอีกครั้งใน {s} วินาที'],
+  busy:     ['ระบบยังรับคำตอบไม่ได้', 'อาจมีหลายคนส่งพร้อมกัน จะลองส่งอีกครั้งใน {s} วินาที'],
+  server:   ['ระบบยังรับคำตอบไม่ได้', 'อาจมีหลายคนส่งพร้อมกัน จะลองส่งอีกครั้งใน {s} วินาที'],
+  offline:  ['ไม่มีสัญญาณอินเทอร์เน็ต', 'ระบบจะส่งให้เองทันทีที่มีสัญญาณ ไม่ต้องทำข้อสอบใหม่'],
+  terminal: ['ชุดข้อสอบถูกปรับปรุงแล้ว', 'คำตอบชุดนี้ส่งไม่ได้ เพราะข้อสอบในระบบเป็นรุ่นใหม่กว่าที่เปิดไว้ ต้องโหลดหน้าใหม่และทำอีกครั้ง · แจ้งผู้สอนให้ทราบด้วย']
+};
+var ICO_WAIT = '<svg viewBox="0 0 48 48" width="44" height="44" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" aria-hidden="true"><circle cx="24" cy="24" r="18"/><path d="M24 14v11l7 4"/></svg>';
+var ICO_OFF  = '<svg viewBox="0 0 48 48" width="44" height="44" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" aria-hidden="true"><path d="M6 18a26 26 0 0136 0M12 25a17 17 0 0124 0M18 32a8 8 0 0112 0"/><circle cx="24" cy="38" r="2" fill="currentColor"/><path d="M8 8l32 32"/></svg>';
+var ICO_BANK = '<svg viewBox="0 0 48 48" width="44" height="44" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M40 24a16 16 0 11-4.7-11.3"/><path d="M40 8v9h-9"/></svg>';
 
 function vSending(){
-  view.innerHTML = '<div class="stack" style="align-items:center;padding-top:56px;text-align:center">'
-    + '<svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="var(--accent)" stroke-width="2.2" stroke-linecap="round">'
-    + '<circle cx="12" cy="12" r="9" opacity=".22"/><path d="M21 12a9 9 0 00-9-9">'
-    + '<animateTransform attributeName="transform" type="rotate" from="0 12 12" to="360 12 12" dur="1s" repeatCount="indefinite"/>'
-    + '</path></svg><h2>กำลังส่งคำตอบ</h2>'
-    + '<p class="tiny" style="max-width:34ch">'
-    + (state.sendAttempt>1
-        ? 'เซิร์ฟเวอร์กำลังเริ่มทำงาน หรือสัญญาณไม่ดี — กำลังลองใหม่ครั้งที่ '+state.sendAttempt+' จาก '+SEND_MAX_ATTEMPTS
-          + '<br>อาจใช้เวลาถึง 1 นาที ไม่ต้องกดอะไร คำตอบยังอยู่ครบ และจะไม่ถูกบันทึกซ้ำ'
-        : 'การตรวจเฉลยเกิดขึ้นฝั่งเซิร์ฟเวอร์')
-    + '</p></div>';
+  SEND.lastTitle = ''; SEND.footFor = '';
+  view.innerHTML = '<div class="stack send">'
+    + '<div class="send-ico" id="sico"></div>'
+    + '<h1 id="sh1" tabindex="-1"></h1>'
+    + '<p class="lede" id="sbody"></p>'
+    + '<div class="send-card" id="scard">'
+    +   '<p>' + TICK + '<span id="sline1"></span></p>'
+    +   '<p>' + TICK + '<span>ลองส่งซ้ำได้อย่างปลอดภัย ระบบไม่บันทึกซ้ำ</span></p>'
+    +   '<p id="sline3">' + TICK + '<span>ถ้าจำเป็นต้องปิดหน้านี้ สแกน QR เดิมอีกครั้ง ระบบจะส่งต่อให้เอง</span></p>'
+    + '</div>'
+    + '<p class="tiny" id="smeta"></p>'
+    + '<div class="escalate" id="sesc" hidden></div></div>';
   foot.hidden = true;
+  paintSending();
+  if (!(state.outbox && state.outbox.terminal)) focusEl(document.getElementById('sh1'));
+}
+/* อัปเดตหน้ากำลังส่งในที่เดิม -- #live ได้เฉพาะหัวข้อสถานะเมื่อเปลี่ยน ตัวนับถอยหลังอยู่นอก live region */
+function paintSending(){
+  var ob = state.outbox, h1 = document.getElementById('sh1');
+  if (state.screen !== 'sending' || !ob || !h1) return;
+  var n = Object.keys(ob.payload.responses || {}).length, k = ob.attempts || 0;
+  var kind = ob.terminal ? 'terminal' : SEND.kind, title, body;
+  if (kind === 'sending') {
+    title = k <= 1 ? 'กำลังส่งคำตอบ' : 'กำลังส่งคำตอบ (ครั้งที่ ' + k + ')';
+    body  = k <= 1 ? 'กำลังส่งคำตอบ ' + n + ' ข้อไปที่ระบบ · ไม่ต้องกดอะไร' : 'กำลังลองส่งอีกครั้ง · ไม่ต้องกดอะไร';
+  } else {
+    title = SEND_COPY[kind][0]; body = SEND_COPY[kind][1];
+  }
+  h1.textContent = title;
+  document.getElementById('sbody').innerHTML = esc(body).replace('{s}', '<span id="scount">' + secsLeft() + '</span>');
+  var ico = document.getElementById('sico');
+  ico.className = 'send-ico' + (kind === 'terminal' ? ' bad' : kind === 'sending' ? '' : ' wait');
+  ico.innerHTML = kind === 'sending' ? '<span class="spin big" aria-hidden="true"></span>'
+                : kind === 'terminal' ? ICO_BANK : kind === 'offline' ? ICO_OFF : ICO_WAIT;
+  document.getElementById('scard').hidden = kind === 'terminal';
+  document.getElementById('sline1').textContent = storageOk
+    ? 'คำตอบครบ ' + n + ' ข้อ เก็บไว้ในเครื่องนี้แล้ว'
+    : 'ยังเก็บคำตอบในเครื่องไม่ได้ · อย่าปิดหน้านี้จนกว่าจะส่งสำเร็จ';
+  document.getElementById('sline3').hidden = !storageOk;
+  var meta = document.getElementById('smeta');
+  meta.textContent = (k && kind !== 'terminal') ? 'ลองส่งแล้ว ' + k + ' ครั้ง · ล่าสุด ' + hhmm(ob.lastAt) + ' น.' : '';
+  var escl = document.getElementById('sesc');
+  var late = kind !== 'terminal' && ((Date.now() - ob.queuedAt) >= 120000 || k >= 6);
+  escl.hidden = !late;
+  if (late) escl.innerHTML = 'ถ้ายังไม่สำเร็จภายใน 10 นาที แจ้งผู้สอนพร้อมรหัสนี้: <b class="code">' + esc(refCode()) + '</b>';
+  var want = kind === 'terminal' ? 'terminal' : kind === 'sending' ? '' : 'now';
+  if (want !== SEND.footFor) {
+    SEND.footFor = want;
+    if (!want) { foot.hidden = true; foot.innerHTML = ''; }
+    else if (want === 'now') {
+      foot.hidden = false;
+      foot.innerHTML = '<button class="btn" id="sendnow">ลองส่งตอนนี้</button>';
+      document.getElementById('sendnow').onclick = function(){ kick('user'); };
+    } else {
+      foot.hidden = false;
+      foot.innerHTML = '<button class="btn" id="reloadbank">โหลดข้อสอบรุ่นใหม่</button>';
+      var rb = document.getElementById('reloadbank');
+      rb.onclick = function(){ state.outbox = null; clearDraft(); reloadFresh(); };
+      focusEl(rb);
+    }
+  }
+  if (title !== SEND.lastTitle) { SEND.lastTitle = title; say(title); }
 }
 
-function vFailed(){
-  view.innerHTML = '<div class="stack" style="padding-top:26px">'
-    + '<div class="errbox"><p class="eyebrow">ส่งคำตอบไม่สำเร็จ</p>'
-    + '<p>'+esc(state.sendError||'')+'</p>'
-    + '<p><b>คำตอบของคุณยังอยู่ครบในเครื่อง</b> กดลองส่งอีกครั้งได้เลย หรือแจ้งผู้สอนถ้ายังไม่สำเร็จ</p></div></div>';
-  foot.hidden = false;
-  foot.innerHTML = '<button class="btn wide" id="retry">ลองส่งอีกครั้ง</button>';
-  document.getElementById('retry').onclick = function(){ submit(1); };
-}
-
+/* หน้าจบ -- ห้ามมีคำว่า ผ่าน / คะแนน / ถูก (D15: หน้านี้ไม่รู้ผล และต้องไม่ทำให้ดูเหมือนรู้)
+   อ่านจากใบรับที่เก็บไว้ จึงแสดงได้แม้เปิดหน้าใหม่และยังไม่ได้โหลดคลังข้อ */
 function vSubmitted(){
-  var r = state.receipt || {};
-  view.innerHTML = '<div class="stack" style="padding-top:22px">'
-    + '<div class="hero"><svg viewBox="0 0 120 120" width="112" height="112" role="img" aria-label="ส่งคำตอบเรียบร้อย">'
-    + '<circle cx="60" cy="60" r="46" fill="var(--accent-soft)"/><circle cx="60" cy="60" r="46" fill="none" stroke="var(--accent)" stroke-width="2.5"/>'
-    + '<path d="M40 61l14 14 27-30" fill="none" stroke="var(--accent)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>'
-    + '<div class="stack-sm" style="text-align:center"><h1>ส่งคำตอบเรียบร้อย</h1>'
-    + '<p class="lede">ระบบได้รับคำตอบของคุณครบถ้วนแล้ว<br>ผู้สอนจะรวบรวมและแจ้งผลให้ทราบภายหลัง</p></div>'
-    + '<div class="score-card" style="gap:10px"><div style="display:flex;flex-direction:column;gap:9px;width:100%">'
-    + [['ชื่อ', state.profile.name||'—'],
-       ['หน่วยงาน', state.profile.dept||'—'],
-       ['บทบาท', roleTh()],
-       ['รุ่นอบรม', state.session],
-       ['เวลาที่ส่ง', (r.submittedAt||'—')+' น.'],
-       ['จำนวนข้อที่ตอบ', (r.answeredCount!=null?r.answeredCount:'—')+' จาก '+(r.totalItems||ITEMS().length)+' ข้อ'],
-       ['รหัสอ้างอิง', r.attemptId||'—']
-      ].map(function(kv){
-        return '<div class="kv"><span>'+kv[0]+'</span><b'+(kv[0]==='รหัสอ้างอิง'?' class="mono"':'')+'>'+esc(kv[1])+'</b></div>';
-      }).join('')
+  var r = state.receipt || {}, still = !!state.still, leaves = '';
+  if (!still) for (var i = 0; i < 14; i++) {
+    leaves += '<i' + (i % 3 === 0 ? ' class="g"' : '') + ' style="--a:' + Math.round(i * 360 / 14) + 'deg;--d:'
+            + (86 + (i % 3) * 22) + 'px;--t:' + ((i % 4) * 45) + 'ms"></i>';
+  }
+  var parts = partStats(), ks = parts.length ? parts.map(function(p){ return p.k; }) : [1, 2, 3, 4, 5];
+  view.innerHTML = '<div class="stack' + (still ? ' still' : '') + '">'
+    + '<div class="finish-top">' + (still ? '' : '<div class="burst" aria-hidden="true">' + leaves + '</div>')
+    + '<div class="stamps" role="img" aria-label="ทำครบทั้ง ' + ks.length + ' หมวด">'
+    + ks.map(function(k, n){ return '<span class="stamp" aria-hidden="true" style="--i:' + n + '"><b>' + k + '</b>' + TICK_C + '</span>'; }).join('')
     + '</div></div>'
-    + (r.duplicate ? '<p class="tiny" style="text-align:center;color:var(--amber)">ระบบเคยรับคำตอบชุดนี้ไว้แล้ว จึงไม่บันทึกซ้ำ</p>' : '')
+    + '<div class="stack-sm center"><p class="eyebrow">ส่งคำตอบเรียบร้อย</p><h1 id="fh1" tabindex="-1">ทำแบบทดสอบครบแล้ว</h1>'
+    + '<p class="lede">ขอบคุณที่ตั้งใจ ผู้สอนจะแจ้งผลให้ทราบภายหลัง</p></div>'
+    + '<div class="receipt">'
+    + [['ชื่อ', r.name || '—'],
+       ['หน่วยงาน', r.dept || '—'],
+       ['บทบาท', roleTh(r.role)],
+       ['รุ่นอบรม', r.session || state.session],
+       ['เวลาที่ส่ง', (r.submittedAt || '—') + ' น.'],
+       ['จำนวนข้อที่ตอบ', (r.answeredCount != null ? r.answeredCount : '—') + ' จาก ' + (r.totalItems || ITEMS().length || '—') + ' ข้อ'],
+       ['รหัสอ้างอิง', r.attemptId || '—']
+      ].map(function(kv){
+        return '<div class="kv"><span>'+kv[0]+'</span><b'+(kv[0]==='รหัสอ้างอิง'?' class="code"':'')+'>'+esc(kv[1])+'</b></div>';
+      }).join('')
+    + '</div>'
+    + (r.duplicate ? '<p class="tiny warn" style="text-align:center">คำตอบชุดนี้บันทึกไว้แล้วตั้งแต่ครั้งก่อนที่ส่ง ไม่มีการบันทึกซ้ำ</p>' : '')
     + '<p class="tiny" style="text-align:center">เก็บรหัสอ้างอิงไว้ เผื่อต้องติดต่อผู้สอน<br>ปิดหน้านี้ได้เลย</p></div>';
   foot.hidden = true;
+  focusEl(document.getElementById('fh1'));
 }
 
-if (ENDPOINT.indexOf('PASTE_') === 0) {
-  var strip = document.getElementById('strip');
-  strip.textContent =
-    'ยังไม่ได้ตั้งค่า ENDPOINT ใน index.html — ส่งคำตอบไม่ได้ (ดู README ขั้นที่ 6)';
-  strip.hidden = false;
+/* ============================ เริ่มทำงาน ============================ */
+var BANK_BUST = (function(){
+  try { var v = sessionStorage.getItem('ssm-bank-bust'); if (v) sessionStorage.removeItem('ssm-bank-bust'); return v; }
+  catch (e) { return null; }
+})();
+function loadBank(){
+  BANK.failed = false; BANK.tries++; BANK.total++;
+  var s = document.createElement('script');
+  s.src = BANK_SRC + (BANK_BUST ? '?v=' + BANK_BUST : (BANK.total > 1 ? '?r=' + Date.now() : ''));
+  s.onload = function(){
+    if (window.ITEMS_BY_ROLE && typeof window.ITEMS_BY_ROLE === 'object') { BANK.ready = true; onBankReady(); }
+    else bankFailed();
+  };
+  s.onerror = function(){ if (s.parentNode) s.parentNode.removeChild(s); bankFailed(); };
+  document.head.appendChild(s);
 }
-render();
-warm();
+function bankFailed(){
+  if (BANK.tries < 3) { setTimeout(loadBank, 1500 * BANK.tries); return; }
+  BANK.failed = true;
+  if (state.screen === 'register') refreshRegisterBits();
+}
+function onBankReady(){
+  paintStrip();
+  if (state.screen === 'register') { refreshRegisterBits(); warmRoleImages(); }
+}
+/* ใบรับของ QR นี้ (บทบาท + รุ่นเดียวกัน) -- เครื่องนี้ส่งแล้ว ไม่ให้ทำซ้ำ (OD-2)
+   QR ที่ไม่มีบทบาทเทียบแค่รุ่น เพราะบอกไม่ได้ว่าเป็นบทบาทอื่นจริง */
+function receiptForThisQR(){
+  var rc = readJSON(RECEIPT_KEY);
+  if (!rc || !rc.attemptId) return null;
+  if (rc.session !== state.session) return null;
+  if (QR.role && rc.role !== QR.role) return null;
+  return rc;
+}
+function boot(){
+  var d = readDraft();
+  if (d && d.outbox && d.outbox.payload) {
+    // (i) กดส่งไว้แล้วแต่ยังไม่ถึงระบบ -- ส่งต่อทันทีโดยไม่รอ items.js (payload แช่แข็งไว้ครบแล้ว)
+    // ไม่ทิ้ง outbox เพราะรุ่นคลังข้อต่าง: เซิร์ฟเวอร์เช็ก token ก่อนรุ่น ครั้งแรกที่บันทึกไปแล้วจะได้ใบรับเดิม
+    adopt(d);
+    state.screen = 'sending';
+    if (d.outbox.terminal) SEND.kind = 'terminal';
+    render();
+    kick('boot');
+  } else {
+    var rc = receiptForThisQR();
+    if (rc) {                                   // (ii) ส่งแล้วจากเครื่องนี้ -- แสดงใบรับเดิม ไม่มีทางเริ่มใหม่
+      state.role = rc.role; state.session = rc.session; state.receipt = rc;
+      state.still = true; state.screen = 'submitted';
+    }
+    render();                                   // (iii) ร่างค้าง -- การ์ดทำต่อบนหน้าลงทะเบียน
+  }
+  warm();
+  loadBank();
+}
+
+window.addEventListener('online', function(){ paintStrip(); kick('online'); });
+window.addEventListener('offline', function(){
+  paintStrip();
+  if (state.outbox && !state.outbox.terminal && !SEND.inflight) {
+    clearTimeout(SEND.timer); SEND.timer = null; stopTick();
+    SEND.kind = 'offline'; paintSending(); armSafety();
+  }
+});
+document.addEventListener('visibilitychange', function(){ if (document.visibilityState === 'visible') kick('visible'); });
+window.addEventListener('pageshow', function(){ kick('pageshow'); });
+window.addEventListener('beforeunload', function(e){
+  if (state.outbox && !state.outbox.terminal) { e.preventDefault(); e.returnValue = ''; }
+});
+
+/* ?diag=1 -- ค่าจอจริงของเครื่อง (เจ้าของงาน 2026-09-25): แถบแดงต้องเห็นที่ขอบล่างสุด ถ้าไม่เห็นแปลว่ามีแถบของแอปบังอยู่ */
+(function(){
+  try { if (new URLSearchParams(location.search).get('diag') !== '1') return; } catch (e) { return; }
+  var box = document.createElement('div'), bar = document.createElement('div'), probe = document.createElement('div');
+  box.className = 'diag'; bar.className = 'diag-bar'; probe.className = 'diag-probe';
+  document.body.appendChild(probe); document.body.appendChild(bar); document.body.appendChild(box);
+  function paint(){
+    var ps = getComputedStyle(probe), vv = window.visualViewport, f = document.getElementById('foot');
+    var fr = f && !f.hidden ? f.getBoundingClientRect() : null;
+    box.textContent = 'innerHeight ' + innerHeight + ' · innerWidth ' + innerWidth
+      + '\nvisualViewport ' + (vv ? Math.round(vv.height) + ' × ' + Math.round(vv.width) + ' scale ' + vv.scale.toFixed(2) : '-')
+      + '\nclientHeight ' + document.documentElement.clientHeight
+      + '\nscreen ' + screen.height + ' · avail ' + screen.availHeight + ' · dpr ' + (window.devicePixelRatio || 1)
+      + '\ninset top ' + ps.paddingTop + ' · bottom ' + ps.paddingBottom
+      + '\nfooter bottom ' + (fr ? Math.round(fr.bottom) : '-')
+      + '\n' + navigator.userAgent;
+  }
+  paint();
+  window.addEventListener('resize', paint);
+  if (window.visualViewport) window.visualViewport.addEventListener('resize', paint);
+  setInterval(paint, 1000);
+})();
+
+/* โหมดทดสอบ: ตัวจำลองการส่งอยู่คนละไฟล์กับคลังข้อ ให้ทดสอบได้ว่า outbox ส่งก่อน items.js โหลดเสร็จ */
+if (FIXTURE) {
+  var fxs = document.createElement('script');
+  fxs.src = '_fixture/stub.js';
+  fxs.onload = fxs.onerror = boot;
+  document.head.appendChild(fxs);
+} else {
+  boot();
+}
 </script>
 </body>
 </html>
