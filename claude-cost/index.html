@@ -124,6 +124,8 @@ hr.rule{border:0;border-top:1px solid var(--line);margin:2px 0}
 .qmeta{display:flex;flex-direction:column;gap:5px;min-width:0}
 .pchip{align-self:flex-start;font-size:11.5px;font-weight:600;padding:3px 10px;border-radius:999px;background:var(--ps);color:var(--pc)}
 .tchip{font-size:12px;color:var(--ink-3);font-weight:500}
+.qimg{margin:0;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:#F6F9F8;box-shadow:0 6px 18px -10px var(--pc)}
+.qimg img{display:block;width:100%;height:auto;aspect-ratio:16/9}
 .stem{font-size:17px;line-height:1.6;font-weight:600;margin:0}
 .hint{font-size:12.5px;color:var(--ink-3);margin:0}
 .case{border-radius:14px;padding:13px 14px;background:var(--ps);border-left:5px solid var(--pc);display:flex;flex-direction:column;gap:5px}
@@ -485,6 +487,7 @@ function vQuestion(){
   if(it.type==='case'){
     body += '<div class="case" data-part="'+it.part+'"><p class="eyebrow">'+esc(it.caseTitle)+'</p><p>'+esc(it.caseText)+'</p></div>';
   }
+  if(it.img) body += '<figure class="qimg" data-part="'+it.part+'"><img src="'+esc(it.img)+'" alt="'+esc(it.alt||'')+'" width="640" height="360" decoding="async"></figure>';
   body += '<p class="stem">'+esc(it.stem)+'</p>';
   if(it.hint) body += '<p class="hint">'+esc(it.hint)+'</p>';
 
