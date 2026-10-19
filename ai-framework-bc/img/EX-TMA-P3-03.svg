@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>ผู้ใช้ GOF-INS บันทึก Sales Invoice ลูกค้าขาจรด้วยบรรทัด G/L แล้วเกิด error และแจ้งเป็น Prog. Bug คุณกอล์ฟจำลองแล้วพบว่า General Posting Setup ไม่ครบและผู้ใช้เลือกบัญชีผิด</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<text x="16" y="29" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">GOF-INS  Issues log</text>
+<rect x="16" y="38" width="608" height="34" rx="0" fill="#008271"/>
+<text x="24" y="60.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ช่อง</text>
+<text x="164" y="60.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Issues log No. 58</text>
+<rect x="16" y="72" width="608" height="34" rx="0" fill="#FFFFFF"/>
+<text x="24" y="94.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Topic</text>
+<text x="164" y="94.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">บันทึก Sales Invoice ลูกค้าขาจร บรรทัด G/L แล้วเกิด error</text>
+<rect x="16" y="106" width="608" height="34" rx="0" fill="#F4F6F6"/>
+<text x="24" y="128.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Raised by</text>
+<text x="164" y="128.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ผู้ใช้ฝ่ายขาย GOF-INS</text>
+<rect x="16" y="140" width="608" height="34" rx="0" fill="#FFFFFF"/>
+<text x="24" y="162.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Category</text>
+<rect x="157" y="141" width="466" height="32" rx="3" fill="#FFF1C9" stroke="#D9A400" stroke-width="1.5"/>
+<text x="164" y="162.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Prog. Bug</text>
+<rect x="16" y="174" width="608" height="34" rx="0" fill="#F4F6F6"/>
+<text x="24" y="196.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Status</text>
+<text x="164" y="196.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Open</text>
+<rect x="16" y="38" width="608" height="170" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+<rect x="16" y="222" width="608" height="92" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 230 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
+<text x="28" y="239" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">ผลจำลองของคุณกอล์ฟ</text>
+<rect x="20" y="255" width="600" height="25" rx="3" fill="#FFF1C9" stroke="#D9A400" stroke-width="1"/>
+<text x="28" y="269" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">General Posting Setup ของคู่กลุ่มนี้ ช่อง Sales Account ว่าง</text>
+<rect x="20" y="281" width="600" height="25" rx="3" fill="#FFF1C9" stroke="#D9A400" stroke-width="1"/>
+<text x="28" y="295" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">บัญชี G/L ที่ผู้ใช้เลือกในบรรทัด  520100 ค่าขนส่งจ่าย</text>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>check_al_ids.py กับแอปของ SCP-INS ออกด้วยรหัส 0 แต่มีคำเตือน no GAP-&lt;MOD&gt;-&lt;nn&gt; tag in header หลายไฟล์ และบางไฟล์ใช้เลข defect แทนรหัส GAP</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<rect x="16" y="14" width="608" height="231" rx="8" fill="#262626"/>
+<path d="M16 22 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#3B4343"/>
+<text x="28" y="31" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" fill="#A9B6B5" text-anchor="start" xml:space="preserve" style="white-space:pre">Terminal  SCP-INS   exit code 0</text>
+<text x="28" y="62" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#6FD6C4" text-anchor="start" xml:space="preserve" style="white-space:pre">$ python scripts/check_al_ids.py SCP-INS/9_AL/Site</text>
+<text x="28" y="83" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#F4F6F6" text-anchor="start" xml:space="preserve" style="white-space:pre">Scanned 6 objects; ranges=[(70000, 70999)]</text>
+<rect x="20" y="91" width="600" height="21" rx="3" fill="#4A3030"/>
+<text x="28" y="104" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#FF9C92" text-anchor="start" xml:space="preserve" style="white-space:pre">WARN  SCP-INS/9_AL/Site\src\codeunit\Cod70210.AMSLotPost.al: no</text>
+<rect x="20" y="112" width="600" height="21" rx="3" fill="#4A3030"/>
+<text x="28" y="125" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#FF9C92" text-anchor="start" xml:space="preserve" style="white-space:pre">  GAP-&lt;MOD&gt;-&lt;nn&gt; tag in header</text>
+<rect x="20" y="133" width="600" height="21" rx="3" fill="#4A3030"/>
+<text x="28" y="146" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#FF9C92" text-anchor="start" xml:space="preserve" style="white-space:pre">WARN  SCP-INS/9_AL/Site\src\page\Pag70130.AMSLotList.al: no</text>
+<rect x="20" y="154" width="600" height="21" rx="3" fill="#4A3030"/>
+<text x="28" y="167" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#FF9C92" text-anchor="start" xml:space="preserve" style="white-space:pre">  GAP-&lt;MOD&gt;-&lt;nn&gt; tag in header</text>
+<rect x="20" y="175" width="600" height="21" rx="3" fill="#4A3030"/>
+<text x="28" y="188" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#FF9C92" text-anchor="start" xml:space="preserve" style="white-space:pre">WARN  SCP-INS/9_AL/Site\src\tableextension\Tab-Ext70060.AMSLot.al: no</text>
+<rect x="20" y="196" width="600" height="21" rx="3" fill="#4A3030"/>
+<text x="28" y="209" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#FF9C92" text-anchor="start" xml:space="preserve" style="white-space:pre">  GAP-&lt;MOD&gt;-&lt;nn&gt; tag in header</text>
+<text x="28" y="230" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#F4F6F6" text-anchor="start" xml:space="preserve" style="white-space:pre">Result: 0 error(s), 3 warning(s)</text>
+<rect x="16" y="257" width="608" height="88" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 265 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
+<text x="28" y="274" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">ส่วนหัวของ Pag70130.AMSLotList.al</text>
+<rect x="20" y="290" width="600" height="23" rx="3" fill="#FFF1C9" stroke="#D9A400" stroke-width="1"/>
+<text x="28" y="304" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">/// [AM BS] 2026-10-02 : DEF-52 lot list page</text>
+<text x="28" y="328" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">page 70130 "AMS Lot List"</text>
+</svg>

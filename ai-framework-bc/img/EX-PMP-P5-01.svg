@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>แผนโครงการของ GOF-INS วางประชุม Go/No-Go ก่อนวันที่ลูกค้ายืนยันไฟล์ master และวางการยืนยันยอดยกมาสินค้าไว้หลังวันขึ้นระบบ</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<text x="16" y="29" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">GOF-INS  แผนโครงการ เรียงตามวัน</text>
+<rect x="16" y="38" width="608" height="50" rx="0" fill="#008271"/>
+<text x="24" y="68.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">วันแผน</text>
+<text x="154" y="68.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">งานในแผนโครงการ</text>
+<rect x="16" y="88" width="608" height="50" rx="0" fill="#FFFFFF"/>
+<text x="24" y="119.48" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="18" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-10-22</text>
+<text x="154" y="119.84" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="19" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ประชุม Go/No-Go</text>
+<rect x="16" y="138" width="608" height="50" rx="0" fill="#F4F6F6"/>
+<text x="24" y="169.48" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="18" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-10-26</text>
+<text x="154" y="169.84" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="19" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ลูกค้าตรวจและยืนยันไฟล์ master</text>
+<rect x="16" y="188" width="608" height="50" rx="0" fill="#FFF1C9"/>
+<text x="24" y="219.48" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="18" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-11-01</text>
+<text x="154" y="219.84" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="19" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ขึ้นระบบ (Go-live)</text>
+<rect x="16" y="238" width="608" height="50" rx="0" fill="#F4F6F6"/>
+<text x="24" y="269.48" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="18" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-11-05</text>
+<text x="154" y="269.84" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="19" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ลูกค้ายืนยันยอดยกมาสินค้า</text>
+<rect x="16" y="38" width="608" height="250" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+<text x="16" y="320" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">วันนี้ 2026-10-13</text>
+</svg>

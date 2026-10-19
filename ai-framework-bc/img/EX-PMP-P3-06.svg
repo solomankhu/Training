@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>ร่าง gap list ของ NSL-01 ได้ PASS แล้ว หลังคุณต้นแก้คำผิดในคำอธิบายของ GAP-FA-45 pre-promote ขึ้น BLOCK drafts changed since freeze</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<rect x="16" y="14" width="608" height="86" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 22 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
+<text x="28" y="31" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="12" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">runs/R-NSL-02/RUN.md</text>
+<text x="28" y="61" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">## Reviewer verdicts</text>
+<text x="28" y="84" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">{"verdict": "PASS", "reviewer": "doc-reviewer", ...}</text>
+<rect x="16" y="110" width="608" height="28" rx="0" fill="#008271"/>
+<text x="24" y="129.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP No.</text>
+<text x="124" y="129.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Description (ร่างหลังแก้คำผิด)</text>
+<text x="496" y="129.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">STATUS</text>
+<rect x="16" y="138" width="608" height="28" rx="0" fill="#FFFFFF"/>
+<text x="24" y="157.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-FA-45</text>
+<text x="124" y="157.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ตัดจำหน่ายสินทรัพย์ถาวรพร้อมเหตุผล</text>
+<text x="496" y="157.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Confirm</text>
+<rect x="16" y="110" width="608" height="56" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+<text x="16" y="184" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">คุณต้นแก้คำสะกดในคำอธิบายของแถวนี้ ไม่ได้เพิ่มหรือลบแถว</text>
+<rect x="16" y="194" width="608" height="147" rx="8" fill="#262626"/>
+<path d="M16 202 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#3B4343"/>
+<text x="28" y="211" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" fill="#A9B6B5" text-anchor="start" xml:space="preserve" style="white-space:pre">Terminal  NSL-01</text>
+<text x="28" y="242" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#6FD6C4" text-anchor="start" xml:space="preserve" style="white-space:pre">$ python scripts/bc_gate.py pre-promote NSL-01 R-NSL-02</text>
+<text x="28" y="263" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#FF9C92" text-anchor="start" xml:space="preserve" style="white-space:pre">BLOCK drafts changed since freeze: CHANGED since freeze</text>
+<text x="28" y="284" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#FF9C92" text-anchor="start" xml:space="preserve" style="white-space:pre">  ff7cd8f42f3b9e50 (round 1):; modified 1_Project Plan/2_Business</text>
+<text x="28" y="305" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#FF9C92" text-anchor="start" xml:space="preserve" style="white-space:pre">  Information/NSL-01_Gap_list.xlsx</text>
+<text x="28" y="326" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#FF9C92" text-anchor="start" xml:space="preserve" style="white-space:pre">PRE-PROMOTE RED (1)</text>
+</svg>

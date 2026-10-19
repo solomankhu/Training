@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>defect log ของ SCP-INS บันทึกการแก้ codeunit 70330 ขัดกัน คุณบอสเขียนว่าแก้ที่ระบบทดสอบ แต่คุณเมย์เขียนว่าแก้ในระบบจริงแล้ว</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<text x="16" y="30" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">SCP-INS  Defect log  DEF-44  การแก้ codeunit 70330</text>
+<rect x="16" y="48" width="296" height="150" rx="8" fill="#F4F6F6"/>
+<text x="30" y="74" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">Comment (dev)</text>
+<text x="30" y="108" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" font-weight="700" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">คุณบอส  14 ต.ค. 2026</text>
+<text x="30" y="140" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">แก้ codeunit 70330</text>
+<text x="30" y="170" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ที่ระบบทดสอบ</text>
+<rect x="328" y="48" width="296" height="150" rx="8" fill="#F4F6F6"/>
+<text x="342" y="74" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">Comment (tester)</text>
+<text x="342" y="108" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" font-weight="700" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">คุณเมย์  16 ต.ค. 2026</text>
+<text x="342" y="140" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">แก้ codeunit 70330</text>
+<text x="342" y="170" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ในระบบจริงแล้ว</text>
+<rect x="320" y="206" width="161.0" height="30" rx="15.0" fill="#B42318"/>
+<text x="329" y="226.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">บันทึก 2 ฝั่งขัดกัน</text>
+<text x="16" y="290" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ต้องแก้ codeunit 70330 อีกรอบ</text>
+</svg>

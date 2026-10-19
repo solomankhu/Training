@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>รอบงานคู่มือ Fixed Assets ของ NSL-01 เก็บ RUN.md ไว้ใน _ai_drafts คู่กับร่างคู่มือ มีตาราง Evidence ที่พิมพ์เอง ผู้ตรวจตอบในแชต และ run_lint.py รายงานว่าหา RUN.md ไม่พบ</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<rect x="16" y="14" width="270" height="150" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 22 a8 8 0 0 1 8 -8 h254 a8 8 0 0 1 8 8 v16 h-270 Z" fill="#F4F6F6"/>
+<text x="28" y="31" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="12" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">โฟลเดอร์ NSL-01</text>
+<text x="28" y="60" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">_ai_drafts/R-NSL-04/</text>
+<text x="28" y="82" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">  RUN.md</text>
+<text x="28" y="104" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">  NSL-01_UM_FA_v1.1.docx</text>
+<text x="28" y="126" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">runs/</text>
+<text x="28" y="148" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">  (ว่าง)</text>
+<rect x="298" y="14" width="326" height="132" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M298 22 a8 8 0 0 1 8 -8 h310 a8 8 0 0 1 8 8 v16 h-326 Z" fill="#F4F6F6"/>
+<text x="310" y="31" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="12" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">_ai_drafts/R-NSL-04/RUN.md</text>
+<text x="310" y="61" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">## Evidence</text>
+<text x="310" y="84" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">| gate     | ผล   |</text>
+<text x="310" y="107" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">| doc_lint | ผ่าน |</text>
+<text x="310" y="130" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">(ตารางนี้พิมพ์เอง)</text>
+<rect x="16" y="172" width="608" height="50" rx="8" fill="#F4F6F6"/>
+<text x="30" y="192" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">แชต  ผู้ตรวจ</text>
+<text x="30" y="213" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">เนื้อหาคู่มือใช้ได้</text>
+<rect x="16" y="232" width="608" height="86" rx="8" fill="#262626"/>
+<path d="M16 240 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#3B4343"/>
+<text x="28" y="249" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" fill="#A9B6B5" text-anchor="start" xml:space="preserve" style="white-space:pre">Terminal  คุณแพรรันตรวจรอบงาน</text>
+<text x="28" y="281" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#6FD6C4" text-anchor="start" xml:space="preserve" style="white-space:pre">$ python scripts/run_lint.py NSL-01 R-NSL-04</text>
+<text x="28" y="303" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#FF9C92" text-anchor="start" xml:space="preserve" style="white-space:pre">run file not found: NSL-01\runs\R-NSL-04\RUN.md</text>
+<text x="16" y="342" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">รอบงาน STANDARD ปรับคู่มือผู้ใช้ Fixed Assets  คุณแพรจะพิจารณา promote พรุ่งนี้</text>
+</svg>

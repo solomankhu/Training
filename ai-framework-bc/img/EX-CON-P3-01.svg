@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>ผล trace_check.py ของ SCP-INS ระบุ GAP-INV-37 ที่ Confirm ขาดทั้ง 3 ชั้น ทั้งที่ฟิลด์ถูกสร้างและทดสอบผ่าน defect log และ Description เป็นเลข defect</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<rect x="16" y="14" width="608" height="152" rx="8" fill="#262626"/>
+<path d="M16 22 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#3B4343"/>
+<text x="28" y="31" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" fill="#A9B6B5" text-anchor="start" xml:space="preserve" style="white-space:pre">Terminal  SCP-INS</text>
+<text x="28" y="63" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#6FD6C4" text-anchor="start" xml:space="preserve" style="white-space:pre">$ python scripts/trace_check.py SCP-INS \</text>
+<text x="28" y="85" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#6FD6C4" text-anchor="start" xml:space="preserve" style="white-space:pre">  --require fdd,test,training</text>
+<text x="28" y="107" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#F4F6F6" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP        status  fdd bi test train log al tc missing</text>
+<rect x="20" y="115" width="600" height="22" rx="3" fill="#4A3030"/>
+<text x="28" y="129" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#FF9C92" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-INV-37 Confirm   0  0    0     0   1  1  0 fdd,test,training</text>
+<text x="28" y="151" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#F4F6F6" text-anchor="start" xml:space="preserve" style="white-space:pre">incomplete 1; IDs used but not in gap list 0</text>
+<rect x="16" y="176" width="608" height="109" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 184 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
+<text x="28" y="193" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="12" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">9_AL/Site/src/tableextension/Tab-Ext70060.AMSItemLot.al</text>
+<text x="28" y="223" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">tableextension 70060 "AMS Item Lot Ext" extends Item</text>
+<text x="28" y="246" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">    field(70060; "AMS Lot Note"; Text[50])</text>
+<rect x="20" y="255" width="600" height="22" rx="3" fill="#FFF1C9" stroke="#D9A400" stroke-width="1"/>
+<text x="28" y="269" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">    { Description = 'DEF-52'; }</text>
+<rect x="16" y="293" width="608" height="34" rx="8" fill="#F4F6F6"/>
+<text x="30" y="316" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">defect log  DEF-52  สร้างฟิลด์หมายเหตุ Lot  สถานะ Done ผ่านการทดสอบแล้ว</text>
+</svg>

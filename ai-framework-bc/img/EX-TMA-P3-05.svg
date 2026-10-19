@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>defect log ของ NSL-01 บันทึกการแก้เลขที่เอกสาร General Journal ขัดกัน คุณบอสเขียนว่าแก้ที่ระบบทดสอบ แต่คุณเมย์เขียนว่าแก้ในระบบจริงแล้ว</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<text x="16" y="30" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">NSL-01  Defect log  DEF-48  แก้เลขที่เอกสารของ General Journal</text>
+<rect x="16" y="48" width="608" height="92" rx="8" fill="#F4F6F6"/>
+<rect x="30" y="60" width="183.0" height="22" rx="11.0" fill="#6B6B6B"/>
+<text x="39" y="76.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">คุณบอส  13 ต.ค. 2026</text>
+<text x="30" y="118" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="18" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">แก้เลขที่เอกสารที่ระบบทดสอบแล้ว</text>
+<rect x="16" y="152" width="608" height="92" rx="8" fill="#F4F6F6"/>
+<rect x="30" y="164" width="177.5" height="22" rx="11.0" fill="#6B6B6B"/>
+<text x="39" y="180.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">คุณเมย์  15 ต.ค. 2026</text>
+<text x="30" y="222" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="18" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">แก้ในระบบจริงแล้ว</text>
+<rect x="16" y="258" width="199.50000000000003" height="30" rx="15.0" fill="#B42318"/>
+<text x="25" y="278.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">บันทึก 2 รายการขัดกัน</text>
+<text x="16" y="322" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ต้องแก้เลขที่เอกสารอีกรอบ</text>
+</svg>

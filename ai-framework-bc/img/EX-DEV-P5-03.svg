@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>defect เรื่อง Unit Cost เคยถูกปิดหลังผู้แจ้งทดสอบด้วยมือกรณีเดียว แล้วถูกแจ้งใหม่ภายใน 2 สัปดาห์ และ test_contract_gate.py รายงาน NO_TEST_CHANGED กับ NEGATIVE_TEST_MISSING</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<text x="16" y="29" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">SCP-INS  ประวัติ defect</text>
+<rect x="16" y="38" width="608" height="30" rx="0" fill="#008271"/>
+<text x="24" y="58.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">defect</text>
+<text x="108" y="58.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">วันที่</text>
+<text x="216" y="58.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">เหตุการณ์</text>
+<rect x="16" y="68" width="608" height="30" rx="0" fill="#FFFFFF"/>
+<text x="24" y="88.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">DEF-70</text>
+<text x="108" y="88.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-09-14</text>
+<text x="216" y="88.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">เปิด Unit Cost เปลี่ยนเมื่อเปลี่ยน Location</text>
+<rect x="16" y="98" width="608" height="30" rx="0" fill="#F4F6F6"/>
+<text x="24" y="118.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">DEF-70</text>
+<text x="108" y="118.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-09-18</text>
+<text x="216" y="118.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ปิด หลังผู้แจ้งทดสอบด้วยมือผ่าน 1 กรณี</text>
+<rect x="16" y="128" width="608" height="30" rx="0" fill="#FFF1C9"/>
+<text x="24" y="148.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">DEF-79</text>
+<text x="108" y="148.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-10-01</text>
+<text x="216" y="148.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">แจ้งใหม่ อาการเดิม</text>
+<rect x="16" y="38" width="608" height="120" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+<rect x="16" y="170" width="608" height="174" rx="8" fill="#262626"/>
+<path d="M16 178 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#3B4343"/>
+<text x="28" y="187" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" fill="#A9B6B5" text-anchor="start" xml:space="preserve" style="white-space:pre">Terminal  SCP-INS</text>
+<text x="28" y="219" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#6FD6C4" text-anchor="start" xml:space="preserve" style="white-space:pre">$ python scripts/test_contract_gate.py SCP-INS/9_AL/Site</text>
+<rect x="20" y="227" width="600" height="22" rx="3" fill="#4A3030"/>
+<text x="28" y="241" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#FF9C92" text-anchor="start" xml:space="preserve" style="white-space:pre">NO_TEST_CHANGED        codeunit 70240 AMS Receipt Cost Mgt </text>
+<rect x="20" y="249" width="600" height="22" rx="3" fill="#4A3030"/>
+<text x="28" y="263" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#FF9C92" text-anchor="start" xml:space="preserve" style="white-space:pre">  GAP-INV-42</text>
+<rect x="20" y="271" width="600" height="22" rx="3" fill="#4A3030"/>
+<text x="28" y="285" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#FF9C92" text-anchor="start" xml:space="preserve" style="white-space:pre">NEGATIVE_TEST_MISSING  codeunit 70240 AMS Receipt Cost Mgt </text>
+<rect x="20" y="293" width="600" height="22" rx="3" fill="#4A3030"/>
+<text x="28" y="307" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#FF9C92" text-anchor="start" xml:space="preserve" style="white-space:pre">  GAP-INV-42</text>
+<text x="28" y="329" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#F4F6F6" text-anchor="start" xml:space="preserve" style="white-space:pre">scope 1 objects, 0 test codeunits; 2 finding(s)</text>
+</svg>

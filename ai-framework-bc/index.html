@@ -130,7 +130,7 @@ hr.rule{border:0;border-top:1px solid var(--line);margin:2px 0}
 .hint{font-size:12.5px;color:var(--ink-3);margin:0}
 .case{border-radius:14px;padding:13px 14px;background:var(--ps);border-left:5px solid var(--pc);display:flex;flex-direction:column;gap:5px}
 .case .eyebrow{color:var(--pc)}
-.case p{margin:0;font-size:14px;line-height:1.6;color:var(--ink)}
+.case p{margin:0;font-size:14px;line-height:1.6;color:var(--ink);white-space:pre-line}
 
 .opts{display:flex;flex-direction:column;gap:10px;margin:0;padding:0;list-style:none}
 .opt{display:flex;gap:12px;align-items:flex-start;padding:13px 13px;border-radius:14px;
@@ -247,7 +247,7 @@ var ENDPOINT = 'https://script.google.com/macros/s/AKfycbzbdQciAu03ZcipcejoYBo1c
    ห้ามประกาศ ROLES ซ้ำในไฟล์นี้ ไม่เช่นนั้นหน้าเว็บกับ Apps Script จะมีรายการบทบาทไม่ตรงกัน */
 
 /* หน่วยงานในแบบฟอร์มลงทะเบียน แก้รายการนี้ให้ตรงกับโครงสร้างจริงของบริษัท */
-var DEPARTMENTS = ['BDG','S&M','Admin','Consulting','Development','IT','ผู้บริหาร','อื่น ๆ'];
+var DEPARTMENTS = ['PM','Presales','Consulting','Data','Development','Testing','MA','อื่น ๆ'];
 
 /* ค่าจาก QR role ต้องอยู่ใน whitelist และ session เหลือเฉพาะ A-Za-z0-9_- */
 var QR = (function () {
@@ -309,7 +309,13 @@ function uuid(){
     var r = Math.random()*16|0, v = c === 'x' ? r : (r&0x3|0x8); return v.toString(16);
   });
 }
-function save(){ try{ localStorage.setItem(DRAFT_KEY, JSON.stringify(state)); }catch(e){} }
+/* qrClosed มาจาก QR ของลิงก์ที่เปิดอยู่ทุกครั้งที่โหลดหน้า จึงไม่เก็บลงร่าง ค่าเก่าที่ค้างอยู่จะทำให้หน้าลงทะเบียนพังเมื่อเปิดลิงก์ที่ไม่มี role */
+function save(){
+  try{
+    var d = {}; for(var k in state){ if(k !== 'qrClosed') d[k] = state[k]; }
+    localStorage.setItem(DRAFT_KEY, JSON.stringify(d));
+  }catch(e){}
+}
 function readDraft(){
   try{
     var d = JSON.parse(localStorage.getItem(DRAFT_KEY) || 'null');
@@ -319,7 +325,7 @@ function readDraft(){
   }catch(e){ return null; }
 }
 function applyDraft(d){
-  for(var k in d){ state[k]=d[k]; }
+  for(var k in d){ if(k !== 'qrClosed') state[k]=d[k]; }   /* ร่างที่บันทึกก่อนแก้อาจมี qrClosed ค้างอยู่ ไม่รับมา */
   state.ordOk = state.ordOk || {};
   /* หน้าชั่วคราวกลับไปที่หน้าตรวจก่อนส่ง ส่วนหน้าคำถามกลับไปข้อเดิม */
   if(state.screen==='sending' || state.screen==='confirm' || state.screen==='failed') state.screen='review';
@@ -442,7 +448,7 @@ function vRegister(){
     + '</div></div>'
     + '<div class="facts">'
       + '<div class="fact" data-part="1"><b class="mono">'+(state.role ? ITEMS().length : '30')+'</b><span>ข้อ</span></div>'
-      + '<div class="fact" data-part="2"><b class="mono">20 - 25</b><span>นาที</span></div>'
+      + '<div class="fact" data-part="2"><b class="mono">30</b><span>นาที</span></div>'
       + '<div class="fact" data-part="3"><b class="mono">70%</b><span>เกณฑ์ผ่าน</span></div>'
     + '</div>'
     + (state.role ? '<div class="legend">'+[1,2,3,4,5].filter(function(p){return pc[p];}).map(function(p){

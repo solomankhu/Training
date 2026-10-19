@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>ผู้ใช้ฝ่ายขายของ GOF-INS เปิดรายงานใหม่ของใบลดหนี้และใบเพิ่มหนี้ไม่ได้ ทั้งที่ผลทดสอบตามบทบาทผ่านทุกบทบาท และรายงานทั้งสองไม่อยู่ในตารางสิทธิ์</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<text x="16" y="29" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">GOF-INS  ตารางสิทธิ์</text>
+<rect x="16" y="38" width="608" height="32" rx="0" fill="#008271"/>
+<text x="24" y="59.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">หน้าจอในตารางสิทธิ์</text>
+<text x="224" y="59.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">พนักงานขาย</text>
+<text x="360" y="59.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">หัวหน้าขาย</text>
+<text x="500" y="59.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ฝ่ายบัญชี</text>
+<rect x="16" y="70" width="608" height="32" rx="0" fill="#FFFFFF"/>
+<text x="24" y="91.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Sales Order</text>
+<text x="224" y="91.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ดูและแก้</text>
+<text x="360" y="91.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ดูและแก้</text>
+<text x="500" y="91.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">-</text>
+<rect x="16" y="102" width="608" height="32" rx="0" fill="#F4F6F6"/>
+<text x="24" y="123.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Sales Credit Memo</text>
+<text x="224" y="123.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ดู</text>
+<text x="360" y="123.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ดูและแก้</text>
+<text x="500" y="123.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ดู</text>
+<rect x="16" y="134" width="608" height="32" rx="0" fill="#FFFFFF"/>
+<text x="24" y="155.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Customer Card</text>
+<text x="224" y="155.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ดู</text>
+<text x="360" y="155.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ดูและแก้</text>
+<text x="500" y="155.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ดู</text>
+<rect x="16" y="38" width="608" height="128" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+<text x="16" y="194" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">ทดสอบตามบทบาท</text>
+<rect x="170" y="176" width="148.9" height="26" rx="13.0" fill="#008271"/>
+<text x="179" y="194.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">พนักงานขาย ผ่าน</text>
+<rect x="326.9" y="176" width="137.9" height="26" rx="13.0" fill="#008271"/>
+<text x="335.9" y="194.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">หัวหน้าขาย ผ่าน</text>
+<rect x="472.79999999999995" y="176" width="124.7" height="26" rx="13.0" fill="#008271"/>
+<text x="481.79999999999995" y="194.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ฝ่ายบัญชี ผ่าน</text>
+<rect x="16" y="214" width="608" height="108" rx="8" fill="#FFF1C9" stroke="#D9A400" stroke-width="1"/>
+<text x="32" y="246" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" font-weight="700" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ผู้ใช้ฝ่ายขายแจ้ง หลังขึ้นระบบเปิดรายงานใหม่ไม่ได้</text>
+<text x="32" y="276" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">รายงานใหม่ของใบลดหนี้และใบเพิ่มหนี้ (Report 70710 และ 70711)</text>
+<text x="32" y="306" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">รายงานทั้งสองไม่มีแถวในตารางสิทธิ์</text>
+</svg>

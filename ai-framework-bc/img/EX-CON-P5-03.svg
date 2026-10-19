@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>ผล check_ob.py ของไฟล์ยอดยกมาลูกหนี้ NSL-01 พิมพ์ยอด Customer Amount (LCY) ที่ไม่ตรงกับงบทดลองระบบเดิม และมีแถวใส่ Bal. Account No. ผิดกับสูตร #REF!</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<rect x="16" y="14" width="608" height="168" rx="8" fill="#262626"/>
+<path d="M16 22 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#3B4343"/>
+<text x="28" y="31" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" fill="#A9B6B5" text-anchor="start" xml:space="preserve" style="white-space:pre">Terminal  NSL-01</text>
+<text x="28" y="62" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#6FD6C4" text-anchor="start" xml:space="preserve" style="white-space:pre">$ python scripts/check_ob.py NSL-01_OB_AR.xlsx --asof 2025-12-31</text>
+<text x="28" y="83" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#F4F6F6" text-anchor="start" xml:space="preserve" style="white-space:pre">Layout ARAP on sheet 'OB_AR', 5 data rows</text>
+<text x="28" y="104" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#F4F6F6" text-anchor="start" xml:space="preserve" style="white-space:pre">Control totals (compare with legacy trial balance / aging / stock /</text>
+<text x="28" y="125" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#F4F6F6" text-anchor="start" xml:space="preserve" style="white-space:pre">  FA register):</text>
+<text x="28" y="146" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#F4F6F6" text-anchor="start" xml:space="preserve" style="white-space:pre">  Customer Amount (LCY)                    58,000.00</text>
+<text x="28" y="167" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#9BE3B5" text-anchor="start" xml:space="preserve" style="white-space:pre">Errors 0</text>
+<text x="16" y="205" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">NSL-01_OB_AR.xlsx</text>
+<rect x="16" y="214" width="330" height="22" rx="0" fill="#008271"/>
+<text x="24" y="229.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Document No.</text>
+<text x="174" y="229.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Bal. Account No.</text>
+<rect x="16" y="236" width="330" height="22" rx="0" fill="#FFFFFF"/>
+<text x="24" y="251.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">INV-EX01</text>
+<text x="174" y="251.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">113100</text>
+<rect x="16" y="258" width="330" height="22" rx="0" fill="#F4F6F6"/>
+<text x="24" y="273.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">INV-EX02</text>
+<text x="174" y="273.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">113100</text>
+<rect x="16" y="280" width="330" height="22" rx="0" fill="#FFFFFF"/>
+<text x="24" y="295.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">INV-1001</text>
+<text x="174" y="295.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">113100</text>
+<rect x="16" y="302" width="330" height="22" rx="0" fill="#F4F6F6"/>
+<text x="24" y="317.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">INV-1002</text>
+<rect x="167" y="303" width="178" height="20" rx="3" fill="#FFF1C9" stroke="#D9A400" stroke-width="1.5"/>
+<text x="174" y="317.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">111111</text>
+<rect x="16" y="324" width="330" height="22" rx="0" fill="#FFFFFF"/>
+<text x="24" y="339.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">INV-1003</text>
+<rect x="167" y="325" width="178" height="20" rx="3" fill="#FFF1C9" stroke="#D9A400" stroke-width="1.5"/>
+<text x="174" y="339.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">311100</text>
+<rect x="16" y="214" width="330" height="132" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+<rect x="364" y="190" width="260" height="74" rx="8" fill="#F4F6F6"/>
+<text x="378" y="216" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">งบทดลองระบบเดิม ลูกหนี้การค้า</text>
+<text x="378" y="250" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="22" font-weight="700" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">61,500.00</text>
+<rect x="364" y="272" width="260" height="74" rx="8" fill="#F4F6F6"/>
+<text x="378" y="298" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">แผ่นงานตรวจของทีม ช่องยอดรวม</text>
+<text x="378" y="332" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="22" font-weight="700" fill="#B42318" text-anchor="start" xml:space="preserve" style="white-space:pre">#REF!</text>
+</svg>

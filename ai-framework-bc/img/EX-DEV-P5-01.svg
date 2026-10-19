@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>การแก้ codeunit 70240 ของ SCP-INS ใช้ event ที่มีเฉพาะในส่วนขยายพื้นฐานของบริษัทรุ่นใหม่ sandbox ติดตั้งรุ่นใหม่แล้ว แต่ระบบจริงและ app.json ยังเป็นรุ่นเดิม</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<text x="16" y="29" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">รุ่นที่ติดตั้งในแต่ละที่</text>
+<rect x="16" y="38" width="608" height="36" rx="0" fill="#008271"/>
+<text x="24" y="61.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">สภาพแวดล้อม</text>
+<text x="324" y="61.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ส่วนขยายพื้นฐานของบริษัท</text>
+<rect x="16" y="74" width="608" height="36" rx="0" fill="#FFFFFF"/>
+<text x="24" y="97.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">sandbox ที่คุณบอสใช้ทดสอบ</text>
+<text x="324" y="97.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">รุ่น 1.4.0.0 ติดตั้งแล้ว</text>
+<rect x="16" y="110" width="608" height="36" rx="0" fill="#F4F6F6"/>
+<text x="24" y="133.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ระบบจริง SCP-INS</text>
+<text x="324" y="133.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">รุ่น 1.3.0.0</text>
+<rect x="16" y="38" width="608" height="108" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+<rect x="16" y="160" width="608" height="136" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 168 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
+<text x="28" y="177" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">app.json ของแอปลูกค้า</text>
+<text x="28" y="207" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">"dependencies": [</text>
+<text x="28" y="231" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">  { "name": "ส่วนขยายพื้นฐานของบริษัท",</text>
+<text x="28" y="255" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">    "version": "1.3.0.0" }</text>
+<text x="28" y="279" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">]</text>
+<rect x="16" y="308" width="608" height="40" rx="8" fill="#F4F6F6"/>
+<text x="30" y="334" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">การแก้ใน codeunit 70240 ใช้ event ที่มีตั้งแต่รุ่น 1.4.0.0</text>
+</svg>

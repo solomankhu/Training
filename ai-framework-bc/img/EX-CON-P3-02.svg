@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>ผล check_ob.py ของไฟล์ยอดยกมาลูกหนี้ GOF-INS รายงานแถวที่ 4 ว่า LCY differs from Amount but no currency โดยแถวนี้ไม่มีรหัสสกุลเงิน</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<text x="16" y="29" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">GOF-OB_AR.xlsx  แผ่น OB_AR</text>
+<rect x="16" y="38" width="608" height="28" rx="0" fill="#008271"/>
+<text x="24" y="57.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">แถว</text>
+<text x="68" y="57.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Account No.</text>
+<text x="176" y="56.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Document No.</text>
+<text x="296" y="57.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Amount</text>
+<text x="388" y="57.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Currency Code</text>
+<text x="514" y="56.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Amount (LCY)</text>
+<rect x="16" y="66" width="608" height="28" rx="0" fill="#FFFFFF"/>
+<text x="24" y="85.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2</text>
+<text x="68" y="85.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">C-0101</text>
+<text x="176" y="85.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">INV-1001</text>
+<text x="372" y="85.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="end" xml:space="preserve" style="white-space:pre">100.00</text>
+<text x="388" y="85.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">USD</text>
+<text x="616" y="85.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="end" xml:space="preserve" style="white-space:pre">3,600.00</text>
+<rect x="16" y="94" width="608" height="28" rx="0" fill="#F4F6F6"/>
+<text x="24" y="113.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">3</text>
+<text x="68" y="113.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">C-0102</text>
+<text x="176" y="113.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">INV-1002</text>
+<text x="372" y="113.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="end" xml:space="preserve" style="white-space:pre">200.00</text>
+<text x="388" y="113.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">EUR</text>
+<text x="616" y="113.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="end" xml:space="preserve" style="white-space:pre">7,800.00</text>
+<rect x="16" y="122" width="608" height="28" rx="0" fill="#FFFFFF"/>
+<text x="24" y="141.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">4</text>
+<text x="68" y="141.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">C-0103</text>
+<text x="176" y="141.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">INV-1003</text>
+<text x="372" y="141.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="end" xml:space="preserve" style="white-space:pre">5,000.00</text>
+<rect x="381" y="123" width="124" height="26" rx="3" fill="#FFF1C9" stroke="#D9A400" stroke-width="1.5"/>
+<rect x="507" y="123" width="116" height="26" rx="3" fill="#FFF1C9" stroke="#D9A400" stroke-width="1.5"/>
+<text x="616" y="141.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="end" xml:space="preserve" style="white-space:pre">5,500.00</text>
+<rect x="16" y="150" width="608" height="28" rx="0" fill="#F4F6F6"/>
+<text x="24" y="169.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">5</text>
+<text x="68" y="169.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">C-0104</text>
+<text x="176" y="169.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">INV-1004</text>
+<text x="372" y="169.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="end" xml:space="preserve" style="white-space:pre">50.00</text>
+<text x="388" y="169.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">USD</text>
+<text x="616" y="169.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="end" xml:space="preserve" style="white-space:pre">1,800.00</text>
+<rect x="16" y="38" width="608" height="140" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+<rect x="16" y="188" width="608" height="152" rx="8" fill="#262626"/>
+<path d="M16 196 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#3B4343"/>
+<text x="28" y="205" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" fill="#A9B6B5" text-anchor="start" xml:space="preserve" style="white-space:pre">Terminal  GOF-INS</text>
+<text x="28" y="237" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#6FD6C4" text-anchor="start" xml:space="preserve" style="white-space:pre">$ python scripts/check_ob.py GOF-OB_AR.xlsx --asof 2025-12-31</text>
+<text x="28" y="259" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#F4F6F6" text-anchor="start" xml:space="preserve" style="white-space:pre">Layout ARAP on sheet 'OB_AR', 4 data rows</text>
+<text x="28" y="281" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#FF9C92" text-anchor="start" xml:space="preserve" style="white-space:pre">Errors 1</text>
+<rect x="20" y="289" width="600" height="22" rx="3" fill="#4A3030"/>
+<text x="28" y="303" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#FF9C92" text-anchor="start" xml:space="preserve" style="white-space:pre">  row (4, 'Amount (LCY)', 5500.0, 'LCY differs from Amount but</text>
+<rect x="20" y="311" width="600" height="22" rx="3" fill="#4A3030"/>
+<text x="28" y="325" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#FF9C92" text-anchor="start" xml:space="preserve" style="white-space:pre">    no currency')</text>
+</svg>

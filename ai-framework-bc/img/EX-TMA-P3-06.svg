@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>ผล trace_check.py ของ SCP-INS แสดง GAP-INV-52 เป็น cancelled-but-still-in-test/training และ retired-claims.tsv มีแถวของ GAP-INV-52 แล้ว</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<rect x="16" y="14" width="608" height="174" rx="8" fill="#262626"/>
+<path d="M16 22 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#3B4343"/>
+<text x="28" y="31" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" fill="#A9B6B5" text-anchor="start" xml:space="preserve" style="white-space:pre">Terminal  SCP-INS</text>
+<text x="28" y="63" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#6FD6C4" text-anchor="start" xml:space="preserve" style="white-space:pre">$ python scripts/trace_check.py SCP-INS \</text>
+<text x="28" y="85" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#6FD6C4" text-anchor="start" xml:space="preserve" style="white-space:pre">  --require fdd,test,training</text>
+<text x="28" y="107" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#F4F6F6" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP        status  fdd bi test train log al tc missing</text>
+<rect x="20" y="115" width="600" height="22" rx="3" fill="#4A3030"/>
+<text x="28" y="129" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#FF9C92" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-INV-52 Cancel    0  0    0     1   1  0  0</text>
+<rect x="20" y="137" width="600" height="22" rx="3" fill="#4A3030"/>
+<text x="28" y="151" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#FF9C92" text-anchor="start" xml:space="preserve" style="white-space:pre">  cancelled-but-still-in-test/training</text>
+<text x="28" y="173" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#F4F6F6" text-anchor="start" xml:space="preserve" style="white-space:pre">incomplete 1; IDs used but not in gap list 0</text>
+<text x="16" y="215" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">wiki/retired-claims.tsv</text>
+<rect x="16" y="224" width="608" height="32" rx="0" fill="#008271"/>
+<text x="24" y="245.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">regex</text>
+<text x="136" y="245.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">reason</text>
+<text x="286" y="245.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ignore globs</text>
+<text x="512" y="245.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">exempt regex</text>
+<rect x="16" y="256" width="608" height="32" rx="0" fill="#FFFFFF"/>
+<text x="24" y="277.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-INV-52</text>
+<text x="136" y="277.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP ยกเลิกแล้ว</text>
+<text x="286" y="277.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">*Gap_list*,*Defect log*</text>
+<rect x="16" y="224" width="608" height="64" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+</svg>

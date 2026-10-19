@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>GAP-MFG-39 ของ SCP-INS เปลี่ยนเป็น Cancel แล้ว แต่ยังมีหัวข้อและรหัสนี้ในสไลด์อบรม UAT และ retired-claims.tsv มีแถวของ GAP นี้แล้ว</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<text x="16" y="29" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">SCP-INS  gap list</text>
+<rect x="16" y="38" width="608" height="30" rx="0" fill="#008271"/>
+<text x="24" y="58.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP No.</text>
+<text x="136" y="58.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Description</text>
+<text x="466" y="58.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">STATUS</text>
+<rect x="16" y="68" width="608" height="30" rx="0" fill="#FFFFFF"/>
+<text x="24" y="88.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-MFG-39</text>
+<text x="136" y="88.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">รายงานต้นทุนผลิตรายใบสั่ง</text>
+<text x="466" y="88.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Cancel</text>
+<rect x="16" y="38" width="608" height="60" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+<text x="16" y="121" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">wiki/retired-claims.tsv</text>
+<rect x="16" y="130" width="608" height="30" rx="0" fill="#008271"/>
+<text x="24" y="150.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">regex</text>
+<text x="136" y="150.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">reason</text>
+<text x="286" y="150.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ignore globs</text>
+<text x="512" y="150.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">exempt regex</text>
+<rect x="16" y="160" width="608" height="30" rx="0" fill="#FFFFFF"/>
+<text x="24" y="180.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-MFG-39</text>
+<text x="136" y="180.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP ยกเลิกแล้ว</text>
+<text x="286" y="180.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">*Gap_list*,*Defect log*</text>
+<rect x="16" y="130" width="608" height="60" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+<rect x="16" y="200" width="608" height="130" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 208 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
+<text x="28" y="217" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">สไลด์อบรม UAT  ตัวอย่างหน้าสไลด์</text>
+<rect x="20" y="233" width="600" height="29" rx="3" fill="#FFF1C9" stroke="#D9A400" stroke-width="1"/>
+<text x="28" y="249" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-MFG-39  รายงานต้นทุนผลิตรายใบสั่ง</text>
+<text x="28" y="279" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">- เปิดรายงานจากเมนูการผลิต</text>
+<text x="28" y="309" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">- เลือกใบสั่งผลิตและช่วงวันที่</text>
+</svg>

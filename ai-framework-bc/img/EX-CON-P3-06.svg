@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>ผล trace_check.py ของ NSL-01 รายงาน IDs used but not in gap list 3 รหัส</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<rect x="16" y="14" width="608" height="224" rx="8" fill="#262626"/>
+<path d="M16 22 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#3B4343"/>
+<text x="28" y="31" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" fill="#A9B6B5" text-anchor="start" xml:space="preserve" style="white-space:pre">Terminal  NSL-01</text>
+<text x="28" y="66" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="18" fill="#6FD6C4" text-anchor="start" xml:space="preserve" style="white-space:pre">$ python scripts/trace_check.py NSL-01 \</text>
+<text x="28" y="92" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="18" fill="#6FD6C4" text-anchor="start" xml:space="preserve" style="white-space:pre">  --require fdd,test,training</text>
+<text x="28" y="118" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="18" fill="#F4F6F6" text-anchor="start" xml:space="preserve" style="white-space:pre">gap list NSL-01_Gap_list.xlsx: 38 GAPs, 27 Confirm;</text>
+<text x="28" y="144" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="18" fill="#F4F6F6" text-anchor="start" xml:space="preserve" style="white-space:pre">  required layers fdd,test,training</text>
+<text x="28" y="170" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="18" fill="#F4F6F6" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP        status  fdd bi test train log al tc missing</text>
+<text x="28" y="196" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="18" fill="#F4F6F6" text-anchor="start" xml:space="preserve" style="white-space:pre">incomplete 0; IDs used but not in gap list 3:</text>
+<text x="28" y="222" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="18" fill="#F4F6F6" text-anchor="start" xml:space="preserve" style="white-space:pre">  GAP-FA-54, GAP-FA-58, GAP-FN-49</text>
+</svg>

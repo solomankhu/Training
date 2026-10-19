@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>รายการให้ลูกค้ายืนยัน CR หลัง UAT ของ GOF-INS มีค่าในคอลัมน์ยืนยันปนกัน เช่น FOC และ Yes? และมีบันทึกว่าถ้าดึงข้อมูลได้ก็เป็น FOC</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<text x="16" y="29" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">GOF-INS  รายการยืนยัน CR หลัง UAT</text>
+<rect x="16" y="38" width="608" height="34" rx="0" fill="#008271"/>
+<text x="24" y="60.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ที่</text>
+<text x="64" y="60.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">รายการ CR</text>
+<text x="394" y="60.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">MD</text>
+<text x="454" y="60.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ยืนยัน (Yes หรือ No)</text>
+<rect x="16" y="72" width="608" height="34" rx="0" fill="#FFFFFF"/>
+<text x="24" y="95.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">1</text>
+<text x="64" y="95.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">รายงานยอดขายแยกพนักงานขาย</text>
+<text x="438" y="95.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="end" xml:space="preserve" style="white-space:pre">3</text>
+<text x="454" y="95.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Yes</text>
+<rect x="16" y="106" width="608" height="34" rx="0" fill="#F4F6F6"/>
+<text x="24" y="129.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2</text>
+<text x="64" y="129.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">เพิ่มช่องทางขายในใบสั่งขาย</text>
+<text x="438" y="129.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="end" xml:space="preserve" style="white-space:pre">1</text>
+<text x="454" y="129.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">FOC</text>
+<rect x="16" y="140" width="608" height="34" rx="0" fill="#FFFFFF"/>
+<text x="24" y="163.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">3</text>
+<text x="64" y="163.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">พิมพ์ใบส่งของ 2 ภาษา</text>
+<text x="438" y="163.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="end" xml:space="preserve" style="white-space:pre">5</text>
+<rect x="447" y="141" width="176" height="32" rx="3" fill="#FFF1C9" stroke="#D9A400" stroke-width="1.5"/>
+<text x="454" y="163.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Yes?</text>
+<rect x="16" y="174" width="608" height="34" rx="0" fill="#F4F6F6"/>
+<text x="24" y="197.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">4</text>
+<text x="64" y="197.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ส่งออกรายการสินค้าเป็น Excel</text>
+<text x="438" y="197.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="end" xml:space="preserve" style="white-space:pre">2</text>
+<text x="454" y="197.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">FOC</text>
+<rect x="16" y="208" width="608" height="34" rx="0" fill="#FFFFFF"/>
+<text x="24" y="231.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">5</text>
+<text x="64" y="231.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">หน้าจอสรุปสต็อกตาม Lot</text>
+<text x="438" y="231.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="end" xml:space="preserve" style="white-space:pre">4</text>
+<text x="454" y="231.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Yes</text>
+<rect x="16" y="242" width="608" height="34" rx="0" fill="#F4F6F6"/>
+<text x="24" y="265.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">6</text>
+<text x="64" y="265.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">แจ้งเตือนสินค้าใกล้หมดอายุ</text>
+<text x="438" y="265.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="end" xml:space="preserve" style="white-space:pre">3</text>
+<text x="454" y="265.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">No</text>
+<rect x="16" y="38" width="608" height="238" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+<rect x="16" y="286" width="608" height="36" rx="8" fill="#FFF1C9" stroke="#D9A400" stroke-width="1"/>
+<text x="30" y="311" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">บันทึกที่แถว 5  ถ้าดึงข้อมูลได้ก็เป็น FOC</text>
+<text x="16" y="344" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">MD คือ man-day ที่ issue-triage ประเมินไว้</text>
+</svg>

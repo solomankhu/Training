@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>แผนและบันทึก SIT ของ interface กับระบบจัดการสต็อกอาหารของ GOF-INS มีการพัฒนาก่อนวันยืนยัน spec ลูกค้าส่ง endpoint ช้าหลายสัปดาห์ และผล SIT 2 วันทดสอบถูกบันทึกเป็นวันเดียวพร้อมหมายเหตุตกลงกันว่า SIT ผ่าน</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<text x="16" y="29" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">GOF-INS  interface กับระบบจัดการสต็อกอาหาร</text>
+<rect x="16" y="38" width="608" height="34" rx="0" fill="#008271"/>
+<text x="24" y="60.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">งาน</text>
+<text x="286" y="60.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">แผน</text>
+<text x="390" y="60.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">จริง</text>
+<text x="494" y="60.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">หมายเหตุ</text>
+<rect x="16" y="72" width="608" height="34" rx="0" fill="#FFFFFF"/>
+<text x="24" y="94.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ยืนยัน spec ของ interface</text>
+<text x="286" y="94.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-10-19</text>
+<rect x="16" y="106" width="608" height="34" rx="0" fill="#F4F6F6"/>
+<text x="24" y="128.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">พัฒนา interface (คุณบอส)</text>
+<text x="390" y="128.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-09-14</text>
+<text x="494" y="128.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">เริ่มแล้ว</text>
+<rect x="16" y="140" width="608" height="34" rx="0" fill="#FFFFFF"/>
+<text x="24" y="162.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ลูกค้าส่ง endpoint</text>
+<text x="286" y="162.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-09-18</text>
+<text x="390" y="162.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-10-12</text>
+<text x="494" y="162.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ช้าหลายสัปดาห์</text>
+<rect x="16" y="38" width="608" height="136" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+<rect x="16" y="186" width="608" height="34" rx="0" fill="#008271"/>
+<text x="24" y="208.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">บันทึก SIT</text>
+<text x="214" y="208.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">วันที่</text>
+<text x="374" y="208.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">หมายเหตุ</text>
+<rect x="16" y="220" width="608" height="34" rx="0" fill="#FFFFFF"/>
+<text x="24" y="242.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">SIT (ทดสอบ 2 วัน)</text>
+<rect x="207" y="221" width="158" height="32" rx="3" fill="#FFF1C9" stroke="#D9A400" stroke-width="1.5"/>
+<text x="214" y="242.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-10-12</text>
+<text x="374" y="242.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ตกลงกันว่า SIT ผ่าน</text>
+<rect x="16" y="254" width="608" height="34" rx="0" fill="#F4F6F6"/>
+<text x="24" y="276.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">SIT รอบที่เหลือ</text>
+<text x="214" y="276.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">แผน 2026-10-23</text>
+<text x="374" y="276.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ยังไม่ได้ทำ</text>
+<rect x="16" y="186" width="608" height="102" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+</svg>

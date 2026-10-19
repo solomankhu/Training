@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>ไฟล์ยอดยกมาลูกหนี้ของ NSL-01 มีแถว Invoice ยอดติดลบ ลูกหนี้ต่างประเทศที่ไม่มีรหัสสกุลเงิน และ dimension ทุกแถวเป็น None แต่ check_ob.py ได้ Errors 0</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<text x="16" y="29" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">NSL-01_OB_AR.xlsx  แผ่น OB_AR</text>
+<rect x="16" y="38" width="608" height="26" rx="0" fill="#008271"/>
+<text x="24" y="56.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ชื่อลูกหนี้</text>
+<text x="286" y="55.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Doc. Type</text>
+<text x="370" y="56.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Amount</text>
+<text x="460" y="56.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Currency</text>
+<text x="546" y="55.32" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Dimension</text>
+<rect x="16" y="64" width="608" height="26" rx="0" fill="#FFFFFF"/>
+<text x="24" y="82.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ลูกค้าสมมติ A</text>
+<text x="286" y="82.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Invoice</text>
+<text x="444" y="82.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="end" xml:space="preserve" style="white-space:pre">1,000.00</text>
+<text x="546" y="82.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">None</text>
+<rect x="16" y="90" width="608" height="26" rx="0" fill="#F4F6F6"/>
+<text x="24" y="108.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ลูกค้าสมมติ B</text>
+<text x="286" y="108.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Invoice</text>
+<text x="444" y="108.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="end" xml:space="preserve" style="white-space:pre">2,000.00</text>
+<text x="546" y="108.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">None</text>
+<rect x="16" y="116" width="608" height="26" rx="0" fill="#FFFFFF"/>
+<text x="24" y="134.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">บริษัท ฟ้าใหม่ขนส่ง จำกัด</text>
+<text x="286" y="134.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Invoice</text>
+<text x="444" y="134.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="end" xml:space="preserve" style="white-space:pre">30,000.00</text>
+<text x="546" y="134.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">None</text>
+<rect x="16" y="142" width="608" height="26" rx="0" fill="#F4F6F6"/>
+<text x="24" y="160.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Aster Bay Trading (ต่างประเทศ)</text>
+<text x="286" y="160.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Invoice</text>
+<rect x="363" y="143" width="88" height="24" rx="3" fill="#FFF1C9" stroke="#D9A400" stroke-width="1.5"/>
+<text x="444" y="160.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="end" xml:space="preserve" style="white-space:pre">-3,000.00</text>
+<text x="546" y="160.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">None</text>
+<rect x="16" y="168" width="608" height="26" rx="0" fill="#FFFFFF"/>
+<text x="24" y="186.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Nordlicht GmbH (ต่างประเทศ)</text>
+<text x="286" y="186.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Invoice</text>
+<text x="444" y="186.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="end" xml:space="preserve" style="white-space:pre">28,000.00</text>
+<text x="546" y="186.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">None</text>
+<rect x="16" y="38" width="608" height="156" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+<rect x="16" y="202" width="608" height="108" rx="8" fill="#262626"/>
+<path d="M16 210 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#3B4343"/>
+<text x="28" y="219" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" fill="#A9B6B5" text-anchor="start" xml:space="preserve" style="white-space:pre">Terminal  NSL-01</text>
+<text x="28" y="251" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#6FD6C4" text-anchor="start" xml:space="preserve" style="white-space:pre">$ python scripts/check_ob.py NSL-01_OB_AR.xlsx --asof 2025-12-31</text>
+<text x="28" y="273" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#F4F6F6" text-anchor="start" xml:space="preserve" style="white-space:pre">Layout ARAP on sheet 'OB_AR', 5 data rows</text>
+<text x="28" y="295" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#9BE3B5" text-anchor="start" xml:space="preserve" style="white-space:pre">Errors 0</text>
+</svg>

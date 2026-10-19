@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>แผนโครงการของ NSL-01 มีงาน UAT รอบที่ 1 ที่ทีมแก้วันแผนเสร็จเป็นวันที่คาดว่าจะเสร็จและคงสถานะ In progress ทั้งที่แผนฉบับก่อนวางไว้เสร็จก่อนวันนี้เกิน 5 วันทำการ</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<text x="16" y="29" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">NSL-01  แผนโครงการ ฉบับปัจจุบัน</text>
+<rect x="16" y="38" width="608" height="36" rx="0" fill="#008271"/>
+<text x="24" y="61.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">งาน</text>
+<text x="230" y="61.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">แผนเริ่ม</text>
+<text x="366" y="61.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">แผนเสร็จ</text>
+<text x="502" y="61.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">สถานะ</text>
+<rect x="16" y="74" width="608" height="36" rx="0" fill="#FFFFFF"/>
+<text x="24" y="98.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">เตรียมข้อมูล UAT</text>
+<text x="230" y="97.76" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-09-01</text>
+<text x="366" y="97.76" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-09-04</text>
+<text x="502" y="98.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Completed</text>
+<rect x="16" y="110" width="608" height="36" rx="0" fill="#F4F6F6"/>
+<text x="24" y="134.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">UAT รอบที่ 1</text>
+<text x="230" y="133.76" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-09-07</text>
+<rect x="359" y="111" width="134" height="34" rx="3" fill="#FFF1C9" stroke="#D9A400" stroke-width="1.5"/>
+<text x="366" y="133.76" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-10-02</text>
+<text x="502" y="134.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">In progress</text>
+<rect x="16" y="146" width="608" height="36" rx="0" fill="#FFFFFF"/>
+<text x="24" y="170.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">UAT รอบที่ 2</text>
+<text x="230" y="169.76" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-10-05</text>
+<text x="366" y="169.76" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-10-09</text>
+<text x="502" y="170.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Not Start</text>
+<rect x="16" y="38" width="608" height="144" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+<rect x="16" y="198" width="608" height="150" rx="8" fill="#F4F6F6"/>
+<text x="32" y="232" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="18" font-weight="700" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">วันนี้ 2026-09-23</text>
+<text x="32" y="268" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">แผนฉบับก่อนหน้า  UAT รอบที่ 1 แผนเสร็จ 2026-09-11</text>
+<text x="32" y="302" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ทีมแก้วันแผนเสร็จเป็นวันที่คาดว่าจะเสร็จ 2026-10-02</text>
+<text x="32" y="332" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">และคงสถานะของงานนี้เป็น In progress</text>
+</svg>

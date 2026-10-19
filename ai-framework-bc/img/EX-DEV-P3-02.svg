@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>หลังขึ้นระบบ ฟิลด์เพิ่มเติมที่ดึงจาก Item Card ในบรรทัด Sales Order ของ GOF-INS ว่างหรือผิดเมื่อผู้ใช้เปลี่ยน VAT Bus. Posting Group หลังเลือก Item หรือใช้ Copy Document</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<text x="16" y="29" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">GOF-INS  สิ่งที่ผู้ใช้เห็นหลังขึ้นระบบ</text>
+<rect x="16" y="38" width="608" height="40" rx="0" fill="#008271"/>
+<text x="24" y="63.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">เหตุการณ์ในบรรทัด Sales Order</text>
+<text x="404" y="63.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ฟิลด์เพิ่มเติมจาก Item Card</text>
+<rect x="16" y="78" width="608" height="40" rx="0" fill="#FFFFFF"/>
+<text x="24" y="103.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">เลือก Item</text>
+<text x="404" y="103.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ถูกต้อง</text>
+<rect x="16" y="118" width="608" height="40" rx="0" fill="#F4F6F6"/>
+<text x="24" y="143.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">เปลี่ยน VAT Bus. Posting Group หลังเลือก Item</text>
+<rect x="397" y="119" width="226" height="38" rx="3" fill="#FFF1C9" stroke="#D9A400" stroke-width="1.5"/>
+<text x="404" y="143.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ว่างหรือผิด</text>
+<rect x="16" y="158" width="608" height="40" rx="0" fill="#FFFFFF"/>
+<text x="24" y="183.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ใช้ Copy Document</text>
+<rect x="397" y="159" width="226" height="38" rx="3" fill="#FFF1C9" stroke="#D9A400" stroke-width="1.5"/>
+<text x="404" y="183.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ว่างหรือผิด</text>
+<rect x="16" y="38" width="608" height="160" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+<rect x="16" y="212" width="608" height="48" rx="8" fill="#F4F6F6"/>
+<text x="32" y="243" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ฟิลด์เพิ่มเติมนี้ดึงค่ามาจาก Item Card ลงในบรรทัด Sales Order</text>
+</svg>

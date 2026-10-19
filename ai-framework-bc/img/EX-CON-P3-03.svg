@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>ผล validate_master_file.py ของไฟล์ master GOF-INS ได้ 0 Fail ทุกแผ่นงาน แต่ราคาขายมีรหัสลูกค้าที่ไม่มีในแผ่นงานลูกค้า และผู้ติดต่อของผู้ขายซ้ำกับไฟล์ CRM</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<rect x="16" y="14" width="608" height="152" rx="8" fill="#262626"/>
+<path d="M16 22 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#3B4343"/>
+<text x="28" y="31" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" fill="#A9B6B5" text-anchor="start" xml:space="preserve" style="white-space:pre">Terminal  GOF-INS</text>
+<text x="28" y="63" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#6FD6C4" text-anchor="start" xml:space="preserve" style="white-space:pre">$ python scripts/validate_master_file.py GOF-INS_MF.xlsx</text>
+<text x="28" y="85" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#F4F6F6" text-anchor="start" xml:space="preserve" style="white-space:pre">Sheet                                      Rows   Fail   Warn</text>
+<text x="28" y="107" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#9BE3B5" text-anchor="start" xml:space="preserve" style="white-space:pre">1.Customer                                    2      0      0</text>
+<text x="28" y="129" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#9BE3B5" text-anchor="start" xml:space="preserve" style="white-space:pre">2.Sales Price                                 2      0      0</text>
+<text x="28" y="151" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#9BE3B5" text-anchor="start" xml:space="preserve" style="white-space:pre">3.Vendor Contact                              1      0      0</text>
+<text x="16" y="189" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">แผ่น 1.Customer</text>
+<rect x="16" y="198" width="288" height="28" rx="0" fill="#008271"/>
+<text x="24" y="217.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Code</text>
+<text x="108" y="217.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ชื่อลูกค้า</text>
+<rect x="16" y="226" width="288" height="28" rx="0" fill="#FFFFFF"/>
+<text x="24" y="245.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">C-0001</text>
+<text x="108" y="245.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ร้านตัวอย่างฟู้ด</text>
+<rect x="16" y="254" width="288" height="28" rx="0" fill="#F4F6F6"/>
+<text x="24" y="273.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">C-0002</text>
+<text x="108" y="273.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">บริษัท ตัวอย่างค้าส่ง</text>
+<rect x="16" y="198" width="288" height="84" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+<text x="328" y="189" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">แผ่น 2.Sales Price</text>
+<rect x="328" y="198" width="296" height="28" rx="0" fill="#008271"/>
+<text x="336" y="217.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Customer</text>
+<text x="432" y="217.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Item</text>
+<text x="522" y="217.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Price</text>
+<rect x="328" y="226" width="296" height="28" rx="0" fill="#FFFFFF"/>
+<text x="336" y="245.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">C-0001</text>
+<text x="432" y="245.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">FD-100</text>
+<text x="616" y="245.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="end" xml:space="preserve" style="white-space:pre">45.00</text>
+<rect x="328" y="254" width="296" height="28" rx="0" fill="#F4F6F6"/>
+<rect x="329" y="255" width="94" height="26" rx="3" fill="#FFF1C9" stroke="#D9A400" stroke-width="1.5"/>
+<text x="336" y="273.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">C-0099</text>
+<text x="432" y="273.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">FD-100</text>
+<text x="616" y="273.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="end" xml:space="preserve" style="white-space:pre">42.00</text>
+<rect x="328" y="198" width="296" height="84" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+<rect x="16" y="290" width="608" height="32" rx="8" fill="#F4F6F6"/>
+<text x="30" y="312" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ผู้ติดต่อของผู้ขาย V-0007 ซ้ำกับไฟล์ CRM (CRM_Contacts.xlsx)</text>
+</svg>

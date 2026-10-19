@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>บันทึก defect ของ GOF-INS หลังขึ้นระบบ ระบุวิธีแก้ให้ลบข้อมูลสินค้าที่ไม่คุม Lot ในฐานข้อมูลด้วยคำสั่ง SQL โดยตรง เพื่อไม่ให้แสดงในหน้ารายการที่ปรับแต่งขึ้น</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<text x="16" y="29" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">GOF-INS  Defect log</text>
+<rect x="16" y="38" width="608" height="30" rx="0" fill="#008271"/>
+<text x="24" y="58.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ช่อง</text>
+<text x="174" y="58.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ค่า</text>
+<rect x="16" y="68" width="608" height="30" rx="0" fill="#FFFFFF"/>
+<text x="24" y="88.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">No.</text>
+<text x="174" y="88.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">DEF-41</text>
+<rect x="16" y="98" width="608" height="30" rx="0" fill="#F4F6F6"/>
+<text x="24" y="118.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Module</text>
+<text x="174" y="118.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Inventory</text>
+<rect x="16" y="128" width="608" height="30" rx="0" fill="#FFFFFF"/>
+<text x="24" y="148.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Title</text>
+<text x="174" y="148.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">หน้ารายการ AMS Lot List แสดงสินค้าที่ไม่คุม Lot</text>
+<rect x="16" y="158" width="608" height="30" rx="0" fill="#F4F6F6"/>
+<text x="24" y="178.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Status</text>
+<text x="174" y="178.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">In-progress</text>
+<rect x="16" y="38" width="608" height="150" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+<rect x="16" y="202" width="608" height="136" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 210 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
+<text x="28" y="219" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">Comment (dev)  วิธีแก้ที่ defect ระบุ</text>
+<text x="28" y="250" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ลบข้อมูลสินค้าที่ไม่คุม Lot ในฐานข้อมูลด้วยคำสั่ง SQL</text>
+<text x="28" y="274" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">โดยตรง เพื่อไม่ให้แสดงในหน้ารายการ</text>
+<rect x="20" y="283" width="600" height="23" rx="3" fill="#FFF1C9" stroke="#D9A400" stroke-width="1"/>
+<text x="28" y="298" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">DELETE FROM [AMS Lot List]</text>
+<rect x="20" y="307" width="600" height="23" rx="3" fill="#FFF1C9" stroke="#D9A400" stroke-width="1"/>
+<text x="28" y="322" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">WHERE [Lot Tracked] = 0;</text>
+</svg>

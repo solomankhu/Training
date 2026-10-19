@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>ไฟล์ร่าง Pag70120.AMSLotCheck.al ของ SCP-INS ประกาศ page 70125 ขณะที่แอปมี page 70120 อยู่แล้ว</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<rect x="16" y="30" width="296" height="250" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 38 a8 8 0 0 1 8 -8 h280 a8 8 0 0 1 8 8 v16 h-296 Z" fill="#F4F6F6"/>
+<text x="28" y="47" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">ไฟล์ร่างใน _ai_drafts</text>
+<text x="28" y="77" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Pag70120.AMSLotCheck.al</text>
+<text x="28" y="107" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre"></text>
+<text x="28" y="137" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">page 70125 "AMS Lot Check"</text>
+<text x="28" y="167" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">{</text>
+<text x="28" y="197" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">    PageType = List;</text>
+<text x="28" y="227" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">    SourceTable = Item;</text>
+<text x="28" y="257" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">}</text>
+<rect x="328" y="30" width="296" height="250" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M328 38 a8 8 0 0 1 8 -8 h280 a8 8 0 0 1 8 8 v16 h-296 Z" fill="#F4F6F6"/>
+<text x="340" y="47" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">ไฟล์ในแอปที่มีอยู่แล้ว</text>
+<text x="340" y="77" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Pag70120.AMSDeliveryZone.al</text>
+<text x="340" y="107" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre"></text>
+<text x="340" y="137" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">page 70120 "AMS Delivery Zone"</text>
+<text x="340" y="167" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">{</text>
+<text x="340" y="197" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">    PageType = List;</text>
+<text x="340" y="227" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">    SourceTable = Zone;</text>
+<text x="340" y="257" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">}</text>
+<text x="16" y="306" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">SCP-INS  แอป AL และไฟล์ร่างของรอบงาน R-SCP-04</text>
+</svg>

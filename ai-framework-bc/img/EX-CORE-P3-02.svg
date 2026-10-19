@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>โฟลเดอร์เอกสารของ NSL-01 ที่จะนำเข้า wiki มีหลายไฟล์ และมี spec ของ interface หนึ่งฉบับที่มีบรรทัด Authorization Bearer เก็บ token เป็นข้อความธรรมดา</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<rect x="16" y="14" width="300" height="238" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 22 a8 8 0 0 1 8 -8 h284 a8 8 0 0 1 8 8 v16 h-300 Z" fill="#F4F6F6"/>
+<text x="28" y="31" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">โฟลเดอร์เอกสารของ NSL-01</text>
+<text x="28" y="60" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">NSL-01/</text>
+<text x="28" y="82" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">  1_Project Plan/</text>
+<text x="28" y="104" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">    NSL-01_Gap_list.xlsx</text>
+<text x="28" y="126" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">  2_Specification/</text>
+<text x="28" y="148" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">    3_Basic setup/</text>
+<text x="28" y="170" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">      NSL-01_Setup.xlsx</text>
+<text x="28" y="192" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">    6_Interface/</text>
+<text x="28" y="214" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">      interface_spec_20261001.md</text>
+<text x="28" y="236" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">  wiki/raw/  (ว่าง)</text>
+<rect x="328" y="14" width="296" height="201" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M328 22 a8 8 0 0 1 8 -8 h280 a8 8 0 0 1 8 8 v16 h-296 Z" fill="#F4F6F6"/>
+<text x="340" y="31" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">interface_spec_20261001.md</text>
+<text x="340" y="61" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">## ตรวจสถานะการชำระเงิน</text>
+<text x="340" y="84" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">POST /api/v1/payment/status</text>
+<text x="340" y="107" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Content-Type: application/json</text>
+<text x="340" y="130" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Authorization: Bearer</text>
+<text x="340" y="153" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">  EXAMPLE-TOKEN-0000-1111-2222</text>
+<text x="340" y="176" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ตัวอย่างคำขอ</text>
+<text x="340" y="199" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">{ "ref": "NSL-TEST-0001" }</text>
+<rect x="16" y="262" width="608" height="84" rx="8" fill="#F4F6F6"/>
+<text x="32" y="292" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">งานของคุณต้นวันนี้</text>
+<text x="32" y="322" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">นำโฟลเดอร์เอกสารของ NSL-01 เข้า wiki</text>
+</svg>

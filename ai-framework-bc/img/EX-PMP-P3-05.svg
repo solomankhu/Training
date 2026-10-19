@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>ร่าง BI ระบบขายของ GOF-INS ได้ PASS จาก al-reviewer ในรอบงาน R-GOF-03 แต่ promote_run.py ตอบ REFUSED</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<rect x="16" y="14" width="300" height="132" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 22 a8 8 0 0 1 8 -8 h284 a8 8 0 0 1 8 8 v16 h-300 Z" fill="#F4F6F6"/>
+<text x="28" y="31" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="12" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">ร่างในโฟลเดอร์ของรอบงาน</text>
+<text x="28" y="60" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">_ai_drafts/R-GOF-03/</text>
+<text x="28" y="83" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">  1_Project Plan/</text>
+<text x="28" y="106" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">    2_Business Information/</text>
+<text x="28" y="129" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">      GOF-INS_BI_Sales.docx</text>
+<rect x="328" y="14" width="296" height="132" rx="8" fill="#F4F6F6"/>
+<text x="344" y="44" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">ผลตรวจล่าสุดของร่างชุดนี้</text>
+<text x="344" y="88" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="30" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">PASS</text>
+<text x="344" y="124" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">โดย al-reviewer</text>
+<rect x="16" y="158" width="608" height="130" rx="8" fill="#262626"/>
+<path d="M16 166 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#3B4343"/>
+<text x="28" y="175" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" fill="#A9B6B5" text-anchor="start" xml:space="preserve" style="white-space:pre">Terminal  GOF-INS</text>
+<text x="28" y="207" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#6FD6C4" text-anchor="start" xml:space="preserve" style="white-space:pre">$ python scripts/promote_run.py GOF-INS R-GOF-03 \</text>
+<text x="28" y="229" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#6FD6C4" text-anchor="start" xml:space="preserve" style="white-space:pre">  --approved-by "&lt;ผู้อนุมัติ&gt;"</text>
+<text x="28" y="251" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#FF9C92" text-anchor="start" xml:space="preserve" style="white-space:pre">REFUSED: pre-promote gate is not green (run bc_gate.py</text>
+<text x="28" y="273" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#FF9C92" text-anchor="start" xml:space="preserve" style="white-space:pre">  pre-promote for details)</text>
+<text x="16" y="326" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">คุณแพรถูกขอให้อนุมัติ promote ร่าง BI ชุดนี้</text>
+</svg>

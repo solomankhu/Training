@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>defect log ของ NSL-01 ที่คุณกอล์ฟจะสรุปรายสัปดาห์ มีช่อง Status ทั้ง Done และ done และเลขรายการ 19 ถูกใช้กับ 2 เรื่อง</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<text x="16" y="29" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">NSL-01  Defect log  (สรุปรายสัปดาห์ส่งวันนี้)</text>
+<rect x="16" y="38" width="608" height="40" rx="0" fill="#008271"/>
+<text x="24" y="63.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">No.</text>
+<text x="80" y="63.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Title</text>
+<text x="484" y="63.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Status</text>
+<rect x="16" y="78" width="608" height="40" rx="0" fill="#FFFFFF"/>
+<text x="24" y="103.76" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">17</text>
+<text x="80" y="104.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">รายงานสรุปยอดชำระไม่ตรงงวด</text>
+<text x="484" y="104.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Done</text>
+<rect x="16" y="118" width="608" height="40" rx="0" fill="#F4F6F6"/>
+<text x="24" y="143.76" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">18</text>
+<text x="80" y="144.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ปุ่มพิมพ์ใบเสร็จไม่ทำงาน</text>
+<text x="484" y="144.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">done</text>
+<rect x="16" y="158" width="608" height="40" rx="0" fill="#FFFFFF"/>
+<text x="24" y="183.76" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">19</text>
+<text x="80" y="184.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">รหัสสินทรัพย์ซ้ำเมื่อนำเข้า</text>
+<text x="484" y="184.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Testing</text>
+<rect x="16" y="198" width="608" height="40" rx="0" fill="#F4F6F6"/>
+<text x="24" y="223.76" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">19</text>
+<text x="80" y="224.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ฟอร์มค้นหาลูกค้าช้า</text>
+<text x="484" y="224.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Open</text>
+<rect x="16" y="238" width="608" height="40" rx="0" fill="#FFFFFF"/>
+<text x="24" y="263.76" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">20</text>
+<text x="80" y="264.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ฟิลด์วันที่ครบกำหนดว่าง</text>
+<text x="484" y="264.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Done</text>
+<rect x="16" y="38" width="608" height="240" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+</svg>
