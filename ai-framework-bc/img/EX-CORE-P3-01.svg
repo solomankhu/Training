@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
-<title>รายงานความคืบหน้าของ SCP-INS ที่พิมพ์เองระบุ GAP 40 รายการ แต่ trace_matrix.csv ที่ trace_check.py สร้างมี 36 แถว</title>
+<title>รายงานความคืบหน้าของ SCP-INS ที่พิมพ์เองระบุ GAP 40 รายการ แต่ตาราง matrix ที่การตรวจเส้นทาง GAP สร้างมี 36 แถว</title>
 <rect width="640" height="360" fill="#FFFFFF"/>
 <rect x="16" y="14" width="608" height="124" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
 <path d="M16 22 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
@@ -9,7 +9,7 @@
 <text x="28" y="120" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="18" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">ตัวเลขในรายงานนี้พิมพ์เอง</text>
 <rect x="16" y="152" width="608" height="160" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
 <path d="M16 160 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
-<text x="28" y="169" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">runs/R-SCP-03/trace_matrix.csv</text>
+<text x="28" y="169" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">ตาราง matrix ของการตรวจเส้นทาง GAP  รอบ R-SCP-03</text>
 <text x="28" y="200" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">gap,status,fdd,bi,test,training,log,al,tc,missing</text>
 <text x="28" y="224" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-MFG-31,Confirm,1,0,1,1,1,2,2,</text>
 <text x="28" y="248" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-MFG-32,Confirm,1,0,0,1,1,1,0,test</text>

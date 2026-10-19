@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
-<title>ตาราง UAT ของ NSL-01 ไม่มีรอบที่ครอบคลุม GAP-FA-42 และ GAP-FN-47 และโครงการไม่ได้เก็บผลทดสอบไว้ ขณะที่ trace_check.py ไม่รายงานสอง GAP นี้</title>
+<title>ตาราง UAT ของ NSL-01 ไม่มีรอบที่ครอบคลุม GAP-FA-42 และ GAP-FN-47 และโครงการไม่ได้เก็บผลทดสอบไว้ ขณะที่การตรวจเส้นทาง GAP ไม่รายงานสอง GAP นี้</title>
 <rect width="640" height="360" fill="#FFFFFF"/>
 <text x="16" y="29" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">NSL-01  ตาราง UAT และอบรม  (ไม่มีไฟล์ผลทดสอบเก็บในโครงการ)</text>
 <rect x="16" y="38" width="608" height="24" rx="0" fill="#008271"/>
@@ -22,9 +22,9 @@
 <rect x="16" y="144" width="608" height="189" rx="8" fill="#262626"/>
 <path d="M16 152 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#3B4343"/>
 <text x="28" y="161" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" fill="#A9B6B5" text-anchor="start" xml:space="preserve" style="white-space:pre">Terminal  NSL-01</text>
-<text x="28" y="192" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#6FD6C4" text-anchor="start" xml:space="preserve" style="white-space:pre">$ python scripts/trace_check.py NSL-01 \</text>
-<text x="28" y="213" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#6FD6C4" text-anchor="start" xml:space="preserve" style="white-space:pre">  --require fdd,test,training --all \</text>
-<text x="28" y="234" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#6FD6C4" text-anchor="start" xml:space="preserve" style="white-space:pre">  --only-refs GAP-FA-42,GAP-FN-47</text>
+<text x="28" y="192" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#6FD6C4" text-anchor="start" xml:space="preserve" style="white-space:pre">&gt; ตรวจเส้นทาง GAP  NSL-01</text>
+<text x="28" y="213" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#6FD6C4" text-anchor="start" xml:space="preserve" style="white-space:pre">&gt; ชั้นที่ต้องมี fdd,test,training  แสดงทุก GAP</text>
+<text x="28" y="234" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#6FD6C4" text-anchor="start" xml:space="preserve" style="white-space:pre">&gt; เฉพาะ GAP-FA-42,GAP-FN-47</text>
 <text x="28" y="255" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#F4F6F6" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP        status  fdd bi test train log al tc missing</text>
 <text x="28" y="276" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#F4F6F6" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-FA-42  Confirm   1  0    2     1   1  3  0</text>
 <text x="28" y="297" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#F4F6F6" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-FN-47  Confirm   2  0    1     1   1  2  0</text>

@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
-<title>ไฟล์ยอดยกมาลูกหนี้ของ NSL-01 ผ่าน check_ob.py ด้วย Errors 0 แต่ใต้แถวที่มีคำว่าตัวอย่างของแม่แบบยังมีแถวตัวอย่าง 2 แถวที่นับเป็นข้อมูล</title>
+<title>ไฟล์ยอดยกมาลูกหนี้ของ NSL-01 ผ่านการตรวจไฟล์ยอดยกมาด้วย Errors 0 แต่ใต้แถวที่มีคำว่าตัวอย่างของแม่แบบยังมีแถวตัวอย่าง 2 แถวที่นับเป็นข้อมูล</title>
 <rect width="640" height="360" fill="#FFFFFF"/>
 <text x="16" y="29" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">NSL-01_OB_AR.xlsx  แผ่น OB_AR</text>
 <rect x="16" y="38" width="608" height="25" rx="0" fill="#008271"/>
@@ -38,7 +38,7 @@
 <rect x="16" y="223" width="608" height="108" rx="8" fill="#262626"/>
 <path d="M16 231 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#3B4343"/>
 <text x="28" y="240" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" fill="#A9B6B5" text-anchor="start" xml:space="preserve" style="white-space:pre">Terminal  NSL-01</text>
-<text x="28" y="272" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#6FD6C4" text-anchor="start" xml:space="preserve" style="white-space:pre">$ python scripts/check_ob.py NSL-01_OB_AR.xlsx --asof 2025-12-31</text>
+<text x="28" y="272" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#6FD6C4" text-anchor="start" xml:space="preserve" style="white-space:pre">&gt; ตรวจไฟล์ยอดยกมา  NSL-01_OB_AR.xlsx  ณ 2025-12-31</text>
 <text x="28" y="294" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#F4F6F6" text-anchor="start" xml:space="preserve" style="white-space:pre">Layout ARAP on sheet 'OB_AR', 5 data rows</text>
 <text x="28" y="316" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#9BE3B5" text-anchor="start" xml:space="preserve" style="white-space:pre">Errors 0</text>
 </svg>

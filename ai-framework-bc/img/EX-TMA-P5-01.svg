@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
-<title>หน้า known-issues ใน wiki ของ NSL-01 สร้างจาก defect log ทั้งไฟล์ แสดงรายการที่ยังไม่ปิด 3 รายการที่มีแต่เลข หน้า GAP ที่ Confirm ยังเป็น draft และ check_wiki.py ได้ 0 FAIL</title>
+<title>หน้า known-issues ใน wiki ของ NSL-01 สร้างจาก defect log ทั้งไฟล์ แสดงรายการที่ยังไม่ปิด 3 รายการที่มีแต่เลข หน้า GAP ที่ Confirm ยังเป็น draft และการตรวจโครงสร้างหน้า wiki ได้ 0 FAIL</title>
 <rect width="640" height="360" fill="#FFFFFF"/>
 <text x="16" y="29" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">wiki/quality/known-issues.md</text>
 <rect x="16" y="38" width="312" height="34" rx="0" fill="#008271"/>
@@ -25,7 +25,7 @@
 <rect x="16" y="190" width="608" height="86" rx="8" fill="#262626"/>
 <path d="M16 198 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#3B4343"/>
 <text x="28" y="207" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" fill="#A9B6B5" text-anchor="start" xml:space="preserve" style="white-space:pre">Terminal  NSL-01</text>
-<text x="28" y="239" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#6FD6C4" text-anchor="start" xml:space="preserve" style="white-space:pre">$ python scripts/check_wiki.py NSL-01/wiki</text>
+<text x="28" y="239" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#6FD6C4" text-anchor="start" xml:space="preserve" style="white-space:pre">&gt; ตรวจโครงสร้างหน้า wiki  NSL-01/wiki</text>
 <text x="28" y="261" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#9BE3B5" text-anchor="start" xml:space="preserve" style="white-space:pre">scope 26 page(s) of 26; 0 FAIL, 0 WARN</text>
 <rect x="16" y="288" width="608" height="36" rx="8" fill="#F4F6F6"/>
 <text x="30" y="313" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">คำถามทดสอบ wiki 1 ข้อ ตอบได้จาก raw เท่านั้น</text>

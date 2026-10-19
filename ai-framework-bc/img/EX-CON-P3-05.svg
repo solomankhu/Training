@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
-<title>GAP-MFG-39 ของ SCP-INS เปลี่ยนเป็น Cancel แล้ว แต่ยังมีหัวข้อและรหัสนี้ในสไลด์อบรม UAT และ retired-claims.tsv มีแถวของ GAP นี้แล้ว</title>
+<title>GAP-MFG-39 ของ SCP-INS เปลี่ยนเป็น Cancel แล้ว แต่ยังมีหัวข้อและรหัสนี้ในสไลด์อบรม UAT และทะเบียนข้อความที่เลิกใช้มีแถวของ GAP นี้แล้ว</title>
 <rect width="640" height="360" fill="#FFFFFF"/>
 <text x="16" y="29" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">SCP-INS  gap list</text>
 <rect x="16" y="38" width="608" height="30" rx="0" fill="#008271"/>
@@ -11,7 +11,7 @@
 <text x="136" y="88.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">รายงานต้นทุนผลิตรายใบสั่ง</text>
 <text x="466" y="88.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Cancel</text>
 <rect x="16" y="38" width="608" height="60" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
-<text x="16" y="121" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">wiki/retired-claims.tsv</text>
+<text x="16" y="121" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">ทะเบียนข้อความที่เลิกใช้</text>
 <rect x="16" y="130" width="608" height="30" rx="0" fill="#008271"/>
 <text x="24" y="150.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">regex</text>
 <text x="136" y="150.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">reason</text>

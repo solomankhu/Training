@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
-<title>ผล validate_master_file.py ของไฟล์ master GOF-INS ได้ 0 Fail ทุกแผ่นงาน แต่ราคาขายมีรหัสลูกค้าที่ไม่มีในแผ่นงานลูกค้า และผู้ติดต่อของผู้ขายซ้ำกับไฟล์ CRM</title>
+<title>ผลการตรวจไฟล์ master ของ GOF-INS ได้ 0 Fail ทุกแผ่นงาน แต่ราคาขายมีรหัสลูกค้าที่ไม่มีในแผ่นงานลูกค้า และผู้ติดต่อของผู้ขายซ้ำกับไฟล์ CRM</title>
 <rect width="640" height="360" fill="#FFFFFF"/>
 <rect x="16" y="14" width="608" height="152" rx="8" fill="#262626"/>
 <path d="M16 22 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#3B4343"/>
 <text x="28" y="31" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" fill="#A9B6B5" text-anchor="start" xml:space="preserve" style="white-space:pre">Terminal  GOF-INS</text>
-<text x="28" y="63" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#6FD6C4" text-anchor="start" xml:space="preserve" style="white-space:pre">$ python scripts/validate_master_file.py GOF-INS_MF.xlsx</text>
+<text x="28" y="63" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#6FD6C4" text-anchor="start" xml:space="preserve" style="white-space:pre">&gt; ตรวจไฟล์ master  GOF-INS_MF.xlsx</text>
 <text x="28" y="85" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#F4F6F6" text-anchor="start" xml:space="preserve" style="white-space:pre">Sheet                                      Rows   Fail   Warn</text>
 <text x="28" y="107" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#9BE3B5" text-anchor="start" xml:space="preserve" style="white-space:pre">1.Customer                                    2      0      0</text>
 <text x="28" y="129" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#9BE3B5" text-anchor="start" xml:space="preserve" style="white-space:pre">2.Sales Price                                 2      0      0</text>

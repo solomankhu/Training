@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
-<title>trace_check.py ของ NSL-01 รายงาน GAP-FA-35 ที่ Confirm ขาด FDD การทดสอบ และเนื้อหาอบรม แต่ฟิลด์ถูกสร้างและทดสอบผ่านแถวใน defect log ที่ปิดแล้ว และ Description ของฟิลด์เป็นเลข defect</title>
+<title>การตรวจเส้นทาง GAP ของ NSL-01 รายงาน GAP-FA-35 ที่ Confirm ขาด FDD การทดสอบ และเนื้อหาอบรม แต่ฟิลด์ถูกสร้างและทดสอบผ่านแถวใน defect log ที่ปิดแล้ว และ Description ของฟิลด์เป็นเลข defect</title>
 <rect width="640" height="360" fill="#FFFFFF"/>
 <rect x="16" y="14" width="608" height="152" rx="8" fill="#262626"/>
 <path d="M16 22 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#3B4343"/>
 <text x="28" y="31" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" fill="#A9B6B5" text-anchor="start" xml:space="preserve" style="white-space:pre">Terminal  NSL-01</text>
-<text x="28" y="63" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#6FD6C4" text-anchor="start" xml:space="preserve" style="white-space:pre">$ python scripts/trace_check.py NSL-01 \</text>
-<text x="28" y="85" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#6FD6C4" text-anchor="start" xml:space="preserve" style="white-space:pre">  --require fdd,test,training</text>
+<text x="28" y="63" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#6FD6C4" text-anchor="start" xml:space="preserve" style="white-space:pre">&gt; ตรวจเส้นทาง GAP  NSL-01</text>
+<text x="28" y="85" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#6FD6C4" text-anchor="start" xml:space="preserve" style="white-space:pre">&gt; ชั้นที่ต้องมี fdd,test,training</text>
 <text x="28" y="107" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#F4F6F6" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP        status  fdd bi test train log al tc missing</text>
 <rect x="20" y="115" width="600" height="22" rx="3" fill="#4A3030"/>
 <text x="28" y="129" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#FF9C92" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-FA-35  Confirm   0  0    0     0   1  1  0 fdd,test,training</text>

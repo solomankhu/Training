@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
-<title>defect เรื่อง Unit Cost เคยถูกปิดหลังผู้แจ้งทดสอบด้วยมือกรณีเดียว แล้วถูกแจ้งใหม่ภายใน 2 สัปดาห์ และ test_contract_gate.py รายงาน NO_TEST_CHANGED กับ NEGATIVE_TEST_MISSING</title>
+<title>defect เรื่อง Unit Cost เคยถูกปิดหลังผู้แจ้งทดสอบด้วยมือกรณีเดียว แล้วถูกแจ้งใหม่ภายใน 2 สัปดาห์ และการตรวจ test ของโค้ดที่แก้รายงาน NO_TEST_CHANGED กับ NEGATIVE_TEST_MISSING</title>
 <rect width="640" height="360" fill="#FFFFFF"/>
 <text x="16" y="29" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">SCP-INS  ประวัติ defect</text>
 <rect x="16" y="38" width="608" height="30" rx="0" fill="#008271"/>
@@ -22,7 +22,7 @@
 <rect x="16" y="170" width="608" height="174" rx="8" fill="#262626"/>
 <path d="M16 178 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#3B4343"/>
 <text x="28" y="187" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" fill="#A9B6B5" text-anchor="start" xml:space="preserve" style="white-space:pre">Terminal  SCP-INS</text>
-<text x="28" y="219" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#6FD6C4" text-anchor="start" xml:space="preserve" style="white-space:pre">$ python scripts/test_contract_gate.py SCP-INS/9_AL/Site</text>
+<text x="28" y="219" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#6FD6C4" text-anchor="start" xml:space="preserve" style="white-space:pre">&gt; ตรวจ test ของโค้ดที่แก้  SCP-INS/9_AL/Site</text>
 <rect x="20" y="227" width="600" height="22" rx="3" fill="#4A3030"/>
 <text x="28" y="241" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#FF9C92" text-anchor="start" xml:space="preserve" style="white-space:pre">NO_TEST_CHANGED        codeunit 70240 AMS Receipt Cost Mgt </text>
 <rect x="20" y="249" width="600" height="22" rx="3" fill="#4A3030"/>

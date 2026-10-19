@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
-<title>ผลค้น wiki ของ SCP-INS พบข้อความประเมิน man-day จากสำเนาไฟล์ต้นทุนในชั้น raw และ extract_raw.py ไม่รายงานว่าไฟล์ถูก block หรือถูกกันออก</title>
+<title>ผลค้น wiki ของ SCP-INS พบข้อความประเมิน man-day จากสำเนาไฟล์ต้นทุนในชั้น raw และการดึงข้อความเข้าชั้นข้อความดิบไม่รายงานว่าไฟล์ถูก block หรือถูกกันออก</title>
 <rect width="640" height="360" fill="#FFFFFF"/>
 <rect x="16" y="14" width="608" height="136" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
 <path d="M16 22 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
@@ -13,7 +13,7 @@
 <rect x="16" y="164" width="608" height="138" rx="8" fill="#262626"/>
 <path d="M16 172 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#3B4343"/>
 <text x="28" y="181" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" fill="#A9B6B5" text-anchor="start" xml:space="preserve" style="white-space:pre">Terminal  SCP-INS</text>
-<text x="28" y="214" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#6FD6C4" text-anchor="start" xml:space="preserve" style="white-space:pre">$ python scripts/extract_raw.py SCP-INS --list</text>
+<text x="28" y="214" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#6FD6C4" text-anchor="start" xml:space="preserve" style="white-space:pre">&gt; ดึงข้อความเข้าชั้นข้อความดิบ  SCP-INS  พร้อมรายการไฟล์</text>
 <text x="28" y="238" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#F4F6F6" text-anchor="start" xml:space="preserve" style="white-space:pre">raw extract ok 11, unchanged 1; manifest 12 files -&gt;</text>
 <text x="28" y="262" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#F4F6F6" text-anchor="start" xml:space="preserve" style="white-space:pre">  wiki\raw\_manifest.json</text>
 <text x="28" y="286" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#F4F6F6" text-anchor="start" xml:space="preserve" style="white-space:pre">  changed 0_Presales/estimate/presales_md_v2_20260915.md</text>
