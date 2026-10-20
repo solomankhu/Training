@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>gap list ของโครงการ GOF-INS 2 แถว คู่กับรายการเอกสารที่อ้างรหัส GAP ของแต่ละแถว</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<text x="16" y="25" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">gap list GOF-INS</text>
+<rect x="16" y="34" width="608" height="30" rx="0" fill="#008271"/>
+<text x="24" y="54.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP</text>
+<text x="162" y="54.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">เรื่อง</text>
+<text x="382" y="54.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">สถานะ</text>
+<text x="482" y="54.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">รหัสการตัดสินใจ</text>
+<rect x="16" y="64" width="608" height="30" rx="0" fill="#FFFFFF"/>
+<text x="24" y="84.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-SALES-44</text>
+<text x="162" y="84.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ส่วนลดตามปริมาณ</text>
+<text x="382" y="84.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Cancel</text>
+<text x="482" y="84.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">D-12</text>
+<rect x="16" y="94" width="608" height="30" rx="0" fill="#F4F6F6"/>
+<text x="24" y="114.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-SALES-45</text>
+<text x="162" y="114.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">พิมพ์ใบส่งของแยกคลัง</text>
+<text x="382" y="114.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Confirm</text>
+<text x="482" y="114.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">D-09</text>
+<rect x="16" y="34" width="608" height="90" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+<text x="16" y="153" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">เอกสารที่อ้างรหัส GAP</text>
+<rect x="16" y="162" width="608" height="30" rx="0" fill="#008271"/>
+<text x="24" y="182.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">เอกสาร</text>
+<text x="424" y="182.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">อ้าง GAP</text>
+<rect x="16" y="192" width="608" height="30" rx="0" fill="#FFFFFF"/>
+<text x="24" y="212.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">FDD ระบบขาย หัวข้อ 4</text>
+<text x="424" y="212.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-SALES-44</text>
+<rect x="16" y="222" width="608" height="30" rx="0" fill="#F4F6F6"/>
+<text x="24" y="242.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">object 70121 และ test</text>
+<text x="424" y="242.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-SALES-45</text>
+<rect x="16" y="252" width="608" height="30" rx="0" fill="#FFFFFF"/>
+<text x="24" y="272.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ตาราง UAT scenario S-07</text>
+<text x="424" y="272.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-SALES-45</text>
+<rect x="16" y="282" width="608" height="30" rx="0" fill="#F4F6F6"/>
+<text x="24" y="302.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">สื่ออบรมระบบขาย บทที่ 3</text>
+<text x="424" y="302.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-SALES-44</text>
+<rect x="16" y="312" width="608" height="30" rx="0" fill="#FFFFFF"/>
+<text x="24" y="332.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">คู่มือการใช้งานระบบขาย หัวข้อ 2</text>
+<text x="424" y="332.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-SALES-44</text>
+<rect x="16" y="162" width="608" height="180" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+</svg>

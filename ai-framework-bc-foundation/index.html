@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<base target="_top">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#007565">
+<title>แบบทดสอบ Foundation AI-Framework-BC</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+:root{
+  --ground:#EEF3F2; --surface:#FFFFFF; --surface-2:#F6F9F8;
+  --ink:#14211D; --ink-2:#46564F; --ink-3:#77877F;
+  --line:#DCE5E1; --line-2:#C3D0CA;
+  --accent:#008271; --accent-ink:#FFFFFF; --accent-soft:#DDF3EF;
+  --amber:#B26A0E; --amber-soft:#FFF1DC;
+  --bad:#B23A2B; --bad-soft:#FBE6E2;
+  --good:#0F8A4F; --good-soft:#DFF5E8;
+  --hero-a:#006356; --hero-b:#008271; --hero-c:#1BB3A0;
+  --p1:#008271; --p1s:#DDF3EF;
+  --p2:#1E6FD9; --p2s:#E3EEFC;
+  --p3:#D2641A; --p3s:#FCEBDD;
+  --p4:#7A4CD0; --p4s:#EEE7FB;
+  --p5:#C8336C; --p5s:#FBE4EC;
+  --shadow:0 1px 2px rgba(20,33,29,.06), 0 10px 28px rgba(20,33,29,.07);
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --ground:#0B1210; --surface:#151E1B; --surface-2:#1C2724;
+    --ink:#E6EEEA; --ink-2:#A9B7B0; --ink-3:#7C8B84;
+    --line:#26332F; --line-2:#36463F;
+    --accent:#30E5D0; --accent-ink:#0B1210; --accent-soft:#103B35;
+    --amber:#F0A94A; --amber-soft:#35270F;
+    --bad:#F08573; --bad-soft:#3B1E19;
+    --good:#4FD68F; --good-soft:#123222;
+    --hero-a:#043F37; --hero-b:#00695C; --hero-c:#0E8F80;
+    --p1:#30E5D0; --p1s:#103B35;
+    --p2:#79AEFF; --p2s:#15263F;
+    --p3:#FF9F5A; --p3s:#3A2413;
+    --p4:#B9A0FF; --p4s:#271D40;
+    --p5:#FF84B1; --p5s:#3D1828;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 28px rgba(0,0,0,.35);
+  }
+}
+*,*::before,*::after{box-sizing:border-box}
+html{height:100%}
+body{height:100%;margin:0;background:var(--ground);color:var(--ink);
+  font-family:"Prompt","Noto Sans Thai",system-ui,sans-serif;font-size:15px;line-height:1.62;
+  -webkit-font-smoothing:antialiased}
+.mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:6px}
+[hidden]{display:none!important}
+
+/* สีประจำหมวด ใช้ผ่าน data-part */
+[data-part="1"]{--pc:var(--p1);--ps:var(--p1s)}
+[data-part="2"]{--pc:var(--p2);--ps:var(--p2s)}
+[data-part="3"]{--pc:var(--p3);--ps:var(--p3s)}
+[data-part="4"]{--pc:var(--p4);--ps:var(--p4s)}
+[data-part="5"]{--pc:var(--p5);--ps:var(--p5s)}
+
+#shell{height:100%;max-width:540px;margin:0 auto;background:var(--surface);
+  display:flex;flex-direction:column;box-shadow:var(--shadow);position:relative}
+.scroll{flex:1 1 auto;overflow-y:auto;-webkit-overflow-scrolling:touch}
+.pad{padding:18px 16px 28px}
+.foot{flex:0 0 auto;background:var(--surface);border-top:1px solid var(--line);
+  padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px));display:flex;gap:10px;align-items:center}
+.demo-strip{background:var(--amber-soft);color:var(--amber);font-size:12px;font-weight:600;
+  padding:7px 16px;text-align:center}
+
+/* แถบบนระหว่างทำข้อสอบ */
+.top{flex:0 0 auto;color:#fff;padding:calc(10px + env(safe-area-inset-top,0px)) 0 10px;
+  background:linear-gradient(135deg,var(--hero-a),var(--hero-b) 55%,var(--hero-c))}
+.top-row{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:0 16px}
+.top-title{font-size:13px;font-weight:600;opacity:.95;white-space:nowrap;overflow:hidden;text-overflow:clip}
+.top-count{font-size:12.5px;font-weight:600;background:rgba(255,255,255,.18);padding:3px 10px;border-radius:999px;white-space:nowrap}
+.track{height:6px;border-radius:999px;background:rgba(255,255,255,.25);overflow:hidden;margin:9px 16px 10px}
+.fill{height:100%;background:#fff;border-radius:999px;transition:width .35s cubic-bezier(.4,0,.2,1)}
+.nums{display:flex;gap:6px;overflow-x:auto;padding:2px 16px 4px;scrollbar-width:none;scroll-behavior:smooth}
+.nums::-webkit-scrollbar{display:none}
+.num{flex:0 0 auto;width:34px;height:34px;border-radius:10px;border:2px solid rgba(255,255,255,.55);
+  background:transparent;color:#fff;font-size:13px;font-weight:600;cursor:pointer;display:grid;place-items:center;
+  position:relative;padding:0}
+.num.done{background:#fff;color:var(--hero-b);border-color:#fff}
+.num.cur{box-shadow:0 0 0 3px rgba(255,255,255,.95), 0 0 0 5px rgba(0,0,0,.18);transform:translateY(-1px)}
+.num i{position:absolute;bottom:-3px;left:50%;transform:translateX(-50%);width:14px;height:4px;border-radius:2px;background:var(--pc)}
+@media (prefers-reduced-motion:reduce){.fill,.nums{transition:none;scroll-behavior:auto}}
+
+h1{font-size:23px;line-height:1.35;margin:0;font-weight:700;text-wrap:balance}
+h2{font-size:18px;line-height:1.45;margin:0;font-weight:600}
+.eyebrow{font-size:11.5px;font-weight:600;letter-spacing:.06em;color:var(--ink-3);margin:0}
+.lede{color:var(--ink-2);margin:0;font-size:14px}
+.tiny{font-size:12px;color:var(--ink-3);margin:0;line-height:1.55}
+.stack{display:flex;flex-direction:column;gap:16px}
+.stack-sm{display:flex;flex-direction:column;gap:9px}
+hr.rule{border:0;border-top:1px solid var(--line);margin:2px 0}
+
+/* หน้าลงทะเบียน */
+.welcome{margin:-18px -16px 0;padding:calc(22px + env(safe-area-inset-top,0px)) 18px 22px;color:#fff;
+  background:linear-gradient(150deg,var(--hero-a),var(--hero-b) 50%,var(--hero-c));border-radius:0 0 22px 22px}
+.welcome h1{color:#fff}
+.welcome .lede{color:rgba(255,255,255,.88)}
+.welcome .eyebrow{color:rgba(255,255,255,.8)}
+.hero{display:flex;justify-content:center;padding:6px 0 4px}
+.facts{display:flex;gap:8px;flex-wrap:wrap}
+.fact{flex:1 1 28%;min-width:92px;border-radius:12px;padding:10px 11px;background:var(--ps,var(--surface-2));border:1px solid var(--line)}
+.fact b{display:block;font-size:17px;font-weight:700;color:var(--pc,var(--ink))}
+.fact span{font-size:11.5px;color:var(--ink-2)}
+.legend{display:flex;flex-direction:column;gap:6px}
+.legend div{display:flex;align-items:center;gap:9px;font-size:13px;color:var(--ink-2)}
+.legend i{width:12px;height:12px;border-radius:4px;background:var(--pc);flex:none}
+.field{display:flex;flex-direction:column;gap:6px}
+.field label{font-size:12.5px;font-weight:600;color:var(--ink-2)}
+.field input,.field select{font:inherit;font-size:16px;padding:12px;border-radius:11px;
+  border:1px solid var(--line-2);background:var(--surface-2);color:var(--ink);width:100%}
+
+/* การ์ดคำถาม */
+.qhead{display:flex;align-items:center;gap:12px}
+.qbadge{flex:none;width:54px;height:54px;border-radius:16px;background:var(--pc);color:#fff;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1.05;box-shadow:0 6px 16px -6px var(--pc)}
+@media (prefers-color-scheme: dark){.qbadge{color:#0B1210}}
+.qbadge small{font-size:10px;font-weight:600;opacity:.9}
+.qbadge b{font-size:21px;font-weight:700}
+.qmeta{display:flex;flex-direction:column;gap:5px;min-width:0}
+.pchip{align-self:flex-start;font-size:11.5px;font-weight:600;padding:3px 10px;border-radius:999px;background:var(--ps);color:var(--pc)}
+.tchip{font-size:12px;color:var(--ink-3);font-weight:500}
+.qimg{margin:0;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:#F6F9F8;box-shadow:0 6px 18px -10px var(--pc)}
+.qimg img{display:block;width:100%;height:auto;aspect-ratio:16/9}
+.stem{font-size:17px;line-height:1.6;font-weight:600;margin:0}
+.hint{font-size:12.5px;color:var(--ink-3);margin:0}
+.case{border-radius:14px;padding:13px 14px;background:var(--ps);border-left:5px solid var(--pc);display:flex;flex-direction:column;gap:5px}
+.case .eyebrow{color:var(--pc)}
+.case p{margin:0;font-size:14px;line-height:1.6;color:var(--ink);white-space:pre-line}
+
+.opts{display:flex;flex-direction:column;gap:10px;margin:0;padding:0;list-style:none}
+.opt{display:flex;gap:12px;align-items:flex-start;padding:13px 13px;border-radius:14px;
+  border:1.5px solid var(--line-2);background:var(--surface);cursor:pointer;text-align:left;width:100%;
+  transition:border-color .15s,background .15s,transform .1s}
+.opt:active{transform:scale(.99)}
+.opt[aria-checked="true"]{border-color:var(--pc);background:var(--ps)}
+.letter{flex:none;width:30px;height:30px;border-radius:9px;border:1.5px solid var(--line-2);background:var(--surface-2);
+  display:grid;place-items:center;font-size:14px;font-weight:600;color:var(--ink-2)}
+.letter.round{border-radius:50%}
+.opt[aria-checked="true"] .letter{background:var(--pc);border-color:var(--pc);color:#fff}
+@media (prefers-color-scheme: dark){.opt[aria-checked="true"] .letter{color:#0B1210}}
+.opt-text{flex:1;font-size:14.5px;line-height:1.55;padding-top:3px}
+
+.ord{display:flex;flex-direction:column;gap:9px;margin:0;padding:0;list-style:none;position:relative}
+.ord li{display:flex;align-items:stretch;gap:9px;padding:9px 9px 9px 10px;border-radius:14px;
+  border:1.5px solid var(--line-2);background:var(--surface);position:relative}
+.ord li.dragging{z-index:5;border-color:var(--pc);box-shadow:0 8px 20px rgba(20,33,29,.18);pointer-events:none;user-select:none}
+.ord.ok li{border-color:var(--pc)}
+.rank{flex:none;width:28px;height:28px;align-self:center;border-radius:9px;background:var(--pc);color:#fff;
+  display:grid;place-items:center;font-size:13px;font-weight:700}
+@media (prefers-color-scheme: dark){.rank{color:#0B1210}}
+.ord-text{flex:1;font-size:14.5px;line-height:1.5;align-self:center}
+.nudge{display:flex;flex-direction:column;gap:4px;flex:none}
+.nudge button{width:38px;height:30px;border-radius:9px;border:1px solid var(--line-2);background:var(--surface-2);
+  cursor:pointer;display:grid;place-items:center;padding:0}
+.nudge button:disabled{opacity:.3;cursor:not-allowed}
+.grip{flex:none;width:32px;border-radius:9px;border:1px solid var(--line-2);background:var(--surface-2);
+  display:grid;place-items:center;cursor:grab;touch-action:none;user-select:none;-webkit-user-select:none}
+.ordok{display:flex;align-items:center;gap:10px;padding:12px 14px;border-radius:14px;border:1.5px dashed var(--pc);
+  background:var(--surface);color:var(--pc);font-weight:600;cursor:pointer;width:100%;justify-content:center}
+.ordok.on{border-style:solid;background:var(--ps)}
+
+.btn{flex:1;padding:13px 16px;border-radius:13px;border:1px solid transparent;background:var(--accent);
+  color:var(--accent-ink);font-weight:600;font-size:15px;cursor:pointer}
+.btn:disabled{opacity:.42;cursor:not-allowed}
+.btn.ghost{background:var(--surface);border-color:var(--line-2);color:var(--ink-2);flex:0 0 auto}
+.btn.warn{background:var(--amber);color:#fff}
+@media (prefers-color-scheme: dark){.btn.warn{color:#0B1210}}
+.saved{flex:1;font-size:11.5px;color:var(--ink-3);display:flex;align-items:center;justify-content:center;gap:5px;text-align:center}
+
+.notice{border-radius:13px;padding:11px 13px;font-size:13.5px;display:flex;gap:10px;align-items:flex-start}
+.notice.warn{background:var(--amber-soft);color:var(--amber);border:1px solid var(--amber)}
+.notice.ok{background:var(--good-soft);color:var(--good);border:1px solid var(--good)}
+.notice b{font-weight:700}
+
+/* ตรวจก่อนส่ง */
+.grid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin:0;padding:0;list-style:none}
+.cell{aspect-ratio:1;border-radius:12px;border:2px solid var(--pc);background:var(--surface);color:var(--pc);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;width:100%;padding:0}
+.cell b{font-size:15px;font-weight:700}
+.cell span{font-size:10px;font-weight:600}
+.cell.done{background:var(--pc);color:#fff}
+@media (prefers-color-scheme: dark){.cell.done{color:#0B1210}}
+.cell.todo{border-style:dashed;background:var(--amber-soft);border-color:var(--amber);color:var(--amber)}
+.tally{display:flex;gap:8px}
+.tally div{flex:1;border-radius:13px;padding:11px 13px;border:1px solid var(--line)}
+.tally .ok{background:var(--good-soft);border-color:var(--good);color:var(--good)}
+.tally .no{background:var(--amber-soft);border-color:var(--amber);color:var(--amber)}
+.tally b{display:block;font-size:22px;font-weight:700}
+.tally span{font-size:12px}
+
+/* ผลคะแนน */
+.bar{height:9px;border-radius:99px;background:var(--line);overflow:hidden;margin-top:5px}
+.bar i{display:block;height:100%;border-radius:99px}
+.rv{background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--pc);border-radius:13px;overflow:hidden}
+.rv summary{display:flex;gap:10px;align-items:flex-start;padding:12px;cursor:pointer;list-style:none}
+.rv summary::-webkit-details-marker{display:none}
+.rv summary svg{flex:none;margin-top:1px}
+.rv-q{flex:1;font-size:13.5px;line-height:1.55}
+.rv-body{padding:0 14px 14px 44px;font-size:13.5px}
+.rv-h{margin:10px 0 4px;font-size:12px;font-weight:600;color:var(--ink-3)}
+.rv-list{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:3px}
+.rv-why{margin:0;color:var(--ink-2);line-height:1.65;white-space:pre-line;background:var(--surface-2);border-radius:10px;padding:10px 12px}
+.chip{font-size:11px;font-weight:600;padding:3px 9px;border-radius:999px;background:var(--ps,var(--accent-soft));color:var(--pc,var(--accent));white-space:nowrap}
+.score-card{background:var(--surface-2);border:1px solid var(--line);border-radius:16px;padding:16px 15px;display:flex;flex-direction:column;gap:10px}
+.kv{display:flex;justify-content:space-between;gap:14px;align-items:baseline}
+.kv span{font-size:13px;color:var(--ink-3)}
+.kv b{font-size:13.5px;font-weight:600;text-align:right}
+.errbox{background:var(--bad-soft);border:1px solid var(--bad);border-radius:13px;padding:13px 14px}
+.errbox .eyebrow{color:var(--bad)}
+.errbox p{margin:6px 0 0;font-size:13.5px;line-height:1.55;color:var(--ink-2)}
+
+.toast{position:absolute;left:50%;bottom:calc(84px + env(safe-area-inset-bottom,0px));transform:translate(-50%,8px);background:var(--ink);color:var(--surface);
+  padding:9px 16px;border-radius:999px;font-size:13px;font-weight:600;box-shadow:var(--shadow);opacity:0;
+  transition:opacity .25s,transform .25s;pointer-events:none;z-index:20;white-space:nowrap}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+.shake{animation:shake .35s}
+@keyframes shake{25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+@media (prefers-reduced-motion:reduce){.shake{animation:none}.toast{transition:none}}
+</style>
+</head>
+<body>
+
+<div id="shell">
+  <div class="demo-strip" id="strip" hidden></div>
+  <div class="top" id="topbar" hidden>
+    <div class="top-row"><span class="top-title" id="ttitle"></span><span class="top-count mono" id="tcount"></span></div>
+    <div class="track"><div class="fill" id="pfill"></div></div>
+    <div class="nums" id="nums" role="navigation" aria-label="เลือกข้อ"></div>
+  </div>
+  <div class="scroll" id="scroll"><div class="pad" id="view"></div></div>
+  <div class="foot" id="foot" hidden></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</div>
+
+<script src="items.js"></script>
+
+<script>
+/* URL ของ Apps Script ที่ deploy แล้ว (ขั้นที่ 5 และ 7 ใน SETUP.md) */
+var ENDPOINT = 'https://script.google.com/macros/s/AKfycbykS9wdOYl1CJFV4hwuy8quKn7AKHgTJR9vIjRe1MU9_H-WYi-WekCgX82wYo4NubOo/exec';
+
+/* ROLES (ชื่อชุดและ track ของทุกบทบาท) มาจาก items.js ซึ่งสร้างจาก exam_config.py
+   ห้ามประกาศ ROLES ซ้ำในไฟล์นี้ ไม่เช่นนั้นหน้าเว็บกับ Apps Script จะมีรายการบทบาทไม่ตรงกัน */
+
+/* หน่วยงานในแบบฟอร์มลงทะเบียน แก้รายการนี้ให้ตรงกับโครงสร้างจริงของบริษัท */
+var DEPARTMENTS = ['PM','Presales','Consulting','Data','Development','Testing','MA','อื่น ๆ'];
+
+/* ค่าจาก QR role ต้องอยู่ใน whitelist และ session เหลือเฉพาะ A-Za-z0-9_- */
+var QR = (function () {
+  var p = new URLSearchParams(location.search);
+  var r = String(p.get('role') || '');
+  return {
+    role: Object.prototype.hasOwnProperty.call(ROLES, r) ? r : '',
+    session: String(p.get('session') || '').replace(/[^A-Za-z0-9_-]/g, '').slice(0, 40)
+  };
+})();
+
+/* ชื่อหมวดตามสเปก Foundation หัวข้อ 4.1 มี 2 หมวด */
+var PARTS = {
+  1:'ความรู้และแนวคิด',
+  2:'ขั้นตอนที่ถูกต้องในสถานการณ์'
+};
+var TYPES = {
+  single:'เลือก 1 คำตอบ',
+  scenario:'เหตุการณ์สมมติ เลือก 1 คำตอบ',
+  case:'กรณีศึกษา เลือก 1 คำตอบ',
+  multiple:'เลือกได้มากกว่า 1 คำตอบ',
+  ordering:'เรียงลำดับขั้นตอน'
+};
+var LETTERS = ['ก','ข','ค','ง','จ','ฉ','ช'];
+
+var ICONS = {
+  ok:  '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="var(--good)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9" fill="var(--good-soft)"/><path d="M8 12.4l2.6 2.6L16 9.6"/></svg>',
+  wait:'<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="var(--amber)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9" fill="var(--amber-soft)"/><path d="M8 12h8"/></svg>',
+  fail:'<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="var(--bad)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9" fill="var(--bad-soft)"/><path d="M9.3 9.3l5.4 5.4M14.7 9.3l-5.4 5.4"/></svg>'
+};
+var TICK = '<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="var(--good)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>';
+var UP   = '<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="var(--ink-2)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V6M6 12l6-6 6 6"/></svg>';
+var DOWN = '<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="var(--ink-2)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v13M18 12l-6 6-6-6"/></svg>';
+var GRIP = '<svg viewBox="0 0 16 22" width="16" height="22" fill="var(--ink-3)" aria-hidden="true"><circle cx="5" cy="5" r="1.7"/><circle cx="11" cy="5" r="1.7"/><circle cx="5" cy="11" r="1.7"/><circle cx="11" cy="11" r="1.7"/><circle cx="5" cy="17" r="1.7"/><circle cx="11" cy="17" r="1.7"/></svg>';
+
+/* ============================ สถานะ ============================ */
+var DRAFT_KEY = 'amco-ai-framework-bc-foundation-exam-v1';   /* GitHub Pages ใช้ origin เดียวกันทุกชุด จึงต้องไม่ซ้ำกับชุดอื่น (รวมแบบทดสอบหลังอบรม ซึ่งใช้ amco-ai-framework-bc-exam-v1) */
+var BANK = window.BANK_VERSION || '';
+/* ชุดที่ยังไม่มีข้อสอบถือว่ายังไม่เปิดสอบ ไม่แสดงในตัวเลือก และเริ่มทำไม่ได้ */
+function hasItems(r){ return !!(ROLES[r] && ITEMS_BY_ROLE[r] && ITEMS_BY_ROLE[r].length); }
+var OPEN_ROLES = Object.keys(ROLES).filter(hasItems);
+/* มีชุดเดียวที่เปิดสอบ ใช้ชุดนั้นเสมอไม่ว่า QR จะมี role อะไรมา (หรือไม่มีเลย) และไม่แสดงตัวเลือกชุด
+   ถ้ามีหลายชุด ใช้ชุดตาม QR และให้เลือกเองเมื่อ QR ไม่ได้ระบุชุดที่เปิดสอบ */
+var SINGLE_PAPER = OPEN_ROLES.length === 1;
+var START_ROLE = SINGLE_PAPER ? OPEN_ROLES[0] : (hasItems(QR.role) ? QR.role : null);
+var state = {
+  screen:'register', idx:0, fix:false, bank:BANK,
+  role: START_ROLE,
+  roleFromQR: !!START_ROLE,
+  qrClosed: !START_ROLE && !!QR.role,
+  session: QR.session || 'AMCO-BCFW-F01',   /* ต้องตรงกับ DEFAULT_SESSION ใน exam_config.py */
+  track: START_ROLE ? ROLES[START_ROLE].track : 'office',
+  clientToken: null,
+  profile:{name:'', dept:''},
+  answers:{}, order:{}, ordOk:{}, startedAt:null, receipt:null, sendError:null
+};
+function ITEMS(){ return (state.role && ITEMS_BY_ROLE[state.role]) || []; }
+function roleTh(){ return state.role ? ROLES[state.role].th : '-'; }
+function uuid(){
+  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c){
+    var r = Math.random()*16|0, v = c === 'x' ? r : (r&0x3|0x8); return v.toString(16);
+  });
+}
+/* qrClosed มาจาก QR ของลิงก์ที่เปิดอยู่ทุกครั้งที่โหลดหน้า จึงไม่เก็บลงร่าง ค่าเก่าที่ค้างอยู่จะทำให้หน้าลงทะเบียนพังเมื่อเปิดลิงก์ที่ไม่มี role */
+function save(){
+  try{
+    var d = {}; for(var k in state){ if(k !== 'qrClosed') d[k] = state[k]; }
+    localStorage.setItem(DRAFT_KEY, JSON.stringify(d));
+  }catch(e){}
+}
+function readDraft(){
+  try{
+    var d = JSON.parse(localStorage.getItem(DRAFT_KEY) || 'null');
+    if(!d || d.screen==='register' || d.screen==='submitted') return null;
+    if(d.bank !== BANK) return null;       /* ข้อสอบเปลี่ยนชุดแล้ว ร่างเดิมใช้ไม่ได้ */
+    return d;
+  }catch(e){ return null; }
+}
+function applyDraft(d){
+  for(var k in d){ if(k !== 'qrClosed') state[k]=d[k]; }   /* ร่างที่บันทึกก่อนแก้อาจมี qrClosed ค้างอยู่ ไม่รับมา */
+  state.ordOk = state.ordOk || {};
+  /* หน้าชั่วคราวกลับไปที่หน้าตรวจก่อนส่ง ส่วนหน้าคำถามกลับไปข้อเดิม */
+  if(state.screen==='sending' || state.screen==='confirm' || state.screen==='failed') state.screen='review';
+  if(state.idx<0 || state.idx>=ITEMS().length) state.idx=0;
+}
+function clearDraft(){ try{ localStorage.removeItem(DRAFT_KEY); }catch(e){} }
+
+function orderItems(it){ return it.type==='ordering' ? it.items : null; }
+function initOrder(it){
+  if(!state.order[it.id]){
+    var n = orderItems(it).length, seq = [];
+    for(var i=0;i<n;i++) seq.push(i);
+    for(var j=n-1;j>0;j--){ var m=(j*7+3)%(j+1), t=seq[j]; seq[j]=seq[m]; seq[m]=t; }
+    state.order[it.id] = seq;
+  }
+  return state.order[it.id];
+}
+/* ข้อเรียงลำดับนับว่าตอบแล้วเมื่อผู้สอบขยับลำดับหรือกดยืนยันลำดับ */
+function answered(it){
+  if(it.type==='ordering') return !!state.ordOk[it.id];
+  var a = state.answers[it.id]; return !!a && a.length>0;
+}
+function doneCount(){ return ITEMS().filter(answered).length; }
+function firstTodo(from){
+  var L = ITEMS(), n = L.length;
+  for(var k=0;k<n;k++){ var i=((from||0)+k)%n; if(!answered(L[i])) return i; }
+  return -1;
+}
+function esc(s){ return String(s).replace(/[&<>"]/g,function(c){
+  return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+var toastT;
+function toast(msg){
+  var t=document.getElementById('toast'); t.textContent=msg; t.classList.add('show');
+  clearTimeout(toastT); toastT=setTimeout(function(){ t.classList.remove('show'); }, 2200);
+}
+
+/* ============================ การวาดหน้าจอ ============================ */
+var view=document.getElementById('view'), foot=document.getElementById('foot'),
+    topbar=document.getElementById('topbar'), scroll=document.getElementById('scroll');
+
+function render(){
+  var q = state.screen==='question' || state.screen==='review';
+  topbar.hidden = !q;
+  if(q) renderTop();
+  ({register:vRegister, question:vQuestion, review:vReview, confirm:vConfirm,
+    sending:vSending, submitted:vSubmitted, failed:vFailed})[state.screen]();
+  scroll.scrollTop = 0;
+}
+function renderTop(){
+  var L = ITEMS(), d = doneCount();
+  /* ชื่อชุดที่ขึ้นต้นด้วยอักษรละติน (PM และ Presales) ต้องเว้นวรรคหลังคำว่า ชุด */
+  document.getElementById('ttitle').textContent = 'ชุด'+(/^[A-Za-z0-9]/.test(roleTh()) ? ' ' : '')+roleTh();
+  document.getElementById('tcount').textContent = 'ตอบแล้ว '+d+' จาก '+L.length;
+  document.getElementById('pfill').style.width = (d/L.length*100)+'%';
+  var nums = document.getElementById('nums');
+  nums.innerHTML = L.map(function(it,i){
+    var cur = state.screen==='question' && i===state.idx;
+    return '<button type="button" class="num mono'+(answered(it)?' done':'')+(cur?' cur':'')+'" data-part="'+it.part+'" data-i="'+i+'"'
+      + ' aria-label="ข้อ '+(i+1)+' '+(answered(it)?'ตอบแล้ว':'ยังไม่ได้ตอบ')+'"'+(cur?' aria-current="step"':'')+'>'+(i+1)+'<i></i></button>';
+  }).join('');
+  Array.prototype.forEach.call(nums.children, function(b){
+    b.onclick = function(){ state.idx=+b.dataset.i; state.screen='question'; save(); render(); };
+  });
+  var c = nums.querySelector('.cur');
+  if(c){ nums.scrollLeft = c.offsetLeft - nums.clientWidth/2 + c.clientWidth/2; }
+}
+function refreshTopState(){
+  /* อัปเดตเฉพาะสถานะตอบแล้ว ไม่วาดใหม่ทั้งหน้า */
+  var L = ITEMS(), d = doneCount();
+  document.getElementById('tcount').textContent = 'ตอบแล้ว '+d+' จาก '+L.length;
+  document.getElementById('pfill').style.width = (d/L.length*100)+'%';
+  Array.prototype.forEach.call(document.getElementById('nums').children, function(b){
+    var ok = answered(L[+b.dataset.i]);
+    b.classList.toggle('done', ok);
+    b.setAttribute('aria-label','ข้อ '+(+b.dataset.i+1)+' '+(ok?'ตอบแล้ว':'ยังไม่ได้ตอบ'));
+  });
+}
+
+function partCount(){
+  var c = {}; ITEMS().forEach(function(it){ c[it.part]=(c[it.part]||0)+1; }); return c;
+}
+
+function vRegister(){
+  var pc = partCount();
+  var closed = state.qrClosed
+    ? '<div class="notice warn"><span>ชุด'+(/^[A-Za-z0-9]/.test(ROLES[QR.role].th) ? ' ' : '')+esc(ROLES[QR.role].th)
+      + ' ยังไม่เปิดสอบ'+(OPEN_ROLES.length ? ' เลือกชุดที่เปิดสอบแล้วด้านล่าง หรือสอบถามผู้สอน' : ' ติดต่อผู้สอน')+'</span></div>'
+    : '';
+  var roleBlock = state.roleFromQR
+    ? '<div class="field"><label>ชุดข้อสอบ</label>'
+      + '<div style="display:flex;align-items:center;gap:9px;padding:12px;border-radius:11px;border:1.5px solid var(--accent);background:var(--accent-soft)">'
+      + '<span style="font-size:15px;font-weight:600;color:var(--accent)">'+esc(roleTh())+'</span>'
+      + '<span class="chip" style="margin-left:auto">รุ่น '+esc(state.session)+'</span></div></div>'
+    : !OPEN_ROLES.length
+    ? closed + (state.qrClosed ? '' : '<div class="notice warn"><span>ขณะนี้ยังไม่เปิดสอบทุกชุด ติดต่อผู้สอน</span></div>')
+    : closed + '<div class="field"><label for="f-role">ชุดข้อสอบ</label><select id="f-role">'
+      + '<option value="">เลือกชุดข้อสอบ</option>'
+      + OPEN_ROLES.map(function(k){
+          return '<option value="'+k+'"'+(state.role===k?' selected':'')+'>'+esc(ROLES[k].th)+'</option>'; }).join('')
+      + '</select><p class="tiny">'+(state.qrClosed ? 'แสดงเฉพาะชุดที่เปิดสอบแล้ว'
+          : 'ปกติชุดข้อสอบมาจาก QR ที่สแกน หน้านี้ไม่ได้รับค่ามา จึงต้องเลือกเอง')+'</p></div>';
+
+  view.innerHTML =
+    '<div class="stack">'
+    + '<div class="welcome"><div class="stack-sm">'
+      + '<div class="hero"><svg viewBox="0 0 230 116" width="210" height="106" role="img" aria-label="ภาพประกอบรายการตรวจและจุดตรวจอัตโนมัติที่งานต้องผ่านครบทุกข้อก่อนไปต่อ">'
+      + '<rect x="1" y="8" width="228" height="107" rx="14" fill="rgba(255,255,255,.14)"/>'
+      + '<rect x="14" y="20" width="100" height="84" rx="10" fill="#fff"/>'
+      + '<g fill="#E3F4F0" stroke="#008271" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="30" cy="40" r="8"/><circle cx="30" cy="62" r="8"/></g>'
+      + '<g fill="none" stroke="#008271" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M26 40l3 3 5-6M26 62l3 3 5-6"/></g>'
+      + '<circle cx="30" cy="84" r="8" fill="#FFF1DC" stroke="#FFB547" stroke-width="2.6" stroke-dasharray="3 3"/>'
+      + '<g stroke="#008271" stroke-width="3" stroke-linecap="round" opacity=".6"><path d="M46 40h52M46 62h40M46 84h46"/></g>'
+      + '<path d="M120 64h16M131 57l7 7-7 7" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>'
+      + '<path d="M146 104V58a31 31 0 0162 0v46" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/>'
+      + '<circle cx="177" cy="70" r="15" fill="#FFB547"/>'
+      + '<path d="M170 70l5 5 9-11" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>'
+      + '<p class="eyebrow">อบรมพื้นฐาน AMCO</p>'
+      + '<h1>แบบทดสอบ Foundation AI-Framework-BC</h1>'
+      + '<p class="lede">โจทย์ถามความรู้พื้นฐานและขั้นตอนที่ถูกต้องในสถานการณ์ ส่งแล้วเห็นคะแนนพร้อมคำอธิบายทุกข้อทันที</p>'
+    + '</div></div>'
+    + '<div class="facts">'
+      + '<div class="fact" data-part="1"><b class="mono">'+(state.role ? ITEMS().length : '20')+'</b><span>ข้อ</span></div>'
+      + '<div class="fact" data-part="2"><b class="mono">20</b><span>นาที</span></div>'
+      + '<div class="fact" data-part="3"><b class="mono">70%</b><span>เกณฑ์ผ่าน</span></div>'
+    + '</div>'
+    + (state.role ? '<div class="legend">'+[1,2].filter(function(p){return pc[p];}).map(function(p){
+        return '<div data-part="'+p+'"><i></i><span>หมวด '+p+' '+PARTS[p]+' '+pc[p]+' ข้อ</span></div>'; }).join('')+'</div>' : '')
+    + '<hr class="rule"><div class="stack-sm">'
+    + '<div class="field"><label for="f-name">ชื่อ นามสกุล</label>'
+      + '<input id="f-name" autocomplete="name" placeholder="เช่น สมชาย ใจดี" value="'+esc(state.profile.name)+'"></div>'
+    + '<div class="field"><label for="f-dept">หน่วยงาน</label><select id="f-dept"><option value="">เลือกหน่วยงาน</option>'
+      + DEPARTMENTS.map(function(d){ return '<option'+(state.profile.dept===d?' selected':'')+'>'+esc(d)+'</option>'; }).join('')
+      + '</select></div>'
+    + roleBlock + '</div>'
+    + '<p class="tiny">ระบบบันทึกชื่อและหน่วยงานพร้อมคำตอบ เพื่อให้ผู้สอนรวบรวมผลของรุ่น ถ้าหน้าจอรีเฟรชหรือปิดไป เปิดลิงก์เดิมแล้วทำต่อจากข้อเดิมได้</p></div>';
+
+  ['name','dept'].forEach(function(k){
+    var el = document.getElementById('f-'+k);
+    el.oninput = el.onchange = function(){ state.profile[k]=el.value; updateStart(); };
+  });
+  var rs = document.getElementById('f-role');
+  if(rs) rs.onchange = function(){
+    state.role = hasItems(rs.value) ? rs.value : null;
+    state.track = state.role ? ROLES[state.role].track : 'office';   /* track ต้องตามบทบาทที่เลือกเอง */
+    state.order = {}; state.answers = {}; state.ordOk = {};
+    render();
+  };
+
+  var draft = readDraft();
+  foot.hidden = false;
+  foot.innerHTML = (draft ? '<button class="btn ghost" id="resume">ทำต่อ</button>' : '')
+                 + '<button class="btn" id="start">เริ่มทำข้อสอบ</button>';
+  document.getElementById('start').onclick = function(){
+    if(!ITEMS().length) return;              /* ชุดที่ไม่มีข้อสอบเริ่มทำไม่ได้ */
+    state.screen='question'; state.idx=0; state.fix=false;
+    state.startedAt = Date.now(); state.clientToken = uuid();
+    save(); render();
+  };
+  var r = document.getElementById('resume');
+  if(r) r.onclick = function(){ var d=readDraft(); if(d){ applyDraft(d); render(); toast('ทำต่อจากข้อ '+(state.idx+1)); } };
+  updateStart();
+}
+function updateStart(){
+  var b = document.getElementById('start');
+  if(b) b.disabled = !(state.profile.name.replace(/\s/g,'') && state.profile.dept && state.role && ITEMS().length);
+}
+
+function vQuestion(){
+  var L = ITEMS(), it = L[state.idx], body = '';
+  if(!it){ state.screen='register'; state.idx=0; render(); return; }   /* ชุดว่างหรือร่างที่ไม่ตรงกับคลังข้อ */
+  body += '<div class="qhead" data-part="'+it.part+'"><div class="qbadge"><small>ข้อ</small><b class="mono">'+(state.idx+1)+'</b></div>'
+        + '<div class="qmeta"><span class="pchip">หมวด '+it.part+' '+PARTS[it.part]+'</span>'
+        + '<span class="tchip">'+TYPES[it.type]+'</span></div></div>';
+  if(state.fix){
+    var left = L.length - doneCount();
+    body += left ? '<div class="notice warn"><span>ยังเหลือ <b>'+left+' ข้อ</b> ที่ยังไม่ได้ตอบ ตอบข้อนี้แล้วกด ข้อถัดไปที่ยังไม่ตอบ</span></div>'
+                 : '<div class="notice ok"><span>ตอบครบทุกข้อแล้ว กด ตรวจก่อนส่ง ได้เลย</span></div>';
+  }
+  if(it.type==='case'){
+    body += '<div class="case" data-part="'+it.part+'"><p class="eyebrow">'+esc(it.caseTitle)+'</p><p>'+esc(it.caseText)+'</p></div>';
+  }
+  if(it.img) body += '<figure class="qimg" data-part="'+it.part+'"><img src="'+esc(it.img)+'" alt="'+esc(it.alt||'')+'" width="640" height="360" decoding="async"></figure>';
+  body += '<p class="stem">'+esc(it.stem)+'</p>';
+  if(it.hint) body += '<p class="hint">'+esc(it.hint)+'</p>';
+
+  if(it.type==='ordering'){
+    var labels = orderItems(it), seq = initOrder(it), ok = !!state.ordOk[it.id];
+    body += '<p class="hint">เรียงจากขั้นแรกไปขั้นสุดท้าย ลากที่ปุ่มจับด้านขวา หรือใช้ปุ่มลูกศร</p>'
+      + '<ul class="ord'+(ok?' ok':'')+'" data-part="'+it.part+'">'
+      + seq.map(function(v,i){
+          return '<li data-v="'+v+'"><span class="rank mono">'+(i+1)+'</span>'
+            + '<span class="ord-text">'+esc(labels[v])+'</span><span class="nudge">'
+            + '<button type="button" data-mv="up"'+(i===0?' disabled':'')+' aria-label="เลื่อน &quot;'+esc(labels[v])+'&quot; ขึ้น">'+UP+'</button>'
+            + '<button type="button" data-mv="down"'+(i===seq.length-1?' disabled':'')+' aria-label="เลื่อน &quot;'+esc(labels[v])+'&quot; ลง">'+DOWN+'</button>'
+            + '</span><span class="grip" role="button" tabindex="-1" aria-label="ลากเพื่อจัดลำดับ">'+GRIP+'</span></li>';
+        }).join('') + '</ul>'
+      + '<button type="button" class="ordok'+(ok?' on':'')+'" id="ordok" data-part="'+it.part+'" aria-pressed="'+ok+'">'
+      + (ok ? '✓ บันทึกลำดับนี้แล้ว' : 'ยืนยันลำดับนี้') + '</button>';
+  } else {
+    var multi = it.type==='multiple', picked = state.answers[it.id] || [];
+    body += '<ul class="opts" data-part="'+it.part+'" role="'+(multi?'group':'radiogroup')+'">'
+      + it.options.map(function(o,i){
+          return '<li><button type="button" class="opt" data-i="'+i+'" role="'+(multi?'checkbox':'radio')+'" aria-checked="'+(picked.indexOf(i)>=0)+'">'
+            + '<span class="letter'+(multi?'':' round')+'">'+LETTERS[i]+'</span>'
+            + '<span class="opt-text">'+esc(o.t)+'</span></button></li>';
+        }).join('') + '</ul>';
+  }
+  view.innerHTML = '<div class="stack">'+body+'</div>';
+
+  Array.prototype.forEach.call(view.querySelectorAll('.opt'), function(b){
+    b.onclick = function(){
+      var i = +b.dataset.i, cur = state.answers[it.id] || [];
+      if(it.type==='multiple'){
+        state.answers[it.id] = cur.indexOf(i)>=0 ? cur.filter(function(x){ return x!==i; })
+                                                 : cur.concat([i]).sort(function(a,b2){ return a-b2; });
+      } else { state.answers[it.id] = [i]; }
+      save();
+      var sel = state.answers[it.id];
+      Array.prototype.forEach.call(view.querySelectorAll('.opt'), function(x){
+        x.setAttribute('aria-checked', sel.indexOf(+x.dataset.i)>=0);
+      });
+      refreshTopState(); refreshFoot();
+    };
+  });
+  if(it.type==='ordering'){
+    wireOrdering(it);
+    document.getElementById('ordok').onclick = function(){ markOrd(it, !state.ordOk[it.id]); };
+  }
+  refreshFoot();
+}
+function markOrd(it, on){
+  if(on) state.ordOk[it.id]=true; else delete state.ordOk[it.id];
+  save();
+  var b=document.getElementById('ordok'), list=view.querySelector('.ord');
+  if(b){ b.classList.toggle('on',!!on); b.setAttribute('aria-pressed',!!on); b.textContent = on ? '✓ บันทึกลำดับนี้แล้ว' : 'ยืนยันลำดับนี้'; }
+  if(list) list.classList.toggle('ok',!!on);
+  refreshTopState(); refreshFoot();
+}
+function refreshFoot(){
+  var L = ITEMS(), last = state.idx===L.length-1;
+  var nextLabel, nextAct;
+  if(state.fix){
+    var nxt = firstTodo(state.idx+1);
+    if(nxt<0){ nextLabel='ตรวจก่อนส่ง'; nextAct=function(){ state.screen='review'; state.fix=false; }; }
+    else { nextLabel='ข้อถัดไปที่ยังไม่ตอบ'; nextAct=function(){ state.idx=nxt; }; }
+  } else if(last){ nextLabel='ตรวจก่อนส่ง'; nextAct=function(){ state.screen='review'; }; }
+  else { nextLabel='ถัดไป'; nextAct=function(){ state.idx++; }; }
+  foot.hidden = false;
+  foot.innerHTML = '<button class="btn ghost" id="prev"'+(state.idx===0?' disabled':'')+'>ย้อนกลับ</button>'
+    + (state.fix ? '' : '<span class="saved">'+TICK+' บันทึกอัตโนมัติ</span>')
+    + '<button class="btn" id="next" style="'+(state.fix?'flex:1':'flex:0 0 auto;min-width:122px')+'">'+nextLabel+'</button>';
+  document.getElementById('prev').onclick = function(){ state.idx--; save(); render(); };
+  document.getElementById('next').onclick = function(){ nextAct(); save(); render(); };
+}
+
+/* ---- การจัดลำดับ ---- */
+var drag = null;
+function commitOrder(it){
+  var list = view.querySelector('.ord'); if(!list) return;
+  var rows = Array.prototype.slice.call(list.children);
+  state.order[it.id] = rows.map(function(li){ return +li.dataset.v; });
+  rows.forEach(function(li,i){
+    li.querySelector('.rank').textContent = i+1;
+    li.querySelector('[data-mv="up"]').disabled   = i===0;
+    li.querySelector('[data-mv="down"]').disabled = i===rows.length-1;
+  });
+  markOrd(it, true);
+}
+function wireOrdering(it){
+  var list = view.querySelector('.ord'); if(!list) return;
+  Array.prototype.forEach.call(list.querySelectorAll('[data-mv]'), function(b){
+    b.onclick = function(){
+      var li = b.parentNode.parentNode;
+      if(b.dataset.mv==='up'){ var p=li.previousElementSibling; if(p) list.insertBefore(li,p); }
+      else { var n=li.nextElementSibling; if(n) list.insertBefore(n,li); }
+      commitOrder(it);
+      if(!b.disabled) b.focus();
+    };
+  });
+  Array.prototype.forEach.call(list.querySelectorAll('.grip'), function(g){
+    g.onpointerdown = function(e){
+      if(e.button && e.button!==0) return;
+      e.preventDefault();
+      drag = { li:g.parentNode, list:list, it:it, y:e.clientY, id:e.pointerId };
+      drag.li.classList.add('dragging');
+    };
+  });
+}
+window.addEventListener('pointermove', function(e){
+  if(!drag || e.pointerId!==drag.id) return;
+  e.preventDefault();
+  drag.li.style.transform = 'translateY('+(e.clientY-drag.y)+'px)';
+  var el = document.elementFromPoint(e.clientX, e.clientY);
+  var row = el && el.closest ? el.closest('.ord > li') : null;
+  if(row && row!==drag.li && drag.list.contains(row)){
+    var r = row.getBoundingClientRect();
+    drag.list.insertBefore(drag.li, (e.clientY < r.top + r.height/2) ? row : row.nextSibling);
+    drag.y = e.clientY; drag.li.style.transform = 'translateY(0)';
+  }
+}, {passive:false});
+function endDrag(){
+  if(!drag) return;
+  drag.li.classList.remove('dragging'); drag.li.style.transform = '';
+  var it = drag.it; drag = null; commitOrder(it);
+}
+window.addEventListener('pointerup', endDrag);
+window.addEventListener('pointercancel', endDrag);
+
+/* ---- ตรวจก่อนส่ง ต้องตอบครบทุกข้อจึงส่งได้ ---- */
+function vReview(){
+  var L = ITEMS(), done = doneCount(), todo = L.length-done;
+  view.innerHTML = '<div class="stack"><div class="stack-sm">'
+    + '<p class="eyebrow">ขั้นสุดท้าย</p><h1>ตรวจก่อนส่งคำตอบ</h1>'
+    + '<p class="lede">แตะหมายเลขข้อเพื่อกลับไปดูหรือแก้คำตอบ</p></div>'
+    + '<div class="tally"><div class="ok"><b class="mono">'+done+'</b><span>ตอบแล้ว</span></div>'
+    + '<div class="'+(todo?'no':'ok')+'"><b class="mono">'+todo+'</b><span>ยังไม่ได้ตอบ</span></div></div>'
+    + (todo
+        ? '<div class="notice warn"><span>ต้องตอบให้ครบทุกข้อก่อนส่ง ข้อที่ยังไม่ได้ตอบคือข้อ <b>'
+          + L.map(function(it,i){ return answered(it)?null:(i+1); }).filter(function(x){return x!==null;}).join(' ')
+          + '</b></span></div>'
+        : '<div class="notice ok"><span>ตอบครบทุกข้อแล้ว ตรวจคำตอบอีกครั้งแล้วกดส่งได้เลย</span></div>')
+    + '<ul class="grid">'+L.map(function(it,i){
+        var ok = answered(it);
+        return '<li><button type="button" class="cell '+(ok?'done':'todo')+'" data-part="'+it.part+'" data-i="'+i+'" '
+          + 'aria-label="ข้อ '+(i+1)+' '+(ok?'ตอบแล้ว':'ยังไม่ได้ตอบ')+'">'
+          + '<b class="mono">'+(i+1)+'</b><span>'+(ok?'✓':'ยังไม่ตอบ')+'</span></button></li>';
+      }).join('')+'</ul>'
+    + '<hr class="rule"><p class="tiny">ส่งแล้วจะกลับมาแก้คำตอบไม่ได้</p></div>';
+
+  Array.prototype.forEach.call(view.querySelectorAll('.cell'), function(b){
+    b.onclick = function(){ state.idx=+b.dataset.i; state.screen='question'; state.fix = todo>0; save(); render(); };
+  });
+  foot.hidden = false;
+  if(todo){
+    var first = firstTodo(0);
+    foot.innerHTML = '<button class="btn warn" id="gotodo">ไปตอบข้อ '+(first+1)+' ที่ยังไม่ได้ตอบ</button>';
+    document.getElementById('gotodo').onclick = function(){
+      state.idx=first; state.screen='question'; state.fix=true; save(); render();
+    };
+  } else {
+    foot.innerHTML = '<button class="btn ghost" id="back">ทบทวน</button><button class="btn" id="submit">ส่งคำตอบ</button>';
+    document.getElementById('back').onclick = function(){ state.idx=0; state.screen='question'; state.fix=false; save(); render(); };
+    document.getElementById('submit').onclick = function(){ state.screen='confirm'; save(); render(); };
+  }
+}
+
+function vConfirm(){
+  if(firstTodo(0) >= 0){ state.screen='review'; return render(); }   /* กันส่งไม่ครบทุกกรณี */
+  view.innerHTML = '<div class="stack" style="padding-top:26px">'
+    + '<div class="hero"><svg viewBox="0 0 96 96" width="88" height="88" role="img" aria-label="ไอคอนพร้อมส่ง">'
+    + '<circle cx="48" cy="48" r="40" fill="var(--good-soft)" stroke="var(--good)" stroke-width="2.5"/>'
+    + '<path d="M32 49l11 11 22-24" fill="none" stroke="var(--good)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>'
+    + '<div class="stack-sm" style="text-align:center"><h1>ยืนยันส่งคำตอบ</h1>'
+    + '<p class="lede">ตอบครบ '+ITEMS().length+' ข้อแล้ว ส่งแล้วจะกลับมาแก้ไม่ได้</p></div></div>';
+  foot.hidden = false;
+  foot.innerHTML = '<button class="btn ghost" id="back2">กลับไปตรวจ</button><button class="btn" id="go">ยืนยันส่ง</button>';
+  document.getElementById('back2').onclick = function(){ state.screen='review'; save(); render(); };
+  document.getElementById('go').onclick = function(){ submit(1); };
+}
+
+/* ---- ส่งคำตอบ พร้อมลองใหม่แบบเว้นช่วงเพิ่มขึ้นทีละเท่าตัว ---- */
+function payload(){
+  return {
+    clientToken: state.clientToken,
+    role: state.role, session: state.session, track: state.track,
+    name: state.profile.name, department: state.profile.dept,
+    startedAt: state.startedAt, submittedAt: Date.now(),
+    responses: (function(){
+      var r = {};
+      ITEMS().forEach(function(it){
+        r[it.id] = it.type==='ordering' ? (state.ordOk[it.id] ? (state.order[it.id]||[]) : []) : (state.answers[it.id]||[]);
+      });
+      return r;
+    })()
+  };
+}
+function submit(attempt){
+  if(firstTodo(0) >= 0){ state.screen='review'; return render(); }
+  state.screen='sending'; state.sendAttempt=attempt; save(); render();
+  /* ไม่ตั้ง Content-Type เพื่อให้เป็น simple request ที่ไม่มี preflight OPTIONS ซึ่ง Apps Script ตอบไม่ได้ */
+  fetch(ENDPOINT, { method: 'POST', body: JSON.stringify(payload()) })
+    .then(function(r){ if(!r.ok) throw new Error('เซิร์ฟเวอร์ตอบ ' + r.status); return r.json(); })
+    .then(function(res){
+      if(!res || !res.ok) throw new Error((res && res.error) || 'ส่งไม่สำเร็จ');
+      state.receipt = res; state.screen='submitted'; clearDraft(); render();
+    })
+    .catch(function(err){
+      if(attempt < 4){ setTimeout(function(){ submit(attempt+1); }, 900 * Math.pow(2, attempt-1)); }
+      else { state.sendError = (err && err.message) ? err.message : 'ส่งไม่สำเร็จ'; state.screen='failed'; render(); }
+    });
+}
+
+function vSending(){
+  view.innerHTML = '<div class="stack" style="align-items:center;padding-top:56px;text-align:center">'
+    + '<svg viewBox="0 0 24 24" width="44" height="44" fill="none" stroke="var(--accent)" stroke-width="2.2" stroke-linecap="round">'
+    + '<circle cx="12" cy="12" r="9" opacity=".22"/><path d="M21 12a9 9 0 00-9-9">'
+    + '<animateTransform attributeName="transform" type="rotate" from="0 12 12" to="360 12 12" dur="1s" repeatCount="indefinite"/>'
+    + '</path></svg><h2>กำลังส่งคำตอบ</h2><p class="tiny" style="max-width:34ch">'
+    + (state.sendAttempt>1 ? 'สัญญาณไม่ดี กำลังลองใหม่ครั้งที่ '+state.sendAttempt+' คำตอบยังอยู่ครบ' : 'ระบบกำลังตรวจคำตอบ รอสักครู่')
+    + '</p></div>';
+  foot.hidden = true;
+}
+function vFailed(){
+  view.innerHTML = '<div class="stack" style="padding-top:26px"><div class="errbox"><p class="eyebrow">ส่งคำตอบไม่สำเร็จ</p>'
+    + '<p>'+esc(state.sendError||'')+'</p>'
+    + '<p><b>คำตอบของคุณยังอยู่ครบในเครื่อง</b> กดลองส่งอีกครั้ง หรือแจ้งผู้สอนถ้ายังไม่สำเร็จ</p></div></div>';
+  foot.hidden = false;
+  foot.innerHTML = '<button class="btn" id="retry">ลองส่งอีกครั้ง</button>';
+  document.getElementById('retry').onclick = function(){ submit(1); };
+}
+
+function optText(it, i){
+  if(it.type==='ordering') return it.items && it.items[i] != null ? it.items[i] : '';
+  var o = it.options && it.options[i]; return o ? (o.t || '') : '';
+}
+function reviewList(it, idxs, ordered){
+  if(!idxs || !idxs.length) return '<p class="tiny" style="margin:0">ไม่ได้ตอบ</p>';
+  var tag = ordered ? 'ol' : 'ul';
+  return '<'+tag+' class="rv-list">' + idxs.map(function(i){
+    return '<li>'+(ordered?'':LETTERS[i]+'. ')+esc(optText(it,i))+'</li>'; }).join('') + '</'+tag+'>';
+}
+function vSubmitted(){
+  var r = state.receipt || {}, res = r.result || null, head;
+  if(res){
+    // ตัดทิ้ง ไม่ปัดเศษ เกณฑ์ผ่านดูจากคะแนนจริง 69.5 ถึง 69.9 จึงไม่ผ่านและต้องไม่แสดงเป็น 70
+    var pct = res.max ? Math.floor(res.total * 100 / res.max) : 0;
+    var col = res.pass ? 'var(--good)' : 'var(--bad)';
+    var C = 2*Math.PI*46, dash = (C*pct/100).toFixed(1);
+    head = '<div class="welcome" style="text-align:center"><div class="stack-sm">'
+      + '<div class="hero"><svg viewBox="0 0 120 120" width="136" height="136" role="img" aria-label="คะแนน '+res.total+' จาก '+res.max+'">'
+      + '<circle cx="60" cy="60" r="46" fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.3)" stroke-width="10"/>'
+      + '<circle cx="60" cy="60" r="46" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" stroke-dasharray="'+dash+' '+C.toFixed(1)+'" transform="rotate(-90 60 60)"/>'
+      + '<text x="60" y="62" text-anchor="middle" font-size="28" font-weight="700" fill="#fff" font-family="IBM Plex Mono,monospace">'+res.total+'</text>'
+      + '<text x="60" y="80" text-anchor="middle" font-size="10" fill="rgba(255,255,255,.85)">จาก '+res.max+'</text></svg></div>'
+      + '<h1>'+(res.pass?'ผ่านเกณฑ์ เยี่ยมมาก':'ยังไม่ผ่านเกณฑ์ ลองทบทวนอีกครั้ง')+'</h1>'
+      + '<p class="lede">เกณฑ์ผ่าน คะแนนรวมอย่างน้อยร้อยละ 70 คุณได้ร้อยละ '+pct+'</p>'
+      + '</div></div>'
+      + '<div class="score-card">'
+      + (res.byComp||[]).map(function(c,k){
+          var w = c.max ? Math.round(c.earned/c.max*100) : 0;
+          return '<div data-part="'+(k+1)+'"><div class="kv"><span>'+esc(c.key+' '+c.name)+'</span><b class="mono">'+c.earned+' / '+c.max+'</b></div>'
+            + '<div class="bar"><i style="width:'+w+'%;background:var(--pc)"></i></div></div>';
+        }).join('')
+      + '</div>';
+  } else {
+    head = '<div class="stack-sm" style="text-align:center"><h1>ส่งคำตอบเรียบร้อย</h1>'
+      + '<p class="lede">ระบบได้รับคำตอบแล้ว แต่ไม่ได้รับผลคะแนนกลับมา ผู้สอนจะแจ้งผลภายหลัง</p></div>';
+  }
+  var review = '';
+  if(res && res.items){
+    var byId = {}; res.items.forEach(function(f){ byId[f.id]=f; });
+    review = '<div class="stack-sm"><h2 style="margin:6px 0 0">ทบทวนรายข้อ</h2>'
+      + '<p class="tiny" style="margin:0">แตะแต่ละข้อเพื่อดูคำตอบของคุณ คำตอบที่ถูก และคำอธิบาย ข้อที่ยังไม่ได้คะแนนเต็มเปิดไว้ให้ก่อน</p>'
+      + ITEMS().map(function(it, n){
+          var f = byId[it.id]; if(!f) return '';
+          var mine = it.type==='ordering' ? (state.order[it.id]||[]) : (state.answers[it.id]||[]);
+          var ok = f.status==='TRUE', part = f.status==='PARTIAL';
+          var icon = ok ? ICONS.ok : (part ? ICONS.wait : ICONS.fail);
+          return '<details class="rv" data-part="'+it.part+'"'+(ok?'':' open')+'><summary>'+icon
+            + '<span class="rv-q"><b>ข้อ '+(n+1)+'</b> '+esc(it.caseTitle ? it.caseTitle+' ' : '')+esc(it.stem)+'</span>'
+            + '<span class="chip mono">'+f.earned+'/'+f.points+'</span></summary><div class="rv-body">'
+            + '<p class="rv-h">คำตอบของคุณ</p>'+reviewList(it, mine, it.type==='ordering')
+            + (ok ? '' : '<p class="rv-h">คำตอบที่ถูก</p>'+reviewList(it, f.answer, it.type==='ordering'))
+            + '<p class="rv-h">คำอธิบาย</p><p class="rv-why">'+esc(f.rationale||'')+'</p></div></details>';
+        }).join('') + '</div>';
+  }
+  view.innerHTML = '<div class="stack">' + head + review
+    + '<div class="score-card">'
+    + [['ชื่อ', state.profile.name||'-'], ['หน่วยงาน', state.profile.dept||'-'], ['ชุดข้อสอบ', roleTh()],
+       ['รุ่นอบรม', state.session], ['เวลาที่ส่ง', (r.submittedAt||'-')+' น.'],
+       ['จำนวนข้อที่ตอบ', (r.answeredCount!=null?r.answeredCount:'-')+' จาก '+(r.totalItems||ITEMS().length)+' ข้อ'],
+       ['รหัสอ้างอิง', r.attemptId||'-']
+      ].map(function(kv){
+        return '<div class="kv"><span>'+kv[0]+'</span><b'+(kv[0]==='รหัสอ้างอิง'?' class="mono"':'')+'>'+esc(kv[1])+'</b></div>';
+      }).join('')
+    + '</div>'
+    + (r.duplicate ? '<p class="tiny" style="text-align:center;color:var(--amber)">ระบบเคยรับคำตอบชุดนี้ไว้แล้ว จึงไม่บันทึกซ้ำ</p>' : '')
+    + '<p class="tiny" style="text-align:center">ผลนี้บันทึกไว้ให้ผู้สอนแล้ว เก็บรหัสอ้างอิงไว้เผื่อต้องติดต่อผู้สอน</p></div>';
+  foot.hidden = true;
+}
+
+/* ============================ เริ่มต้น ============================ */
+if (ENDPOINT.indexOf('PASTE_') === 0) {
+  var strip = document.getElementById('strip');
+  strip.textContent = 'ยังไม่ได้ตั้งค่า ENDPOINT ใน index.html ส่งคำตอบไม่ได้ (ดู SETUP.md ขั้นที่ 7)';
+  strip.hidden = false;
+}
+(function boot(){
+  /* รีเฟรชหน้าจอแล้วกลับไปข้อเดิมทันที ถ้าร่างเป็นชุดเดียวกับ QR ที่เปิด */
+  var d = readDraft();
+  if(d && (!QR.role || QR.role === d.role)){
+    if(QR.session && QR.session !== d.session){ render(); return; }
+    applyDraft(d); render();
+    toast(state.screen==='review' ? 'กลับมาที่หน้าตรวจก่อนส่ง' : 'ทำต่อจากข้อ '+(state.idx+1));
+    return;
+  }
+  render();
+})();
+</script>
+</body>
+</html>

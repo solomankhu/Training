@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>รายงานการประชุม GOF-INS ครั้งที่ 6 คู่กับบันทึกการนำเข้าของผู้ช่วยที่เขียนหน้า wiki 3 หน้าต่อจากการนำเข้า</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<rect x="16" y="14" width="608" height="148" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 22 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v20 h-608 Z" fill="#F4F6F6"/>
+<text x="28" y="33.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" font-weight="700" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">รายงานการประชุม GOF-INS ครั้งที่ 6</text>
+<text x="32" y="70" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">วันที่ 15/10/2569</text>
+<text x="32" y="104" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">มติ ลูกค้าเพิ่มกระบวนการฝากขายสินค้าเข้าขอบเขตของโครงการ</text>
+<text x="32" y="138" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">รหัสการตัดสินใจ D-07    ผู้ตัดสิน คุณสุดา</text>
+<rect x="16" y="178" width="608" height="134" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 186 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v20 h-608 Z" fill="#F4F6F6"/>
+<text x="28" y="197.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" font-weight="700" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">บันทึกการนำเข้าของผู้ช่วย</text>
+<text x="32" y="234" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">10:00</text>
+<text x="96" y="234" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">นำเข้ารายงานการประชุมครั้งที่ 6</text>
+<text x="32" y="268" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">10:05</text>
+<text x="96" y="268" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">เขียนหน้า wiki 3 หน้า คือ หน้าโมดูลขาย ทะเบียนการตัดสินใจ</text>
+<text x="96" y="298" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">และหน้า GAP-SALES-48</text>
+</svg>

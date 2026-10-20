@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>หน้า pull request #61 ใน Azure DevOps ของโครงการ NSL-01 พร้อมความเห็นของผู้รีวิวที่ขอให้แก้ FDD หัวข้อ 3.2</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<rect x="16" y="10" width="608" height="36" rx="6" fill="#008271"/>
+<text x="30" y="34" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Azure DevOps  Pull request #61  แก้ FDD สินทรัพย์ถาวร NSL-01</text>
+<text x="24" y="76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">ผู้สร้าง</text>
+<text x="194" y="76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">คุณต้น</text>
+<line x1="24" y1="84" x2="616" y2="84" stroke="#C5D0CF" stroke-width="1"/>
+<text x="24" y="106" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">งานที่อ้าง</text>
+<text x="194" y="106" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ISS-44</text>
+<line x1="24" y1="114" x2="616" y2="114" stroke="#C5D0CF" stroke-width="1"/>
+<text x="24" y="136" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">branch ของงาน</text>
+<text x="194" y="136" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">iss-44-fdd</text>
+<line x1="24" y1="144" x2="616" y2="144" stroke="#C5D0CF" stroke-width="1"/>
+<text x="24" y="166" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">ผลของ pipeline</text>
+<text x="194" y="166" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">เขียว (ก่อนแก้)</text>
+<line x1="24" y1="174" x2="616" y2="174" stroke="#C5D0CF" stroke-width="1"/>
+<text x="24" y="196" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">ผู้รีวิวที่กำหนด</text>
+<text x="194" y="196" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">คุณแพร</text>
+<line x1="24" y1="204" x2="616" y2="204" stroke="#C5D0CF" stroke-width="1"/>
+<text x="24" y="226" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">สถานะ</text>
+<text x="194" y="226" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">รอการแก้</text>
+<line x1="24" y1="234" x2="616" y2="234" stroke="#C5D0CF" stroke-width="1"/>
+<rect x="16" y="252" width="608" height="82" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 260 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v20 h-608 Z" fill="#F4F6F6"/>
+<text x="28" y="271.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ความเห็น คุณแพร</text>
+<text x="32" y="310" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">หัวข้อ 3.2 ยังไม่ระบุวันที่มีผลของการโอนสินทรัพย์ ขอแก้ก่อนอนุมัติ</text>
+</svg>

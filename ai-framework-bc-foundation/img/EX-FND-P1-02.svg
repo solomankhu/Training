@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>ตารางไฟล์ 4 รายการที่คุณมิ้นท์จะนำเข้าคลังกลางของโครงการ NSL-01 พร้อมเนื้อหาและการใช้งานของแต่ละไฟล์</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<text x="16" y="29" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">ไฟล์ที่คุณมิ้นท์จะนำเข้าคลังกลาง NSL-01</text>
+<rect x="16" y="40" width="608" height="32" rx="0" fill="#008271"/>
+<text x="24" y="61.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ไฟล์</text>
+<text x="220" y="61.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">เนื้อหา</text>
+<text x="434" y="61.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ใช้ทำอะไร</text>
+<rect x="16" y="72" width="608" height="62" rx="0" fill="#FFFFFF"/>
+<text x="24" y="97.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">รหัสเข้าระบบ</text>
+<text x="24" y="119.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">interface ธนาคาร</text>
+<text x="220" y="108.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">รหัสผ่านและ token</text>
+<text x="434" y="97.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ให้ interface</text>
+<text x="434" y="119.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">เชื่อมกับธนาคาร</text>
+<rect x="16" y="134" width="608" height="62" rx="0" fill="#F4F6F6"/>
+<text x="24" y="170.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">รายชื่อผู้ใช้ชุด A</text>
+<text x="220" y="159.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ชื่อพนักงานของลูกค้า</text>
+<text x="220" y="181.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">12 คน</text>
+<text x="434" y="170.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ใช้ในสื่ออบรม</text>
+<rect x="16" y="196" width="608" height="62" rx="0" fill="#FFFFFF"/>
+<text x="24" y="232.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">รายชื่อผู้ใช้ชุด B</text>
+<text x="220" y="221.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ชื่อพนักงานของลูกค้า</text>
+<text x="220" y="243.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">12 คน</text>
+<text x="434" y="221.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ใช้สร้าง user</text>
+<text x="434" y="243.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ในระบบจริง</text>
+<rect x="16" y="258" width="608" height="62" rx="0" fill="#F4F6F6"/>
+<text x="24" y="294.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ไฟล์ master ลูกค้า</text>
+<text x="220" y="283.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ชื่อลูกค้าและเลขประจำตัว</text>
+<text x="220" y="305.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ผู้เสียภาษี</text>
+<text x="434" y="283.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ใช้โหลดเข้า</text>
+<text x="434" y="305.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ระบบจริง</text>
+<rect x="16" y="40" width="608" height="280" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+</svg>

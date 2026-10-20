@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>ผลตรวจอัตโนมัติของรอบงาน R-GOF-15 ปรับ BI ระบบขายของโครงการ GOF-INS แสดงผลของรายการที่ 1 ถึง 3</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<rect x="16" y="22" width="608" height="282" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 30 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v28 h-608 Z" fill="#F4F6F6"/>
+<text x="28" y="46.48" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="18" font-weight="700" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ผลตรวจอัตโนมัติ จุดตรวจก่อนส่งตรวจ</text>
+<text x="32" y="90" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">รอบงาน R-GOF-15 ปรับ BI ระบบขาย GOF-INS</text>
+<rect x="17" y="106" width="606" height="34" rx="0" fill="#F4F6F6"/>
+<text x="32" y="129" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" font-weight="700" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">รายการ</text>
+<text x="396" y="129" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" font-weight="700" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">ผล</text>
+<line x1="17" y1="140" x2="623" y2="140" stroke="#C5D0CF" stroke-width="1"/>
+<text x="32" y="176" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="20" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">รายการที่ 1</text>
+<rect x="396" y="152" width="130" height="30" rx="15" fill="#FFFFFF" stroke="#9AA7A6" stroke-width="1.5"/>
+<text x="461.0" y="173" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="18" font-weight="700" fill="#262626" text-anchor="middle" xml:space="preserve" style="white-space:pre">เขียว</text>
+<line x1="17" y1="194" x2="623" y2="194" stroke="#C5D0CF" stroke-width="1"/>
+<text x="32" y="230" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="20" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">รายการที่ 2</text>
+<rect x="396" y="206" width="130" height="30" rx="15" fill="#FFFFFF" stroke="#9AA7A6" stroke-width="1.5"/>
+<text x="461.0" y="227" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="18" font-weight="700" fill="#262626" text-anchor="middle" xml:space="preserve" style="white-space:pre">เขียว</text>
+<line x1="17" y1="248" x2="623" y2="248" stroke="#C5D0CF" stroke-width="1"/>
+<text x="32" y="284" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="20" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">รายการที่ 3</text>
+<rect x="396" y="260" width="130" height="30" rx="15" fill="#FFFFFF" stroke="#9AA7A6" stroke-width="1.5"/>
+<text x="461.0" y="281" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="18" font-weight="700" fill="#262626" text-anchor="middle" xml:space="preserve" style="white-space:pre">MANUAL</text>
+<line x1="17" y1="302" x2="623" y2="302" stroke="#C5D0CF" stroke-width="1"/>
+</svg>

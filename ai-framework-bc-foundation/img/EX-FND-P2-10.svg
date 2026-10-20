@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>log คำถามหลังขึ้นระบบสัปดาห์ที่ 1 ของโครงการ NSL-01 รวม 7 แถว แต่ละแถวมีวันที่ ผู้ถาม และคำถาม</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<text x="16" y="25" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">log คำถามหลังขึ้นระบบ NSL-01 สัปดาห์ที่ 1</text>
+<rect x="16" y="34" width="608" height="36" rx="0" fill="#008271"/>
+<text x="24" y="57.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">วันที่</text>
+<text x="126" y="57.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ผู้ถาม</text>
+<text x="246" y="57.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">คำถาม</text>
+<rect x="16" y="70" width="608" height="36" rx="0" fill="#FFFFFF"/>
+<text x="24" y="93.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">02/11/2569</text>
+<text x="126" y="93.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ผู้ใช้ฝ่ายบัญชี 1</text>
+<text x="246" y="93.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">กลับรายการค่าเสื่อมที่บันทึกผิดทำอย่างไร</text>
+<rect x="16" y="106" width="608" height="36" rx="0" fill="#F4F6F6"/>
+<text x="24" y="129.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">02/11/2569</text>
+<text x="126" y="129.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ผู้ใช้ฝ่ายบัญชี 2</text>
+<text x="246" y="129.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ปิดงวดค่าเสื่อมรายเดือนทำอย่างไร</text>
+<rect x="16" y="142" width="608" height="36" rx="0" fill="#FFFFFF"/>
+<text x="24" y="165.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">03/11/2569</text>
+<text x="126" y="165.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ผู้ใช้ฝ่ายบัญชี 3</text>
+<text x="246" y="165.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">กลับรายการค่าเสื่อมทำอย่างไร</text>
+<rect x="16" y="178" width="608" height="36" rx="0" fill="#F4F6F6"/>
+<text x="24" y="201.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">04/11/2569</text>
+<text x="126" y="201.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ผู้ใช้สาขา 1</text>
+<text x="246" y="201.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">บันทึกค่าเสื่อมผิดงวด จะกลับรายการอย่างไร</text>
+<rect x="16" y="214" width="608" height="36" rx="0" fill="#FFFFFF"/>
+<text x="24" y="237.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">05/11/2569</text>
+<text x="126" y="237.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ผู้ใช้ฝ่ายบัญชี 1</text>
+<text x="246" y="237.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">กลับรายการค่าเสื่อมของสินทรัพย์ที่ขายแล้วทำอย่างไร</text>
+<rect x="16" y="250" width="608" height="36" rx="0" fill="#F4F6F6"/>
+<text x="24" y="273.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">06/11/2569</text>
+<text x="126" y="273.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ผู้ใช้สาขา 2</text>
+<text x="246" y="273.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">กลับรายการค่าเสื่อมที่บันทึกซ้ำทำอย่างไร</text>
+<rect x="16" y="286" width="608" height="36" rx="0" fill="#FFFFFF"/>
+<text x="24" y="309.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">06/11/2569</text>
+<text x="126" y="309.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ผู้ใช้ฝ่ายบัญชี 2</text>
+<text x="246" y="309.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">เปิดหน้าจอสินทรัพย์ถาวรไม่ได้</text>
+<rect x="16" y="34" width="608" height="288" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+</svg>

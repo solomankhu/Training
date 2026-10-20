@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>สรุปความพร้อมของผู้ช่วยก่อนขอ Check 3 ของโครงการ SCP-INS วันที่ 02/11/2569 แสดงหลักฐาน 4 รายการ</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<text x="16" y="29" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">ผู้ช่วย  สรุปความพร้อมก่อนขอ Check 3  SCP-INS  วันที่ 02/11/2569</text>
+<rect x="16" y="40" width="608" height="34" rx="0" fill="#008271"/>
+<text x="24" y="62.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">หลักฐาน</text>
+<text x="396" y="62.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">สถานะ</text>
+<rect x="16" y="74" width="608" height="50" rx="0" fill="#FFFFFF"/>
+<text x="24" y="104.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ยอดควบคุม 4 แหล่งพร้อมผลต่างที่จัดประเภทแล้ว</text>
+<text x="396" y="104.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ครบ</text>
+<rect x="16" y="124" width="608" height="50" rx="0" fill="#F4F6F6"/>
+<text x="24" y="154.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ผลทดสอบสิทธิ์ตามบทบาท</text>
+<text x="396" y="154.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ครบ</text>
+<rect x="16" y="174" width="608" height="50" rx="0" fill="#FFFFFF"/>
+<text x="24" y="204.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ผล UAT พร้อมลายเซ็นตามโมดูล</text>
+<text x="396" y="204.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ยังขาดลายเซ็นโมดูลคลังสินค้า</text>
+<rect x="16" y="224" width="608" height="50" rx="0" fill="#F4F6F6"/>
+<text x="24" y="254.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">defect ระดับ A ที่ค้าง</text>
+<text x="396" y="254.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ไม่มี</text>
+<rect x="16" y="40" width="608" height="234" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+<text x="16" y="314" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="18" font-weight="700" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">สรุป  หลักฐานยังขาด 1 รายการ</text>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>บันทึกรอบงาน R-SCP-11 เพิ่ม field ผู้ตรวจรับในใบสั่งผลิตของโครงการ SCP-INS ที่ระบุระดับงาน แผน และร่างในพื้นที่ร่าง</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<rect x="16" y="10" width="608" height="302" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 18 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v20 h-608 Z" fill="#F4F6F6"/>
+<text x="28" y="29.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">บันทึกรอบงาน R-SCP-11 เพิ่ม field ผู้ตรวจรับในใบสั่งผลิต SCP-INS</text>
+<text x="32" y="66" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">ระดับงาน</text>
+<text x="132" y="66" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">STANDARD</text>
+<text x="32" y="97" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">แผน (ผู้ตรวจไม่ค้าน)</text>
+<text x="44" y="122" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">1</text>
+<text x="60" y="122" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">เพิ่ม field ในตารางใบสั่งผลิต</text>
+<text x="44" y="147" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">2</text>
+<text x="60" y="147" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">แสดง field ในหน้าใบสั่งผลิต</text>
+<text x="32" y="178" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">ร่างในพื้นที่ร่าง</text>
+<text x="44" y="203" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">1</text>
+<text x="60" y="203" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">table extension 70130 ใบสั่งผลิต</text>
+<text x="44" y="228" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">2</text>
+<text x="60" y="228" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">page extension 70131 ใบสั่งผลิต</text>
+<text x="44" y="253" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">3</text>
+<text x="60" y="253" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ปรับ No. Series ของใบสั่งผลิตให้ขึ้นต้นด้วยรหัสสาขา</text>
+<text x="32" y="284" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">งานถัดไป</text>
+<text x="132" y="284" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ส่งร่างเข้าจุดตรวจก่อนส่งตรวจ</text>
+</svg>

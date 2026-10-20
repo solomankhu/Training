@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>แชทของคุณต้นกับผู้ช่วยเรื่องการรับสินค้าบางส่วนตามใบสั่งซื้อ คู่กับบรรทัดต้นทางที่เปิดดูใน gap list ระบบซื้อ แถวที่ 12</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<rect x="16" y="10" width="608" height="226" rx="10" fill="#F4F6F6" stroke="#C5D0CF" stroke-width="1"/>
+<text x="32" y="36" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" font-weight="700" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">แชทกับผู้ช่วย  โครงการ GOF-INS</text>
+<rect x="229.09999999999997" y="48" width="378.90000000000003" height="38" rx="12" fill="#008271"/>
+<text x="243.09999999999997" y="73" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">การรับสินค้าบางส่วนตามใบสั่งซื้ออยู่ใน GAP ใด</text>
+<text x="608" y="104" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#6B6B6B" text-anchor="end" xml:space="preserve" style="white-space:pre">คุณต้น</text>
+<rect x="32" y="116" width="560" height="82" rx="12" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<text x="48" y="144" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">อยู่ใน GAP-PUR-51</text>
+<text x="48" y="178" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">ที่มา  gap list ระบบซื้อ แถวที่ 12</text>
+<text x="32" y="220" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">ผู้ช่วย</text>
+<rect x="16" y="252" width="608" height="76" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 260 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v20 h-608 Z" fill="#F4F6F6"/>
+<text x="28" y="271.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">gap list ระบบซื้อ แถวที่ 12</text>
+<text x="32" y="310" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-PUR-05  รับสินค้าบางส่วนตามใบสั่งซื้อ</text>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>โครงโฟลเดอร์คลังกลางของโครงการ GOF-INS ที่เปิดโฟลเดอร์คู่มือการใช้งาน แสดงไฟล์ 3 ไฟล์ พร้อมเจ้าของและวันที่แก้ล่าสุด</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<rect x="16" y="12" width="608" height="302" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 20 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v20 h-608 Z" fill="#F4F6F6"/>
+<text x="28" y="32.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" font-weight="700" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">คลังกลาง GOF-INS</text>
+<path d="M32 55 l7 5 l-7 5 Z" fill="#6B6B6B"/>
+<path d="M50 54 h8 l3 3 h11 v12 h-22 Z" fill="#E4ECEB" stroke="#6B6B6B" stroke-width="1.2"/>
+<text x="84" y="68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">wiki</text>
+<path d="M32 87 l7 5 l-7 5 Z" fill="#6B6B6B"/>
+<path d="M50 86 h8 l3 3 h11 v12 h-22 Z" fill="#E4ECEB" stroke="#6B6B6B" stroke-width="1.2"/>
+<text x="84" y="100" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">บันทึกรอบงาน</text>
+<path d="M32 119 l7 5 l-7 5 Z" fill="#6B6B6B"/>
+<path d="M50 118 h8 l3 3 h11 v12 h-22 Z" fill="#E4ECEB" stroke="#6B6B6B" stroke-width="1.2"/>
+<text x="84" y="132" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ไฟล์ตั้งต้นของโครงการ</text>
+<path d="M31 155 l10 0 l-5 7 Z" fill="#6B6B6B"/>
+<path d="M50 150 h8 l3 3 h11 v12 h-22 Z" fill="#CFE3E0" stroke="#6B6B6B" stroke-width="1.2"/>
+<path d="M52 165 l3 -8 h19 l-3 8 Z" fill="#FFFFFF" stroke="#6B6B6B" stroke-width="1.2"/>
+<text x="84" y="164" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" font-weight="700" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">คู่มือการใช้งาน</text>
+<rect x="56" y="176" width="550" height="30" rx="0" fill="#008271"/>
+<text x="64" y="196.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ไฟล์</text>
+<text x="354" y="196.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">เจ้าของ</text>
+<text x="472" y="196.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">แก้ล่าสุด</text>
+<rect x="56" y="206" width="550" height="30" rx="0" fill="#FFFFFF"/>
+<text x="64" y="226.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">คู่มือการใช้งานระบบขาย</text>
+<text x="354" y="226.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ทีมอบรม</text>
+<text x="472" y="226.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">08/10/2569</text>
+<rect x="56" y="236" width="550" height="30" rx="0" fill="#F4F6F6"/>
+<text x="64" y="256.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">คู่มือการใช้งานระบบซื้อ</text>
+<text x="354" y="256.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ทีมอบรม</text>
+<text x="472" y="256.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">09/10/2569</text>
+<rect x="56" y="266" width="550" height="30" rx="0" fill="#FFFFFF"/>
+<text x="64" y="286.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">test plan ระบบขาย</text>
+<text x="354" y="286.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">คุณเมย์</text>
+<text x="472" y="286.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">12/10/2569</text>
+<rect x="56" y="176" width="550" height="120" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+</svg>

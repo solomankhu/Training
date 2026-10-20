@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>บันทึกรอบงาน R-GOF-16 ของคุณเมย์ ปรับ test plan ระบบซื้อ GOF-INS ที่มีร่างในพื้นที่ร่างหนึ่งไฟล์</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<rect x="16" y="22" width="608" height="282" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 30 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v20 h-608 Z" fill="#F4F6F6"/>
+<text x="28" y="41.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" font-weight="700" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">บันทึกรอบงาน R-GOF-16 ปรับ test plan ระบบซื้อ GOF-INS</text>
+<text x="32" y="88" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="18" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">ผู้รับผิดชอบ</text>
+<text x="182" y="88" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="18" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">คุณเมย์</text>
+<line x1="32" y1="96" x2="608" y2="96" stroke="#C5D0CF" stroke-width="1"/>
+<text x="32" y="126" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="18" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">งาน</text>
+<text x="182" y="126" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="18" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">เพิ่ม scenario คืนสินค้าให้ผู้ขาย</text>
+<text x="182" y="164" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="18" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ตามผล UAT รอบ 1</text>
+<line x1="32" y1="172" x2="608" y2="172" stroke="#C5D0CF" stroke-width="1"/>
+<text x="32" y="202" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="18" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">ระดับงาน</text>
+<text x="182" y="202" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="18" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">(ยังไม่ระบุ)</text>
+<line x1="32" y1="210" x2="608" y2="210" stroke="#C5D0CF" stroke-width="1"/>
+<text x="32" y="240" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="18" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">แผน</text>
+<text x="182" y="240" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="18" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">(ยังไม่มี)</text>
+<line x1="32" y1="248" x2="608" y2="248" stroke="#C5D0CF" stroke-width="1"/>
+<text x="32" y="278" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="18" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">พื้นที่ร่าง</text>
+<text x="182" y="278" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="18" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">test plan ระบบซื้อ ฉบับแก้ 1 ไฟล์</text>
+<line x1="32" y1="286" x2="608" y2="286" stroke="#C5D0CF" stroke-width="1"/>
+</svg>
