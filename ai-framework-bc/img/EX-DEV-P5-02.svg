@@ -1,18 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
-<title>defect เรื่อง Unit Cost ในเอกสารรับสินค้าของ SCP-INS กับการแก้เมื่อเดือนก่อนที่ทดสอบเฉพาะกรณีที่แจ้งและทำให้ post จากอุปกรณ์มือถือผิดในวันรุ่งขึ้น</title>
+<title>ภาพบันทึกรอบงาน R-SCP-12 ของ SCP-INS คู่กับผลตรวจระดับงานจากร่างจริง</title>
 <rect width="640" height="360" fill="#FFFFFF"/>
-<rect x="16" y="14" width="608" height="100" rx="8" fill="#F4F6F6"/>
-<rect x="30" y="24" width="87.30000000000001" height="22" rx="11.0" fill="#6B6B6B"/>
-<text x="39" y="40.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">เดือนก่อน</text>
-<text x="30" y="66" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">แก้ logic เดียวกันอีกจุด ทดสอบเฉพาะกรณีที่แจ้ง</text>
-<text x="30" y="96" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" font-weight="700" fill="#B42318" text-anchor="start" xml:space="preserve" style="white-space:pre">วันรุ่งขึ้น post จากอุปกรณ์มือถือได้ Unit Cost ผิด</text>
-<rect x="16" y="126" width="608" height="70" rx="8" fill="#F4F6F6"/>
-<rect x="30" y="136" width="57.6" height="22" rx="11.0" fill="#008271"/>
-<text x="39" y="152.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">รอบนี้</text>
-<text x="30" y="184" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">DEF-70  Unit Cost เปลี่ยนเมื่อผู้ใช้เปลี่ยน Location</text>
-<rect x="16" y="208" width="608" height="88" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
-<path d="M16 216 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
-<text x="28" y="225" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="12" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">ร่างการแก้ใน codeunit 70240 AMS Receipt Cost Mgt</text>
-<text x="28" y="255" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">if UnitCostChangedAfterLocationChange then</text>
-<text x="28" y="279" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">    Error(UnitCostLockedErr);</text>
+<rect x="16" y="10" width="608" height="130" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 18 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
+<text x="28" y="27" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">บันทึกรอบงาน  R-SCP-12  GAP-MFG-47</text>
+<text x="28" y="58" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ระดับงานในแผน  STANDARD</text>
+<text x="28" y="88" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">แผน  ผ่านการตรวจแผน 2026-10-16</text>
+<text x="28" y="118" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ร่างในพื้นที่ร่าง  2 ไฟล์</text>
+<rect x="16" y="154" width="608" height="147" rx="8" fill="#262626"/>
+<path d="M16 162 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#3B4343"/>
+<text x="28" y="171" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" fill="#A9B6B5" text-anchor="start" xml:space="preserve" style="white-space:pre">ผลตรวจระดับงานจากร่างจริง</text>
+<text x="28" y="201" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6FD6C4" text-anchor="start" xml:space="preserve" style="white-space:pre">&gt; การตรวจระดับงานจากร่างจริง  R-SCP-12</text>
+<text x="28" y="222" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#F4F6F6" text-anchor="start" xml:space="preserve" style="white-space:pre">lane declared STANDARD, derived DEEP from 2 files -&gt; RAISE (final DEEP)</text>
+<text x="28" y="243" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#F4F6F6" text-anchor="start" xml:space="preserve" style="white-space:pre">  DEEP     posting routine or posting event  e.g.</text>
+<text x="28" y="264" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#F4F6F6" text-anchor="start" xml:space="preserve" style="white-space:pre">    src/codeunit/Cod70047.AMSDocNoCheck.al</text>
+<text x="28" y="285" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#F4F6F6" text-anchor="start" xml:space="preserve" style="white-space:pre">  STANDARD new AL object  e.g. src/test/Cod70947.AMSDocNoCheckTest.al</text>
 </svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>หน้าสถานะโครงการ GOF-INS ในคลังกลาง แก้ล่าสุด 2026-10-09</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<rect x="16" y="10" width="608" height="168" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 18 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
+<text x="28" y="27" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">สถานะโครงการ GOF-INS  (แก้ล่าสุด 2026-10-09)</text>
+<text x="28" y="59" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">defect เปิด 23 รายการ</text>
+<text x="28" y="91" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">CR รออนุมัติ 2 รายการ</text>
+<text x="28" y="123" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">FOC MD สะสม ร้อยละ 4  เขียว  (ค่าของ 2026-10-09)</text>
+<text x="28" y="155" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">งานถัดไป  (ว่าง)</text>
+<rect x="16" y="200" width="608" height="96" rx="8" fill="#F4F6F6"/>
+<text x="32" y="232" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">วันนี้ 2026-10-16</text>
+<text x="32" y="266" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ทะเบียนการตัดสินใจ  มี 2 เรื่องที่รอลูกค้าตอบ</text>
+</svg>

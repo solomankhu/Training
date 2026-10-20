@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>ภาพทะเบียนบทเรียนของ GOF-INS คู่กับบันทึกรอบงาน R-GOF-05 วันที่ 2026-10-16</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<text x="16" y="25" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">ทะเบียนบทเรียน  GOF-INS</text>
+<rect x="16" y="34" width="608" height="28" rx="0" fill="#008271"/>
+<text x="24" y="53.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">บทเรียน</text>
+<text x="324" y="53.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ครั้ง</text>
+<text x="388" y="53.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">พบล่าสุด</text>
+<text x="508" y="53.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">รอบงาน</text>
+<rect x="16" y="62" width="608" height="28" rx="0" fill="#FFFFFF"/>
+<text x="24" y="81.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ช่องสถานะของ issue log พิมพ์ค่าอิสระ</text>
+<text x="324" y="81.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">1</text>
+<text x="388" y="81.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-09-14</text>
+<text x="508" y="81.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">R-GOF-02</text>
+<rect x="16" y="90" width="608" height="28" rx="0" fill="#F4F6F6"/>
+<text x="24" y="109.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ยอดควบคุมไม่ระบุวันตัดยอด</text>
+<text x="324" y="109.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">1</text>
+<text x="388" y="109.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-08-30</text>
+<text x="508" y="109.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">R-GOF-01</text>
+<rect x="16" y="34" width="608" height="84" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+<rect x="16" y="136" width="608" height="130" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 144 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
+<text x="28" y="153" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">บันทึกรอบงาน R-GOF-05  วันที่ 2026-10-16</text>
+<text x="28" y="185" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ตรวจ issue log ของ GOF-INS ก่อนส่งรายงานสถานะ</text>
+<text x="28" y="215" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ช่องสถานะมีค่า "เสร็จ?" และ "Done แล้ว"</text>
+<text x="28" y="245" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ทั้ง 2 ค่าไม่อยู่ในค่าควบคุมของช่องสถานะ</text>
+</svg>

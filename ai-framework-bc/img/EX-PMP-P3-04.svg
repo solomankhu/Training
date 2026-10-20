@@ -1,43 +1,25 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
-<title>รายการ Item Journal ในระบบจริงของ SCP-INS มีข้อมูลผิดบางรายการ คุณเมย์ตรวจเทียบแล้วพบ 2 รายการ และทีมต้องแก้ข้อมูลนี้</title>
+<title>ภาพชุดส่งต่องานจาก Presales ของ NSL-01 คู่กับตารางสถานะแถวใน gap list หลังการสำรวจ</title>
 <rect width="640" height="360" fill="#FFFFFF"/>
-<text x="16" y="33" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="18" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">Item Journal</text>
-<rect x="464.1" y="14" width="159.9" height="26" rx="13.0" fill="#B42318"/>
-<text x="473.1" y="32.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ระบบจริง SCP-INS</text>
-<rect x="16" y="48" width="608" height="38" rx="0" fill="#008271"/>
-<text x="24" y="72.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Item</text>
-<text x="194" y="72.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Location</text>
-<text x="310" y="72.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Quantity</text>
-<text x="414" y="72.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Unit Cost</text>
-<text x="518" y="72.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ผลตรวจ</text>
-<rect x="16" y="86" width="608" height="38" rx="0" fill="#FFFFFF"/>
-<text x="24" y="110.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ชิ้นส่วน A-100</text>
-<text x="194" y="110.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">MAIN</text>
-<text x="398" y="110.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="end" xml:space="preserve" style="white-space:pre">50</text>
-<text x="502" y="110.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="end" xml:space="preserve" style="white-space:pre">100.00</text>
-<text x="518" y="110.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ตรง</text>
-<rect x="16" y="124" width="608" height="38" rx="0" fill="#F4F6F6"/>
-<text x="24" y="148.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ชิ้นส่วน B-220</text>
-<text x="194" y="148.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">MAIN</text>
-<text x="398" y="148.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="end" xml:space="preserve" style="white-space:pre">5,000</text>
-<text x="502" y="148.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="end" xml:space="preserve" style="white-space:pre">80.00</text>
-<rect x="511" y="125" width="112" height="36" rx="3" fill="#FFF1C9" stroke="#D9A400" stroke-width="1.5"/>
-<text x="518" y="148.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Quantity ผิด</text>
-<rect x="16" y="162" width="608" height="38" rx="0" fill="#FFFFFF"/>
-<text x="24" y="186.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ชิ้นส่วน A-100</text>
-<text x="194" y="186.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">(ว่าง)</text>
-<text x="398" y="186.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="end" xml:space="preserve" style="white-space:pre">30</text>
-<text x="502" y="186.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="end" xml:space="preserve" style="white-space:pre">100.00</text>
-<rect x="511" y="163" width="112" height="36" rx="3" fill="#FFF1C9" stroke="#D9A400" stroke-width="1.5"/>
-<text x="518" y="186.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Location ผิด</text>
-<rect x="16" y="200" width="608" height="38" rx="0" fill="#F4F6F6"/>
-<text x="24" y="224.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ชิ้นส่วน C-310</text>
-<text x="194" y="224.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">MAIN</text>
-<text x="398" y="224.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="end" xml:space="preserve" style="white-space:pre">12</text>
-<text x="502" y="224.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="end" xml:space="preserve" style="white-space:pre">60.00</text>
-<text x="518" y="224.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ตรง</text>
-<rect x="16" y="48" width="608" height="190" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
-<rect x="16" y="252" width="608" height="76" rx="8" fill="#F4F6F6"/>
-<text x="32" y="284" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">คุณเมย์เทียบรายการกับใบนับสต็อกแล้วพบข้อมูลผิด 2 รายการ</text>
-<text x="32" y="314" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ทีมต้องแก้ข้อมูลของรายการเหล่านี้ในระบบจริง</text>
+<rect x="16" y="10" width="608" height="160" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 18 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
+<text x="28" y="27" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">ชุดส่งต่องานจาก Presales  NSL-01</text>
+<text x="28" y="58" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">MD งาน customise ก่อนตัด  60 MD</text>
+<text x="28" y="88" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">MD งาน customise ในใบเสนอราคา  48 MD  (ตัดลงร้อยละ 20)</text>
+<text x="28" y="118" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">บันทึกเหตุผลของการตัด  ไม่มี</text>
+<text x="28" y="148" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">เกณฑ์การตัด MD ในใบเสนอราคา  เกินร้อยละ 10 (ค่าตั้งต้น)</text>
+<text x="16" y="205" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">gap list  NSL-01  หลังการสำรวจ</text>
+<rect x="16" y="214" width="608" height="26" rx="0" fill="#008271"/>
+<text x="24" y="232.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">สถานะใน gap list</text>
+<text x="284" y="232.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">จำนวนแถว</text>
+<text x="444" y="232.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">MD</text>
+<rect x="16" y="240" width="608" height="26" rx="0" fill="#FFFFFF"/>
+<text x="24" y="258.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Confirm</text>
+<text x="284" y="258.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">10</text>
+<text x="444" y="258.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">58</text>
+<rect x="16" y="266" width="608" height="26" rx="0" fill="#F4F6F6"/>
+<text x="24" y="284.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Cancel</text>
+<text x="284" y="284.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">1</text>
+<text x="444" y="284.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2</text>
+<rect x="16" y="214" width="608" height="78" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
 </svg>

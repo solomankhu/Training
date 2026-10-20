@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>ภาพทะเบียนการตัดสินใจของ NSL-01 ที่มี 2 รายการ คู่กับกล่องวันนี้</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<text x="16" y="25" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">ทะเบียนการตัดสินใจ  NSL-01</text>
+<rect x="16" y="34" width="608" height="24" rx="0" fill="#008271"/>
+<text x="24" y="50.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">รหัส</text>
+<text x="114" y="50.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">เรื่อง</text>
+<text x="320" y="50.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ครบกำหนด</text>
+<text x="424" y="50.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">สถานะ</text>
+<text x="508" y="50.32" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ผลเมื่อเลยกำหนด</text>
+<rect x="16" y="58" width="608" height="24" rx="0" fill="#FFFFFF"/>
+<text x="24" y="74.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">D-NSL-06</text>
+<text x="114" y="75.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">วิธีคิดค่าเสื่อมของรถขนส่ง</text>
+<text x="320" y="74.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-04-30</text>
+<text x="424" y="75.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ตัดสินแล้ว</text>
+<text x="508" y="75.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">-</text>
+<rect x="16" y="82" width="608" height="24" rx="0" fill="#F4F6F6"/>
+<text x="24" y="98.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">D-NSL-07</text>
+<text x="114" y="99.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ยืนยัน FDD ของ GAP-FA-44</text>
+<text x="320" y="98.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-05-08</text>
+<text x="424" y="99.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">รอลูกค้า</text>
+<rect x="16" y="34" width="608" height="72" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+<rect x="16" y="130" width="608" height="46" rx="8" fill="#F4F6F6"/>
+<text x="32" y="160" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">วันนี้ 2026-05-15</text>
+</svg>

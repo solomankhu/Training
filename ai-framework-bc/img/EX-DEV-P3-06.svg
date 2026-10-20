@@ -1,18 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
-<title>defect log ของ SCP-INS บันทึกการแก้ codeunit 70330 ขัดกัน คุณบอสเขียนว่าแก้ที่ระบบทดสอบ แต่คุณเมย์เขียนว่าแก้ในระบบจริงแล้ว</title>
+<title>ภาพแถว DEF-63 ของ SCP-INS ใน defect log คู่กับข้อความใน FDD ของ GAP-INV-52</title>
 <rect width="640" height="360" fill="#FFFFFF"/>
-<text x="16" y="30" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">SCP-INS  Defect log  DEF-44  การแก้ codeunit 70330</text>
-<rect x="16" y="48" width="296" height="150" rx="8" fill="#F4F6F6"/>
-<text x="30" y="74" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">Comment (dev)</text>
-<text x="30" y="108" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" font-weight="700" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">คุณบอส  14 ต.ค. 2026</text>
-<text x="30" y="140" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">แก้ codeunit 70330</text>
-<text x="30" y="170" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ที่ระบบทดสอบ</text>
-<rect x="328" y="48" width="296" height="150" rx="8" fill="#F4F6F6"/>
-<text x="342" y="74" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">Comment (tester)</text>
-<text x="342" y="108" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" font-weight="700" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">คุณเมย์  16 ต.ค. 2026</text>
-<text x="342" y="140" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">แก้ codeunit 70330</text>
-<text x="342" y="170" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ในระบบจริงแล้ว</text>
-<rect x="320" y="206" width="161.0" height="30" rx="15.0" fill="#B42318"/>
-<text x="329" y="226.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">บันทึก 2 ฝั่งขัดกัน</text>
-<text x="16" y="290" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ต้องแก้ codeunit 70330 อีกรอบ</text>
+<rect x="16" y="10" width="608" height="164" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 18 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
+<text x="28" y="27" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">defect log  SCP-INS  DEF-63</text>
+<text x="28" y="58" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">หน้าจอ  AMS Lot Tracking List (หน้าที่ปรับแต่ง)</text>
+<text x="28" y="89" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">อาการ  หน้าจอแสดงสินค้าที่ไม่คุม Lot ปนมาด้วย</text>
+<text x="28" y="120" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">วิธีแก้ที่เขียนไว้  ลบแถวสินค้าที่ไม่คุม Lot</text>
+<text x="28" y="151" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ด้วยคำสั่ง SQL ในฐานข้อมูล production</text>
+<rect x="16" y="190" width="608" height="71" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 198 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
+<text x="28" y="207" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">FDD GAP-INV-52  หน้าจอ AMS Lot Tracking List</text>
+<text x="28" y="238" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">หน้าจอแสดงเฉพาะสินค้าที่คุม Lot</text>
 </svg>

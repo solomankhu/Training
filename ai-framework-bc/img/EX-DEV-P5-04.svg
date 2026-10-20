@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>ภาพหน้า pull request !245 ของ GAP-MFG-47 ใน Azure DevOps คู่กับรายการผล test และหมายเหตุของ GAP-MFG-33</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<rect x="16" y="8" width="608" height="130" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 16 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
+<text x="28" y="25" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">Azure DevOps  pull request !245</text>
+<text x="28" y="56" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-MFG-47  ตรวจเลขที่เอกสารซ้ำก่อน post</text>
+<text x="28" y="86" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ผู้สร้าง  คุณบอส     ผู้รีวิว  อนุมัติแล้ว 1 คน</text>
+<text x="28" y="116" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">pipeline ตรวจ  ล้ม     test ผ่าน 14  ล้ม 1</text>
+<rect x="16" y="150" width="608" height="32" rx="0" fill="#008271"/>
+<text x="24" y="170.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">test ที่ล้ม</text>
+<text x="304" y="170.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">อ้าง</text>
+<text x="520" y="170.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ผล</text>
+<rect x="16" y="182" width="608" height="32" rx="0" fill="#FFFFFF"/>
+<text x="24" y="202.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">PostJnlDocWithTwoLines</text>
+<text x="304" y="202.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">TC-GAP-MFG-33-01</text>
+<text x="520" y="202.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">FAIL</text>
+<rect x="16" y="150" width="608" height="64" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+<rect x="16" y="226" width="608" height="74" rx="8" fill="#F4F6F6"/>
+<text x="32" y="251" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-MFG-33 (ฉบับฐาน 1.0)  สมุดรายวันหลายบรรทัด</text>
+<text x="32" y="279" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ใช้เลขที่เอกสารเดียวกันได้</text>
+</svg>

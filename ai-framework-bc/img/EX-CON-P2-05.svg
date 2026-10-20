@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>ภาพตารางสิทธิ์รุ่น 1.1 ของ GOF-INS 3 บทบาท คู่กับผลทดสอบตามบทบาทรุ่น 1.1</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<text x="16" y="25" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">ตารางสิทธิ์  GOF-INS  รุ่น 1.1</text>
+<rect x="16" y="34" width="608" height="28" rx="0" fill="#008271"/>
+<text x="24" y="53.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">หน้าจอหรือรายงาน</text>
+<text x="272" y="53.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Sales-M</text>
+<text x="392" y="53.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Sales-O</text>
+<text x="512" y="53.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">AC-O</text>
+<rect x="16" y="62" width="608" height="28" rx="0" fill="#FFFFFF"/>
+<text x="24" y="81.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ใบสั่งขาย</text>
+<text x="272" y="81.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">M</text>
+<text x="392" y="81.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">M</text>
+<text x="512" y="81.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">V</text>
+<rect x="16" y="90" width="608" height="28" rx="0" fill="#F4F6F6"/>
+<text x="24" y="109.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ใบแจ้งหนี้ขาย</text>
+<text x="272" y="109.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">M</text>
+<text x="392" y="109.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">V</text>
+<text x="512" y="109.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">M</text>
+<rect x="16" y="118" width="608" height="28" rx="0" fill="#FFFFFF"/>
+<text x="24" y="137.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ข้อมูลลูกค้า</text>
+<text x="272" y="137.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">M</text>
+<text x="392" y="137.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">V</text>
+<text x="512" y="137.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">V</text>
+<rect x="16" y="34" width="608" height="112" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+<text x="16" y="166" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">M ดู เพิ่ม แก้   V ดูอย่างเดียว</text>
+<rect x="16" y="180" width="608" height="100" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 188 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
+<text x="28" y="197" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">ผลทดสอบตามบทบาท  รุ่น 1.1</text>
+<text x="28" y="228" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Sales-M  PASS 6   Sales-O  PASS 6   AC-O  PASS 5</text>
+<text x="28" y="258" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">รุ่น 1.2  เพิ่มรายงานใบลดหนี้ 1 รายงาน</text>
+</svg>

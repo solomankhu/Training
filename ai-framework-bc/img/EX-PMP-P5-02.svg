@@ -1,37 +1,25 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
-<title>แผนและบันทึก SIT ของ interface กับระบบจัดการสต็อกอาหารของ GOF-INS มีการพัฒนาก่อนวันยืนยัน spec ลูกค้าส่ง endpoint ช้าหลายสัปดาห์ และผล SIT 2 วันทดสอบถูกบันทึกเป็นวันเดียวพร้อมหมายเหตุตกลงกันว่า SIT ผ่าน</title>
+<title>ภาพร่างรายงานสถานะรายสัปดาห์ของ GOF-INS สัปดาห์ 2026-10-12</title>
 <rect width="640" height="360" fill="#FFFFFF"/>
-<text x="16" y="29" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">GOF-INS  interface กับระบบจัดการสต็อกอาหาร</text>
-<rect x="16" y="38" width="608" height="34" rx="0" fill="#008271"/>
-<text x="24" y="60.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">งาน</text>
-<text x="286" y="60.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">แผน</text>
-<text x="390" y="60.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">จริง</text>
-<text x="494" y="60.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">หมายเหตุ</text>
-<rect x="16" y="72" width="608" height="34" rx="0" fill="#FFFFFF"/>
-<text x="24" y="94.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ยืนยัน spec ของ interface</text>
-<text x="286" y="94.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-10-19</text>
-<rect x="16" y="106" width="608" height="34" rx="0" fill="#F4F6F6"/>
-<text x="24" y="128.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">พัฒนา interface (คุณบอส)</text>
-<text x="390" y="128.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-09-14</text>
-<text x="494" y="128.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">เริ่มแล้ว</text>
-<rect x="16" y="140" width="608" height="34" rx="0" fill="#FFFFFF"/>
-<text x="24" y="162.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ลูกค้าส่ง endpoint</text>
-<text x="286" y="162.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-09-18</text>
-<text x="390" y="162.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-10-12</text>
-<text x="494" y="162.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ช้าหลายสัปดาห์</text>
-<rect x="16" y="38" width="608" height="136" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
-<rect x="16" y="186" width="608" height="34" rx="0" fill="#008271"/>
-<text x="24" y="208.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">บันทึก SIT</text>
-<text x="214" y="208.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">วันที่</text>
-<text x="374" y="208.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">หมายเหตุ</text>
-<rect x="16" y="220" width="608" height="34" rx="0" fill="#FFFFFF"/>
-<text x="24" y="242.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">SIT (ทดสอบ 2 วัน)</text>
-<rect x="207" y="221" width="158" height="32" rx="3" fill="#FFF1C9" stroke="#D9A400" stroke-width="1.5"/>
-<text x="214" y="242.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-10-12</text>
-<text x="374" y="242.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ตกลงกันว่า SIT ผ่าน</text>
-<rect x="16" y="254" width="608" height="34" rx="0" fill="#F4F6F6"/>
-<text x="24" y="276.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">SIT รอบที่เหลือ</text>
-<text x="214" y="276.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">แผน 2026-10-23</text>
-<text x="374" y="276.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ยังไม่ได้ทำ</text>
-<rect x="16" y="186" width="608" height="102" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+<text x="16" y="30" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">ร่างรายงานสถานะ GOF-INS  สัปดาห์ 2026-10-12</text>
+<rect x="16" y="44" width="608" height="44" rx="8" fill="#F4F6F6"/>
+<text x="32" y="73" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ระดับโครงการ  เขียว      สรุป  งานเดินตามแผน</text>
+<rect x="16" y="102" width="608" height="26" rx="0" fill="#008271"/>
+<text x="24" y="120.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">สัญญาณ</text>
+<text x="294" y="120.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ค่าสัปดาห์นี้</text>
+<text x="464" y="120.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ผล</text>
+<rect x="16" y="128" width="608" height="26" rx="0" fill="#FFFFFF"/>
+<text x="24" y="146.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">FOC MD สะสมเทียบ MD สัญญา</text>
+<text x="294" y="146.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">9 จาก 150 MD</text>
+<text x="464" y="146.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">เหลือง</text>
+<rect x="16" y="154" width="608" height="26" rx="0" fill="#F4F6F6"/>
+<text x="24" y="172.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">การตัดสินใจที่เลยวันครบกำหนด</text>
+<text x="294" y="172.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">0 เรื่อง</text>
+<text x="464" y="172.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">เขียว</text>
+<rect x="16" y="180" width="608" height="26" rx="0" fill="#FFFFFF"/>
+<text x="24" y="198.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">งานกระจุกที่คนเดียว</text>
+<text x="294" y="198.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ร้อยละ 22</text>
+<text x="464" y="198.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">เขียว</text>
+<rect x="16" y="102" width="608" height="104" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+<text x="16" y="290" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">เกณฑ์ FOC MD สะสม (ค่าตั้งต้น)  เหลือง เกินร้อยละ 5  แดง เกินร้อยละ 10</text>
 </svg>

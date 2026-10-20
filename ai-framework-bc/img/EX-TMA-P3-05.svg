@@ -1,16 +1,24 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
-<title>defect log ของ NSL-01 บันทึกการแก้เลขที่เอกสาร General Journal ขัดกัน คุณบอสเขียนว่าแก้ที่ระบบทดสอบ แต่คุณเมย์เขียนว่าแก้ในระบบจริงแล้ว</title>
+<title>ภาพแถว ISS-128 ใน issue log ของ GOF-INS วันแรกหลังขึ้นระบบ คู่กับสถานการณ์ทดสอบ approval workflow ของใบสั่งซื้อ</title>
 <rect width="640" height="360" fill="#FFFFFF"/>
-<text x="16" y="30" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">NSL-01  Defect log  DEF-48  แก้เลขที่เอกสารของ General Journal</text>
-<rect x="16" y="48" width="608" height="92" rx="8" fill="#F4F6F6"/>
-<rect x="30" y="60" width="183.0" height="22" rx="11.0" fill="#6B6B6B"/>
-<text x="39" y="76.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">คุณบอส  13 ต.ค. 2026</text>
-<text x="30" y="118" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="18" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">แก้เลขที่เอกสารที่ระบบทดสอบแล้ว</text>
-<rect x="16" y="152" width="608" height="92" rx="8" fill="#F4F6F6"/>
-<rect x="30" y="164" width="177.5" height="22" rx="11.0" fill="#6B6B6B"/>
-<text x="39" y="180.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">คุณเมย์  15 ต.ค. 2026</text>
-<text x="30" y="222" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="18" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">แก้ในระบบจริงแล้ว</text>
-<rect x="16" y="258" width="199.50000000000003" height="30" rx="15.0" fill="#B42318"/>
-<text x="25" y="278.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">บันทึก 2 รายการขัดกัน</text>
-<text x="16" y="322" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ต้องแก้เลขที่เอกสารอีกรอบ</text>
+<rect x="16" y="10" width="608" height="133" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 18 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
+<text x="28" y="27" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">issue log  GOF-INS  วันแรกหลังขึ้นระบบ  ISS-128</text>
+<text x="28" y="58" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">เรื่อง  ส่งใบสั่งซื้อเข้า approval workflow ไม่ได้</text>
+<text x="28" y="89" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">อาการ  error เมื่อใบสั่งซื้อมีบรรทัดที่ Type ว่าง</text>
+<text x="28" y="120" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ผู้แจ้ง  ฝ่ายจัดซื้อ     ส่งต่อ  คุณบอส แก้โค้ด</text>
+<text x="16" y="174" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">สถานการณ์ทดสอบ approval workflow ของใบสั่งซื้อ  GOF-INS</text>
+<rect x="16" y="183" width="608" height="34" rx="0" fill="#008271"/>
+<text x="24" y="205.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">scenario</text>
+<text x="134" y="205.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">กรณีในสถานการณ์ทดสอบเดิม</text>
+<text x="514" y="205.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ผล</text>
+<rect x="16" y="217" width="608" height="34" rx="0" fill="#FFFFFF"/>
+<text x="24" y="239.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">PUR.11</text>
+<text x="134" y="239.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ส่งใบสั่งซื้อที่มีบรรทัด Item 2 บรรทัด</text>
+<text x="514" y="239.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Pass</text>
+<rect x="16" y="251" width="608" height="34" rx="0" fill="#F4F6F6"/>
+<text x="24" y="273.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">PUR.12</text>
+<text x="134" y="273.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ผู้อนุมัติอนุมัติใบสั่งซื้อ 1 ใบ</text>
+<text x="514" y="273.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Pass</text>
+<rect x="16" y="183" width="608" height="102" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
 </svg>

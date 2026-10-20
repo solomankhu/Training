@@ -1,20 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
-<title>ผลค้น wiki ของ SCP-INS พบข้อความประเมิน man-day จากสำเนาไฟล์ต้นทุนในชั้น raw และการดึงข้อความเข้าชั้นข้อความดิบไม่รายงานว่าไฟล์ถูก block หรือถูกกันออก</title>
+<title>ภาพบันทึกรอบงาน R-GOF-04 ของการปรับสื่ออบรมระบบขายตามผล UAT รอบ 2 คู่กับส่วนคำถามค้างของรอบงาน</title>
 <rect width="640" height="360" fill="#FFFFFF"/>
-<rect x="16" y="14" width="608" height="136" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
-<path d="M16 22 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
-<text x="28" y="31" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">ค้น wiki  คำค้น ประเมิน man-day</text>
-<text x="28" y="61" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">wiki/raw/0_Presales/estimate/</text>
-<text x="28" y="85" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">  presales_md_v2_20260915.md.txt</text>
-<rect x="20" y="95" width="600" height="23" rx="3" fill="#FFF1C9" stroke="#D9A400" stroke-width="1"/>
-<text x="28" y="109" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ประเมิน man-day ฉบับ 2</text>
-<rect x="20" y="119" width="600" height="23" rx="3" fill="#FFF1C9" stroke="#D9A400" stroke-width="1"/>
-<text x="28" y="133" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Manufacturing 20 MD   Inventory 10 MD   Finance 10 MD</text>
-<rect x="16" y="164" width="608" height="138" rx="8" fill="#262626"/>
-<path d="M16 172 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#3B4343"/>
-<text x="28" y="181" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" fill="#A9B6B5" text-anchor="start" xml:space="preserve" style="white-space:pre">Terminal  SCP-INS</text>
-<text x="28" y="214" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#6FD6C4" text-anchor="start" xml:space="preserve" style="white-space:pre">&gt; ดึงข้อความเข้าชั้นข้อความดิบ  SCP-INS  พร้อมรายการไฟล์</text>
-<text x="28" y="238" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#F4F6F6" text-anchor="start" xml:space="preserve" style="white-space:pre">raw extract ok 11, unchanged 1; manifest 12 files -&gt;</text>
-<text x="28" y="262" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#F4F6F6" text-anchor="start" xml:space="preserve" style="white-space:pre">  wiki\raw\_manifest.json</text>
-<text x="28" y="286" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#F4F6F6" text-anchor="start" xml:space="preserve" style="white-space:pre">  changed 0_Presales/estimate/presales_md_v2_20260915.md</text>
+<rect x="16" y="10" width="608" height="100" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 18 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
+<text x="28" y="27" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">บันทึกรอบงาน R-GOF-04  ปรับสื่ออบรมระบบขายตามผล UAT รอบ 2</text>
+<text x="28" y="59" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">จุดตรวจก่อนส่งตรวจ  เขียว</text>
+<text x="28" y="89" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">doc-reviewer  PASS</text>
+<rect x="16" y="124" width="608" height="190" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 132 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
+<text x="28" y="141" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">บันทึกรอบงาน R-GOF-04  คำถามค้าง</text>
+<text x="28" y="173" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">1. แผ่นงาน GAP เพิ่มเติมในตาราง UAT รอบ 2</text>
+<text x="28" y="203" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">   ใช้รหัส GAP-SALES-52 และ GAP-SALES-53</text>
+<text x="28" y="233" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">   gap list ไม่มีแถวของ 2 รหัสนี้</text>
+<text x="28" y="263" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">   สื่ออบรมฉบับร่างอ้าง 2 รหัสนี้</text>
+<text x="28" y="293" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">   ผู้ตอบ  PM   สถานะ  ยังไม่ตอบ</text>
 </svg>

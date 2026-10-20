@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>ภาพร่างหนังสือปิดงาน Step 3 ของ SCP-INS คู่กับรายการ CR ของโครงการ</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<rect x="16" y="10" width="608" height="190" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 18 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
+<text x="28" y="27" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">ร่างหนังสือปิดงาน Step 3  SCP-INS</text>
+<text x="28" y="58" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">หลักฐาน Check 3 ครบ  2026-10-12</text>
+<text x="28" y="88" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">งานที่ส่งมอบใน Step นี้</text>
+<text x="28" y="118" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">  GAP-MFG-41  รายงานต้นทุนการผลิต  ส่งมอบ 2026-10-05</text>
+<text x="28" y="148" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">  GAP-INV-43  การโอนย้ายระหว่างคลัง  ส่งมอบ 2026-10-07</text>
+<text x="28" y="178" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">  CR-SCP-05  แบบฟอร์มใบเบิกวัตถุดิบ  ส่งมอบ 2026-10-09</text>
+<text x="16" y="233" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">รายการ CR  SCP-INS</text>
+<rect x="16" y="242" width="608" height="26" rx="0" fill="#008271"/>
+<text x="24" y="260.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">CR</text>
+<text x="134" y="260.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">เรื่อง</text>
+<text x="364" y="260.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">สถานะ</text>
+<rect x="16" y="268" width="608" height="26" rx="0" fill="#FFFFFF"/>
+<text x="24" y="286.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">CR-SCP-05</text>
+<text x="134" y="286.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">แบบฟอร์มใบเบิกวัตถุดิบ</text>
+<text x="364" y="286.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">รอลูกค้าอนุมัติใบเสนอราคา</text>
+<rect x="16" y="242" width="608" height="52" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>คำถามวิธีพิมพ์ใบกำกับภาษีซ้ำ 5 ครั้งในสัปดาห์แรกหลังขึ้นระบบของ GOF-INS มาทาง issue log 3 ครั้งและทางแชท 2 ครั้ง</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<text x="16" y="25" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">คำถามสัปดาห์แรกหลังขึ้นระบบ  GOF-INS</text>
+<rect x="16" y="34" width="608" height="34" rx="0" fill="#008271"/>
+<text x="24" y="56.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">วันที่</text>
+<text x="144" y="56.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ช่องทาง</text>
+<text x="240" y="56.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ผู้ถาม</text>
+<text x="352" y="56.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">คำถาม</text>
+<text x="552" y="56.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ISS</text>
+<rect x="16" y="68" width="608" height="34" rx="0" fill="#FFFFFF"/>
+<text x="24" y="90.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-12-01</text>
+<text x="144" y="90.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">issue log</text>
+<text x="240" y="90.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ฝ่ายขาย 1</text>
+<text x="352" y="90.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">พิมพ์ใบกำกับภาษีซ้ำ</text>
+<text x="552" y="90.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ISS-131</text>
+<rect x="16" y="102" width="608" height="34" rx="0" fill="#F4F6F6"/>
+<text x="24" y="124.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-12-01</text>
+<text x="144" y="124.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">แชท</text>
+<text x="240" y="124.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ฝ่ายขาย 2</text>
+<text x="352" y="124.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">พิมพ์ใบกำกับภาษีซ้ำ</text>
+<rect x="16" y="136" width="608" height="34" rx="0" fill="#FFFFFF"/>
+<text x="24" y="158.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-12-02</text>
+<text x="144" y="158.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">issue log</text>
+<text x="240" y="158.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ฝ่ายบัญชี</text>
+<text x="352" y="158.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">พิมพ์ใบกำกับภาษีซ้ำ</text>
+<text x="552" y="158.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ISS-134</text>
+<rect x="16" y="170" width="608" height="34" rx="0" fill="#F4F6F6"/>
+<text x="24" y="192.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-12-03</text>
+<text x="144" y="192.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">แชท</text>
+<text x="240" y="192.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ฝ่ายขาย 3</text>
+<text x="352" y="192.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">พิมพ์ใบกำกับภาษีซ้ำ</text>
+<rect x="16" y="204" width="608" height="34" rx="0" fill="#FFFFFF"/>
+<text x="24" y="226.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-12-04</text>
+<text x="144" y="226.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">issue log</text>
+<text x="240" y="226.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ฝ่ายขาย 1</text>
+<text x="352" y="226.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">พิมพ์ใบกำกับภาษีซ้ำ</text>
+<text x="552" y="226.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ISS-137</text>
+<rect x="16" y="34" width="608" height="204" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+<rect x="16" y="262" width="608" height="74" rx="8" fill="#F4F6F6"/>
+<text x="32" y="287" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">wiki ส่วนปัญหาที่รู้แล้ว  ยังไม่มีหน้าของเรื่องนี้</text>
+<text x="32" y="315" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">สื่ออบรมและคู่มือแก้ปัญหา  ยังไม่มีหัวข้อนี้</text>
+</svg>

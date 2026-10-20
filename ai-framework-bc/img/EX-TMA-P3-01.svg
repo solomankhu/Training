@@ -1,37 +1,44 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
-<title>ผู้ใช้ฝ่ายขายของ GOF-INS เปิดรายงานใหม่ของใบลดหนี้และใบเพิ่มหนี้ไม่ได้ ทั้งที่ผลทดสอบตามบทบาทผ่านทุกบทบาท และรายงานทั้งสองไม่อยู่ในตารางสิทธิ์</title>
+<title>ภาพ Operation Guide ที่ใช้เป็นสถานการณ์ทดสอบและคู่มืออบรมของ GOF-INS 3 แถว คู่กับแถวใน gap list 4 แถว</title>
 <rect width="640" height="360" fill="#FFFFFF"/>
-<text x="16" y="29" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">GOF-INS  ตารางสิทธิ์</text>
-<rect x="16" y="38" width="608" height="32" rx="0" fill="#008271"/>
-<text x="24" y="59.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">หน้าจอในตารางสิทธิ์</text>
-<text x="224" y="59.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">พนักงานขาย</text>
-<text x="360" y="59.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">หัวหน้าขาย</text>
-<text x="500" y="59.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ฝ่ายบัญชี</text>
-<rect x="16" y="70" width="608" height="32" rx="0" fill="#FFFFFF"/>
-<text x="24" y="91.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Sales Order</text>
-<text x="224" y="91.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ดูและแก้</text>
-<text x="360" y="91.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ดูและแก้</text>
-<text x="500" y="91.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">-</text>
-<rect x="16" y="102" width="608" height="32" rx="0" fill="#F4F6F6"/>
-<text x="24" y="123.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Sales Credit Memo</text>
-<text x="224" y="123.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ดู</text>
-<text x="360" y="123.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ดูและแก้</text>
-<text x="500" y="123.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ดู</text>
-<rect x="16" y="134" width="608" height="32" rx="0" fill="#FFFFFF"/>
-<text x="24" y="155.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Customer Card</text>
-<text x="224" y="155.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ดู</text>
-<text x="360" y="155.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ดูและแก้</text>
-<text x="500" y="155.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ดู</text>
-<rect x="16" y="38" width="608" height="128" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
-<text x="16" y="194" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">ทดสอบตามบทบาท</text>
-<rect x="170" y="176" width="148.9" height="26" rx="13.0" fill="#008271"/>
-<text x="179" y="194.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">พนักงานขาย ผ่าน</text>
-<rect x="326.9" y="176" width="137.9" height="26" rx="13.0" fill="#008271"/>
-<text x="335.9" y="194.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">หัวหน้าขาย ผ่าน</text>
-<rect x="472.79999999999995" y="176" width="124.7" height="26" rx="13.0" fill="#008271"/>
-<text x="481.79999999999995" y="194.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ฝ่ายบัญชี ผ่าน</text>
-<rect x="16" y="214" width="608" height="108" rx="8" fill="#FFF1C9" stroke="#D9A400" stroke-width="1"/>
-<text x="32" y="246" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" font-weight="700" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ผู้ใช้ฝ่ายขายแจ้ง หลังขึ้นระบบเปิดรายงานใหม่ไม่ได้</text>
-<text x="32" y="276" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">รายงานใหม่ของใบลดหนี้และใบเพิ่มหนี้ (Report 70710 และ 70711)</text>
-<text x="32" y="306" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">รายงานทั้งสองไม่มีแถวในตารางสิทธิ์</text>
+<text x="16" y="21" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">Operation Guide (สถานการณ์ทดสอบและคู่มืออบรม)  GOF-INS</text>
+<rect x="16" y="30" width="608" height="31" rx="0" fill="#008271"/>
+<text x="24" y="50.54" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">scenario</text>
+<text x="124" y="50.54" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">เรื่อง</text>
+<text x="454" y="50.54" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP No.</text>
+<rect x="16" y="61" width="608" height="31" rx="0" fill="#FFFFFF"/>
+<text x="24" y="81.54" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">FN.02</text>
+<text x="124" y="81.9" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ตรวจเงินโอนจากธนาคารกับใบแจ้งหนี้</text>
+<text x="454" y="81.54" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-FN-34</text>
+<rect x="16" y="92" width="608" height="31" rx="0" fill="#F4F6F6"/>
+<text x="24" y="112.54" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">SAL.06</text>
+<text x="124" y="112.9" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ส่วนลดขั้นบันไดตามปริมาณ</text>
+<text x="454" y="112.54" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAPSALES-45</text>
+<rect x="16" y="123" width="608" height="31" rx="0" fill="#FFFFFF"/>
+<text x="24" y="143.54" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">PUR.03</text>
+<text x="124" y="143.9" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">อนุมัติใบสั่งซื้อตามวงเงิน</text>
+<text x="454" y="143.54" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-PR-36</text>
+<rect x="16" y="30" width="608" height="124" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+<text x="16" y="181" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">gap list  GOF-INS</text>
+<rect x="16" y="190" width="608" height="29" rx="0" fill="#008271"/>
+<text x="24" y="209.54" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP</text>
+<text x="202" y="209.54" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">เรื่องใน gap list</text>
+<text x="532" y="209.54" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">สถานะ</text>
+<rect x="16" y="219" width="608" height="29" rx="0" fill="#FFFFFF"/>
+<text x="24" y="238.54" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-FN-33</text>
+<text x="202" y="238.9" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ตรวจเงินโอนจากธนาคารกับใบแจ้งหนี้</text>
+<text x="532" y="238.9" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Confirm</text>
+<rect x="16" y="248" width="608" height="29" rx="0" fill="#F4F6F6"/>
+<text x="24" y="267.54" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-FN-34</text>
+<text x="202" y="267.9" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ปฏิทินวันหยุดของการส่งสินค้า</text>
+<text x="532" y="267.9" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Confirm</text>
+<rect x="16" y="277" width="608" height="29" rx="0" fill="#FFFFFF"/>
+<text x="24" y="296.54" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-SALES-45</text>
+<text x="202" y="296.9" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ส่วนลดขั้นบันไดตามปริมาณ</text>
+<text x="532" y="296.9" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Confirm</text>
+<rect x="16" y="306" width="608" height="29" rx="0" fill="#F4F6F6"/>
+<text x="24" y="325.54" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-PUR-36</text>
+<text x="202" y="325.9" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">อนุมัติใบสั่งซื้อตามวงเงิน</text>
+<text x="532" y="325.9" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Confirm</text>
+<rect x="16" y="190" width="608" height="145" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
 </svg>

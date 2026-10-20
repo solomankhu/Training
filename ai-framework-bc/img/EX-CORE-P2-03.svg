@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>ภาพบันทึกรอบงาน R-NSL-03 ของร่าง gap list ของ NSL-01 ที่แสดงเหตุการณ์ตามเวลา 10:05 ถึง 11:15</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<rect x="16" y="14" width="608" height="306" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 22 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
+<text x="28" y="31" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">บันทึกรอบงาน R-NSL-03  ร่าง gap list ของ NSL-01</text>
+<text x="28" y="64" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="18" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">เวลา   เหตุการณ์</text>
+<text x="28" y="102" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="18" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">10:05  จุดตรวจก่อนส่งตรวจ  เขียว</text>
+<text x="28" y="140" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="18" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">       ล็อกชุดร่าง 7c21</text>
+<text x="28" y="178" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="18" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">10:40  doc-reviewer  PASS  ชุดร่าง 7c21</text>
+<text x="28" y="216" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="18" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">11:15  คุณต้นแก้คำอธิบาย GAP-FA-47</text>
+<text x="28" y="254" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="18" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">       ในร่าง gap list 1 บรรทัด</text>
+<text x="28" y="292" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="18" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">งานถัดไป  ย้ายร่างเข้าโครงการ</text>
+</svg>

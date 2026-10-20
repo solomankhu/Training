@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>ภาพหน้าสรุปผลกระทบยอดเจ้าหนี้รอบ 1 ของ NSL-01 ที่ผู้ช่วยรวบรวม วันที่ 2026-10-20</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<rect x="16" y="10" width="608" height="280" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 18 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
+<text x="28" y="27" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="12" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">สรุปผลกระทบยอดเจ้าหนี้  รอบ 1  NSL-01  (ผู้ช่วยรวบรวม 2026-10-20)</text>
+<text x="28" y="59" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ผู้ขาย 42 ราย</text>
+<text x="28" y="99" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">จัดประเภทผลต่างแล้ว  41 ราย</text>
+<text x="28" y="139" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ยังไม่จัดประเภท  1 ราย  V-0032</text>
+<text x="28" y="179" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ผลเทียบยอด  ครบทุกผู้ขายแล้ว</text>
+<text x="28" y="219" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">วันลงนามยอดในแผน  2026-10-20</text>
+<text x="28" y="259" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ร่างข้อความของผู้ช่วย  พร้อมให้ลูกค้าลงนาม</text>
+</svg>

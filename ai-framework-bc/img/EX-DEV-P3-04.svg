@@ -1,25 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
-<title>ไฟล์ร่าง Pag70120.AMSLotCheck.al ของ SCP-INS ประกาศ page 70125 ขณะที่แอปมี page 70120 อยู่แล้ว</title>
+<title>แผนภาพ 3 เส้นทางที่เติมฟิลด์ AMS Pack Size ในบรรทัดขายของ GOF-INS พร้อมสถานะใน FDD test และ defect ที่แจ้ง</title>
 <rect width="640" height="360" fill="#FFFFFF"/>
-<rect x="16" y="30" width="296" height="250" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
-<path d="M16 38 a8 8 0 0 1 8 -8 h280 a8 8 0 0 1 8 8 v16 h-296 Z" fill="#F4F6F6"/>
-<text x="28" y="47" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">ไฟล์ร่างใน _ai_drafts</text>
-<text x="28" y="77" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Pag70120.AMSLotCheck.al</text>
-<text x="28" y="107" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre"></text>
-<text x="28" y="137" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">page 70125 "AMS Lot Check"</text>
-<text x="28" y="167" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">{</text>
-<text x="28" y="197" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">    PageType = List;</text>
-<text x="28" y="227" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">    SourceTable = Item;</text>
-<text x="28" y="257" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">}</text>
-<rect x="328" y="30" width="296" height="250" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
-<path d="M328 38 a8 8 0 0 1 8 -8 h280 a8 8 0 0 1 8 8 v16 h-296 Z" fill="#F4F6F6"/>
-<text x="340" y="47" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">ไฟล์ในแอปที่มีอยู่แล้ว</text>
-<text x="340" y="77" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Pag70120.AMSDeliveryZone.al</text>
-<text x="340" y="107" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre"></text>
-<text x="340" y="137" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">page 70120 "AMS Delivery Zone"</text>
-<text x="340" y="167" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">{</text>
-<text x="340" y="197" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">    PageType = List;</text>
-<text x="340" y="227" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">    SourceTable = Zone;</text>
-<text x="340" y="257" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">}</text>
-<text x="16" y="306" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">SCP-INS  แอป AL และไฟล์ร่างของรอบงาน R-SCP-04</text>
+<text x="16" y="26" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">ฟิลด์ AMS Pack Size ในบรรทัดขาย  GOF-INS  GAP-SALES-48</text>
+<rect x="16" y="44" width="420" height="80" rx="8" fill="#F4F6F6" stroke="#C5D0CF" stroke-width="1"/>
+<text x="30" y="76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">เลือก Item ในบรรทัด Sales Order</text>
+<text x="30" y="104" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">FDD มี   test มี   defect -</text>
+<line x1="436" y1="84" x2="470" y2="84" stroke="#6B6B6B" stroke-width="2"/>
+<rect x="16" y="140" width="420" height="80" rx="8" fill="#F4F6F6" stroke="#C5D0CF" stroke-width="1"/>
+<text x="30" y="172" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">เปลี่ยน VAT Bus. Posting Group หลังเลือก Item</text>
+<text x="30" y="200" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">FDD ไม่มี   test ไม่มี   defect DEF-81</text>
+<line x1="436" y1="180" x2="470" y2="180" stroke="#6B6B6B" stroke-width="2"/>
+<rect x="16" y="236" width="420" height="80" rx="8" fill="#F4F6F6" stroke="#C5D0CF" stroke-width="1"/>
+<text x="30" y="268" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Copy Document จาก Sales Quote</text>
+<text x="30" y="296" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">FDD ไม่มี   test ไม่มี   defect DEF-84</text>
+<line x1="436" y1="276" x2="470" y2="276" stroke="#6B6B6B" stroke-width="2"/>
+<rect x="470" y="44" width="154" height="272" rx="8" fill="#FFFFFF" stroke="#008271" stroke-width="1.5"/>
+<text x="547" y="170" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#262626" text-anchor="middle" xml:space="preserve" style="white-space:pre">ค่า AMS</text>
+<text x="547" y="194" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#262626" text-anchor="middle" xml:space="preserve" style="white-space:pre">Pack Size</text>
+<text x="547" y="218" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="middle" xml:space="preserve" style="white-space:pre">ในบรรทัด</text>
 </svg>

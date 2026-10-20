@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>ภาพ test plan SIT ระบบคลังสินค้าของ SCP-INS 5 แถว ที่คุณเมย์บันทึกผล</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<text x="16" y="29" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">test plan SIT ระบบคลังสินค้า  SCP-INS</text>
+<rect x="16" y="38" width="608" height="36" rx="0" fill="#008271"/>
+<text x="24" y="60.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">แถว</text>
+<text x="76" y="60.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">scenario</text>
+<text x="176" y="60.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">build</text>
+<text x="300" y="60.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ผู้ทดสอบ</text>
+<text x="396" y="60.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ผล</text>
+<text x="500" y="60.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">หลักฐาน</text>
+<rect x="16" y="74" width="608" height="36" rx="0" fill="#FFFFFF"/>
+<text x="24" y="97.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">1</text>
+<text x="76" y="96.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">INV.03</text>
+<text x="176" y="96.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026.11.2.0</text>
+<text x="300" y="97.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">คุณเมย์</text>
+<text x="396" y="97.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Pass</text>
+<text x="500" y="96.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">INV.03-4.png</text>
+<rect x="16" y="110" width="608" height="36" rx="0" fill="#F4F6F6"/>
+<text x="24" y="133.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2</text>
+<text x="76" y="132.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">INV.04</text>
+<text x="176" y="132.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026.11.2.0</text>
+<text x="300" y="133.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">คุณเมย์</text>
+<text x="396" y="133.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Fail</text>
+<text x="500" y="132.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">DEF-68</text>
+<rect x="16" y="146" width="608" height="36" rx="0" fill="#FFFFFF"/>
+<text x="24" y="169.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">3</text>
+<text x="76" y="168.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">INV.05</text>
+<text x="300" y="169.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">คุณเมย์</text>
+<text x="396" y="169.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Pass</text>
+<text x="500" y="168.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">INV.05-2.png</text>
+<rect x="16" y="182" width="608" height="36" rx="0" fill="#F4F6F6"/>
+<text x="24" y="205.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">4</text>
+<text x="76" y="204.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">INV.06</text>
+<text x="176" y="204.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026.11.2.0</text>
+<text x="300" y="205.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">คุณเมย์</text>
+<text x="396" y="205.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Not tested</text>
+<rect x="16" y="218" width="608" height="36" rx="0" fill="#FFFFFF"/>
+<text x="24" y="241.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">5</text>
+<text x="176" y="240.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026.11.2.0</text>
+<text x="300" y="241.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">คุณเมย์</text>
+<text x="396" y="241.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Pass</text>
+<text x="500" y="240.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ผู้ใช้บอกว่าใช้ได้</text>
+<rect x="16" y="38" width="608" height="216" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+<rect x="16" y="272" width="608" height="46" rx="8" fill="#F4F6F6"/>
+<text x="32" y="297" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ช่องที่ว่างในตาราง คือช่องที่ผู้บันทึกไม่ได้กรอก</text>
+</svg>

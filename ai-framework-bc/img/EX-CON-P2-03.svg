@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>ภาพแถว GAP-FA-49 ของ NSL-01 ใน gap list คู่กับสถานะ FDD วันประชุมยืนยัน gap list และวัน Check 2 ในแผน</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<text x="16" y="25" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">gap list  NSL-01</text>
+<rect x="16" y="34" width="608" height="36" rx="0" fill="#008271"/>
+<text x="24" y="57.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP</text>
+<text x="144" y="57.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">เรื่อง</text>
+<text x="432" y="57.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">STATUS</text>
+<rect x="16" y="70" width="608" height="36" rx="0" fill="#FFFFFF"/>
+<text x="24" y="93.76" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-FA-49</text>
+<text x="144" y="94.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ค่าเสื่อมแบบผลรวมจำนวนปี</text>
+<text x="432" y="94.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Pending</text>
+<rect x="16" y="34" width="608" height="72" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+<rect x="16" y="124" width="608" height="136" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 132 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
+<text x="28" y="141" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">สถานะ FDD  NSL-01</text>
+<text x="28" y="173" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-FA-49  FDD ยังไม่มี</text>
+<text x="28" y="205" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ประชุมยืนยัน gap list กับลูกค้า  2026-10-22</text>
+<text x="28" y="237" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Check 2 ในแผน  2026-11-20</text>
+</svg>

@@ -1,14 +1,48 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
-<title>ผลการตรวจเส้นทาง GAP ของ NSL-01 รายงาน IDs used but not in gap list 3 รหัส</title>
+<title>ภาพไฟล์ยอดยกมาลูกหนี้ของ GOF-INS แผ่น OB_AR 5 แถว คู่กับผลตรวจไฟล์ยอดยกมา ณ 2025-12-31</title>
 <rect width="640" height="360" fill="#FFFFFF"/>
-<rect x="16" y="14" width="608" height="224" rx="8" fill="#262626"/>
-<path d="M16 22 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#3B4343"/>
-<text x="28" y="31" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" fill="#A9B6B5" text-anchor="start" xml:space="preserve" style="white-space:pre">Terminal  NSL-01</text>
-<text x="28" y="66" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="18" fill="#6FD6C4" text-anchor="start" xml:space="preserve" style="white-space:pre">&gt; ตรวจเส้นทาง GAP  NSL-01</text>
-<text x="28" y="92" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="18" fill="#6FD6C4" text-anchor="start" xml:space="preserve" style="white-space:pre">&gt; ชั้นที่ต้องมี fdd,test,training</text>
-<text x="28" y="118" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="18" fill="#F4F6F6" text-anchor="start" xml:space="preserve" style="white-space:pre">gap list NSL-01_Gap_list.xlsx: 38 GAPs, 27 Confirm;</text>
-<text x="28" y="144" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="18" fill="#F4F6F6" text-anchor="start" xml:space="preserve" style="white-space:pre">  required layers fdd,test,training</text>
-<text x="28" y="170" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="18" fill="#F4F6F6" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP        status  fdd bi test train log al tc missing</text>
-<text x="28" y="196" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="18" fill="#F4F6F6" text-anchor="start" xml:space="preserve" style="white-space:pre">incomplete 0; IDs used but not in gap list 3:</text>
-<text x="28" y="222" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="18" fill="#F4F6F6" text-anchor="start" xml:space="preserve" style="white-space:pre">  GAP-FA-54, GAP-FA-58, GAP-FN-49</text>
+<text x="16" y="23" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">ไฟล์ยอดยกมาลูกหนี้  GOF-INS  แผ่น OB_AR</text>
+<rect x="16" y="32" width="608" height="25" rx="0" fill="#008271"/>
+<text x="24" y="49.18" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">แถว</text>
+<text x="72" y="49.18" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Customer</text>
+<text x="172" y="49.18" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Doc. Type</text>
+<text x="278" y="49.18" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Amount</text>
+<text x="386" y="49.18" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Currency</text>
+<text x="492" y="49.18" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Amount (LCY)</text>
+<rect x="16" y="57" width="608" height="25" rx="0" fill="#FFFFFF"/>
+<text x="24" y="74.18" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2</text>
+<text x="72" y="74.18" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">C-0031</text>
+<text x="172" y="74.54" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Invoice</text>
+<text x="370" y="74.18" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="end" xml:space="preserve" style="white-space:pre">100.00</text>
+<text x="616" y="74.18" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="end" xml:space="preserve" style="white-space:pre">100.00</text>
+<rect x="16" y="82" width="608" height="25" rx="0" fill="#F4F6F6"/>
+<text x="24" y="99.18" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">3</text>
+<text x="72" y="99.18" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">C-0032</text>
+<text x="172" y="99.54" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Invoice</text>
+<text x="370" y="99.18" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="end" xml:space="preserve" style="white-space:pre">-50.00</text>
+<text x="616" y="99.18" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="end" xml:space="preserve" style="white-space:pre">-50.00</text>
+<rect x="16" y="107" width="608" height="25" rx="0" fill="#FFFFFF"/>
+<text x="24" y="124.18" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">4</text>
+<text x="72" y="124.18" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">C-0033</text>
+<text x="172" y="124.54" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Invoice</text>
+<text x="370" y="124.18" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="end" xml:space="preserve" style="white-space:pre">200.00</text>
+<text x="616" y="124.18" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="end" xml:space="preserve" style="white-space:pre">200.00</text>
+<rect x="16" y="132" width="608" height="25" rx="0" fill="#F4F6F6"/>
+<text x="24" y="149.18" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">5</text>
+<text x="72" y="149.18" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">C-0034</text>
+<text x="172" y="149.54" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Invoice</text>
+<text x="370" y="149.18" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="end" xml:space="preserve" style="white-space:pre">100.00</text>
+<text x="616" y="149.18" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="end" xml:space="preserve" style="white-space:pre">3,500.00</text>
+<rect x="16" y="157" width="608" height="25" rx="0" fill="#FFFFFF"/>
+<text x="24" y="174.18" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">6</text>
+<text x="72" y="174.18" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">C-0035</text>
+<text x="172" y="174.54" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Invoice</text>
+<text x="370" y="174.18" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="end" xml:space="preserve" style="white-space:pre">80.00</text>
+<text x="616" y="174.18" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="end" xml:space="preserve" style="white-space:pre">80.00</text>
+<rect x="16" y="32" width="608" height="150" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+<rect x="16" y="192" width="608" height="88" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 200 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
+<text x="28" y="209" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">ผลตรวจไฟล์ยอดยกมา  ณ 2025-12-31</text>
+<text x="28" y="237" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Errors 1</text>
+<text x="28" y="261" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">row (5, 'Amount (LCY)', 3500.0, 'LCY differs from Amount but no currency')</text>
 </svg>

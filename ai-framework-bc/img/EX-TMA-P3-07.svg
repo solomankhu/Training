@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>ภาพแถว ISS-132 ใน issue log ของ GOF-INS วันที่ 2 หลังขึ้นระบบ คู่กับผลทดสอบตามบทบาท UAT รอบ 2 และหมายเหตุของตารางสิทธิ์</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<rect x="16" y="6" width="608" height="96" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 14 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
+<text x="28" y="23" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">issue log  GOF-INS  วันที่ 2 หลังขึ้นระบบ  ISS-132</text>
+<text x="28" y="53" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ผู้ใช้ฝ่ายขาย export รายงานใบลดหนี้ตามสาขา (Rep70052) ไม่ได้</text>
+<text x="28" y="81" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ระบบแจ้งว่าผู้ใช้ไม่มีสิทธิ์ใช้รายงานนี้</text>
+<text x="16" y="127" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">ผลทดสอบตามบทบาท UAT รอบ 2  GOF-INS</text>
+<rect x="16" y="136" width="608" height="30" rx="0" fill="#008271"/>
+<text x="24" y="155.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">บทบาท</text>
+<text x="174" y="155.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">หน้าจอหรือรายงาน</text>
+<text x="364" y="155.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">งานที่ลอง</text>
+<text x="514" y="155.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ผล</text>
+<rect x="16" y="166" width="608" height="30" rx="0" fill="#FFFFFF"/>
+<text x="24" y="186.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Sales Clerk</text>
+<text x="174" y="186.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Sales Order</text>
+<text x="364" y="186.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">สร้างและ post</text>
+<text x="514" y="186.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">PASS</text>
+<rect x="16" y="196" width="608" height="30" rx="0" fill="#F4F6F6"/>
+<text x="24" y="216.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Sales Clerk</text>
+<text x="174" y="216.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Sales Invoice</text>
+<text x="364" y="216.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">post</text>
+<text x="514" y="216.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">PASS</text>
+<rect x="16" y="226" width="608" height="30" rx="0" fill="#FFFFFF"/>
+<text x="24" y="246.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Sales Manager</text>
+<text x="174" y="246.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Sales Analysis</text>
+<text x="364" y="246.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">export</text>
+<text x="514" y="246.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">PASS</text>
+<rect x="16" y="136" width="608" height="120" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+<rect x="16" y="266" width="608" height="46" rx="8" fill="#F4F6F6"/>
+<text x="32" y="291" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ตารางสิทธิ์รุ่นที่ใช้ทดสอบ  2026-11-10  ไม่มี Rep70052</text>
+</svg>

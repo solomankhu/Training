@@ -1,22 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
-<title>defect log ของ GOF-INS หลังขึ้นระบบสัปดาห์แรกมี 2 รายการที่คุณบอสแก้แล้ว คือส่งใบสั่งซื้อขออนุมัติเกิด error เมื่อบรรทัด Type ว่าง และพิมพ์หลายใบพร้อมกันแล้วทุกใบแสดงลายเซ็นของใบแรก</title>
+<title>ภาพแถว DEF-48 ใน defect log ของ NSL-01 UAT รอบ 2 คู่กับภาพหน้าจอที่คุณนิดาแนบ</title>
 <rect width="640" height="360" fill="#FFFFFF"/>
-<text x="16" y="29" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">GOF-INS  Defect log  สัปดาห์แรกหลังขึ้นระบบ</text>
-<rect x="16" y="38" width="608" height="44" rx="0" fill="#008271"/>
-<text x="24" y="65.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">No.</text>
-<text x="74" y="65.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Title</text>
-<text x="514" y="65.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Status</text>
-<rect x="16" y="82" width="608" height="44" rx="0" fill="#FFFFFF"/>
-<text x="24" y="109.76" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">61</text>
-<text x="74" y="110.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ส่งใบสั่งซื้อขออนุมัติเกิด error เมื่อบรรทัด Type ว่าง</text>
-<text x="514" y="110.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">UAT</text>
-<rect x="16" y="126" width="608" height="44" rx="0" fill="#F4F6F6"/>
-<text x="24" y="153.76" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">62</text>
-<text x="74" y="154.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">พิมพ์หลายใบพร้อมกัน ทุกใบแสดงลายเซ็นของใบแรก</text>
-<text x="514" y="154.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">UAT</text>
-<rect x="16" y="38" width="608" height="132" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
-<rect x="16" y="190" width="608" height="120" rx="8" fill="#F4F6F6"/>
-<text x="32" y="228" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="19" font-weight="700" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">คุณบอสแก้ 2 รายการนี้แล้ว</text>
-<text x="32" y="266" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">สถานะ UAT คือพร้อมให้ทดสอบ</text>
-<text x="32" y="294" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">คุณเมย์เป็นผู้ทดสอบรายการเหล่านี้</text>
+<rect x="16" y="10" width="608" height="195" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 18 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
+<text x="28" y="27" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">defect log  NSL-01  UAT รอบ 2  DEF-48</text>
+<text x="28" y="58" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">เรื่อง  post ใบแจ้งหนี้ลูกค้าขาจรที่ใช้บรรทัดประเภท G/L ไม่ได้</text>
+<text x="28" y="89" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ผู้แจ้ง  คุณนิดา     ประเภทที่ผู้ใช้ระบุ  bug ของโปรแกรม</text>
+<text x="28" y="120" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">หมายเหตุ  ใบแจ้งหนี้ที่ใช้บรรทัดประเภท Item post ได้ปกติ</text>
+<text x="28" y="151" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ผลจำลองปัญหา  (ยังไม่มี)</text>
+<text x="28" y="182" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ส่งต่อ  คุณบอส  (รอส่ง)</text>
+<rect x="16" y="221" width="608" height="66" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<text x="32" y="247" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">ภาพหน้าจอที่คุณนิดาแนบ</text>
+<text x="32" y="273" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#B42318" text-anchor="start" xml:space="preserve" style="white-space:pre">Error  ระบบไม่ post ใบแจ้งหนี้ เมื่อมีบรรทัดประเภท G/L</text>
 </svg>

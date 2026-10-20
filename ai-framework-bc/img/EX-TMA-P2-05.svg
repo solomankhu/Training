@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>ภาพแถว SIT ของ scenario SAL.07 ของ GOF-INS คู่กับหมายเหตุของ defect log</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<rect x="16" y="10" width="608" height="164" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 18 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
+<text x="28" y="27" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">test plan SIT ระบบขาย  GOF-INS  SAL.07</text>
+<text x="28" y="58" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">เรื่อง  ราคาพิเศษตามเส้นทางส่งสินค้า  GAP-SALES-48</text>
+<text x="28" y="89" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">build  2026.11.3.0     ผู้ทดสอบ  คุณเมย์</text>
+<text x="28" y="120" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ผล  Fail     หลักฐาน  SAL.07-3.png</text>
+<text x="28" y="151" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">หมายเหตุ  ใบสั่งขายไม่ดึงราคาพิเศษของเส้นทางที่เลือก</text>
+<rect x="16" y="190" width="608" height="78" rx="8" fill="#F4F6F6"/>
+<text x="32" y="215" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">defect log  GOF-INS  ยังไม่มีแถวที่อ้าง SAL.07</text>
+<text x="32" y="245" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">แถวล่าสุดใน defect log  DEF-70</text>
+</svg>

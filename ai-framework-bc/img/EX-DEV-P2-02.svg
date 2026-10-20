@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>แถว DEF-41 ของ GOF-INS ที่คัดเป็น Program bug และส่งถึงคุณบอส พร้อม TC ID และรายการ test ของ GAP-SALES-45 ที่มีอยู่</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<rect x="16" y="10" width="608" height="164" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 18 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
+<text x="28" y="27" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">defect log  GOF-INS  DEF-41</text>
+<text x="28" y="58" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP  GAP-SALES-45     TC ID  TC-GAP-SALES-45-03</text>
+<text x="28" y="89" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">เรื่อง  ส่วนลดขั้นบันไดไม่คำนวณใหม่เมื่อแก้ Quantity</text>
+<text x="28" y="120" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Cause category  Program bug</text>
+<text x="28" y="151" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ส่งต่อ  คุณบอส     สถานะ  Open</text>
+<rect x="16" y="192" width="608" height="78" rx="8" fill="#F4F6F6"/>
+<text x="32" y="218" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">test ของ GAP-SALES-45 ใน codebase</text>
+<text x="32" y="248" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">TC-GAP-SALES-45-01   TC-GAP-SALES-45-02</text>
+</svg>

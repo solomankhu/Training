@@ -1,36 +1,59 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
-<title>Operation Guide ระบบการเงินของ NSL-01 ใช้เป็นสถานการณ์ทดสอบและคู่มืออบรม โดยสถานการณ์ตรวจเงินโอนติดรหัส GAP-FN-44 ซึ่งเป็น GAP เรื่องปฏิทินวันหยุด</title>
+<title>ผลตรวจไฟล์ master ของ GOF-INS ไม่มี Fail ทุกแผ่นงาน คู่กับแผ่นงานลูกค้า ราคาขาย และปฏิทินลูกค้า</title>
 <rect width="640" height="360" fill="#FFFFFF"/>
-<text x="16" y="29" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">NSL-01  gap list</text>
-<rect x="16" y="38" width="608" height="36" rx="0" fill="#008271"/>
-<text x="24" y="61.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP No.</text>
-<text x="136" y="61.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Description</text>
-<text x="466" y="61.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">STATUS</text>
-<rect x="16" y="74" width="608" height="36" rx="0" fill="#FFFFFF"/>
-<text x="24" y="97.76" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-FN-44</text>
-<text x="136" y="98.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ปฏิทินวันหยุดสำหรับวันครบกำหนด</text>
-<text x="466" y="98.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Confirm</text>
-<rect x="16" y="38" width="608" height="72" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
-<text x="16" y="139" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">Operation Guide ระบบการเงิน</text>
-<rect x="16" y="148" width="608" height="36" rx="0" fill="#008271"/>
-<text x="24" y="171.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ข้อ</text>
-<text x="78" y="171.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ชื่อสถานการณ์ใน Operation Guide</text>
-<text x="472" y="171.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP</text>
-<rect x="16" y="184" width="608" height="36" rx="0" fill="#FFFFFF"/>
-<text x="24" y="207.76" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">1</text>
-<text x="78" y="208.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">บันทึกใบสำคัญจ่าย</text>
-<text x="472" y="207.76" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-FN-41</text>
-<rect x="16" y="220" width="608" height="36" rx="0" fill="#F4F6F6"/>
-<text x="24" y="243.76" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2</text>
-<text x="78" y="244.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ตั้งวันหยุดและวันครบกำหนด</text>
-<text x="472" y="243.76" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-FN-44</text>
-<rect x="16" y="256" width="608" height="36" rx="0" fill="#FFF1C9"/>
-<text x="24" y="279.76" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">3</text>
-<text x="78" y="280.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ตรวจเงินโอน</text>
-<text x="472" y="279.76" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-FN-44</text>
-<rect x="16" y="292" width="608" height="36" rx="0" fill="#F4F6F6"/>
-<text x="24" y="315.76" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">4</text>
-<text x="78" y="316.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ปิดงวดบัญชีสิ้นเดือน</text>
-<text x="472" y="315.76" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-FN-50</text>
-<rect x="16" y="148" width="608" height="180" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+<text x="16" y="23" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">ผลตรวจไฟล์ master  GOF-INS</text>
+<rect x="16" y="32" width="608" height="24" rx="0" fill="#008271"/>
+<text x="24" y="48.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Sheet</text>
+<text x="320" y="48.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Rows</text>
+<text x="424" y="48.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Fail</text>
+<text x="528" y="48.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Warn</text>
+<rect x="16" y="56" width="608" height="24" rx="0" fill="#FFFFFF"/>
+<text x="24" y="72.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">1.Customer</text>
+<text x="320" y="72.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2</text>
+<text x="424" y="72.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">0</text>
+<text x="528" y="72.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">0</text>
+<rect x="16" y="80" width="608" height="24" rx="0" fill="#F4F6F6"/>
+<text x="24" y="96.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2.Sales Price</text>
+<text x="320" y="96.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">3</text>
+<text x="424" y="96.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">0</text>
+<text x="528" y="96.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">0</text>
+<rect x="16" y="104" width="608" height="24" rx="0" fill="#FFFFFF"/>
+<text x="24" y="120.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">3.Calendar</text>
+<text x="320" y="120.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">1</text>
+<text x="424" y="120.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">0</text>
+<text x="528" y="120.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">0</text>
+<rect x="16" y="32" width="608" height="96" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+<text x="16" y="153" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">แผ่น 1.Customer</text>
+<rect x="16" y="162" width="192" height="24" rx="0" fill="#008271"/>
+<text x="24" y="178.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Code</text>
+<text x="116" y="178.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Name</text>
+<rect x="16" y="186" width="192" height="24" rx="0" fill="#FFFFFF"/>
+<text x="24" y="202.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">C-0031</text>
+<text x="116" y="203.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ร้าน ก</text>
+<rect x="16" y="210" width="192" height="24" rx="0" fill="#F4F6F6"/>
+<text x="24" y="226.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">C-0032</text>
+<text x="116" y="227.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ร้าน ข</text>
+<rect x="16" y="162" width="192" height="72" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+<text x="224" y="153" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">แผ่น 2.Sales Price</text>
+<rect x="224" y="162" width="180" height="24" rx="0" fill="#008271"/>
+<text x="232" y="178.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Customer</text>
+<text x="330" y="178.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Item</text>
+<rect x="224" y="186" width="180" height="24" rx="0" fill="#FFFFFF"/>
+<text x="232" y="202.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">C-0031</text>
+<text x="330" y="202.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">FD-100</text>
+<rect x="224" y="210" width="180" height="24" rx="0" fill="#F4F6F6"/>
+<text x="232" y="226.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">C-0039</text>
+<text x="330" y="226.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">FD-100</text>
+<rect x="224" y="234" width="180" height="24" rx="0" fill="#FFFFFF"/>
+<text x="232" y="250.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">C-0032</text>
+<text x="330" y="250.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">FD-200</text>
+<rect x="224" y="162" width="180" height="96" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+<text x="420" y="153" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">แผ่น 3.Calendar</text>
+<rect x="420" y="162" width="204" height="24" rx="0" fill="#008271"/>
+<text x="428" y="178.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Customer</text>
+<text x="526" y="178.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Calendar</text>
+<rect x="420" y="186" width="204" height="24" rx="0" fill="#FFFFFF"/>
+<text x="428" y="202.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">C-0039</text>
+<text x="526" y="202.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">CAL-01</text>
+<rect x="420" y="162" width="204" height="48" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
 </svg>

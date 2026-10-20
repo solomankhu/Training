@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>ภาพหน้าปัญหาที่รู้แล้วใน wiki ของ GOF-INS ก่อนส่งงานให้ทีม MA 4 แถว คู่กับหมายเหตุผลตรวจโครงสร้างหน้าและ defect log ต้นทาง</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<text x="16" y="23" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">wiki  ปัญหาที่รู้แล้ว  เกรทวัน ฟู้ดส์  GOF-INS</text>
+<rect x="16" y="32" width="608" height="34" rx="0" fill="#008271"/>
+<text x="24" y="53.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">เลข</text>
+<text x="110" y="53.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">โมดูล</text>
+<text x="196" y="53.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">สถานะ</text>
+<text x="268" y="53.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">เรื่อง</text>
+<text x="480" y="53.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">วิธีเลี่ยง</text>
+<rect x="16" y="66" width="608" height="34" rx="0" fill="#FFFFFF"/>
+<text x="24" y="87.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">DEF-91</text>
+<text x="110" y="88.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Sales</text>
+<text x="196" y="88.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Open</text>
+<text x="268" y="88.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ราคาพิเศษไม่ดึงเมื่อแก้วันส่ง</text>
+<text x="480" y="88.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">กรอกราคาในบรรทัด</text>
+<rect x="16" y="100" width="608" height="34" rx="0" fill="#F4F6F6"/>
+<text x="24" y="121.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ISS-188</text>
+<text x="110" y="122.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Purchase</text>
+<text x="196" y="122.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Open</text>
+<text x="268" y="122.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">พิมพ์ใบสั่งซื้อหลายใบช้า</text>
+<rect x="16" y="134" width="608" height="34" rx="0" fill="#FFFFFF"/>
+<text x="24" y="155.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">DEF-95</text>
+<rect x="16" y="168" width="608" height="34" rx="0" fill="#F4F6F6"/>
+<text x="24" y="189.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">DEF-96</text>
+<rect x="16" y="32" width="608" height="170" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+<rect x="16" y="216" width="608" height="78" rx="8" fill="#F4F6F6"/>
+<text x="32" y="241" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ผลตรวจโครงสร้างหน้า wiki  FAIL 0</text>
+<text x="32" y="271" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">defect log ต้นทาง  แถวสุดท้ายที่มีข้อมูลคือ DEF-94</text>
+</svg>

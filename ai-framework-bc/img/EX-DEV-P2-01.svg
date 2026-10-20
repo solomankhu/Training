@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>ภาพแชทจากคุณนิดาถึงคุณบอสในโครงการ NSL-01 วันที่ 2026-10-20 คู่กับรายการ work order ของคุณบอส</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<rect x="16" y="10" width="608" height="104" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 18 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
+<text x="28" y="27" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">แชท  คุณนิดา (NSL-01) ถึงคุณบอส  2026-10-20 09:12</text>
+<text x="28" y="59" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">คุณบอสช่วยเพิ่มคอลัมน์สาขาในรายงานค่าขนส่งรายเดือน</text>
+<text x="28" y="91" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ให้หน่อยค่ะ ต้องใช้ก่อนปิดเดือนนี้</text>
+<text x="16" y="147" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">work order ของคุณบอส  NSL-01</text>
+<rect x="16" y="156" width="608" height="34" rx="0" fill="#008271"/>
+<text x="24" y="178.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">รหัส</text>
+<text x="128" y="178.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ประเภท</text>
+<text x="296" y="178.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">เรื่อง</text>
+<rect x="16" y="190" width="608" height="34" rx="0" fill="#FFFFFF"/>
+<text x="24" y="212.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">DEF-37</text>
+<text x="128" y="212.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">bug</text>
+<text x="296" y="212.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ใบแจ้งหนี้ค่าขนส่งปัดเศษภาษีผิด</text>
+<rect x="16" y="224" width="608" height="34" rx="0" fill="#F4F6F6"/>
+<text x="24" y="246.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ISS-42</text>
+<text x="128" y="246.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">CR อนุมัติแล้ว</text>
+<text x="296" y="246.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">รายงานรถเข้าซ่อมรายเดือน</text>
+<rect x="16" y="156" width="608" height="102" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+</svg>

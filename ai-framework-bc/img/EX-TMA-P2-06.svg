@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>ภาพแถว GAP-PUR-41 ของ GOF-INS คู่กับผลค้นรหัสนี้ในคลังกลาง</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<rect x="16" y="10" width="608" height="48" rx="8" fill="#F4F6F6"/>
+<text x="32" y="36" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-PUR-41  ขอใบเสนอราคาจากผู้ขาย 3 ราย  สถานะ Cancel</text>
+<text x="16" y="85" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">ผลค้นรหัส GAP-PUR-41 ในคลังกลาง  GOF-INS</text>
+<rect x="16" y="94" width="608" height="34" rx="0" fill="#008271"/>
+<text x="24" y="116.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">เอกสารที่ยังอ้าง GAP-PUR-41</text>
+<text x="354" y="116.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ตำแหน่ง</text>
+<rect x="16" y="128" width="608" height="34" rx="0" fill="#FFFFFF"/>
+<text x="24" y="150.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">test plan ของ SIT ระบบซื้อ</text>
+<text x="354" y="150.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">scenario PUR.08</text>
+<rect x="16" y="162" width="608" height="34" rx="0" fill="#F4F6F6"/>
+<text x="24" y="184.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ตาราง UAT รอบ 2 ของระบบซื้อ</text>
+<text x="354" y="184.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">session 4</text>
+<rect x="16" y="196" width="608" height="34" rx="0" fill="#FFFFFF"/>
+<text x="24" y="218.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">สื่ออบรมกลุ่มงาน SCM</text>
+<text x="354" y="218.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">สไลด์ 14</text>
+<rect x="16" y="230" width="608" height="34" rx="0" fill="#F4F6F6"/>
+<text x="24" y="252.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">คู่มือการใช้งานระบบซื้อ</text>
+<text x="354" y="252.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ชีต 6</text>
+<rect x="16" y="264" width="608" height="34" rx="0" fill="#FFFFFF"/>
+<text x="24" y="286.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ทะเบียนการตัดสินใจ</text>
+<text x="354" y="286.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">DEC-12  ยกเลิก  คุณสุดา  2026-11-05</text>
+<rect x="16" y="94" width="608" height="204" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+</svg>

@@ -1,18 +1,32 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
-<title>รายงานความคืบหน้าของ SCP-INS ที่พิมพ์เองระบุ GAP 40 รายการ แต่ตาราง matrix ที่การตรวจเส้นทาง GAP สร้างมี 36 แถว</title>
+<title>ภาพ issue log ของ GOF-INS แถว ISS-030 และ ISS-031 คู่กับรายละเอียดของ ISS-031</title>
 <rect width="640" height="360" fill="#FFFFFF"/>
-<rect x="16" y="14" width="608" height="124" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
-<path d="M16 22 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
-<text x="28" y="31" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">progress_report_20261018.md</text>
-<text x="28" y="64" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="18" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">รายงานความคืบหน้า SCP-INS</text>
-<text x="28" y="92" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="18" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP total 40</text>
-<text x="28" y="120" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="18" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">ตัวเลขในรายงานนี้พิมพ์เอง</text>
-<rect x="16" y="152" width="608" height="160" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
-<path d="M16 160 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
-<text x="28" y="169" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">ตาราง matrix ของการตรวจเส้นทาง GAP  รอบ R-SCP-03</text>
-<text x="28" y="200" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">gap,status,fdd,bi,test,training,log,al,tc,missing</text>
-<text x="28" y="224" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-MFG-31,Confirm,1,0,1,1,1,2,2,</text>
-<text x="28" y="248" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-MFG-32,Confirm,1,0,0,1,1,1,0,test</text>
-<text x="28" y="272" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-INV-33,Cancel,0,0,0,0,0,0,0,</text>
-<text x="28" y="296" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">... รวม 36 แถวข้อมูล</text>
+<text x="16" y="25" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">issue log  GOF-INS</text>
+<rect x="16" y="34" width="608" height="26" rx="0" fill="#008271"/>
+<text x="24" y="52.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ISS</text>
+<text x="108" y="52.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">เรื่อง</text>
+<text x="344" y="52.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ประเภท</text>
+<text x="420" y="52.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">MD</text>
+<text x="472" y="51.32" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ผู้รับต้นทุน</text>
+<text x="548" y="52.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">สถานะ</text>
+<rect x="16" y="60" width="608" height="26" rx="0" fill="#FFFFFF"/>
+<text x="24" y="78.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ISS-030</text>
+<text x="108" y="78.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ใบกำกับพิมพ์ชื่อสินค้าไม่ครบ</text>
+<text x="344" y="78.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">bug</text>
+<text x="420" y="78.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">0.5</text>
+<text x="472" y="78.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">AMCO</text>
+<text x="548" y="78.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ปิดแล้ว</text>
+<rect x="16" y="86" width="608" height="26" rx="0" fill="#F4F6F6"/>
+<text x="24" y="104.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ISS-031</text>
+<text x="108" y="104.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">รายงานยอดขายภาษาอังกฤษ</text>
+<text x="344" y="104.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">FOC</text>
+<text x="548" y="104.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">กำลังทำ</text>
+<rect x="16" y="34" width="608" height="78" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+<rect x="16" y="130" width="608" height="160" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 138 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
+<text x="28" y="147" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">รายละเอียด ISS-031</text>
+<text x="28" y="178" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ที่มา  คุณนิดาขอทางแชท 2026-10-13</text>
+<text x="28" y="208" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ต้องการรายงานแบบเดียวกับรายงานยอดขายภาษาไทยที่มีอยู่</text>
+<text x="28" y="238" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ผู้รับผิดชอบ  คุณบอส   เริ่มทำ 2026-10-14</text>
+<text x="28" y="268" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ผู้ตัดสินแก้ฟรีหรือคิดเงิน  (ว่าง)</text>
 </svg>

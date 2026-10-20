@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>แผนภาพงานทดสอบของ GAP-FA-44 ของ NSL-01 ที่เริ่มจาก GAP ที่ Confirm และจบที่ defect โดยกล่อง 4 กล่องตรงกลางยังว่าง</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<text x="16" y="26" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">แผนภาพงานทดสอบ  GAP-FA-44  NSL-01</text>
+<rect x="200" y="40" width="240" height="34" rx="6" fill="#F4F6F6" stroke="#C5D0CF" stroke-width="1.5"/>
+<text x="320.0" y="62.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="middle" xml:space="preserve" style="white-space:pre">GAP-FA-44  สถานะ Confirm</text>
+<path d="M320 76 L320 85" stroke="#6B6B6B" stroke-width="2"/><path d="M315 83 L320 90 L325 83 Z" fill="#6B6B6B"/>
+<rect x="200" y="92" width="240" height="34" rx="6" fill="#FFFFFF" stroke="#6B6B6B" stroke-width="1.5"/>
+<text x="320.0" y="115.48" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="18" font-weight="700" fill="#6B6B6B" text-anchor="middle" xml:space="preserve" style="white-space:pre">?</text>
+<path d="M320 128 L320 137" stroke="#6B6B6B" stroke-width="2"/><path d="M315 135 L320 142 L325 135 Z" fill="#6B6B6B"/>
+<rect x="200" y="144" width="240" height="34" rx="6" fill="#FFFFFF" stroke="#6B6B6B" stroke-width="1.5"/>
+<text x="320.0" y="167.48" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="18" font-weight="700" fill="#6B6B6B" text-anchor="middle" xml:space="preserve" style="white-space:pre">?</text>
+<path d="M320 180 L320 189" stroke="#6B6B6B" stroke-width="2"/><path d="M315 187 L320 194 L325 187 Z" fill="#6B6B6B"/>
+<rect x="200" y="196" width="240" height="34" rx="6" fill="#FFFFFF" stroke="#6B6B6B" stroke-width="1.5"/>
+<text x="320.0" y="219.48" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="18" font-weight="700" fill="#6B6B6B" text-anchor="middle" xml:space="preserve" style="white-space:pre">?</text>
+<path d="M320 232 L320 241" stroke="#6B6B6B" stroke-width="2"/><path d="M315 239 L320 246 L325 239 Z" fill="#6B6B6B"/>
+<rect x="200" y="248" width="240" height="34" rx="6" fill="#FFFFFF" stroke="#6B6B6B" stroke-width="1.5"/>
+<text x="320.0" y="271.48" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="18" font-weight="700" fill="#6B6B6B" text-anchor="middle" xml:space="preserve" style="white-space:pre">?</text>
+<path d="M320 284 L320 293" stroke="#6B6B6B" stroke-width="2"/><path d="M315 291 L320 298 L325 291 Z" fill="#6B6B6B"/>
+<rect x="170" y="300" width="300" height="34" rx="6" fill="#F4F6F6" stroke="#C5D0CF" stroke-width="1.5"/>
+<text x="320.0" y="322.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="middle" xml:space="preserve" style="white-space:pre">defect DEF-n และหลักฐาน EV_n</text>
+</svg>

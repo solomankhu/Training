@@ -1,22 +1,24 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
-<title>ร่าง BI ระบบขายของ GOF-INS ได้ PASS จาก al-reviewer ในรอบงาน R-GOF-03 แต่การย้ายร่างเข้าโครงการตอบ REFUSED</title>
+<title>ภาพแผนช่วงขึ้นระบบของ SCP-INS ที่แสดงงานและวันตามแผน</title>
 <rect width="640" height="360" fill="#FFFFFF"/>
-<rect x="16" y="14" width="300" height="132" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
-<path d="M16 22 a8 8 0 0 1 8 -8 h284 a8 8 0 0 1 8 8 v16 h-300 Z" fill="#F4F6F6"/>
-<text x="28" y="31" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="12" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">ร่างในโฟลเดอร์ของรอบงาน</text>
-<text x="28" y="60" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">_ai_drafts/R-GOF-03/</text>
-<text x="28" y="83" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">  1_Project Plan/</text>
-<text x="28" y="106" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">    2_Business Information/</text>
-<text x="28" y="129" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">      GOF-INS_BI_Sales.docx</text>
-<rect x="328" y="14" width="296" height="132" rx="8" fill="#F4F6F6"/>
-<text x="344" y="44" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">ผลตรวจล่าสุดของร่างชุดนี้</text>
-<text x="344" y="88" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="30" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">PASS</text>
-<text x="344" y="124" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">โดย al-reviewer</text>
-<rect x="16" y="158" width="608" height="108" rx="8" fill="#262626"/>
-<path d="M16 166 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#3B4343"/>
-<text x="28" y="175" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" fill="#A9B6B5" text-anchor="start" xml:space="preserve" style="white-space:pre">Terminal  GOF-INS</text>
-<text x="28" y="207" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#6FD6C4" text-anchor="start" xml:space="preserve" style="white-space:pre">&gt; ย้ายร่างเข้าโครงการ  GOF-INS R-GOF-03</text>
-<text x="28" y="229" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#6FD6C4" text-anchor="start" xml:space="preserve" style="white-space:pre">&gt; ผู้อนุมัติ  &lt;ผู้อนุมัติ&gt;</text>
-<text x="28" y="251" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#FF9C92" text-anchor="start" xml:space="preserve" style="white-space:pre">REFUSED: pre-promote gate is not green</text>
-<text x="16" y="326" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">คุณแพรถูกขอให้อนุมัติ promote ร่าง BI ชุดนี้</text>
+<text x="16" y="25" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">แผนโครงการ SCP-INS  ช่วงขึ้นระบบ</text>
+<rect x="16" y="34" width="608" height="28" rx="0" fill="#008271"/>
+<text x="24" y="53.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">งาน</text>
+<text x="454" y="53.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Plan</text>
+<rect x="16" y="62" width="608" height="28" rx="0" fill="#FFFFFF"/>
+<text x="24" y="81.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ประชุม go หรือ no-go</text>
+<text x="454" y="81.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-11-20</text>
+<rect x="16" y="90" width="608" height="28" rx="0" fill="#F4F6F6"/>
+<text x="24" y="109.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ลูกค้าตรวจและยืนยันไฟล์ master รอบ go-live</text>
+<text x="454" y="109.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-11-24</text>
+<rect x="16" y="118" width="608" height="28" rx="0" fill="#FFFFFF"/>
+<text x="24" y="137.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">กระทบยอดยกมารอบ 2 และลูกค้ายืนยันยอด</text>
+<text x="454" y="137.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-11-27</text>
+<rect x="16" y="146" width="608" height="28" rx="0" fill="#F4F6F6"/>
+<text x="24" y="165.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">เริ่ม cutover</text>
+<text x="454" y="165.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-11-28</text>
+<rect x="16" y="174" width="608" height="28" rx="0" fill="#FFFFFF"/>
+<text x="24" y="193.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ขึ้นระบบ</text>
+<text x="454" y="193.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-12-01</text>
+<rect x="16" y="34" width="608" height="168" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
 </svg>

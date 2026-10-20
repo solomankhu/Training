@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>ภาพร่างสารบัญชุดส่งมอบ MA ของ GOF-INS 5 ส่วน ที่คุณแพรส่งให้คุณกอล์ฟ</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<text x="16" y="25" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">ชุดส่งมอบ MA  สารบัญ (ร่าง)  เกรทวัน ฟู้ดส์  GOF-INS</text>
+<rect x="16" y="34" width="608" height="38" rx="0" fill="#008271"/>
+<text x="24" y="58.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ส่วน</text>
+<text x="88" y="58.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">หัวข้อ</text>
+<text x="448" y="58.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">จำนวนหน้า</text>
+<rect x="16" y="72" width="608" height="38" rx="0" fill="#FFFFFF"/>
+<text x="24" y="96.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">1</text>
+<text x="88" y="96.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ขอบเขตและ SLA</text>
+<text x="448" y="96.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">3</text>
+<rect x="16" y="110" width="608" height="38" rx="0" fill="#F4F6F6"/>
+<text x="24" y="134.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2</text>
+<text x="88" y="134.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">issue ค้างและ CR backlog</text>
+<text x="448" y="134.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2</text>
+<rect x="16" y="148" width="608" height="38" rx="0" fill="#FFFFFF"/>
+<text x="24" y="172.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">3</text>
+<text x="88" y="172.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">custom object</text>
+<text x="448" y="172.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">4</text>
+<rect x="16" y="186" width="608" height="38" rx="0" fill="#F4F6F6"/>
+<text x="24" y="210.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">4</text>
+<text x="88" y="210.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ปัญหาที่รู้แล้ว</text>
+<text x="448" y="210.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ลิงก์หน้า wiki</text>
+<rect x="16" y="224" width="608" height="38" rx="0" fill="#FFFFFF"/>
+<text x="24" y="248.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">5</text>
+<text x="88" y="248.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ผู้ติดต่อ</text>
+<text x="448" y="248.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">0</text>
+<rect x="16" y="34" width="608" height="228" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+<rect x="16" y="268" width="608" height="46" rx="8" fill="#F4F6F6"/>
+<text x="32" y="293" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ผู้ร่าง  คุณแพร     ส่งให้  คุณกอล์ฟ</text>
+</svg>

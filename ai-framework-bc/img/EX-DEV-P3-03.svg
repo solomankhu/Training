@@ -1,25 +1,25 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
-<title>FDD ของ GAP-PUR-48 ที่ Confirm ถูกเขียนจากออบเจ็กต์ที่สร้างผ่าน defect log และ Description ของฟิลด์ใน AL เป็นเลข defect</title>
+<title>ภาพ defect log ของ SCP-INS แถว DEF-52 และ DEF-58 คู่กับหมายเหตุของงานแก้</title>
 <rect width="640" height="360" fill="#FFFFFF"/>
-<text x="16" y="29" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">GOF-INS  gap list</text>
-<rect x="16" y="38" width="608" height="32" rx="0" fill="#008271"/>
-<text x="24" y="59.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP No.</text>
-<text x="134" y="59.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Description</text>
-<text x="464" y="59.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">STATUS</text>
-<rect x="16" y="70" width="608" height="32" rx="0" fill="#FFFFFF"/>
-<text x="24" y="91.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-PUR-48</text>
-<text x="134" y="91.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">บันทึกหมายเหตุรับสินค้าในบรรทัดซื้อ</text>
-<text x="464" y="91.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Confirm</text>
-<rect x="16" y="38" width="608" height="64" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
-<rect x="16" y="114" width="608" height="155" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
-<path d="M16 122 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
-<text x="28" y="131" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="12" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">9_AL/Site/src/tableextension/Tab-Ext70040.AMSPurchLine.al</text>
-<text x="28" y="160" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">/// [AM BS] 2026-09-30 : DEF-52 receipt note field</text>
-<text x="28" y="183" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">tableextension 70040 "AMS Purch Line Ext"</text>
-<text x="28" y="206" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">    extends "Purchase Line"</text>
-<text x="28" y="229" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">    field(70040; "AMS Receipt Note"; Text[50])</text>
-<rect x="20" y="239" width="600" height="22" rx="3" fill="#FFF1C9" stroke="#D9A400" stroke-width="1"/>
-<text x="28" y="252" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">    { Description = 'DEF-52'; }</text>
-<rect x="16" y="279" width="608" height="34" rx="8" fill="#F4F6F6"/>
-<text x="30" y="302" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">คุณต้นเขียน FDD ของ GAP นี้ในรอบงานเอกสาร คุณบอสช่วยอธิบายออบเจ็กต์</text>
+<text x="16" y="25" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">defect log  SCP-INS</text>
+<rect x="16" y="34" width="608" height="34" rx="0" fill="#008271"/>
+<text x="24" y="55.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">DEF</text>
+<text x="104" y="55.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">เรื่อง</text>
+<text x="360" y="55.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">สถานะ</text>
+<text x="484" y="55.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ผลทดสอบ</text>
+<rect x="16" y="68" width="608" height="34" rx="0" fill="#FFFFFF"/>
+<text x="24" y="89.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">DEF-52</text>
+<text x="104" y="90.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Undo ใบประกอบแล้ว post ใหม่ไม่ได้</text>
+<text x="360" y="90.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Closed 09-10</text>
+<text x="484" y="90.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">มือ 1 กรณี ผ่าน</text>
+<rect x="16" y="102" width="608" height="34" rx="0" fill="#F4F6F6"/>
+<text x="24" y="123.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">DEF-58</text>
+<text x="104" y="124.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">อาการเดียวกับ DEF-52</text>
+<text x="360" y="124.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Open 09-22</text>
+<text x="484" y="124.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">-</text>
+<rect x="16" y="34" width="608" height="102" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+<rect x="16" y="154" width="608" height="108" rx="8" fill="#F4F6F6"/>
+<text x="32" y="179" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">error ที่ผู้ใช้แนบ  Quantity to Assemble เกิน Remaining Quantity</text>
+<text x="32" y="209" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">งานแก้ DEF-52  ทดสอบด้วยมือเฉพาะกรณีที่ผู้ใช้แจ้ง</text>
+<text x="32" y="239" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">test codeunit ในแอปของโครงการ  0 ตัว</text>
 </svg>

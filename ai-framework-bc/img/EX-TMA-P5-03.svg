@@ -1,21 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
-<title>การตรวจเส้นทาง GAP ของ NSL-01 รายงาน GAP-FA-35 ที่ Confirm ขาด FDD การทดสอบ และเนื้อหาอบรม แต่ฟิลด์ถูกสร้างและทดสอบผ่านแถวใน defect log ที่ปิดแล้ว และ Description ของฟิลด์เป็นเลข defect</title>
+<title>คำขอผ่านช่องทาง support ของ GOF-INS หลังขึ้นระบบที่ขอรายงานยอดขายรายเส้นทางและติดป้ายว่า bug คู่กับรายการไม่รวมใน BI ระบบขายรุ่นที่ลูกค้ายืนยัน</title>
 <rect width="640" height="360" fill="#FFFFFF"/>
-<rect x="16" y="14" width="608" height="152" rx="8" fill="#262626"/>
-<path d="M16 22 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#3B4343"/>
-<text x="28" y="31" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" fill="#A9B6B5" text-anchor="start" xml:space="preserve" style="white-space:pre">Terminal  NSL-01</text>
-<text x="28" y="63" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#6FD6C4" text-anchor="start" xml:space="preserve" style="white-space:pre">&gt; ตรวจเส้นทาง GAP  NSL-01</text>
-<text x="28" y="85" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#6FD6C4" text-anchor="start" xml:space="preserve" style="white-space:pre">&gt; ชั้นที่ต้องมี fdd,test,training</text>
-<text x="28" y="107" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#F4F6F6" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP        status  fdd bi test train log al tc missing</text>
-<rect x="20" y="115" width="600" height="22" rx="3" fill="#4A3030"/>
-<text x="28" y="129" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#FF9C92" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-FA-35  Confirm   0  0    0     0   1  1  0 fdd,test,training</text>
-<text x="28" y="151" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#F4F6F6" text-anchor="start" xml:space="preserve" style="white-space:pre">incomplete 1; IDs used but not in gap list 0</text>
-<rect x="16" y="178" width="608" height="34" rx="8" fill="#F4F6F6"/>
-<text x="30" y="201" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">defect log  DEF-48  สร้างฟิลด์ตามที่ GAP-FA-35 ขอ  ปิดแล้ว (Done)</text>
-<rect x="16" y="224" width="608" height="86" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
-<path d="M16 232 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
-<text x="28" y="241" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="12" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">9_AL/Site/src/tableextension/Tab-Ext70080.AMSFixedAsset.al</text>
-<text x="28" y="271" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">field(70080; "AMS Asset Note"; Text[50])</text>
-<rect x="20" y="280" width="600" height="22" rx="3" fill="#FFF1C9" stroke="#D9A400" stroke-width="1"/>
-<text x="28" y="294" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">{ Description = 'DEF-48'; }</text>
+<rect x="16" y="10" width="608" height="164" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 18 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
+<text x="28" y="27" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">ช่องทาง support  เกรทวัน ฟู้ดส์  GOF-INS  ISS-203</text>
+<text x="28" y="58" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ผู้แจ้ง  คุณนิดา     แจ้งเมื่อ  สองสัปดาห์หลังขึ้นระบบ</text>
+<text x="28" y="89" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ป้ายที่ลูกค้าติด  bug  งานเดิมส่งมอบไม่ครบ</text>
+<text x="28" y="120" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">เรื่อง  ขอรายงานยอดขายรายเส้นทางส่งสินค้า แยกตามเดือน</text>
+<text x="28" y="151" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ผู้รับเรื่อง  คุณกอล์ฟ     ประเภท  (ยังไม่คัดแยก)</text>
+<rect x="16" y="190" width="608" height="102" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 198 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
+<text x="28" y="207" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">BI ระบบขาย  รุ่นที่ลูกค้ายืนยัน  ส่วนรายการไม่รวม</text>
+<text x="28" y="238" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">1  รายงานวิเคราะห์ที่ไม่อยู่ในรายงานมาตรฐานของระบบ</text>
+<text x="28" y="269" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2  แบบฟอร์มพิมพ์เกิน 2 แบบต่อเอกสาร</text>
 </svg>

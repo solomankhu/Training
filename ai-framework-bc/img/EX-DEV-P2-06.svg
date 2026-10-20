@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>pull request 3 รายการของ NSL-01 ที่อ้าง change item ต่างประเภท และแก้ไฟล์ต่างกัน</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<text x="16" y="29" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">pull request ใน Azure DevOps  NSL-01</text>
+<rect x="16" y="38" width="608" height="34" rx="0" fill="#008271"/>
+<text x="24" y="59.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">PR</text>
+<text x="92" y="59.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">อ้าง</text>
+<text x="176" y="59.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ประเภท</text>
+<text x="288" y="59.32" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">เปลี่ยนพฤติกรรม</text>
+<text x="400" y="59.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ไฟล์ที่แก้</text>
+<rect x="16" y="72" width="608" height="34" rx="0" fill="#FFFFFF"/>
+<text x="24" y="93.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">!231</text>
+<text x="92" y="93.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ISS-52</text>
+<text x="176" y="94.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">CR อนุมัติแล้ว</text>
+<text x="288" y="94.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ใช่</text>
+<text x="400" y="94.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">AL 2 ไฟล์  test 1 ไฟล์</text>
+<rect x="16" y="106" width="608" height="34" rx="0" fill="#F4F6F6"/>
+<text x="24" y="127.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">!232</text>
+<text x="92" y="127.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ISS-55</text>
+<text x="176" y="128.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">FOC</text>
+<text x="288" y="128.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ใช่</text>
+<text x="400" y="128.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">AL 1  test 1  FDD as-built  คู่มือ</text>
+<rect x="16" y="140" width="608" height="34" rx="0" fill="#FFFFFF"/>
+<text x="24" y="161.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">!233</text>
+<text x="92" y="161.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">DEF-61</text>
+<text x="176" y="162.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">bug</text>
+<text x="288" y="162.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ไม่</text>
+<text x="400" y="162.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">AL 1  test ที่อ้าง DEF-61</text>
+<rect x="16" y="38" width="608" height="136" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+<rect x="16" y="196" width="608" height="105" rx="8" fill="#F4F6F6"/>
+<text x="32" y="221" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">!231  เปลี่ยนขั้นอนุมัติใบสั่งงานขนส่ง</text>
+<text x="32" y="250" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">!232  เพิ่มเงื่อนไขส่วนลดในใบแจ้งหนี้ค่าขนส่ง</text>
+<text x="32" y="279" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">!233  ยอดภาษีในใบแจ้งหนี้ปัดเศษผิด</text>
+</svg>

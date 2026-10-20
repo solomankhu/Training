@@ -1,45 +1,37 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
-<title>รายการให้ลูกค้ายืนยัน CR หลัง UAT ของ GOF-INS มีค่าในคอลัมน์ยืนยันปนกัน เช่น FOC และ Yes? และมีบันทึกว่าถ้าดึงข้อมูลได้ก็เป็น FOC</title>
+<title>issue log ของ SCP-INS หลัง UAT รอบ 1 มี 5 แถวที่ผู้ใช้แจ้งเป็น defect คู่กับขอบเขตใน BI ระบบผลิตรุ่นที่ลูกค้ายืนยัน</title>
 <rect width="640" height="360" fill="#FFFFFF"/>
-<text x="16" y="29" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">GOF-INS  รายการยืนยัน CR หลัง UAT</text>
-<rect x="16" y="38" width="608" height="34" rx="0" fill="#008271"/>
-<text x="24" y="60.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ที่</text>
-<text x="64" y="60.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">รายการ CR</text>
-<text x="394" y="60.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">MD</text>
-<text x="454" y="60.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ยืนยัน (Yes หรือ No)</text>
-<rect x="16" y="72" width="608" height="34" rx="0" fill="#FFFFFF"/>
-<text x="24" y="95.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">1</text>
-<text x="64" y="95.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">รายงานยอดขายแยกพนักงานขาย</text>
-<text x="438" y="95.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="end" xml:space="preserve" style="white-space:pre">3</text>
-<text x="454" y="95.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Yes</text>
-<rect x="16" y="106" width="608" height="34" rx="0" fill="#F4F6F6"/>
-<text x="24" y="129.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2</text>
-<text x="64" y="129.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">เพิ่มช่องทางขายในใบสั่งขาย</text>
-<text x="438" y="129.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="end" xml:space="preserve" style="white-space:pre">1</text>
-<text x="454" y="129.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">FOC</text>
-<rect x="16" y="140" width="608" height="34" rx="0" fill="#FFFFFF"/>
-<text x="24" y="163.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">3</text>
-<text x="64" y="163.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">พิมพ์ใบส่งของ 2 ภาษา</text>
-<text x="438" y="163.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="end" xml:space="preserve" style="white-space:pre">5</text>
-<rect x="447" y="141" width="176" height="32" rx="3" fill="#FFF1C9" stroke="#D9A400" stroke-width="1.5"/>
-<text x="454" y="163.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Yes?</text>
-<rect x="16" y="174" width="608" height="34" rx="0" fill="#F4F6F6"/>
-<text x="24" y="197.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">4</text>
-<text x="64" y="197.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ส่งออกรายการสินค้าเป็น Excel</text>
-<text x="438" y="197.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="end" xml:space="preserve" style="white-space:pre">2</text>
-<text x="454" y="197.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">FOC</text>
-<rect x="16" y="208" width="608" height="34" rx="0" fill="#FFFFFF"/>
-<text x="24" y="231.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">5</text>
-<text x="64" y="231.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">หน้าจอสรุปสต็อกตาม Lot</text>
-<text x="438" y="231.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="end" xml:space="preserve" style="white-space:pre">4</text>
-<text x="454" y="231.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Yes</text>
-<rect x="16" y="242" width="608" height="34" rx="0" fill="#F4F6F6"/>
-<text x="24" y="265.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">6</text>
-<text x="64" y="265.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">แจ้งเตือนสินค้าใกล้หมดอายุ</text>
-<text x="438" y="265.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="end" xml:space="preserve" style="white-space:pre">3</text>
-<text x="454" y="265.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">No</text>
-<rect x="16" y="38" width="608" height="238" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
-<rect x="16" y="286" width="608" height="36" rx="8" fill="#FFF1C9" stroke="#D9A400" stroke-width="1"/>
-<text x="30" y="311" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">บันทึกที่แถว 5  ถ้าดึงข้อมูลได้ก็เป็น FOC</text>
-<text x="16" y="344" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">MD คือ man-day ที่ issue-triage ประเมินไว้</text>
+<text x="16" y="25" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">issue log  SCP-INS  หลัง UAT รอบ 1</text>
+<rect x="16" y="34" width="608" height="24" rx="0" fill="#008271"/>
+<text x="24" y="50.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ISS</text>
+<text x="94" y="50.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">เรื่องที่แจ้ง</text>
+<text x="532" y="50.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">แจ้งเป็น</text>
+<rect x="16" y="58" width="608" height="24" rx="0" fill="#FFFFFF"/>
+<text x="24" y="74.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ISS-12</text>
+<text x="94" y="75.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ใบเบิกวัตถุดิบไม่ตัดสต็อกเมื่อ Post</text>
+<text x="532" y="75.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">defect</text>
+<rect x="16" y="82" width="608" height="24" rx="0" fill="#F4F6F6"/>
+<text x="24" y="98.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ISS-13</text>
+<text x="94" y="99.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">รายงานต้นทุนผลิตไม่แยกตามเครื่องจักร</text>
+<text x="532" y="99.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">defect</text>
+<rect x="16" y="106" width="608" height="24" rx="0" fill="#FFFFFF"/>
+<text x="24" y="122.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ISS-14</text>
+<text x="94" y="123.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ผู้ใช้ไม่ทราบวิธีปิดใบสั่งผลิต</text>
+<text x="532" y="123.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">defect</text>
+<rect x="16" y="130" width="608" height="24" rx="0" fill="#F4F6F6"/>
+<text x="24" y="146.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ISS-15</text>
+<text x="94" y="147.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ระบบไม่ส่งอีเมลแจ้งหัวหน้าเมื่อผลิตเสร็จ</text>
+<text x="532" y="147.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">defect</text>
+<rect x="16" y="154" width="608" height="24" rx="0" fill="#FFFFFF"/>
+<text x="24" y="170.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ISS-16</text>
+<text x="94" y="171.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">หน่วยนับของวัตถุดิบ 2 รายการตั้งค่าผิด</text>
+<text x="532" y="171.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">defect</text>
+<rect x="16" y="34" width="608" height="144" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+<rect x="16" y="188" width="608" height="140" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 196 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
+<text x="28" y="205" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="12" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">ขอบเขตใน BI ระบบผลิต รุ่น 1.2 (ลูกค้ายืนยัน) และ gap list</text>
+<text x="28" y="234" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ในขอบเขต  GAP-MFG-36 ตัดสต็อกวัตถุดิบเมื่อ Post ใบเบิก</text>
+<text x="28" y="259" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ในขอบเขต  ปิดใบสั่งผลิตและตั้งค่าหน่วยนับตามงานมาตรฐาน</text>
+<text x="28" y="284" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">นอกขอบเขต  รายงานวิเคราะห์ต้นทุนตามเครื่องจักร</text>
+<text x="28" y="309" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">gap list  ไม่มีแถวเรื่องการแจ้งเตือนทางอีเมล</text>
 </svg>

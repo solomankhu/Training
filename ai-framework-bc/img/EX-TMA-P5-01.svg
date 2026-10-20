@@ -1,32 +1,32 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
-<title>หน้า known-issues ใน wiki ของ NSL-01 สร้างจาก defect log ทั้งไฟล์ แสดงรายการที่ยังไม่ปิด 3 รายการที่มีแต่เลข หน้า GAP ที่ Confirm ยังเป็น draft และการตรวจโครงสร้างหน้า wiki ได้ 0 FAIL</title>
+<title>ภาพ test plan SIT ระบบขายและระบบซื้อของ GOF-INS สามสัปดาห์ก่อน UAT รอบ 1 ที่มี 5 scenario</title>
 <rect width="640" height="360" fill="#FFFFFF"/>
-<text x="16" y="29" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">wiki/quality/known-issues.md</text>
-<rect x="16" y="38" width="312" height="34" rx="0" fill="#008271"/>
-<text x="24" y="60.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">No.</text>
-<text x="76" y="60.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Module</text>
-<text x="158" y="60.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Status</text>
-<text x="236" y="60.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Title</text>
-<rect x="16" y="72" width="312" height="34" rx="0" fill="#FFF1C9"/>
-<text x="24" y="94.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">40</text>
-<rect x="16" y="106" width="312" height="34" rx="0" fill="#FFF1C9"/>
-<text x="24" y="128.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">41</text>
-<rect x="16" y="140" width="312" height="34" rx="0" fill="#FFF1C9"/>
-<text x="24" y="162.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">42</text>
-<rect x="16" y="38" width="312" height="136" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
-<rect x="364" y="14" width="260" height="165" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
-<path d="M364 22 a8 8 0 0 1 8 -8 h244 a8 8 0 0 1 8 8 v16 h-260 Z" fill="#F4F6F6"/>
-<text x="376" y="31" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">หน้า GAP ที่ Confirm</text>
-<text x="376" y="61" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-FA-31.md  draft</text>
-<text x="376" y="86" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-FA-35.md  draft</text>
-<text x="376" y="111" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-FA-42.md  draft</text>
-<text x="376" y="136" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-FN-47.md  draft</text>
-<text x="376" y="161" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">...</text>
-<rect x="16" y="190" width="608" height="86" rx="8" fill="#262626"/>
-<path d="M16 198 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#3B4343"/>
-<text x="28" y="207" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" fill="#A9B6B5" text-anchor="start" xml:space="preserve" style="white-space:pre">Terminal  NSL-01</text>
-<text x="28" y="239" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#6FD6C4" text-anchor="start" xml:space="preserve" style="white-space:pre">&gt; ตรวจโครงสร้างหน้า wiki  NSL-01/wiki</text>
-<text x="28" y="261" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#9BE3B5" text-anchor="start" xml:space="preserve" style="white-space:pre">scope 26 page(s) of 26; 0 FAIL, 0 WARN</text>
-<rect x="16" y="288" width="608" height="36" rx="8" fill="#F4F6F6"/>
-<text x="30" y="313" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">คำถามทดสอบ wiki 1 ข้อ ตอบได้จาก raw เท่านั้น</text>
+<text x="16" y="25" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">test plan SIT  เกรทวัน ฟู้ดส์  GOF-INS</text>
+<rect x="16" y="34" width="608" height="34" rx="0" fill="#008271"/>
+<text x="24" y="56.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">scenario</text>
+<text x="134" y="56.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP</text>
+<text x="294" y="56.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">เรื่อง</text>
+<rect x="16" y="68" width="608" height="34" rx="0" fill="#FFFFFF"/>
+<text x="24" y="90.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">SAL.06</text>
+<text x="134" y="90.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-SALES-45</text>
+<text x="294" y="90.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ส่วนลดขั้นบันไดตามปริมาณ</text>
+<rect x="16" y="102" width="608" height="34" rx="0" fill="#F4F6F6"/>
+<text x="24" y="124.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">SAL.07</text>
+<text x="134" y="124.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-SALES-48</text>
+<text x="294" y="124.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ราคาพิเศษตามเส้นทางส่งสินค้า</text>
+<rect x="16" y="136" width="608" height="34" rx="0" fill="#FFFFFF"/>
+<text x="24" y="158.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">PUR.03</text>
+<text x="134" y="158.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-PUR-36</text>
+<text x="294" y="158.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">อนุมัติใบสั่งซื้อตามวงเงิน</text>
+<rect x="16" y="170" width="608" height="34" rx="0" fill="#F4F6F6"/>
+<text x="24" y="192.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">PUR.04</text>
+<text x="134" y="192.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-PUR-39</text>
+<text x="294" y="192.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ตรวจอายุสินค้าตอนรับเข้า</text>
+<rect x="16" y="204" width="608" height="34" rx="0" fill="#FFFFFF"/>
+<text x="24" y="226.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">INV.01</text>
+<text x="134" y="226.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-INV-44</text>
+<text x="294" y="226.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">เตือนสินค้าอายุเหลือต่ำกว่าเกณฑ์</text>
+<rect x="16" y="34" width="608" height="204" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+<rect x="16" y="252" width="608" height="46" rx="8" fill="#F4F6F6"/>
+<text x="32" y="277" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">รวม 5 scenario  ทุกแถวมีรหัส GAP</text>
 </svg>

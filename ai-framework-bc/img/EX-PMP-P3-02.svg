@@ -1,32 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
-<title>แผนโครงการของ NSL-01 มีงาน UAT รอบที่ 1 ที่ทีมแก้วันแผนเสร็จเป็นวันที่คาดว่าจะเสร็จและคงสถานะ In progress ทั้งที่แผนฉบับก่อนวางไว้เสร็จก่อนวันนี้เกิน 5 วันทำการ</title>
+<title>ภาพบันทึกการประชุมสำรวจระบบขายของ GOF-INS วันที่ 2026-06-10 คู่กับแถว GAP-SALES-39 ใน gap list ฉบับร่าง</title>
 <rect width="640" height="360" fill="#FFFFFF"/>
-<text x="16" y="29" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">NSL-01  แผนโครงการ ฉบับปัจจุบัน</text>
-<rect x="16" y="38" width="608" height="36" rx="0" fill="#008271"/>
-<text x="24" y="61.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">งาน</text>
-<text x="230" y="61.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">แผนเริ่ม</text>
-<text x="366" y="61.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">แผนเสร็จ</text>
-<text x="502" y="61.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">สถานะ</text>
-<rect x="16" y="74" width="608" height="36" rx="0" fill="#FFFFFF"/>
-<text x="24" y="98.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">เตรียมข้อมูล UAT</text>
-<text x="230" y="97.76" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-09-01</text>
-<text x="366" y="97.76" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-09-04</text>
-<text x="502" y="98.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Completed</text>
-<rect x="16" y="110" width="608" height="36" rx="0" fill="#F4F6F6"/>
-<text x="24" y="134.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">UAT รอบที่ 1</text>
-<text x="230" y="133.76" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-09-07</text>
-<rect x="359" y="111" width="134" height="34" rx="3" fill="#FFF1C9" stroke="#D9A400" stroke-width="1.5"/>
-<text x="366" y="133.76" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-10-02</text>
-<text x="502" y="134.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">In progress</text>
-<rect x="16" y="146" width="608" height="36" rx="0" fill="#FFFFFF"/>
-<text x="24" y="170.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">UAT รอบที่ 2</text>
-<text x="230" y="169.76" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-10-05</text>
-<text x="366" y="169.76" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-10-09</text>
-<text x="502" y="170.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Not Start</text>
-<rect x="16" y="38" width="608" height="144" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
-<rect x="16" y="198" width="608" height="150" rx="8" fill="#F4F6F6"/>
-<text x="32" y="232" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="18" font-weight="700" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">วันนี้ 2026-09-23</text>
-<text x="32" y="268" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">แผนฉบับก่อนหน้า  UAT รอบที่ 1 แผนเสร็จ 2026-09-11</text>
-<text x="32" y="302" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ทีมแก้วันแผนเสร็จเป็นวันที่คาดว่าจะเสร็จ 2026-10-02</text>
-<text x="32" y="332" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">และคงสถานะของงานนี้เป็น In progress</text>
+<rect x="16" y="10" width="608" height="160" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 18 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
+<text x="28" y="27" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">บันทึกการประชุมสำรวจ ระบบขาย  GOF-INS  2026-06-10</text>
+<text x="28" y="58" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">คุณชายขอให้เก็บ log ทุกครั้งที่ผู้ใช้ export ข้อมูล</text>
+<text x="28" y="88" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">เป็น Excel จากทุกหน้าจอของระบบ</text>
+<text x="28" y="118" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">คุณต้นรับว่าจะทำเป็น GAP และแจ้งลูกค้าในที่ประชุม</text>
+<text x="28" y="148" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">คุณต้นประเมินไว้ 6 MD ในวันเดียวกัน</text>
+<text x="16" y="205" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">gap list ฉบับร่าง  GOF-INS</text>
+<rect x="16" y="214" width="608" height="26" rx="0" fill="#008271"/>
+<text x="24" y="232.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP</text>
+<text x="154" y="232.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">เรื่อง</text>
+<text x="404" y="232.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">สถานะ</text>
+<text x="504" y="232.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">MD</text>
+<rect x="16" y="240" width="608" height="26" rx="0" fill="#FFFFFF"/>
+<text x="24" y="258.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-SALES-39</text>
+<text x="154" y="258.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">เก็บ log การ export ทุกหน้าจอ</text>
+<text x="404" y="258.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Pending</text>
+<text x="504" y="258.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">6</text>
+<rect x="16" y="214" width="608" height="52" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
 </svg>

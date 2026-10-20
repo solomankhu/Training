@@ -1,22 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
-<title>หลังขึ้นระบบ ฟิลด์เพิ่มเติมที่ดึงจาก Item Card ในบรรทัด Sales Order ของ GOF-INS ว่างหรือผิดเมื่อผู้ใช้เปลี่ยน VAT Bus. Posting Group หลังเลือก Item หรือใช้ Copy Document</title>
+<title>ภาพแผนงานของ GOF-INS คู่กับสถานะ spec interface คลังสินค้า GAP-INT-38 และทะเบียนการตัดสินใจ</title>
 <rect width="640" height="360" fill="#FFFFFF"/>
-<text x="16" y="29" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">GOF-INS  สิ่งที่ผู้ใช้เห็นหลังขึ้นระบบ</text>
-<rect x="16" y="38" width="608" height="40" rx="0" fill="#008271"/>
-<text x="24" y="63.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">เหตุการณ์ในบรรทัด Sales Order</text>
-<text x="404" y="63.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ฟิลด์เพิ่มเติมจาก Item Card</text>
-<rect x="16" y="78" width="608" height="40" rx="0" fill="#FFFFFF"/>
-<text x="24" y="103.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">เลือก Item</text>
-<text x="404" y="103.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ถูกต้อง</text>
-<rect x="16" y="118" width="608" height="40" rx="0" fill="#F4F6F6"/>
-<text x="24" y="143.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">เปลี่ยน VAT Bus. Posting Group หลังเลือก Item</text>
-<rect x="397" y="119" width="226" height="38" rx="3" fill="#FFF1C9" stroke="#D9A400" stroke-width="1.5"/>
-<text x="404" y="143.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ว่างหรือผิด</text>
-<rect x="16" y="158" width="608" height="40" rx="0" fill="#FFFFFF"/>
-<text x="24" y="183.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ใช้ Copy Document</text>
-<rect x="397" y="159" width="226" height="38" rx="3" fill="#FFF1C9" stroke="#D9A400" stroke-width="1.5"/>
-<text x="404" y="183.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ว่างหรือผิด</text>
-<rect x="16" y="38" width="608" height="160" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
-<rect x="16" y="212" width="608" height="48" rx="8" fill="#F4F6F6"/>
-<text x="32" y="243" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ฟิลด์เพิ่มเติมนี้ดึงค่ามาจาก Item Card ลงในบรรทัด Sales Order</text>
+<text x="16" y="25" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">แผนงาน  GOF-INS</text>
+<rect x="16" y="34" width="608" height="36" rx="0" fill="#008271"/>
+<text x="24" y="57.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">งาน</text>
+<text x="360" y="57.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">เริ่ม</text>
+<text x="496" y="57.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">สถานะ</text>
+<rect x="16" y="70" width="608" height="36" rx="0" fill="#FFFFFF"/>
+<text x="24" y="93.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">พัฒนา interface คลังสินค้า GAP-INT-38</text>
+<text x="360" y="93.4" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-10-05</text>
+<text x="496" y="93.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">กำลังทำ</text>
+<rect x="16" y="34" width="608" height="72" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+<rect x="16" y="124" width="608" height="164" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 132 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
+<text x="28" y="141" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">สถานะ spec และการตัดสินใจ  GAP-INT-38</text>
+<text x="28" y="172" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">spec interface คลังสินค้า รุ่น 0.4  สถานะ ร่าง</text>
+<text x="28" y="203" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ลูกค้ายืนยัน spec  ยังไม่ยืนยัน</text>
+<text x="28" y="234" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">endpoint ทดสอบจากลูกค้า  ยังไม่ได้รับ (นัดเดิม 2026-10-01)</text>
+<text x="28" y="265" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ทะเบียนการตัดสินใจ  ไม่มีแถวของ GAP-INT-38</text>
 </svg>

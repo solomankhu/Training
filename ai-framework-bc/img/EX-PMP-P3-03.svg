@@ -1,32 +1,27 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
-<title>ทะเบียนการตัดสินใจใน wiki ของ SCP-INS มีการยกเลิก GAP-MFG-38 ที่ไม่มีวันที่และผู้ตัดสิน และมีแถวที่ยังรอลูกค้ายืนยันถูกบันทึกเป็นการตัดสินใจ</title>
+<title>ภาพหน้า wiki ทะเบียนการตัดสินใจของ SCP-INS 4 แถว คือ D-01 ถึง D-04</title>
 <rect width="640" height="360" fill="#FFFFFF"/>
-<text x="16" y="29" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">SCP-INS  ทะเบียนการตัดสินใจ</text>
-<rect x="16" y="38" width="608" height="42" rx="0" fill="#008271"/>
-<text x="24" y="64.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">รหัส</text>
-<text x="84" y="64.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">เรื่อง</text>
-<text x="384" y="64.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ผู้ตัดสิน</text>
-<text x="502" y="64.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">วันที่</text>
-<rect x="16" y="80" width="608" height="42" rx="0" fill="#FFFFFF"/>
-<text x="24" y="106.76" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">D-01</text>
-<text x="84" y="107.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ยกเลิก GAP-MFG-38</text>
-<rect x="377" y="81" width="116" height="40" rx="3" fill="#FFF1C9" stroke="#D9A400" stroke-width="1.5"/>
-<rect x="495" y="81" width="128" height="40" rx="3" fill="#FFF1C9" stroke="#D9A400" stroke-width="1.5"/>
-<rect x="16" y="122" width="608" height="42" rx="0" fill="#F4F6F6"/>
-<text x="24" y="148.76" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">D-02</text>
-<text x="84" y="149.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ใช้ต้นทุนมาตรฐานรายกลุ่มสินค้า</text>
-<text x="384" y="149.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">คุณสุดา</text>
-<text x="502" y="148.76" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-09-11</text>
-<rect x="16" y="164" width="608" height="42" rx="0" fill="#FFFFFF"/>
-<text x="24" y="190.76" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">D-03</text>
-<rect x="77" y="165" width="298" height="40" rx="3" fill="#FFF1C9" stroke="#D9A400" stroke-width="1.5"/>
-<text x="84" y="191.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">รอลูกค้ายืนยันขอบเขต GAP-MFG-44</text>
-<rect x="16" y="206" width="608" height="42" rx="0" fill="#F4F6F6"/>
-<text x="24" y="232.76" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">D-04</text>
-<text x="84" y="233.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">เลื่อนเก็บยอดยกมาสินค้าไปรอบ 2</text>
-<text x="384" y="233.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">คุณนิดา</text>
-<text x="502" y="232.76" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-09-18</text>
-<rect x="16" y="38" width="608" height="210" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
-<rect x="16" y="266" width="608" height="66" rx="8" fill="#F4F6F6"/>
-<text x="32" y="307" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="18" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">คุณแพรเตรียมขอปิด Check 1 ของโครงการ</text>
+<text x="16" y="25" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">wiki  ทะเบียนการตัดสินใจ  SCP-INS</text>
+<rect x="16" y="34" width="608" height="24" rx="0" fill="#008271"/>
+<text x="24" y="50.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">รหัส</text>
+<text x="88" y="50.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">เรื่อง</text>
+<text x="318" y="50.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ผู้ตัดสิน</text>
+<text x="410" y="50.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">วันที่</text>
+<text x="514" y="50.68" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">หมายเหตุ</text>
+<rect x="16" y="58" width="608" height="24" rx="0" fill="#FFFFFF"/>
+<text x="24" y="74.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">D-01</text>
+<text x="88" y="75.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ยกเลิก GAP-MFG-38</text>
+<rect x="16" y="82" width="608" height="24" rx="0" fill="#F4F6F6"/>
+<text x="24" y="98.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">D-02</text>
+<text x="88" y="99.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ยกเลิก GAP-INV-46</text>
+<rect x="16" y="106" width="608" height="24" rx="0" fill="#FFFFFF"/>
+<text x="24" y="122.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">D-03</text>
+<text x="88" y="123.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ใช้หน่วยนับกล่องกับวัตถุดิบนำเข้า</text>
+<text x="514" y="123.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">รอคุณสุดายืนยัน</text>
+<rect x="16" y="130" width="608" height="24" rx="0" fill="#F4F6F6"/>
+<text x="24" y="146.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">D-04</text>
+<text x="88" y="147.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ใช้ BI ระบบผลิต รุ่น 1.2</text>
+<text x="318" y="147.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">คุณสุดา</text>
+<text x="410" y="146.68" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-04-28</text>
+<rect x="16" y="34" width="608" height="120" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
 </svg>

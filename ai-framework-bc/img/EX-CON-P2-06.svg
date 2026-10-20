@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>ภาพร่าง spec ของ interface WMS รุ่น 0.3 ของ SCP-INS คู่กับรายการฟิลด์ใน FDD ของ GAP-WMS-42</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<rect x="16" y="8" width="608" height="256" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 16 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
+<text x="28" y="25" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">spec interface WMS  SCP-INS  รุ่น 0.3  GAP-WMS-42</text>
+<text x="28" y="55" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ภาพรวม  WMS ส่งผลการรับสินค้า แล้ว BC Post ใบรับสินค้า</text>
+<text x="28" y="82" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ระดับงาน  STANDARD</text>
+<text x="28" y="109" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">endpoint  https://{wms-host}/api/receipts</text>
+<text x="28" y="136" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ยืนยันตัวตน  อ้างชื่อรายการในที่เก็บรหัสลับ</text>
+<text x="28" y="163" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ตารางฟิลด์  Item No.  Quantity  Location Code  Delivery Zone</text>
+<text x="28" y="190" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">รหัสข้อผิดพลาด  (ว่าง)</text>
+<text x="28" y="217" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">หัวข้อที่มี  ภาพรวม ลำดับการเรียก endpoint ยืนยันตัวตน</text>
+<text x="28" y="244" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">           ตารางฟิลด์ แผน SIT</text>
+<rect x="16" y="274" width="608" height="67" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 282 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
+<text x="28" y="291" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">FDD ของ GAP-WMS-42  ฟิลด์ที่รับจาก WMS</text>
+<text x="28" y="321" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Item No.   Quantity   Location Code</text>
+</svg>

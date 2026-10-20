@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>ภาพ release note ของแอป NSL-01 รุ่น 2026.10.2.0 คู่กับบันทึกรอบงาน R-NSL-11 ของ DEF-66</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<rect x="16" y="8" width="608" height="100" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 16 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
+<text x="28" y="25" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">release note  แอป NSL-01  รุ่น 2026.10.2.0</text>
+<text x="28" y="56" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">แก้ DEF-66  หน้าใบงานขนส่งแสดงสาขาผิด</text>
+<text x="28" y="86" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ส่วนขยายพื้นฐานของบริษัท  (ไม่ระบุรุ่น)</text>
+<rect x="16" y="120" width="608" height="160" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 128 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
+<text x="28" y="137" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">บันทึกรอบงาน  R-NSL-11  DEF-66</text>
+<text x="28" y="168" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">แก้ได้เมื่อใช้ส่วนขยายพื้นฐานของบริษัทรุ่น 2026.9.1.0</text>
+<text x="28" y="198" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">sandbox ทดสอบ  ส่วนขยายพื้นฐานรุ่น 2026.9.1.0</text>
+<text x="28" y="228" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">live  ส่วนขยายพื้นฐานรุ่น 2026.6.0.0</text>
+<text x="28" y="258" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">dependencies ของแอป  รุ่นขั้นต่ำ 2026.6.0.0</text>
+</svg>

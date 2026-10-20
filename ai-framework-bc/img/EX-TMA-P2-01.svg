@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>ภาพผล SIT ระบบงานขนส่งของ NSL-01 คู่กับร่างสารบัญคู่มือการใช้งานระบบงานขนส่งของทีมอบรม</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<text x="16" y="23" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">test plan SIT ระบบงานขนส่ง  NSL-01</text>
+<rect x="16" y="32" width="608" height="32" rx="0" fill="#008271"/>
+<text x="24" y="53.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">scenario</text>
+<text x="120" y="53.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">เรื่อง</text>
+<text x="402" y="53.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ผล</text>
+<text x="474" y="53.04" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">หลักฐาน</text>
+<rect x="16" y="64" width="608" height="32" rx="0" fill="#FFFFFF"/>
+<text x="24" y="85.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">JOB.01</text>
+<text x="120" y="85.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">สร้าง Job งานขนส่ง</text>
+<text x="402" y="85.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Pass</text>
+<text x="474" y="85.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">JOB.01-3.png</text>
+<rect x="16" y="96" width="608" height="32" rx="0" fill="#F4F6F6"/>
+<text x="24" y="117.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">FN.01</text>
+<text x="120" y="117.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ออกใบแจ้งหนี้ค่าขนส่ง</text>
+<text x="402" y="117.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Pass</text>
+<text x="474" y="117.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">FN.01-2.png</text>
+<rect x="16" y="128" width="608" height="32" rx="0" fill="#FFFFFF"/>
+<text x="24" y="149.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">JOB.03</text>
+<text x="120" y="149.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">คิดค่าขนส่งตามระยะทาง GAP-FN-37</text>
+<text x="402" y="149.4" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Fail</text>
+<text x="474" y="149.04" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">DEF-36 (Open)</text>
+<rect x="16" y="32" width="608" height="128" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+<rect x="16" y="174" width="608" height="130" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 182 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
+<text x="28" y="191" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">คู่มือการใช้งานระบบงานขนส่ง  สารบัญ (ร่างของทีมอบรม)</text>
+<text x="28" y="222" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">1  สร้าง Job งานขนส่ง</text>
+<text x="28" y="252" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2  ออกใบแจ้งหนี้ค่าขนส่ง</text>
+<text x="28" y="282" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">3  คิดค่าขนส่งตามระยะทาง</text>
+</svg>

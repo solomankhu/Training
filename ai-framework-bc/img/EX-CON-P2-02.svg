@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>ตารางรอบข้อมูลรอบ 1 ของ SCP-INS มีชุดข้อมูลสินค้าที่ยังไม่เริ่ม และวันหยุดรับไฟล์ของรอบ</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<text x="16" y="25" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">ตารางรอบข้อมูล  รอบ 1  SCP-INS</text>
+<rect x="16" y="34" width="608" height="34" rx="0" fill="#008271"/>
+<text x="24" y="56.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ชุดข้อมูล</text>
+<text x="224" y="56.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">สถานะ</text>
+<text x="424" y="56.76" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">ไฟล์ล่าสุด</text>
+<rect x="16" y="68" width="608" height="34" rx="0" fill="#FFFFFF"/>
+<text x="24" y="91.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ผู้ขาย</text>
+<text x="224" y="91.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">เสร็จ</text>
+<text x="424" y="90.76" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-10-06</text>
+<rect x="16" y="102" width="608" height="34" rx="0" fill="#F4F6F6"/>
+<text x="24" y="125.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ลูกค้า</text>
+<text x="224" y="125.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ค้าง 3 แถว</text>
+<text x="424" y="124.76" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">2026-10-12</text>
+<rect x="16" y="136" width="608" height="34" rx="0" fill="#FFFFFF"/>
+<text x="24" y="159.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">สินค้า</text>
+<text x="224" y="159.12" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ยังไม่เริ่ม</text>
+<text x="424" y="158.76" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">-</text>
+<rect x="16" y="34" width="608" height="136" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+<rect x="16" y="190" width="608" height="82" rx="8" fill="#F4F6F6"/>
+<text x="32" y="217" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">วันหยุดรับไฟล์ของรอบ 1  2026-10-30</text>
+<text x="32" y="249" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">แม่แบบ master สินค้า อยู่ในคลังกลางแล้ว</text>
+</svg>

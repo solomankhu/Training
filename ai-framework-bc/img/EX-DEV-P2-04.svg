@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>ชีต Test cases ของ GAP-INV-44 มี test case แบบ Auto 2 ตัวและ Manual 1 ตัว คู่กับรายการ test ใน codebase และผลทดสอบในบันทึกรอบงาน</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<text x="16" y="23" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" font-weight="700" fill="#008271" text-anchor="start" xml:space="preserve" style="white-space:pre">FDD GAP-INV-44  GOF-INS  ชีต Test cases</text>
+<rect x="16" y="32" width="608" height="27" rx="0" fill="#008271"/>
+<text x="24" y="50.18" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">TC ID</text>
+<text x="220" y="50.18" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">แบบ</text>
+<text x="304" y="50.18" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">Then</text>
+<rect x="16" y="59" width="608" height="27" rx="0" fill="#FFFFFF"/>
+<text x="24" y="77.18" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">TC-GAP-INV-44-01</text>
+<text x="220" y="77.54" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Auto</text>
+<text x="304" y="77.54" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ปฏิเสธการส่งสินค้าที่อายุเหลือต่ำกว่าเกณฑ์</text>
+<rect x="16" y="86" width="608" height="27" rx="0" fill="#F4F6F6"/>
+<text x="24" y="104.18" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">TC-GAP-INV-44-02</text>
+<text x="220" y="104.54" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Auto</text>
+<text x="304" y="104.54" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ส่งสินค้าได้เมื่ออายุเหลือถึงเกณฑ์</text>
+<rect x="16" y="113" width="608" height="27" rx="0" fill="#FFFFFF"/>
+<text x="24" y="131.18" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">TC-GAP-INV-44-03</text>
+<text x="220" y="131.54" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">Manual</text>
+<text x="304" y="131.54" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="14" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ข้อความเตือนแสดงบนหน้าใบสั่งขาย</text>
+<rect x="16" y="32" width="608" height="108" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+<rect x="16" y="152" width="608" height="27" rx="0" fill="#008271"/>
+<text x="24" y="170.18" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">test ใน codebase</text>
+<text x="324" y="170.18" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="start" xml:space="preserve" style="white-space:pre">อ้าง</text>
+<rect x="16" y="179" width="608" height="27" rx="0" fill="#FFFFFF"/>
+<text x="24" y="197.18" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">RejectShortShelfLife</text>
+<text x="324" y="197.18" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">TC-GAP-INV-44-01</text>
+<rect x="16" y="152" width="608" height="54" rx="0" fill="none" stroke="#C5D0CF" stroke-width="1"/>
+<rect x="16" y="218" width="608" height="74" rx="8" fill="#F4F6F6"/>
+<text x="32" y="243" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">บันทึกรอบงาน  ผลทดสอบ  รันในเครื่องของคุณบอส ผ่าน 1 test</text>
+<text x="32" y="271" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="15" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ผลรันใน pipeline  ยังไม่มี</text>
+</svg>

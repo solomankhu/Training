@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>ภาพบันทึกการประชุมของ NSL-01 วันที่ 2026-07-14 คู่กับผลค้นรหัส GAP-FA-52 ในคลังกลาง และหมายเหตุของทะเบียนการตัดสินใจ</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<rect x="16" y="10" width="290" height="220" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 18 a8 8 0 0 1 8 -8 h274 a8 8 0 0 1 8 8 v16 h-290 Z" fill="#F4F6F6"/>
+<text x="28" y="27" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">บันทึกการประชุม  2026-07-14</text>
+<text x="28" y="58" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">NSL-01</text>
+<text x="28" y="88" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">คุณสุดาแจ้งยกเลิก</text>
+<text x="28" y="118" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">GAP-FA-52</text>
+<text x="28" y="148" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">การแบ่งค่าเสื่อมตามสาขา</text>
+<text x="28" y="178" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">เหตุผล ใช้มิติของ</text>
+<text x="28" y="208" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ระบบมาตรฐานแทน</text>
+<rect x="322" y="10" width="302" height="220" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M322 18 a8 8 0 0 1 8 -8 h286 a8 8 0 0 1 8 8 v16 h-302 Z" fill="#F4F6F6"/>
+<text x="334" y="27" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="13" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">ผลค้นรหัส GAP-FA-52 ในคลังกลาง</text>
+<text x="334" y="58" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">gap list  สถานะ Confirm</text>
+<text x="334" y="88" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">FDD ของ GAP-FA-52</text>
+<text x="334" y="118" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">test plan  3 แถว</text>
+<text x="334" y="148" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ตาราง UAT รอบ 2</text>
+<text x="334" y="178" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">สื่ออบรมระบบสินทรัพย์</text>
+<text x="334" y="208" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">คู่มือการใช้งานสินทรัพย์</text>
+<rect x="16" y="262" width="608" height="60" rx="8" fill="#F4F6F6"/>
+<text x="32" y="299" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="17" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ทะเบียนการตัดสินใจ NSL-01  ยังไม่มีแถวของเรื่องนี้</text>
+</svg>
