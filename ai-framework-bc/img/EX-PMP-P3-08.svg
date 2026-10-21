@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img">
+<title>สรุปความพร้อมก่อนขอ Check 1 ของ NSL-01 ที่ผู้ช่วยรวบรวม</title>
+<rect width="640" height="360" fill="#FFFFFF"/>
+<rect x="16" y="10" width="608" height="278" rx="8" fill="#FFFFFF" stroke="#C5D0CF" stroke-width="1"/>
+<path d="M16 18 a8 8 0 0 1 8 -8 h592 a8 8 0 0 1 8 8 v16 h-608 Z" fill="#F4F6F6"/>
+<text x="28" y="27" font-family="Consolas, 'Courier New', Prompt, Sarabun, Tahoma, monospace" font-size="12" fill="#6B6B6B" text-anchor="start" xml:space="preserve" style="white-space:pre">สรุปความพร้อมก่อนขอ Check 1  NSL-01  (ผู้ช่วยรวบรวม 2026-04-10)</text>
+<text x="28" y="58" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">BI ระบบการเงิน รุ่น 1.1  ผู้ตรวจเอกสาร PASS</text>
+<text x="28" y="92" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">BI ระบบสินทรัพย์ถาวร รุ่น 1.0  ยังไม่ส่งผู้ตรวจเอกสาร</text>
+<text x="28" y="126" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">ลูกค้ายืนยัน BI ทั้ง 2 ฉบับ  คุณสุดา  2026-04-08</text>
+<text x="28" y="160" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">gap list 12 แถว  Confirm 9  Pending 2  Cancel 1  ทุกแถวมีเจ้าของ</text>
+<text x="28" y="194" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">MD ใน gap list  Confirm 50  Pending ที่ประเมิน 16  รวม 66</text>
+<text x="28" y="228" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">MD งาน customise ในสัญญา 50  (gap list = ร้อยละ 132)</text>
+<text x="28" y="262" font-family="Prompt, Sarabun, Tahoma, sans-serif" font-size="16" fill="#262626" text-anchor="start" xml:space="preserve" style="white-space:pre">เกณฑ์ MD ใน gap list  ไม่เกินร้อยละ 110 ของสัญญา (ค่าตั้งต้น)</text>
+</svg>
